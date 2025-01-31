@@ -1,38 +1,153 @@
 
 import random
 import pandas as pd
-import numpy as np
+import numpy as np  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None) 
+
+
+# Setup
+# ******************************************************
+# ******************************************************
 
 #> Data BankTransactions.csv 
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
+#> VisualizeAllColumns 
+# Code added to start of file to display all columns for dataframes 
 
-#> ColumnGet --columns Location 
-location_1 = bankTransactionsDf['Location'] 
+# Get some of the columns from the data frame
+#> ColumnGet --columns Location DeviceID IP  Address TransactionDuration LoginAttempts 
 location = bankTransactionsDf['Location']
+deviceID = bankTransactionsDf['DeviceID']
+iPAddress = bankTransactionsDf['IP Address']
+transactionDuration = bankTransactionsDf['TransactionDuration']
+loginAttempts = bankTransactionsDf['LoginAttempts'] 
 
-# Example 1 Add location as a new column
+# Then, remove those columns
+#> ColumnRemove --columns Location DeviceID IP  Address TransactionDuration LoginAttempts 
+bankTransactionsDf.drop(columns= ['Location', 'DeviceID', 'IP Address', 'TransactionDuration', 'LoginAttempts'] , inplace=True) 
+
+
+
+# Example 1
+# Add new empty column
+# Seed being used: #> ColumnAdd --newColumnNames NewEmptyColumn 
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)1 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39
+
+#> ColumnAdd --newColumnNames NewEmptyColumn 
+bankTransactionsDf['NewEmptyColumn'] = pd.Series() 
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)2 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN
+
+
+
+# Example 2
+# Add a column with a default value
+# Seed being used: #> ColumnAdd 1 --newColumnNames Columnof1s 
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)3 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN
+
+#> ColumnAdd 1 --newColumnNames Columnof1s 
+bankTransactionsDf['Columnof1s'] = 1 
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)4 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1
+
+
+
+# Example 3
+# Add location, which is a series previously extracted, as a new column
+# Seed being used: #> ColumnAdd location 
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)5 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1
 
 #> ColumnAdd location 
-#***Analyze location to learn about: type
-#***#> `run script and gather data 
-# User changes detected
-bankTransactionsDf['new_location'] = location
+bankTransactionsDf['location'] = location 
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)6 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta
+
+
+
+# Example 4
+# Add a random series to the dataframe
+# Seed being used: #> ColumnAdd randomListSeries 
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)7 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta
 
 #> Random --list --count 2512 
-randomList_1 = [random.random() for ___1 in range(2512)] 
-randomList = [random.random() for __ in range(2512)]
+randomList = [random.random() for __ in range(2512)] 
 
 #> ToSeries 
 randomListSeries = pd.Series(randomList) 
-randomListSeries = pd.Series(randomList)
 
-#Example 2 Add random series to the dataframe
 #> ColumnAdd randomListSeries 
-#***Analyze randomListSeries to learn about: type
-#***#> `run script and gather data 
-bankTransactionsDf['randomListSeries'] = randomListSeries
+bankTransactionsDf['randomListSeries'] = randomListSeries 
 
+#> Visualize 
+print(bankTransactionsDf.head()) #)8 
+##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location  randomListSeries
+##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego          0.848532
+##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston          0.197302
+##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa          0.373826
+##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh          0.822673
+##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta          0.001565
