@@ -1,31 +1,67 @@
 
 import pandas as pd
-import numpy as np
+import numpy as np  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None) 
+
+
+# Setup
+# ******************************************************
+# ******************************************************
 
 #> Data bankTransactions.csv 
 bankTransactionsDf = pd.read_csv('bankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-bankTransactionsDf = pd.read_csv('bankTransactions.csv')
-bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
-bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate'])
-bankTransactionsDf = pd.read_csv('../bankTransactions.csv')
 
-# Example 1: Unique column with single columns
+#> VisualizeAllColumns 
+# Code added to start of file to display all columns for dataframes 
+
+#> ColumnHeaders 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate 
+
+
+
+# Example
+# Unique column with single columns
+# Seed being used: #>
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)1 
+
 #> ColumnUnique CustomerAge --print 
-bankTransactionsDfUnique_2 = bankTransactionsDf['CustomerAge'].unique()
-print(bankTransactionsDfUnique_2) #)1 
-bankTransactionsDfUnique_1 = bankTransactionsDf['CustomerAge'].unique()
-print(bankTransactionsDfUnique_1) #)1
 bankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()
-print(bankTransactionsDfUnique) ##1
+print(bankTransactionsDfUnique) #)2 
 
-# Example 2: Unique column with multiple columns
+
+
+# Example
+# Unique column with multiple columns
+# Seed being used: #>
+# ******************************************************
+# ******************************************************
+
+#> Visualize 
+print(bankTransactionsDf.head()) #)3 
+
 #> ColumnUnique AccountBalance CustomerAge --print 
-#***Analyze bankTransactionsDfUnique to learn about: type
-#***#> `run script and gather data 
-#***Analyze bankTransactionsDfUnique to learn about: type
-#***#> `run script and gather data
-bankTransactionsDfUnique_1AccountBalance = bankTransactionsDf['AccountBalance'].unique()
-bankTransactionsDfUnique_1CustomerAge = bankTransactionsDf['CustomerAge'].unique()
-print(bankTransactionsDfUnique_1CustomerAge) ##2
+bankTransactionsDfUnique_1_AccountBalance = bankTransactionsDf['AccountBalance'].unique()
+bankTransactionsDfUnique_1_CustomerAge = bankTransactionsDf['CustomerAge'].unique()
+print(bankTransactionsDfUnique_1CustomerAge) #)4 
