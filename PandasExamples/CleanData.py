@@ -33,6 +33,7 @@ pizzeriasDf = pd.read_csv('pizzerias.csv')
 
 # Example 1
 # Removing missing data from the dataframe
+# Seed being used: #> CleanData --removeMissing 
 # ******************************************************
 # ******************************************************
 
@@ -61,6 +62,7 @@ print(pizzeriasDf.head()) #)2
 
 # Example 2
 # Fill missing Rating values with mean of the column
+# Seed being used: #> CleanData --fill --columns Rating --mean 
 # ******************************************************
 # ******************************************************
 
@@ -93,6 +95,7 @@ print(pizzeriasDf.head()) #)4
 
 # Example 3
 # Interpolate missing Rating values using the nearest non-NaN values
+# Seed being used: #> CleanData --interpolate --columns Rating 
 # ******************************************************
 # ******************************************************
 
