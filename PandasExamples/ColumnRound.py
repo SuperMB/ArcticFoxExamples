@@ -192,7 +192,7 @@ print(bankTransactionsDf.head(n=10)) #)8
 # Example 5
 # Round to the nearest multiple of a number for multiple columns
 # while only applying to rows that meet a specified criteria
-# Seed being used: #> ColumnRound AccountBalance TransactionAmount 
+# Seed being used: #> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where _TransactionAmount_ > 100 
 # ******************************************************
 # ******************************************************
 
