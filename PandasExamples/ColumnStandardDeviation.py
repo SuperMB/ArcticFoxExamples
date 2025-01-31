@@ -115,6 +115,6 @@ weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].st
 #> print 
 print(weatherDfStd) #)6 
 ##***               Sunshine  Rainfall
-##*** RainTomorrow                    
+##*** RainTomorrow
 ##*** No            3.148458  3.590815
 ##*** Yes           3.492323  6.258950

@@ -15,8 +15,10 @@ pd.set_option('display.max_columns', None)
 
 
 # Example 1
-# Description
-# Seed being used: #>
+# Concatenate two dataframes, create a new dataframe with the
+# rows from the first dataframe followed by rows from the
+# second dataframe
+# Seed being used: #> DataframeConcat df2021_FinalDf df2020_FinalDf 
 # ******************************************************
 # ******************************************************
 
@@ -31,5 +33,14 @@ df2020_FinalDf = pd.read_csv('2020_Final.csv')
 dfsList = [df2021_FinalDf, df2020_FinalDf]
 dfsConcat = pd.concat(dfsList, ignore_index=True) 
 
+
+#> Visualize 
+print(dfsConcat.head()) #)1 
+##***    YEAR  MONTH STATE               TYPE OF PRODUCER               ENERGY SOURCE  GENERATION\r\n(Megawatthours)
+##*** 0  2021      1    AK  Total Electric Power Industry                       Total                         593896
+##*** 1  2021      1    AK  Total Electric Power Industry                        Coal                          72164
+##*** 2  2021      1    AK  Total Electric Power Industry  Hydroelectric Conventional                         171307
+##*** 3  2021      1    AK  Total Electric Power Industry                 Natural Gas                         266928
+##*** 4  2021      1    AK  Total Electric Power Industry                       Other                           -318
 
 
