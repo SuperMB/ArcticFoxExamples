@@ -1,11 +1,14 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data BankTransactions.csv ⮜#@>2
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
+#> Data BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -21,16 +24,35 @@ bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<3
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
 #Example 1: Extarct single column
-#⮞ ColumnExtract DeviceID ⮜#@>4
-bankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ]#<4
+#> ColumnExtract DeviceID 
+bankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ] 
+bankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ]
 
 #Example 2: Extarct multiple columns
-#⮞ ColumnExtract Location AccountBalance ⮜ #⮞ `> ⮜#@>5
-bankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance' ] ]#<5
+#> ColumnExtract Location AccountBalance  
+bankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance #>', '`', '>' ] ] 
+bankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance' ] ]
 
 
-#⮞ print  ⮜#@>6
-print(bankTransactionsDf) ##1#<6
+#> print 
+print(bankTransactionsDf) #)1 
+print(bankTransactionsDf) ##1

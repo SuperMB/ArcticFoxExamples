@@ -1,11 +1,12 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
-#⮞ Data pizzerias.csv ⮜#@>2
-pizzeriasDf = pd.read_csv('../pizzerias.csv')#<2
+import numpy as np
+#> Data pizzerias.csv 
+pizzeriasDf = pd.read_csv('pizzerias.csv') 
+pizzeriasDf = pd.read_csv('../pizzerias.csv')
 
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # Pizzeria Name
 # Location
 # Specialty Pizza
@@ -15,15 +16,28 @@ pizzeriasDf = pd.read_csv('../pizzerias.csv')#<2
 # Vegan Friendly
 # Established Year
 # Seating Capacity
-# Website#<3
+# Website 
+# Pizzeria Name
+# Location
+# Specialty Pizza
+# Price Range
+# Rating
+# Delivery Options
+# Vegan Friendly
+# Established Year
+# Seating Capacity
+# Website
 
 #Example 1: Get single column
-#⮞ ColumnGet Rating ⮜#@>4
-rating = pizzeriasDf['Rating']#<4
+#> ColumnGet Rating 
+rating_2 = pizzeriasDf['Rating'] 
+rating = pizzeriasDf['Rating']
 
 #Example2: Get multiple columns
 
-#⮞ ColumnGet Location Rating ⮜#@>5
+#> ColumnGet Location Rating 
+#***Analyze rating to learn about: type
+#***#> `run script and gather data 
 location = pizzeriasDf['Location']
-rating_1 = pizzeriasDf['Rating']#<5
+rating_1 = pizzeriasDf['Rating']
 

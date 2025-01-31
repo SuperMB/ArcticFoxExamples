@@ -1,11 +1,14 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data BankTransactions.csv ⮜#@>2
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
+#> Data BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -21,14 +24,34 @@ bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<3
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
 # Example 1: Column Remove with multiple columns
-#⮞ ColumnRemove  TransactionID TransactionDuration --print ⮜#@>4
+#> ColumnRemove  TransactionID TransactionDuration --print 
 bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True)
-print(bankTransactionsDf) ##1#<4
+print(bankTransactionsDf) #)1 
+bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True)
+print(bankTransactionsDf) ##1
 
 # Example 2: Column Remove with single columns
-#⮞ ColumnRemove CustomerAge --print ⮜#@>5
+#> ColumnRemove CustomerAge --print 
 bankTransactionsDf.drop(columns='CustomerAge', inplace=True)
-print(bankTransactionsDf) ##2#<5
+print(bankTransactionsDf) #)2 
+bankTransactionsDf.drop(columns='CustomerAge', inplace=True)
+print(bankTransactionsDf) ##2

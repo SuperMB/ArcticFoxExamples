@@ -1,19 +1,28 @@
-#>1
+
 import pandas as pd
 import numpy as np
-#<1 #>2
+
 pd.set_option('display.width', 10000)
-pd.set_option('display.max_columns', None)#<2
+pd.set_option('display.max_columns', None) 
 
-#⮞ Data BankTransactions.csv ⮜#@>3
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<3
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None)
 
-#⮞ ColumnRearrange 3 ⮜#@>4
+#> Data BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
+
+#> ColumnRearrange 3 
 columnsToMove = [bankTransactionsDf.columns[3]]
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
-bankTransactionsDf = bankTransactionsDf[columnsToMove]#<4
+bankTransactionsDf = bankTransactionsDf[columnsToMove] 
+columnsToMove = [bankTransactionsDf.columns[3]]
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove]
 
-#⮞ ColumnHeaders  ⮜#@>5
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -29,16 +38,37 @@ bankTransactionsDf = bankTransactionsDf[columnsToMove]#<4
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<5
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
-#⮞ VisualizeAllColumns  ⮜#@>6
-# Code added to start of file to display all columns for dataframes#<6
+#> VisualizeAllColumns 
+# Code added to start of file to display all columns for dataframes 
+# Code added to start of file to display all columns for dataframes
 
 # Example 1: Column Rearrange with multiple columns, moves columns to the start
-#⮞ ColumnRearrange TransactionID MerchantID Channel ⮜#@>7
+#> ColumnRearrange TransactionID MerchantID Channel 
 columnsToMove = ['TransactionID', 'MerchantID', 'Channel']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
-bankTransactionsDf = bankTransactionsDf[columnsToMove]#<7
+bankTransactionsDf = bankTransactionsDf[columnsToMove] 
+columnsToMove = ['TransactionID', 'MerchantID', 'Channel']
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove]
 
-#⮞ print  ⮜#@>8
-print(bankTransactionsDf) ##1#<8
+#> print 
+print(bankTransactionsDf) #)1 
+print(bankTransactionsDf) ##1

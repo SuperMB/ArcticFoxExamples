@@ -1,11 +1,14 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data BankTransactions.csv ⮜#@>2
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
+#> Data BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -21,14 +24,34 @@ bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<3
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
 # Example 1: Round with multiple columns
-#⮞ ColumnRound AccountBalance TransactionAmount --print ⮜#@>4
+#> ColumnRound AccountBalance TransactionAmount --print 
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'])
-print(bankTransactionsDf) ##1#<4
+print(bankTransactionsDf) #)1 
+bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])
+bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'])
+print(bankTransactionsDf) ##1
 
 # Example 2: Round with single column
-#⮞ ColumnRound AccountBalance ⮜#@>5
-bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])#<5
+#> ColumnRound AccountBalance 
+bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance']) 
+bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])

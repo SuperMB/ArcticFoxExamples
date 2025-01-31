@@ -1,11 +1,12 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data Pizzerias.csv ⮜#@>2
-pizzeriasDf = pd.read_csv('../Pizzerias.csv')#<2
+#> Data Pizzerias.csv 
+pizzeriasDf = pd.read_csv('Pizzerias.csv') 
+pizzeriasDf = pd.read_csv('../Pizzerias.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # Pizzeria Name
 # Location
 # Specialty Pizza
@@ -15,16 +16,30 @@ pizzeriasDf = pd.read_csv('../Pizzerias.csv')#<2
 # Vegan Friendly
 # Established Year
 # Seating Capacity
-# Website#<3
+# Website 
+# Pizzeria Name
+# Location
+# Specialty Pizza
+# Price Range
+# Rating
+# Delivery Options
+# Vegan Friendly
+# Established Year
+# Seating Capacity
+# Website
 
 #Example 1: Copy single column
-#⮞ ColumnCopy Location --to new_location ⮜#@>4
-pizzeriasDf['new_location'] = pizzeriasDf['Location']#<4
+#> ColumnCopy Location --to new_location 
+pizzeriasDf['new_location'] = pizzeriasDf['Location'] 
+pizzeriasDf['new_location'] = pizzeriasDf['Location']
 
 #Example 2: Copy multiple columns
-#⮞ ColumnCopy Rating Website --to newRating newWebsite ⮜#@>5
+#> ColumnCopy Rating Website --to newRating newWebsite 
 pizzeriasDf['newRating'] = pizzeriasDf['Rating']
-pizzeriasDf['newWebsite'] = pizzeriasDf['Website']#<5
+pizzeriasDf['newWebsite'] = pizzeriasDf['Website'] 
+pizzeriasDf['newRating'] = pizzeriasDf['Rating']
+pizzeriasDf['newWebsite'] = pizzeriasDf['Website']
 
-#⮞ print  ⮜#@>6
-print(pizzeriasDf) ##1#<6
+#> print 
+print(pizzeriasDf) #)1 
+print(pizzeriasDf) ##1

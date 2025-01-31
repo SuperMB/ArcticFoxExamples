@@ -1,11 +1,12 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data weather.csv ⮜#@>2
-weatherDf = pd.read_csv('../weather.csv')#<2
+#> Data weather.csv 
+weatherDf = pd.read_csv('weather.csv') 
+weatherDf = pd.read_csv('../weather.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # MinTemp
 # MaxTemp
 # Rainfall
@@ -27,14 +28,40 @@ weatherDf = pd.read_csv('../weather.csv')#<2
 # Temp3pm
 # RainToday
 # RISK_MM
-# RainTomorrow#<3
+# RainTomorrow 
+# MinTemp
+# MaxTemp
+# Rainfall
+# Evaporation
+# Sunshine
+# WindGustDir
+# WindGustSpeed
+# WindDir9am
+# WindDir3pm
+# WindSpeed9am
+# WindSpeed3pm
+# Humidity9am
+# Humidity3pm
+# Pressure9am
+# Pressure3pm
+# Cloud9am
+# Cloud3pm
+# Temp9am
+# Temp3pm
+# RainToday
+# RISK_MM
+# RainTomorrow
 
 # Example 1: Calculates Column Min with multiple columns
-#⮞ ColumnMin Humidity3pm Humidity9am Temp3pm --print ⮜#@>4
+#> ColumnMin Humidity3pm Humidity9am Temp3pm --print 
 weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
-print(weatherDfMin) ##1#<4
+print(weatherDfMin) #)1 
+weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
+print(weatherDfMin) ##1
 
 # Example 2: Calculates Column Min with single column
-#⮞ ColumnMin WindGustSpeed --print ⮜#@>5
+#> ColumnMin WindGustSpeed --print 
 weatherDfMin = weatherDf['WindGustSpeed'].min()
-print(weatherDfMin) ##2#<5
+print(weatherDfMin) #)2 
+weatherDfMin = weatherDf['WindGustSpeed'].min()
+print(weatherDfMin) ##2

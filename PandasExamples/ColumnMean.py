@@ -1,11 +1,12 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data weather.csv ⮜#@>2
-weatherDf = pd.read_csv('../weather.csv')#<2
+#> Data weather.csv 
+weatherDf = pd.read_csv('weather.csv') 
+weatherDf = pd.read_csv('../weather.csv')
 
-#⮞ ColumnHeaders ⮜#@>3
+#> ColumnHeaders 
 # MinTemp
 # MaxTemp
 # Rainfall
@@ -27,26 +28,52 @@ weatherDf = pd.read_csv('../weather.csv')#<2
 # Temp3pm
 # RainToday
 # RISK_MM
-# RainTomorrow#<3
+# RainTomorrow 
+# MinTemp
+# MaxTemp
+# Rainfall
+# Evaporation
+# Sunshine
+# WindGustDir
+# WindGustSpeed
+# WindDir9am
+# WindDir3pm
+# WindSpeed9am
+# WindSpeed3pm
+# Humidity9am
+# Humidity3pm
+# Pressure9am
+# Pressure3pm
+# Cloud9am
+# Cloud3pm
+# Temp9am
+# Temp3pm
+# RainToday
+# RISK_MM
+# RainTomorrow
 
 # Example 2: Calculates Column Mean with single column
-#⮞ ColumnMean Temp3pm ⮜#@>4
-weatherDfMean = weatherDf['Temp3pm'].mean()#<4
+#> ColumnMean Temp3pm 
+weatherDfMean = weatherDf['Temp3pm'].mean() 
+weatherDfMean = weatherDf['Temp3pm'].mean()
 
 # Example 1: Calculates Column Mean with multiple columns
-#⮞ ColumnMean Temp3pm Temp9am MaxTemp MinTemp ⮜#@>5
-weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean()#<5
+#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp 
+weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean() 
+weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean()
 
 
-#⮞ print  ⮜#@>6
-print(weatherDfMean) ##1#<6
+#> print 
+print(weatherDfMean) #)1 
+print(weatherDfMean) ##1
 
 
-#⮞ Data Power.csv ⮜#@>7
-powerDf = pd.read_csv('../Power.csv')#<7
+#> Data Power.csv 
+#ISSUE: Can't find Power.csv in the Arctic Fox project. Arctic Fox searched all sub-directories of the project. Please make sure Power.csv is inside the project directories. 
+powerDf = pd.read_csv('../Power.csv')
 
 # Does not work
-# #⮞ ColumnMean GENERATION  Megawatthours --group STATE TYPE  OF  PRODUCER --addToDataframe --where _STATE_ == AK or _STATE_ == AL --print ⮜#@8
+# #> ColumnMean GENERATION  Megawatthours --group STATE TYPE  OF  PRODUCER --addToDataframe --where _STATE_ == AK or _STATE_ == AL --print 
 
 # Does not work
-# #⮞ ColumnMean GENERATION  Megawatthours --addToDataframe --where _STATE_ == AK  ⮜#@9
+# #> ColumnMean GENERATION  Megawatthours --addToDataframe --where _STATE_ == AK 

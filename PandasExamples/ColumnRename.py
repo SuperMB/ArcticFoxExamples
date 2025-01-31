@@ -1,11 +1,14 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data BankTransactions.csv ⮜#@>2
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
+#> Data BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -21,14 +24,34 @@ bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<2
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<3
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
 # Example 1: Column Rename with multiple columns
-#⮞ ColumnRename TransactionID AccountID --to tid aid --print ⮜#@>4
+#> ColumnRename TransactionID AccountID --to tid aid --print 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'})
-print(bankTransactionsDf) ##1#<4
+print(bankTransactionsDf) #)1 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'})
+print(bankTransactionsDf) ##1
 
 # Example 2: Column Rename with single columns
-#⮞ ColumnRename CustomerAge --to Age --print ⮜#@>5
+#> ColumnRename CustomerAge --to Age --print 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'})
-print(bankTransactionsDf) ##2#<5
+print(bankTransactionsDf) #)2 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'})
+print(bankTransactionsDf) ##2

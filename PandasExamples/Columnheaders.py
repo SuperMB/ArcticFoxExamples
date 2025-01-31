@@ -1,11 +1,12 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
-#⮞ Data pizzerias.csv ⮜#@>2
-pizzeriasDf = pd.read_csv('../pizzerias.csv')#<2
+#> Data pizzerias.csv 
+pizzeriasDf = pd.read_csv('pizzerias.csv') 
+pizzeriasDf = pd.read_csv('../pizzerias.csv')
 
-#⮞ ColumnHeaders  ⮜#@>3
+#> ColumnHeaders 
 # Pizzeria Name
 # Location
 # Specialty Pizza
@@ -15,12 +16,25 @@ pizzeriasDf = pd.read_csv('../pizzerias.csv')#<2
 # Vegan Friendly
 # Established Year
 # Seating Capacity
-# Website#<3
+# Website 
+# Pizzeria Name
+# Location
+# Specialty Pizza
+# Price Range
+# Rating
+# Delivery Options
+# Vegan Friendly
+# Established Year
+# Seating Capacity
+# Website
 
-#⮞ Data  BankTransactions.csv ⮜#@>4
-bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<4
+#> Data  BankTransactions.csv 
+bankTransactionsDf = pd.read_csv('BankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../BankTransactions.csv')
 
-#⮞ ColumnHeaders  ⮜#@>5
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -36,4 +50,20 @@ bankTransactionsDf = pd.read_csv('../BankTransactions.csv')#<4
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<5
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate

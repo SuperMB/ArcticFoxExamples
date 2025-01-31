@@ -1,12 +1,15 @@
-#>1
+
 import pandas as pd
-import numpy as np#<1
+import numpy as np
 
 
-#⮞ Data bankTransactions.csv ⮜#@>2
-bankTransactionsDf = pd.read_csv('../bankTransactions.csv')#<2
+#> Data bankTransactions.csv 
+bankTransactionsDf = pd.read_csv('bankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('../bankTransactions.csv')
 
-#⮞ ColumnHeaders ⮜#@>3
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -22,11 +25,29 @@ bankTransactionsDf = pd.read_csv('../bankTransactions.csv')#<2
 # TransactionDuration
 # LoginAttempts
 # AccountBalance
-# PreviousTransactionDate#<3
+# PreviousTransactionDate 
+# TransactionID
+# AccountID
+# TransactionAmount
+# TransactionDate
+# TransactionType
+# Location
+# DeviceID
+# IP Address
+# MerchantID
+# Channel
+# CustomerAge
+# CustomerOccupation
+# TransactionDuration
+# LoginAttempts
+# AccountBalance
+# PreviousTransactionDate
 
 # Example 1: print data types of various columns
-#⮞ ColumnDataTypes AccountID LoginAttempts TransactionAmount ⮜#@>4
-bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'TransactionAmount' ] ].dtypes#<4
+#> ColumnDataTypes AccountID LoginAttempts TransactionAmount 
+bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'TransactionAmount' ] ].dtypes 
+bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'TransactionAmount' ] ].dtypes
 
-#⮞ print  ⮜#@>5
-print(bankTransactionsDfDataTypes) ##1#<5
+#> print 
+print(bankTransactionsDfDataTypes) #)1 
+print(bankTransactionsDfDataTypes) ##1
