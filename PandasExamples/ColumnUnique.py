@@ -6,12 +6,17 @@ import numpy as np
 bankTransactionsDf = pd.read_csv('bankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
+bankTransactionsDf = pd.read_csv('bankTransactions.csv')
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate'])
 bankTransactionsDf = pd.read_csv('../bankTransactions.csv')
 
 # Example 1: Unique column with single columns
 #> ColumnUnique CustomerAge --print 
+bankTransactionsDfUnique_2 = bankTransactionsDf['CustomerAge'].unique()
+print(bankTransactionsDfUnique_2) #)1 
 bankTransactionsDfUnique_1 = bankTransactionsDf['CustomerAge'].unique()
-print(bankTransactionsDfUnique_1) #)1 
+print(bankTransactionsDfUnique_1) #)1
 bankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()
 print(bankTransactionsDfUnique) ##1
 
@@ -19,6 +24,8 @@ print(bankTransactionsDfUnique) ##1
 #> ColumnUnique AccountBalance CustomerAge --print 
 #***Analyze bankTransactionsDfUnique to learn about: type
 #***#> `run script and gather data 
+#***Analyze bankTransactionsDfUnique to learn about: type
+#***#> `run script and gather data
 bankTransactionsDfUnique_1AccountBalance = bankTransactionsDf['AccountBalance'].unique()
 bankTransactionsDfUnique_1CustomerAge = bankTransactionsDf['CustomerAge'].unique()
 print(bankTransactionsDfUnique_1CustomerAge) ##2
