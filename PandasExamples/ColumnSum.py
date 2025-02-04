@@ -52,7 +52,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnSum  AccountBalance --print 
+#> ColumnSum AccountBalance --print 
 bankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()
 print(bankTransactionsDfSum) #)2 
 ##*** 12847129.049999999
