@@ -1,0 +1,1001 @@
+Pizzeria Name,Location,Specialty Pizza,Price Range,First Person Rating,Second Person Rating,Delivery Options,Vegan Friendly,Established Year,Seating Capacity,Website
+Antonio's Urban,"Bronx, NYC",Hawaiian,$$$$,,5.0,No,No,,77.0,
+Giovanni's Secret,"Staten Island, NYC",Hawaiian,$$$,,,Yes,Yes,,35.0,www.giovanni'ssecret94.com
+Giovanni's Traditional,"Queens, NYC",,$$$$,3.1,3.1,Yes,Yes,,,www.giovanni'straditional33.com
+Giovanni's Slice of Heaven,,Hawaiian,,,,Non,No,1991.0,11.0,www.giovanni'ssliceofheaven16.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Buffalo Chicken,$$,,,No,No,1989.0,23.0,www.antonio'ssliceofheaven22.com
+Giovanni's Traditional,"Brooklyn, NYC",Buffalo Chicken,$,4.8,4.8,Yes,No,,39.0,www.giovanni'straditional57.com
+Mario's Garden,"Queens, NYC",Pepperoni,$$,4.1,,No,Yes,,58.0,www.mario'sgarden62.com
+Antonio's Slice of Heaven,"Queens, NYC",Margherita,$,4.0,4.0,Yes,No,1986.0,21.0,www.antonio'ssliceofheaven82.com
+Luigi's Slice of Heaven,"Queens, NYC",Hawaiian,$,3.2,3.2,Yes,Yes,1971.0,99.0,
+Giovanni's Gourmet,"Staten Island, NYC",,$,4.3,4.3,Non,Yes,2006.0,53.0,www.giovanni'sgourmet90.com
+Mario's Urban,,Margherita,$$,4.6,4.6,Non,Yes,1976.0,42.0,www.mario'surban72.com
+Antonio's Traditional,"Queens, NYC",Veggie,$,,,Non,No,1990.0,22.0,www.antonio'straditional70.com
+Giovanni's Traditional,"Staten Island, NYC",Buffalo Chicken,$$,4.6,,Non,No,1983.0,87.0,www.giovanni'straditional30.com
+Giovanni's Gourmet,"Brooklyn, NYC",Margherita,$$$$,4.9,4.9,Non,No,,97.0,www.giovanni'sgourmet23.com
+Mario's Secret,"Bronx, NYC",Veggie,$$$,3.4,3.4,Yes,Yes,2015.0,35.0,www.mario'ssecret32.com
+Luigi's Traditional,"Brooklyn, NYC",Margherita,$$$,4.0,4.0,Yes,Yes,1961.0,30.0,www.luigi'straditional86.com
+Antonio's Traditional,"Bronx, NYC",Buffalo Chicken,$,3.6,,No,No,1989.0,37.0,www.antonio'straditional57.com
+Rosa's Traditional,,,$$,,,Yes,Yes,1959.0,57.0,www.rosa'straditional9.com
+Rosa's Gourmet,"Manhattan, NYC",Pepperoni,$$$,4.2,4.2,Non,Yes,1997.0,49.0,www.rosa'sgourmet31.com
+Mario's Gourmet,"Bronx, NYC",Hawaiian,$$,,,Yes,No,1969.0,75.0,
+Luigi's Secret,"Brooklyn, NYC",Margherita,$$,,4.6,No,No,,82.0,www.luigi'ssecret9.com
+Luigi's Gourmet,"Staten Island, NYC",Margherita,$,3.8,3.8,Yes,No,2009.0,96.0,www.luigi'sgourmet13.com
+Mario's Traditional,"Bronx, NYC",,$$$,4.8,4.8,Yes,Yes,,88.0,
+Antonio's Secret,,Buffalo Chicken,$,4.1,4.1,Yes,Yes,2014.0,86.0,www.antonio'ssecret3.com
+Luigi's Secret,"Manhattan, NYC",Margherita,$,3.3,3.3,No,Non,2000.0,,www.luigi'ssecret35.com
+Rosa's Gourmet,,Buffalo Chicken,$$$,4.4,4.4,Yes,Yes,1985.0,90.0,
+Giovanni's Urban,"Queens, NYC",Margherita,$$$,4.6,4.6,Yes,Yes,1973.0,57.0,www.giovanni'surban21.com
+Antonio's Gourmet,"Brooklyn, NYC",Pepperoni,$$$$,3.6,,No,No,1976.0,11.0,www.antonio'sgourmet64.com
+Rosa's Urban,"Bronx, NYC",Hawaiian,,4.7,,No,Non,1951.0,93.0,
+Antonio's Slice of Heaven,"Bronx, NYC",Margherita,$$,4.8,4.8,Yes,Yes,1980.0,29.0,www.antonio'ssliceofheaven52.com
+Giovanni's Urban,,,$$$,,,Yes,Yes,2006.0,68.0,www.giovanni'surban34.com
+Mario's Garden,"Bronx, NYC",Pepperoni,,5.0,5.0,No,No,2015.0,55.0,www.mario'sgarden96.com
+Antonio's Secret,"Bronx, NYC",Margherita,$$,3.3,3.3,No,No,1978.0,12.0,www.antonio'ssecret35.com
+Giovanni's Gourmet,"Manhattan, NYC",,$$,,3.4,Non,No,1964.0,,www.giovanni'sgourmet15.com
+Mario's Secret,"Queens, NYC",,,3.4,3.4,No,Yes,1961.0,21.0,www.mario'ssecret96.com
+Rosa's Traditional,"Staten Island, NYC",Margherita,$$$$,4.8,4.8,No,No,1977.0,49.0,www.rosa'straditional6.com
+Mario's Slice of Heaven,"Queens, NYC",Pepperoni,$$$,4.3,,No,No,1973.0,75.0,www.mario'ssliceofheaven85.com
+Antonio's Slice of Heaven,,Veggie,$,3.3,3.3,No,No,1970.0,,
+Rosa's Urban,"Manhattan, NYC",,$$,3.9,3.9,Yes,Yes,1959.0,,www.rosa'surban32.com
+Antonio's Urban,"Brooklyn, NYC",Pepperoni,$$$$,4.2,4.2,No,No,1967.0,92.0,www.antonio'surban52.com
+Antonio's Urban,"Bronx, NYC",,$$$$,3.2,3.2,Non,Yes,,,www.antonio'surban83.com
+Rosa's Gourmet,"Manhattan, NYC",Pepperoni,$,4.8,4.8,Yes,Yes,,53.0,www.rosa'sgourmet97.com
+Luigi's Secret,,Veggie,$,4.6,4.6,No,No,2007.0,15.0,www.luigi'ssecret28.com
+Luigi's Garden,,Margherita,$$$$,4.0,4.0,No,Non,1971.0,86.0,www.luigi'sgarden95.com
+Luigi's Slice of Heaven,"Brooklyn, NYC",Veggie,,4.9,4.9,Yes,No,2019.0,73.0,www.luigi'ssliceofheaven85.com
+Antonio's Urban,"Manhattan, NYC",Veggie,$,,,No,Non,1985.0,31.0,www.antonio'surban98.com
+Rosa's Garden,,Hawaiian,$$$$,,,Yes,No,1994.0,27.0,www.rosa'sgarden64.com
+Luigi's Slice of Heaven,,Veggie,$,,,Non,No,,21.0,www.luigi'ssliceofheaven79.com
+Giovanni's Urban,"Brooklyn, NYC",Veggie,$$$,4.3,4.3,Yes,No,,61.0,www.giovanni'surban78.com
+Mario's Secret,"Bronx, NYC",Margherita,$$,3.3,3.3,Non,Yes,2010.0,60.0,www.mario'ssecret19.com
+Giovanni's Slice of Heaven,"Bronx, NYC",,$,4.8,4.8,Non,No,2005.0,80.0,www.giovanni'ssliceofheaven15.com
+Luigi's Urban,,,$$$,3.9,3.9,Non,Yes,1982.0,,www.luigi'surban6.com
+Mario's Secret,"Bronx, NYC",Margherita,,3.3,3.3,Yes,No,,28.0,www.mario'ssecret73.com
+Mario's Gourmet,,Margherita,$,,3.0,No,Yes,,15.0,www.mario'sgourmet84.com
+Luigi's Traditional,,Buffalo Chicken,$,,,Yes,Yes,1969.0,93.0,
+Antonio's Gourmet,"Manhattan, NYC",Veggie,$$$$,4.1,,Yes,Non,1967.0,36.0,www.antonio'sgourmet38.com
+Mario's Secret,"Bronx, NYC",Pepperoni,$$,,4.4,Yes,Non,1987.0,62.0,www.mario'ssecret26.com
+Mario's Traditional,"Brooklyn, NYC",Hawaiian,$$$$,4.8,4.8,Yes,Non,2016.0,,
+Rosa's Gourmet,"Bronx, NYC",Pepperoni,$,,3.2,No,No,1972.0,16.0,www.rosa'sgourmet92.com
+Antonio's Urban,"Brooklyn, NYC",Buffalo Chicken,$$$$,4.5,4.5,Yes,No,1965.0,,www.antonio'surban51.com
+Rosa's Garden,"Brooklyn, NYC",Margherita,$$$,,,No,Yes,,78.0,www.rosa'sgarden73.com
+Antonio's Traditional,"Bronx, NYC",Margherita,$$$$,4.7,,No,No,2018.0,20.0,www.antonio'straditional96.com
+Rosa's Secret,"Staten Island, NYC",,$,4.6,4.6,Yes,Non,,24.0,www.rosa'ssecret53.com
+Luigi's Gourmet,"Brooklyn, NYC",Margherita,$$$$,,,Yes,Yes,1970.0,73.0,www.luigi'sgourmet56.com
+Luigi's Traditional,"Brooklyn, NYC",,$$,4.4,4.4,Yes,Non,2019.0,12.0,www.luigi'straditional59.com
+Giovanni's Slice of Heaven,"Bronx, NYC",,$$$$,3.6,3.6,Yes,No,1961.0,,www.giovanni'ssliceofheaven70.com
+Rosa's Gourmet,"Brooklyn, NYC",Hawaiian,$$,3.9,3.9,No,Yes,,32.0,
+Giovanni's Secret,"Brooklyn, NYC",Buffalo Chicken,$$$,,,No,No,1963.0,,www.giovanni'ssecret92.com
+Giovanni's Urban,"Bronx, NYC",Margherita,$$,3.9,3.9,No,No,2010.0,46.0,www.giovanni'surban58.com
+Antonio's Gourmet,"Bronx, NYC",Margherita,$$$$,3.7,3.7,Yes,Non,2020.0,,www.antonio'sgourmet88.com
+Giovanni's Garden,"Manhattan, NYC",Buffalo Chicken,$,4.0,4.0,No,Yes,1995.0,,www.giovanni'sgarden13.com
+Giovanni's Slice of Heaven,,Veggie,$$,,4.7,Non,Non,,12.0,www.giovanni'ssliceofheaven43.com
+Rosa's Gourmet,"Staten Island, NYC",Veggie,$$$,3.7,3.7,Yes,Yes,1964.0,79.0,www.rosa'sgourmet76.com
+Giovanni's Garden,"Brooklyn, NYC",Veggie,$$,3.3,3.3,Yes,No,1993.0,,www.giovanni'sgarden51.com
+Luigi's Slice of Heaven,"Staten Island, NYC",Buffalo Chicken,$$,4.4,4.4,Yes,Yes,1966.0,35.0,
+Rosa's Urban,"Brooklyn, NYC",Margherita,$$,,4.7,Yes,No,,30.0,www.rosa'surban21.com
+Luigi's Gourmet,"Manhattan, NYC",Buffalo Chicken,,3.2,3.2,No,Yes,2003.0,81.0,www.luigi'sgourmet91.com
+Giovanni's Secret,"Bronx, NYC",,,3.5,3.5,Non,Yes,1993.0,,www.giovanni'ssecret83.com
+Antonio's Traditional,"Bronx, NYC",Veggie,$$,3.3,3.3,Yes,Yes,1954.0,20.0,
+Mario's Traditional,"Bronx, NYC",Pepperoni,$$,3.7,3.7,No,Yes,1976.0,47.0,www.mario'straditional26.com
+Luigi's Garden,"Staten Island, NYC",Margherita,$,,3.9,Non,Yes,1992.0,,www.luigi'sgarden45.com
+Luigi's Garden,"Manhattan, NYC",,$$$,4.5,4.5,Yes,Yes,1980.0,97.0,www.luigi'sgarden28.com
+Rosa's Gourmet,"Staten Island, NYC",Pepperoni,$$,4.3,4.3,Non,No,1966.0,44.0,www.rosa'sgourmet82.com
+Luigi's Gourmet,"Staten Island, NYC",Pepperoni,$$$,4.2,4.2,No,No,2003.0,23.0,
+Antonio's Gourmet,,Hawaiian,$$,3.7,3.7,Yes,Yes,2011.0,23.0,www.antonio'sgourmet17.com
+Giovanni's Secret,"Manhattan, NYC",Margherita,$$$$,4.7,4.7,Yes,Non,1981.0,19.0,www.giovanni'ssecret68.com
+Rosa's Urban,"Manhattan, NYC",,,3.9,3.9,No,Yes,,21.0,www.rosa'surban44.com
+Giovanni's Urban,"Manhattan, NYC",Veggie,$$,5.0,,Non,Yes,1962.0,47.0,www.giovanni'surban61.com
+Antonio's Slice of Heaven,"Bronx, NYC",Hawaiian,$$$$,4.3,4.3,No,No,1984.0,43.0,www.antonio'ssliceofheaven93.com
+Antonio's Gourmet,"Queens, NYC",Margherita,$$,3.3,,Yes,Yes,1954.0,50.0,www.antonio'sgourmet68.com
+Antonio's Slice of Heaven,,Buffalo Chicken,$$$$,4.4,4.4,Yes,Non,,19.0,www.antonio'ssliceofheaven74.com
+Rosa's Slice of Heaven,,,$,3.7,3.7,No,No,2019.0,26.0,www.rosa'ssliceofheaven25.com
+Giovanni's Gourmet,"Queens, NYC",Pepperoni,$,4.4,4.4,Yes,Yes,1974.0,26.0,www.giovanni'sgourmet95.com
+Giovanni's Garden,"Queens, NYC",Pepperoni,$,3.1,,No,Yes,1971.0,,www.giovanni'sgarden67.com
+Mario's Garden,"Manhattan, NYC",,,3.3,3.3,No,No,2015.0,71.0,www.mario'sgarden2.com
+Luigi's Urban,"Queens, NYC",Pepperoni,$$$,,,Yes,No,1994.0,10.0,www.luigi'surban89.com
+Rosa's Traditional,"Staten Island, NYC",Hawaiian,$,3.5,3.5,Yes,Yes,2018.0,21.0,
+Luigi's Secret,"Brooklyn, NYC",,$$$,4.7,4.7,Non,Yes,2021.0,13.0,www.luigi'ssecret70.com
+Rosa's Garden,"Brooklyn, NYC",Hawaiian,,3.6,,No,Yes,1950.0,51.0,www.rosa'sgarden26.com
+Giovanni's Gourmet,"Manhattan, NYC",,$$,4.3,4.3,No,No,1993.0,,www.giovanni'sgourmet72.com
+Luigi's Garden,,Buffalo Chicken,$$,4.4,,No,No,,94.0,www.luigi'sgarden27.com
+Mario's Garden,"Manhattan, NYC",Margherita,$$,4.0,4.0,Yes,Yes,2003.0,95.0,www.mario'sgarden89.com
+Antonio's Secret,,Margherita,$,3.6,,No,No,,13.0,www.antonio'ssecret18.com
+Mario's Slice of Heaven,"Brooklyn, NYC",Veggie,$$$,,3.4,Non,No,2003.0,91.0,www.mario'ssliceofheaven54.com
+Antonio's Traditional,,Veggie,$$$$,,,No,Yes,1965.0,78.0,www.antonio'straditional1.com
+Giovanni's Gourmet,"Staten Island, NYC",Buffalo Chicken,$$$$,3.6,,Yes,Yes,1969.0,28.0,www.giovanni'sgourmet61.com
+Rosa's Garden,"Queens, NYC",,$,4.3,4.3,Yes,No,1995.0,11.0,www.rosa'sgarden3.com
+Giovanni's Urban,"Bronx, NYC",Buffalo Chicken,,,,Non,No,,21.0,
+Antonio's Gourmet,"Queens, NYC",Veggie,$$$$,4.7,4.7,Non,Yes,2014.0,90.0,
+Luigi's Slice of Heaven,"Queens, NYC",Veggie,$$$$,4.5,,Non,Yes,2007.0,83.0,www.luigi'ssliceofheaven37.com
+Rosa's Gourmet,"Manhattan, NYC",Margherita,$$$$,,,Yes,Yes,2002.0,15.0,www.rosa'sgourmet51.com
+Luigi's Urban,,Hawaiian,$$$,4.3,4.3,No,Yes,1950.0,17.0,www.luigi'surban15.com
+Luigi's Traditional,"Staten Island, NYC",Pepperoni,$$$$,3.5,3.5,No,Yes,2015.0,60.0,
+Giovanni's Gourmet,,,$$,4.8,4.8,Yes,No,,20.0,www.giovanni'sgourmet38.com
+Rosa's Garden,"Manhattan, NYC",Veggie,$,4.3,4.3,No,No,2019.0,,www.rosa'sgarden83.com
+Mario's Slice of Heaven,"Staten Island, NYC",,$$$,4.1,4.1,No,Non,1957.0,66.0,www.mario'ssliceofheaven56.com
+Mario's Gourmet,"Brooklyn, NYC",Hawaiian,$$$$,3.2,,Yes,No,1978.0,21.0,www.mario'sgourmet47.com
+Giovanni's Garden,"Queens, NYC",,,3.9,3.9,Yes,Yes,2000.0,82.0,www.giovanni'sgarden90.com
+Rosa's Garden,"Manhattan, NYC",,,,,No,Yes,1982.0,,www.rosa'sgarden10.com
+Mario's Urban,"Brooklyn, NYC",Pepperoni,$$,4.7,4.7,Yes,Yes,,17.0,www.mario'surban78.com
+Luigi's Secret,"Brooklyn, NYC",Pepperoni,$,4.1,4.1,No,No,,20.0,www.luigi'ssecret49.com
+Luigi's Urban,,Margherita,$$$$,,,No,No,1984.0,62.0,www.luigi'surban41.com
+Giovanni's Urban,,Buffalo Chicken,$$$$,5.0,5.0,Yes,No,,19.0,www.giovanni'surban83.com
+Luigi's Traditional,"Queens, NYC",Veggie,$$$$,3.2,,No,Yes,1969.0,94.0,www.luigi'straditional30.com
+Luigi's Gourmet,"Manhattan, NYC",,$$$$,3.8,3.8,No,No,1988.0,93.0,www.luigi'sgourmet5.com
+Luigi's Slice of Heaven,"Bronx, NYC",Veggie,$,,3.1,Non,Yes,1953.0,17.0,www.luigi'ssliceofheaven95.com
+Antonio's Urban,,Hawaiian,,,4.5,Yes,Non,1968.0,45.0,www.antonio'surban71.com
+Antonio's Garden,"Bronx, NYC",Buffalo Chicken,$$,4.8,4.8,Non,Non,1994.0,85.0,www.antonio'sgarden83.com
+Rosa's Traditional,"Staten Island, NYC",Hawaiian,$,3.6,,No,Yes,1992.0,23.0,www.rosa'straditional31.com
+Luigi's Traditional,"Staten Island, NYC",Pepperoni,$$$$,,,Yes,Yes,1962.0,63.0,www.luigi'straditional52.com
+Rosa's Urban,"Queens, NYC",Pepperoni,$$,3.6,,Yes,Yes,1962.0,94.0,www.rosa'surban88.com
+Luigi's Secret,"Staten Island, NYC",,$$,4.8,4.8,Yes,No,2009.0,95.0,www.luigi'ssecret98.com
+Giovanni's Traditional,"Bronx, NYC",Buffalo Chicken,$$,4.5,4.5,Yes,Yes,,30.0,www.giovanni'straditional23.com
+Antonio's Secret,"Staten Island, NYC",Hawaiian,,4.6,4.6,Non,Yes,2001.0,59.0,www.antonio'ssecret48.com
+Mario's Slice of Heaven,"Queens, NYC",Veggie,$$$,,,Non,No,2002.0,,www.mario'ssliceofheaven40.com
+Mario's Traditional,"Queens, NYC",Pepperoni,$$$$,4.9,4.9,Yes,Yes,1992.0,29.0,www.mario'straditional6.com
+Mario's Gourmet,"Bronx, NYC",,$,,,No,No,2021.0,97.0,
+Mario's Garden,"Brooklyn, NYC",,,,,Yes,Non,2021.0,96.0,www.mario'sgarden41.com
+Mario's Gourmet,"Brooklyn, NYC",Hawaiian,$$$$,4.7,4.7,Non,No,1991.0,,
+Luigi's Slice of Heaven,"Staten Island, NYC",Hawaiian,$$$$,3.6,3.6,No,Yes,1975.0,18.0,www.luigi'ssliceofheaven75.com
+Antonio's Secret,"Manhattan, NYC",,$$,,,No,Yes,,10.0,www.antonio'ssecret69.com
+Giovanni's Traditional,"Staten Island, NYC",Buffalo Chicken,,3.2,3.2,Non,Non,,35.0,www.giovanni'straditional57.com
+Rosa's Traditional,"Bronx, NYC",Margherita,,,,Non,Yes,1977.0,47.0,
+Giovanni's Gourmet,"Bronx, NYC",Pepperoni,$,4.1,4.1,No,Yes,1958.0,47.0,www.giovanni'sgourmet71.com
+Antonio's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,,,,Yes,Non,1969.0,70.0,www.antonio'ssliceofheaven91.com
+Luigi's Urban,"Bronx, NYC",Hawaiian,$$$$,,3.5,No,No,2005.0,53.0,
+Rosa's Slice of Heaven,,Veggie,$,3.0,3.0,Yes,Yes,1988.0,95.0,www.rosa'ssliceofheaven79.com
+Giovanni's Gourmet,"Queens, NYC",Hawaiian,$$$,,3.9,Yes,No,,53.0,www.giovanni'sgourmet13.com
+Rosa's Garden,,Pepperoni,$$,3.6,3.6,No,No,1961.0,83.0,www.rosa'sgarden11.com
+Rosa's Urban,"Bronx, NYC",Hawaiian,,4.2,4.2,No,No,,,www.rosa'surban90.com
+Giovanni's Traditional,"Manhattan, NYC",Margherita,$$,,,No,Yes,1960.0,15.0,www.giovanni'straditional86.com
+Giovanni's Traditional,"Manhattan, NYC",Pepperoni,,,,Non,Yes,1975.0,,www.giovanni'straditional92.com
+Luigi's Gourmet,"Manhattan, NYC",Veggie,$,,,No,Yes,1991.0,60.0,www.luigi'sgourmet24.com
+Rosa's Garden,"Manhattan, NYC",Margherita,$$,3.1,,No,No,1976.0,47.0,
+Luigi's Slice of Heaven,"Queens, NYC",Pepperoni,,4.8,,No,Yes,1960.0,33.0,www.luigi'ssliceofheaven73.com
+Giovanni's Gourmet,,Veggie,$,4.7,,Yes,Non,,60.0,www.giovanni'sgourmet4.com
+Giovanni's Secret,,,$,,,Yes,Yes,1992.0,,
+Luigi's Secret,"Staten Island, NYC",Margherita,$,,,Yes,Yes,1968.0,81.0,www.luigi'ssecret18.com
+Luigi's Garden,"Manhattan, NYC",Pepperoni,,4.8,4.8,No,No,2013.0,30.0,www.luigi'sgarden43.com
+Luigi's Gourmet,,Buffalo Chicken,$$$,3.4,3.4,No,Yes,1955.0,79.0,www.luigi'sgourmet80.com
+Mario's Secret,,Margherita,,3.2,3.2,No,Non,1995.0,94.0,www.mario'ssecret33.com
+Antonio's Gourmet,"Manhattan, NYC",Margherita,$$,3.5,,Yes,Yes,1991.0,66.0,www.antonio'sgourmet93.com
+Giovanni's Garden,"Staten Island, NYC",Veggie,$$$,,4.6,No,Yes,2014.0,48.0,
+Rosa's Gourmet,"Manhattan, NYC",,$$,3.1,,No,No,2021.0,97.0,www.rosa'sgourmet73.com
+Luigi's Urban,"Queens, NYC",Pepperoni,$$$$,4.2,4.2,Non,No,2008.0,42.0,www.luigi'surban59.com
+Mario's Garden,,Pepperoni,$$,,5.0,No,No,2001.0,68.0,www.mario'sgarden31.com
+Mario's Gourmet,"Bronx, NYC",Buffalo Chicken,$$$,4.7,4.7,Yes,Yes,,27.0,www.mario'sgourmet28.com
+Giovanni's Slice of Heaven,"Queens, NYC",Buffalo Chicken,,4.0,4.0,Yes,Yes,1956.0,65.0,www.giovanni'ssliceofheaven60.com
+Rosa's Secret,"Manhattan, NYC",Pepperoni,$$$,3.1,3.1,Non,Yes,1960.0,66.0,www.rosa'ssecret3.com
+Luigi's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,$$,4.7,4.7,Non,No,2010.0,85.0,
+Mario's Secret,"Manhattan, NYC",,$$$,,,No,No,2017.0,,www.mario'ssecret14.com
+Antonio's Gourmet,"Manhattan, NYC",Pepperoni,$$$,,3.2,Yes,No,1974.0,51.0,www.antonio'sgourmet58.com
+Giovanni's Slice of Heaven,"Brooklyn, NYC",Buffalo Chicken,$$,,,Yes,Yes,,36.0,www.giovanni'ssliceofheaven89.com
+Luigi's Traditional,"Bronx, NYC",Pepperoni,,4.8,,Yes,Yes,1975.0,83.0,www.luigi'straditional15.com
+Luigi's Gourmet,"Bronx, NYC",Hawaiian,$,4.3,,Non,No,1961.0,61.0,www.luigi'sgourmet2.com
+Mario's Garden,"Brooklyn, NYC",Margherita,,4.7,4.7,No,Yes,,,
+Mario's Gourmet,"Queens, NYC",Pepperoni,$$,,,No,No,2000.0,41.0,www.mario'sgourmet78.com
+Mario's Garden,,Margherita,,4.1,4.1,No,Yes,,35.0,www.mario'sgarden64.com
+Giovanni's Traditional,"Staten Island, NYC",,$$$,4.0,4.0,Yes,Yes,1995.0,34.0,www.giovanni'straditional71.com
+Mario's Gourmet,"Manhattan, NYC",Margherita,$,3.9,3.9,Yes,Non,2002.0,84.0,www.mario'sgourmet24.com
+Giovanni's Urban,"Manhattan, NYC",Pepperoni,$$,3.6,3.6,Non,Yes,1962.0,32.0,www.giovanni'surban27.com
+Antonio's Slice of Heaven,"Queens, NYC",Hawaiian,$$,3.9,3.9,Yes,Yes,2003.0,66.0,www.antonio'ssliceofheaven37.com
+Mario's Traditional,"Manhattan, NYC",Buffalo Chicken,$$,4.5,4.5,Non,No,2006.0,61.0,www.mario'straditional94.com
+Giovanni's Garden,"Brooklyn, NYC",Pepperoni,,4.2,,Non,No,1953.0,,www.giovanni'sgarden91.com
+Antonio's Slice of Heaven,"Brooklyn, NYC",Buffalo Chicken,,,,No,Non,1998.0,40.0,www.antonio'ssliceofheaven39.com
+Giovanni's Traditional,"Bronx, NYC",Veggie,$$,,3.9,Yes,No,,73.0,www.giovanni'straditional63.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Margherita,$$$$,,,Yes,Yes,1960.0,80.0,www.antonio'ssliceofheaven79.com
+Luigi's Urban,,Veggie,$$,,4.3,No,No,2003.0,,www.luigi'surban26.com
+Rosa's Secret,"Manhattan, NYC",Pepperoni,$$,,,No,Yes,1994.0,94.0,www.rosa'ssecret65.com
+Luigi's Slice of Heaven,"Queens, NYC",Hawaiian,$$,4.4,4.4,Yes,Yes,1972.0,11.0,www.luigi'ssliceofheaven4.com
+Rosa's Traditional,"Brooklyn, NYC",Buffalo Chicken,$$,3.5,3.5,No,No,1977.0,,www.rosa'straditional29.com
+Antonio's Traditional,"Staten Island, NYC",Margherita,$$$,4.0,4.0,Yes,Non,2006.0,56.0,www.antonio'straditional1.com
+Luigi's Garden,"Bronx, NYC",Buffalo Chicken,$$$$,3.2,3.2,Yes,Yes,1975.0,42.0,www.luigi'sgarden50.com
+Rosa's Traditional,,Pepperoni,$$$,,,Non,No,,,www.rosa'straditional86.com
+Antonio's Gourmet,"Bronx, NYC",,$$$$,4.0,4.0,Non,No,2003.0,44.0,
+Giovanni's Traditional,,Margherita,$$,4.3,4.3,No,Yes,1978.0,60.0,www.giovanni'straditional74.com
+Luigi's Secret,"Queens, NYC",Pepperoni,$,4.9,4.9,Yes,No,1985.0,27.0,www.luigi'ssecret59.com
+Mario's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$$,4.2,4.2,No,No,1963.0,97.0,www.mario'sgourmet62.com
+Luigi's Garden,"Staten Island, NYC",Hawaiian,$,,,Yes,Yes,1984.0,81.0,www.luigi'sgarden81.com
+Mario's Gourmet,"Bronx, NYC",Pepperoni,$$$,4.0,4.0,Yes,Yes,1979.0,39.0,www.mario'sgourmet36.com
+Rosa's Traditional,"Brooklyn, NYC",Pepperoni,$$,,4.3,Yes,No,1966.0,53.0,
+Luigi's Garden,,Hawaiian,$$$,,3.1,Yes,No,,62.0,www.luigi'sgarden90.com
+Giovanni's Secret,"Manhattan, NYC",Veggie,$$,3.5,3.5,No,Non,1979.0,19.0,www.giovanni'ssecret21.com
+Rosa's Traditional,"Manhattan, NYC",Margherita,$$$,,3.7,Yes,Non,1994.0,96.0,
+Luigi's Gourmet,,Veggie,$$,3.9,3.9,Yes,Yes,2000.0,61.0,www.luigi'sgourmet9.com
+Giovanni's Garden,"Queens, NYC",,$$,,,No,Yes,1996.0,58.0,www.giovanni'sgarden11.com
+Rosa's Secret,"Staten Island, NYC",Hawaiian,$$$$,,3.3,Yes,Non,2002.0,20.0,www.rosa'ssecret75.com
+Giovanni's Slice of Heaven,,Veggie,$$,3.6,3.6,Yes,Yes,2013.0,75.0,www.giovanni'ssliceofheaven70.com
+Mario's Gourmet,"Bronx, NYC",Pepperoni,$$$$,,4.9,No,Yes,1987.0,67.0,www.mario'sgourmet1.com
+Mario's Garden,,Buffalo Chicken,,3.7,3.7,Non,Yes,2013.0,99.0,www.mario'sgarden70.com
+Antonio's Urban,"Queens, NYC",Buffalo Chicken,$,4.0,4.0,No,No,1956.0,45.0,www.antonio'surban77.com
+Antonio's Slice of Heaven,"Bronx, NYC",,,3.4,3.4,Yes,No,1971.0,42.0,
+Giovanni's Traditional,"Queens, NYC",,,,4.2,Non,Yes,1990.0,56.0,
+Luigi's Urban,"Brooklyn, NYC",Hawaiian,$,3.6,3.6,No,Yes,,22.0,www.luigi'surban31.com
+Mario's Urban,"Queens, NYC",Margherita,$$,,3.4,Yes,Yes,2006.0,49.0,
+Antonio's Gourmet,"Queens, NYC",,,4.0,4.0,Yes,No,1956.0,98.0,www.antonio'sgourmet37.com
+Rosa's Secret,"Bronx, NYC",Veggie,$$$$,,,Yes,Yes,1999.0,77.0,www.rosa'ssecret47.com
+Rosa's Traditional,"Bronx, NYC",Pepperoni,$$$,3.0,3.0,Yes,No,2001.0,51.0,www.rosa'straditional91.com
+Rosa's Traditional,"Manhattan, NYC",Buffalo Chicken,$$,3.4,3.4,Yes,Non,1982.0,28.0,www.rosa'straditional78.com
+Mario's Secret,"Manhattan, NYC",Margherita,$,3.1,,No,Non,1950.0,91.0,www.mario'ssecret47.com
+Luigi's Secret,"Brooklyn, NYC",Pepperoni,$$,3.2,3.2,No,No,2002.0,,www.luigi'ssecret69.com
+Rosa's Traditional,"Manhattan, NYC",Hawaiian,$$$$,3.7,3.7,No,No,2009.0,67.0,www.rosa'straditional58.com
+Antonio's Urban,"Queens, NYC",Hawaiian,$$,4.6,4.6,Non,Yes,1983.0,32.0,www.antonio'surban36.com
+Mario's Secret,"Bronx, NYC",Veggie,$$,,4.1,Non,Yes,1953.0,63.0,
+Luigi's Secret,"Manhattan, NYC",Veggie,$,4.0,4.0,Yes,Non,1966.0,89.0,www.luigi'ssecret98.com
+Mario's Traditional,"Manhattan, NYC",Hawaiian,$$$$,3.6,3.6,Non,Yes,1953.0,74.0,www.mario'straditional64.com
+Luigi's Slice of Heaven,"Brooklyn, NYC",,$$$,4.9,,No,No,1992.0,21.0,www.luigi'ssliceofheaven71.com
+Rosa's Gourmet,"Brooklyn, NYC",Margherita,$$$,3.8,3.8,Yes,No,1953.0,,www.rosa'sgourmet42.com
+Rosa's Urban,"Queens, NYC",Veggie,$,3.2,3.2,No,Yes,1950.0,43.0,www.rosa'surban48.com
+Rosa's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,$$,4.2,,Yes,Non,2020.0,62.0,www.rosa'ssliceofheaven74.com
+Rosa's Urban,"Brooklyn, NYC",Veggie,,3.2,3.2,No,Yes,1999.0,17.0,www.rosa'surban81.com
+Rosa's Garden,"Manhattan, NYC",Pepperoni,$,3.7,3.7,No,Non,2010.0,27.0,
+Antonio's Gourmet,"Bronx, NYC",Margherita,$,4.0,4.0,Non,Yes,1984.0,,www.antonio'sgourmet21.com
+Giovanni's Gourmet,"Bronx, NYC",Pepperoni,$$,4.7,,Yes,No,1957.0,14.0,www.giovanni'sgourmet60.com
+Giovanni's Gourmet,"Manhattan, NYC",Pepperoni,$$$$,4.0,4.0,No,Non,1973.0,35.0,
+Giovanni's Secret,"Brooklyn, NYC",Buffalo Chicken,$,4.4,,Non,Non,1985.0,,www.giovanni'ssecret1.com
+Mario's Secret,,Margherita,,5.0,5.0,Yes,Yes,1999.0,63.0,www.mario'ssecret65.com
+Giovanni's Traditional,"Bronx, NYC",Margherita,$$$$,3.3,3.3,Non,No,,22.0,www.giovanni'straditional33.com
+Rosa's Slice of Heaven,"Staten Island, NYC",Margherita,$,3.5,3.5,Yes,Yes,1976.0,92.0,www.rosa'ssliceofheaven38.com
+Mario's Urban,"Staten Island, NYC",Margherita,$$$,,,Yes,No,1981.0,38.0,www.mario'surban25.com
+Giovanni's Secret,"Queens, NYC",,$$$$,3.8,3.8,Yes,Yes,1967.0,12.0,www.giovanni'ssecret26.com
+Mario's Traditional,,Buffalo Chicken,$,3.8,,Yes,Non,1977.0,,www.mario'straditional77.com
+Antonio's Garden,"Manhattan, NYC",Veggie,$$$$,4.8,,Yes,No,,67.0,www.antonio'sgarden59.com
+Rosa's Gourmet,"Queens, NYC",Pepperoni,$$$$,4.4,4.4,Non,Non,,85.0,www.rosa'sgourmet92.com
+Rosa's Secret,,Margherita,$$$$,4.2,4.2,Yes,Yes,1996.0,11.0,www.rosa'ssecret33.com
+Mario's Urban,"Queens, NYC",Veggie,$$$$,,,Yes,No,,84.0,www.mario'surban41.com
+Rosa's Urban,"Bronx, NYC",Veggie,$$$$,4.6,4.6,Yes,Non,1980.0,37.0,www.rosa'surban30.com
+Rosa's Garden,"Manhattan, NYC",Pepperoni,$$$$,,,Yes,No,1953.0,91.0,www.rosa'sgarden57.com
+Giovanni's Gourmet,"Bronx, NYC",Buffalo Chicken,,4.6,4.6,No,No,1986.0,86.0,www.giovanni'sgourmet49.com
+Antonio's Urban,"Queens, NYC",Hawaiian,$$$,3.0,3.0,Yes,No,,95.0,www.antonio'surban48.com
+Luigi's Urban,"Manhattan, NYC",Hawaiian,$$,4.3,4.3,No,No,1988.0,85.0,www.luigi'surban72.com
+Antonio's Slice of Heaven,,Veggie,$$$$,3.1,3.1,Yes,No,1997.0,11.0,www.antonio'ssliceofheaven49.com
+Rosa's Gourmet,"Bronx, NYC",Pepperoni,$$,,,No,Yes,,16.0,www.rosa'sgourmet47.com
+Giovanni's Garden,"Queens, NYC",Hawaiian,$,3.1,3.1,Yes,Yes,1997.0,35.0,www.giovanni'sgarden56.com
+Antonio's Secret,"Manhattan, NYC",,$$$$,4.2,4.2,Yes,Yes,1988.0,99.0,www.antonio'ssecret65.com
+Luigi's Gourmet,"Queens, NYC",,$$$,,4.4,No,No,1953.0,,www.luigi'sgourmet12.com
+Rosa's Urban,"Manhattan, NYC",Hawaiian,$$,3.2,3.2,Yes,No,1979.0,85.0,www.rosa'surban69.com
+Mario's Gourmet,"Staten Island, NYC",,,3.8,3.8,No,No,1979.0,25.0,www.mario'sgourmet88.com
+Antonio's Secret,"Brooklyn, NYC",,,3.9,3.9,Non,No,1971.0,32.0,www.antonio'ssecret6.com
+Rosa's Garden,"Brooklyn, NYC",Margherita,$$$,3.7,3.7,No,Yes,2015.0,,www.rosa'sgarden89.com
+Giovanni's Gourmet,"Brooklyn, NYC",,,,3.2,Yes,Yes,1961.0,69.0,www.giovanni'sgourmet65.com
+Luigi's Secret,"Queens, NYC",Margherita,$$,,3.8,Non,No,1985.0,82.0,
+Luigi's Urban,"Staten Island, NYC",Pepperoni,$$$$,4.5,4.5,No,No,1967.0,41.0,www.luigi'surban1.com
+Luigi's Slice of Heaven,"Manhattan, NYC",Margherita,,3.1,3.1,Yes,Yes,2002.0,24.0,www.luigi'ssliceofheaven32.com
+Antonio's Traditional,"Bronx, NYC",Margherita,$$$,,,Yes,No,,22.0,www.antonio'straditional3.com
+Luigi's Gourmet,"Manhattan, NYC",Hawaiian,,3.7,3.7,Yes,No,1950.0,,www.luigi'sgourmet49.com
+Rosa's Slice of Heaven,"Bronx, NYC",Veggie,$$$,,,Yes,No,2007.0,84.0,www.rosa'ssliceofheaven19.com
+Giovanni's Secret,"Manhattan, NYC",Buffalo Chicken,$,4.3,,Non,Non,1955.0,83.0,www.giovanni'ssecret60.com
+Giovanni's Slice of Heaven,"Staten Island, NYC",Margherita,$$$,4.4,,Yes,Non,2019.0,61.0,www.giovanni'ssliceofheaven29.com
+Giovanni's Secret,"Bronx, NYC",,$$,3.7,3.7,No,No,1993.0,86.0,www.giovanni'ssecret50.com
+Mario's Secret,"Queens, NYC",Margherita,$$,4.2,4.2,No,Yes,2021.0,50.0,www.mario'ssecret2.com
+Luigi's Garden,"Manhattan, NYC",Pepperoni,$,3.0,3.0,No,No,1973.0,62.0,www.luigi'sgarden73.com
+Rosa's Urban,"Manhattan, NYC",Margherita,,4.3,4.3,Yes,No,1968.0,59.0,www.rosa'surban56.com
+Mario's Slice of Heaven,"Bronx, NYC",Hawaiian,$$,4.8,4.8,No,Yes,1967.0,24.0,www.mario'ssliceofheaven17.com
+Rosa's Gourmet,"Queens, NYC",Veggie,$$$,,,Yes,No,1979.0,16.0,www.rosa'sgourmet60.com
+Giovanni's Gourmet,,Pepperoni,$$,4.7,4.7,Yes,Non,1991.0,49.0,www.giovanni'sgourmet36.com
+Giovanni's Secret,"Staten Island, NYC",Margherita,$,4.4,4.4,Yes,Non,1982.0,37.0,www.giovanni'ssecret61.com
+Rosa's Garden,,Buffalo Chicken,$$$,3.2,3.2,Yes,No,1961.0,41.0,www.rosa'sgarden17.com
+Giovanni's Traditional,"Queens, NYC",,$$$$,4.8,4.8,No,No,1976.0,,www.giovanni'straditional49.com
+Mario's Garden,"Queens, NYC",Pepperoni,$$$,3.1,3.1,Yes,No,1988.0,,www.mario'sgarden76.com
+Mario's Slice of Heaven,"Brooklyn, NYC",Margherita,$,4.1,4.1,No,Yes,1958.0,79.0,www.mario'ssliceofheaven60.com
+Luigi's Urban,"Staten Island, NYC",Pepperoni,,3.3,3.3,Yes,No,1970.0,74.0,www.luigi'surban20.com
+Giovanni's Urban,"Manhattan, NYC",,$$$,3.0,3.0,No,Yes,,13.0,www.giovanni'surban50.com
+Luigi's Gourmet,"Bronx, NYC",Pepperoni,,,,No,No,1982.0,20.0,www.luigi'sgourmet3.com
+Rosa's Traditional,,Buffalo Chicken,$$$,3.6,3.6,No,No,,35.0,www.rosa'straditional43.com
+Mario's Gourmet,"Staten Island, NYC",Margherita,$,4.0,4.0,No,No,1964.0,70.0,
+Rosa's Slice of Heaven,"Bronx, NYC",Veggie,$,4.2,4.2,No,No,1951.0,,www.rosa'ssliceofheaven50.com
+Giovanni's Traditional,,,$$$$,3.1,3.1,Non,Yes,2001.0,32.0,www.giovanni'straditional68.com
+Luigi's Garden,"Queens, NYC",Veggie,$$,,,Yes,Yes,1993.0,94.0,www.luigi'sgarden81.com
+Antonio's Traditional,,Buffalo Chicken,,,4.1,No,No,2003.0,49.0,
+Giovanni's Slice of Heaven,"Queens, NYC",Pepperoni,$$$,3.7,3.7,Yes,No,1967.0,86.0,
+Luigi's Traditional,,Hawaiian,$$$,4.5,4.5,No,No,1952.0,,www.luigi'straditional46.com
+Antonio's Secret,,Veggie,$$$$,4.3,4.3,Yes,No,1956.0,25.0,
+Giovanni's Garden,"Bronx, NYC",Pepperoni,$$$$,4.7,4.7,No,No,1992.0,,www.giovanni'sgarden15.com
+Mario's Urban,"Bronx, NYC",,$$$$,,,No,No,1987.0,77.0,www.mario'surban33.com
+Giovanni's Gourmet,"Staten Island, NYC",Pepperoni,$,3.9,3.9,Yes,No,1986.0,,www.giovanni'sgourmet80.com
+Giovanni's Urban,"Staten Island, NYC",Margherita,$$$$,4.3,4.3,No,Non,2007.0,40.0,
+Rosa's Slice of Heaven,"Queens, NYC",Veggie,$$$$,3.6,3.6,No,Yes,1982.0,,www.rosa'ssliceofheaven20.com
+Mario's Urban,"Bronx, NYC",Hawaiian,$$$,,,No,Yes,2008.0,34.0,www.mario'surban24.com
+Giovanni's Secret,"Manhattan, NYC",Hawaiian,$$$$,,4.6,Yes,Non,1960.0,53.0,www.giovanni'ssecret64.com
+Rosa's Garden,"Staten Island, NYC",Buffalo Chicken,$,3.9,3.9,Non,No,2017.0,21.0,www.rosa'sgarden80.com
+Rosa's Gourmet,"Staten Island, NYC",Pepperoni,$,4.6,4.6,Yes,No,,,www.rosa'sgourmet94.com
+Rosa's Gourmet,"Manhattan, NYC",Veggie,$$$,,,No,No,1971.0,18.0,
+Giovanni's Garden,"Staten Island, NYC",Buffalo Chicken,,4.7,4.7,No,Yes,,21.0,www.giovanni'sgarden65.com
+Luigi's Garden,"Queens, NYC",Veggie,$$$$,,,Yes,No,,78.0,www.luigi'sgarden88.com
+Luigi's Traditional,"Bronx, NYC",Pepperoni,$,3.9,3.9,No,Yes,1955.0,,www.luigi'straditional88.com
+Rosa's Gourmet,"Manhattan, NYC",Hawaiian,,,,No,No,,63.0,www.rosa'sgourmet73.com
+Giovanni's Garden,,Margherita,$$$$,4.2,4.2,Yes,Yes,1974.0,37.0,www.giovanni'sgarden86.com
+Antonio's Gourmet,"Staten Island, NYC",Hawaiian,$$$$,,,No,Yes,,65.0,www.antonio'sgourmet76.com
+Rosa's Garden,"Staten Island, NYC",Buffalo Chicken,$$,4.2,,Yes,Yes,2004.0,78.0,www.rosa'sgarden17.com
+Mario's Secret,"Manhattan, NYC",,$$$,,,Yes,No,,86.0,www.mario'ssecret89.com
+Mario's Urban,"Queens, NYC",,$$,4.4,4.4,Yes,Yes,,67.0,www.mario'surban92.com
+Luigi's Garden,"Brooklyn, NYC",Pepperoni,$$$,,,No,No,1988.0,87.0,www.luigi'sgarden61.com
+Luigi's Slice of Heaven,"Manhattan, NYC",Margherita,$,3.3,3.3,Yes,No,1977.0,84.0,www.luigi'ssliceofheaven15.com
+Luigi's Secret,"Brooklyn, NYC",Buffalo Chicken,$$$$,,,Non,No,2000.0,51.0,www.luigi'ssecret94.com
+Antonio's Traditional,"Brooklyn, NYC",Pepperoni,$$$,,,No,No,1998.0,47.0,www.antonio'straditional51.com
+Antonio's Garden,"Queens, NYC",Hawaiian,$$,,4.8,Yes,No,1958.0,77.0,
+Luigi's Garden,"Brooklyn, NYC",Pepperoni,$$$$,3.7,3.7,No,Yes,2007.0,62.0,www.luigi'sgarden86.com
+Mario's Garden,"Brooklyn, NYC",Veggie,$,,,No,No,1994.0,,www.mario'sgarden74.com
+Rosa's Urban,"Queens, NYC",Pepperoni,$$$,3.1,,No,No,,80.0,www.rosa'surban61.com
+Mario's Traditional,"Brooklyn, NYC",Pepperoni,,,,Non,No,1981.0,65.0,
+Mario's Secret,"Brooklyn, NYC",Veggie,$$$,4.3,,Yes,No,,81.0,www.mario'ssecret31.com
+Antonio's Garden,"Brooklyn, NYC",Buffalo Chicken,$$$$,3.7,3.7,Yes,No,2018.0,60.0,www.antonio'sgarden91.com
+Mario's Urban,,Buffalo Chicken,$$,3.1,3.1,Yes,Yes,1991.0,83.0,www.mario'surban12.com
+Mario's Slice of Heaven,"Manhattan, NYC",Pepperoni,$$,,3.8,Non,Yes,2002.0,,www.mario'ssliceofheaven46.com
+Rosa's Slice of Heaven,,Veggie,$$$,,,Yes,No,2008.0,24.0,www.rosa'ssliceofheaven31.com
+Luigi's Traditional,"Queens, NYC",Veggie,,4.4,,Non,Yes,1988.0,47.0,www.luigi'straditional32.com
+Luigi's Urban,"Staten Island, NYC",,$,,,Yes,Non,1964.0,24.0,www.luigi'surban32.com
+Luigi's Urban,"Brooklyn, NYC",Buffalo Chicken,$$,3.7,3.7,Yes,No,2020.0,14.0,www.luigi'surban53.com
+Antonio's Urban,"Brooklyn, NYC",Margherita,$,,,Yes,Yes,1978.0,92.0,www.antonio'surban61.com
+Luigi's Garden,,Buffalo Chicken,$$,5.0,5.0,No,No,1952.0,63.0,www.luigi'sgarden46.com
+Mario's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$$,3.9,3.9,No,Yes,1959.0,60.0,
+Mario's Traditional,"Manhattan, NYC",Hawaiian,$$,4.4,4.4,Yes,Yes,1978.0,,www.mario'straditional74.com
+Antonio's Gourmet,"Staten Island, NYC",,$$,3.3,3.3,No,Yes,1984.0,21.0,www.antonio'sgourmet80.com
+Mario's Slice of Heaven,"Bronx, NYC",Hawaiian,$$$,,4.0,Non,No,1955.0,13.0,
+Mario's Slice of Heaven,"Brooklyn, NYC",Margherita,$,,3.1,Yes,Non,1961.0,27.0,www.mario'ssliceofheaven4.com
+Luigi's Garden,"Manhattan, NYC",Pepperoni,$$,4.0,4.0,No,Yes,1987.0,89.0,www.luigi'sgarden91.com
+Luigi's Garden,"Bronx, NYC",Margherita,$$,4.9,4.9,No,No,1968.0,45.0,www.luigi'sgarden52.com
+Luigi's Traditional,,Hawaiian,$$$,3.8,3.8,Yes,No,2016.0,34.0,
+Giovanni's Traditional,"Bronx, NYC",,$,3.1,3.1,Yes,Non,1957.0,96.0,www.giovanni'straditional31.com
+Mario's Urban,"Manhattan, NYC",Margherita,$$,3.1,,No,No,1957.0,85.0,www.mario'surban75.com
+Antonio's Traditional,"Bronx, NYC",Margherita,$$$,,,Yes,Yes,1996.0,,
+Rosa's Garden,"Queens, NYC",Veggie,$$,,,No,Yes,1953.0,76.0,
+Antonio's Traditional,"Bronx, NYC",Buffalo Chicken,$$$$,,,Yes,No,,18.0,www.antonio'straditional54.com
+Giovanni's Slice of Heaven,"Brooklyn, NYC",Pepperoni,$$$,4.5,4.5,No,No,2016.0,70.0,
+Luigi's Traditional,,Hawaiian,$,3.9,3.9,Yes,No,,62.0,
+Mario's Garden,"Queens, NYC",,$,3.6,,Yes,Yes,1957.0,,www.mario'sgarden75.com
+Rosa's Urban,"Manhattan, NYC",Buffalo Chicken,$,4.8,4.8,No,No,1965.0,52.0,www.rosa'surban30.com
+Antonio's Urban,"Brooklyn, NYC",,$,,,Yes,Yes,2016.0,44.0,
+Luigi's Slice of Heaven,"Staten Island, NYC",Margherita,$$,4.9,4.9,Yes,No,1958.0,72.0,www.luigi'ssliceofheaven43.com
+Rosa's Urban,"Brooklyn, NYC",Buffalo Chicken,$$,3.6,3.6,No,Yes,,87.0,www.rosa'surban27.com
+Antonio's Garden,"Brooklyn, NYC",Margherita,$,,,Yes,No,2020.0,13.0,www.antonio'sgarden37.com
+Giovanni's Secret,"Manhattan, NYC",Margherita,$,,4.2,Non,Yes,1964.0,50.0,www.giovanni'ssecret46.com
+Mario's Traditional,"Bronx, NYC",Margherita,,4.7,4.7,Yes,No,2020.0,54.0,
+Rosa's Slice of Heaven,"Brooklyn, NYC",Hawaiian,$$,5.0,5.0,No,Non,1990.0,59.0,
+Luigi's Gourmet,"Queens, NYC",Hawaiian,$,,,No,No,1971.0,88.0,www.luigi'sgourmet80.com
+Giovanni's Traditional,"Bronx, NYC",Veggie,,4.9,4.9,No,No,1973.0,37.0,www.giovanni'straditional80.com
+Giovanni's Secret,"Staten Island, NYC",Pepperoni,$$$$,3.8,,Non,Yes,1993.0,51.0,
+Mario's Gourmet,"Manhattan, NYC",Buffalo Chicken,,,,Yes,No,1950.0,,www.mario'sgourmet26.com
+Mario's Urban,"Staten Island, NYC",Buffalo Chicken,$,3.7,3.7,Yes,Yes,1959.0,85.0,www.mario'surban19.com
+Antonio's Urban,"Bronx, NYC",Buffalo Chicken,,,,Yes,Yes,2021.0,78.0,www.antonio'surban81.com
+Rosa's Gourmet,"Bronx, NYC",Veggie,$,3.3,3.3,No,No,2005.0,10.0,www.rosa'sgourmet45.com
+Luigi's Slice of Heaven,"Bronx, NYC",Hawaiian,,4.1,4.1,Yes,Yes,1999.0,48.0,www.luigi'ssliceofheaven26.com
+Giovanni's Garden,"Staten Island, NYC",Veggie,$$$,,,Yes,Non,1961.0,99.0,www.giovanni'sgarden22.com
+Antonio's Garden,,Buffalo Chicken,$$$,4.5,4.5,Yes,Non,2009.0,26.0,www.antonio'sgarden58.com
+Antonio's Garden,"Staten Island, NYC",Pepperoni,$,4.7,4.7,No,Yes,1975.0,97.0,www.antonio'sgarden63.com
+Giovanni's Garden,"Bronx, NYC",Margherita,,3.9,3.9,Yes,Non,1990.0,44.0,www.giovanni'sgarden28.com
+Mario's Garden,,Hawaiian,$$$$,,3.6,Yes,Non,1985.0,55.0,www.mario'sgarden65.com
+Mario's Gourmet,,Hawaiian,$$$,3.5,,Yes,Yes,1972.0,,www.mario'sgourmet44.com
+Rosa's Garden,"Staten Island, NYC",Veggie,$,3.4,3.4,Yes,No,1992.0,48.0,www.rosa'sgarden43.com
+Luigi's Traditional,"Brooklyn, NYC",Hawaiian,$$,3.1,3.1,Yes,No,1955.0,99.0,www.luigi'straditional37.com
+Giovanni's Gourmet,"Bronx, NYC",Buffalo Chicken,$$,3.7,3.7,No,Yes,2018.0,58.0,www.giovanni'sgourmet66.com
+Antonio's Urban,"Brooklyn, NYC",Buffalo Chicken,$$$$,3.5,3.5,Yes,Yes,1992.0,71.0,www.antonio'surban17.com
+Giovanni's Traditional,"Queens, NYC",Veggie,$$,,4.9,Yes,No,1974.0,47.0,www.giovanni'straditional40.com
+Antonio's Urban,"Manhattan, NYC",Buffalo Chicken,$$$$,4.1,4.1,Yes,No,1967.0,32.0,www.antonio'surban38.com
+Rosa's Gourmet,"Queens, NYC",Pepperoni,$$$$,,,Non,No,,31.0,www.rosa'sgourmet85.com
+Mario's Garden,"Bronx, NYC",Veggie,,4.2,,Non,No,1962.0,13.0,www.mario'sgarden61.com
+Luigi's Traditional,,Pepperoni,,,,Yes,Yes,1992.0,58.0,www.luigi'straditional9.com
+Antonio's Slice of Heaven,"Brooklyn, NYC",Margherita,,,,Yes,No,1977.0,68.0,www.antonio'ssliceofheaven77.com
+Luigi's Urban,"Staten Island, NYC",Pepperoni,$$$,4.3,,Yes,Non,1967.0,82.0,www.luigi'surban75.com
+Mario's Gourmet,"Brooklyn, NYC",Margherita,$,4.0,,Non,Yes,2008.0,77.0,www.mario'sgourmet61.com
+Luigi's Urban,"Staten Island, NYC",Margherita,$,3.8,3.8,Yes,Non,,80.0,www.luigi'surban80.com
+Luigi's Garden,,Pepperoni,,5.0,5.0,No,Yes,2012.0,96.0,www.luigi'sgarden16.com
+Rosa's Slice of Heaven,"Bronx, NYC",Veggie,$,4.8,4.8,No,No,2006.0,11.0,www.rosa'ssliceofheaven2.com
+Antonio's Traditional,"Staten Island, NYC",Buffalo Chicken,$$,4.2,4.2,No,Yes,2000.0,58.0,www.antonio'straditional72.com
+Antonio's Slice of Heaven,"Manhattan, NYC",Buffalo Chicken,$$,4.1,4.1,No,Non,2005.0,97.0,www.antonio'ssliceofheaven43.com
+Giovanni's Secret,"Brooklyn, NYC",Margherita,$,,,Yes,Non,1976.0,40.0,
+Luigi's Garden,,Margherita,$$,3.4,3.4,No,Yes,,49.0,www.luigi'sgarden77.com
+Luigi's Secret,"Manhattan, NYC",Veggie,$,3.8,,Non,No,1958.0,57.0,www.luigi'ssecret57.com
+Rosa's Gourmet,"Brooklyn, NYC",Hawaiian,$,,3.1,Non,No,2017.0,60.0,www.rosa'sgourmet81.com
+Antonio's Garden,"Manhattan, NYC",Pepperoni,$,4.0,,Non,Yes,1995.0,52.0,www.antonio'sgarden88.com
+Antonio's Garden,"Staten Island, NYC",Margherita,$$$$,,,No,Yes,2016.0,,www.antonio'sgarden67.com
+Rosa's Gourmet,"Staten Island, NYC",Buffalo Chicken,$,3.5,,Yes,No,1975.0,97.0,www.rosa'sgourmet30.com
+Antonio's Gourmet,"Manhattan, NYC",Veggie,$$$$,4.9,4.9,Yes,Non,1957.0,58.0,www.antonio'sgourmet13.com
+Luigi's Urban,,,$,4.8,4.8,Non,Non,1955.0,99.0,www.luigi'surban19.com
+Giovanni's Garden,"Staten Island, NYC",Veggie,,4.4,4.4,No,Yes,1973.0,89.0,www.giovanni'sgarden7.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Pepperoni,$,4.1,4.1,No,No,1997.0,66.0,www.antonio'ssliceofheaven9.com
+Mario's Urban,"Queens, NYC",,$$,4.7,4.7,Yes,Non,1994.0,86.0,www.mario'surban83.com
+Luigi's Gourmet,"Bronx, NYC",Margherita,$$$$,3.3,3.3,Non,No,1962.0,24.0,www.luigi'sgourmet54.com
+Antonio's Traditional,"Brooklyn, NYC",Veggie,$$$$,,4.6,Non,Non,,36.0,
+Antonio's Traditional,"Queens, NYC",Veggie,$,3.2,3.2,Yes,Yes,1974.0,77.0,www.antonio'straditional82.com
+Mario's Slice of Heaven,"Staten Island, NYC",Buffalo Chicken,$,4.6,,No,Non,1969.0,89.0,www.mario'ssliceofheaven61.com
+Luigi's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$,,3.6,Yes,Yes,2015.0,73.0,www.luigi'sgourmet87.com
+Mario's Gourmet,,Margherita,$$,4.8,4.8,Yes,No,1994.0,39.0,www.mario'sgourmet2.com
+Giovanni's Traditional,"Bronx, NYC",Margherita,$$,4.9,4.9,No,No,1996.0,45.0,www.giovanni'straditional50.com
+Luigi's Secret,"Staten Island, NYC",Hawaiian,$$$$,,3.3,Yes,Non,2012.0,76.0,www.luigi'ssecret75.com
+Rosa's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$$$,3.9,3.9,Yes,Yes,2004.0,95.0,www.rosa'sgourmet31.com
+Giovanni's Urban,"Bronx, NYC",Pepperoni,,5.0,5.0,Yes,Non,1968.0,95.0,www.giovanni'surban33.com
+Antonio's Secret,,Veggie,$,,,No,Yes,1984.0,58.0,www.antonio'ssecret78.com
+Mario's Traditional,"Bronx, NYC",Margherita,$$$$,,4.7,Yes,No,2002.0,85.0,www.mario'straditional80.com
+Luigi's Urban,"Brooklyn, NYC",Veggie,$$$,,4.2,Yes,Yes,1975.0,64.0,www.luigi'surban11.com
+Mario's Traditional,"Brooklyn, NYC",Veggie,$$$,3.8,3.8,Yes,Yes,1963.0,94.0,www.mario'straditional33.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Hawaiian,$$,3.6,3.6,Yes,Yes,,65.0,www.antonio'ssliceofheaven7.com
+Mario's Garden,"Bronx, NYC",Buffalo Chicken,,,,Yes,No,1993.0,77.0,www.mario'sgarden31.com
+Giovanni's Gourmet,"Manhattan, NYC",,$$$,,4.5,Non,Yes,2014.0,,www.giovanni'sgourmet48.com
+Mario's Garden,"Staten Island, NYC",,$$,3.8,3.8,No,No,2000.0,40.0,
+Mario's Slice of Heaven,"Brooklyn, NYC",Margherita,$$$$,4.0,,No,Yes,1992.0,,www.mario'ssliceofheaven78.com
+Giovanni's Gourmet,"Brooklyn, NYC",Pepperoni,,,,Yes,Yes,1972.0,96.0,www.giovanni'sgourmet92.com
+Mario's Gourmet,"Staten Island, NYC",Hawaiian,$$$,4.2,4.2,Non,Yes,2005.0,62.0,www.mario'sgourmet53.com
+Antonio's Garden,"Bronx, NYC",Pepperoni,$,4.7,,No,Yes,1968.0,93.0,www.antonio'sgarden80.com
+Mario's Traditional,,Margherita,$$$$,5.0,5.0,Yes,No,2004.0,88.0,www.mario'straditional19.com
+Antonio's Slice of Heaven,,,$$$,,,Non,Yes,2009.0,32.0,www.antonio'ssliceofheaven81.com
+Mario's Garden,,Buffalo Chicken,$$$$,,,No,Non,2008.0,37.0,www.mario'sgarden90.com
+Luigi's Secret,"Brooklyn, NYC",Veggie,$,,,No,Non,1982.0,25.0,
+Luigi's Slice of Heaven,,,$$$,4.1,4.1,No,Non,1968.0,46.0,
+Giovanni's Gourmet,"Brooklyn, NYC",Pepperoni,$,4.9,4.9,No,Yes,1977.0,30.0,www.giovanni'sgourmet73.com
+Luigi's Urban,"Manhattan, NYC",Hawaiian,$$$$,,,Non,Yes,,88.0,www.luigi'surban50.com
+Rosa's Garden,,Veggie,$$$$,3.2,,No,Yes,1998.0,26.0,
+Antonio's Secret,"Staten Island, NYC",Buffalo Chicken,$,4.7,4.7,No,No,1986.0,46.0,
+Antonio's Slice of Heaven,"Bronx, NYC",,$$$,3.9,3.9,Yes,No,1975.0,86.0,www.antonio'ssliceofheaven12.com
+Mario's Traditional,"Brooklyn, NYC",Pepperoni,$,4.7,4.7,Yes,Yes,1989.0,,www.mario'straditional23.com
+Giovanni's Traditional,"Manhattan, NYC",Buffalo Chicken,,4.8,4.8,No,No,1987.0,39.0,www.giovanni'straditional54.com
+Antonio's Secret,"Bronx, NYC",Hawaiian,$,3.1,3.1,No,No,2003.0,54.0,www.antonio'ssecret69.com
+Rosa's Secret,"Queens, NYC",,$$$$,,,Yes,Yes,,27.0,www.rosa'ssecret59.com
+Giovanni's Gourmet,"Bronx, NYC",Hawaiian,,3.9,,No,Non,1965.0,87.0,www.giovanni'sgourmet36.com
+Luigi's Secret,"Bronx, NYC",Buffalo Chicken,$$$,4.0,4.0,No,Yes,1977.0,71.0,www.luigi'ssecret3.com
+Mario's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$$,4.3,4.3,Yes,No,1984.0,,www.mario'sgourmet58.com
+Rosa's Garden,"Queens, NYC",,$,4.9,,Yes,No,2009.0,93.0,www.rosa'sgarden88.com
+Antonio's Gourmet,"Bronx, NYC",Pepperoni,$,3.0,3.0,Yes,No,1994.0,,www.antonio'sgourmet55.com
+Giovanni's Traditional,"Manhattan, NYC",Buffalo Chicken,$$$,,4.0,No,Yes,,28.0,www.giovanni'straditional57.com
+Antonio's Garden,"Manhattan, NYC",Buffalo Chicken,$$$$,,4.4,No,No,2021.0,,www.antonio'sgarden17.com
+Luigi's Garden,,Veggie,$$$,4.4,4.4,Yes,Yes,2004.0,16.0,www.luigi'sgarden39.com
+Mario's Traditional,"Queens, NYC",Pepperoni,$$$$,4.4,4.4,Yes,Non,1975.0,53.0,www.mario'straditional90.com
+Mario's Secret,"Queens, NYC",Veggie,$,,,No,No,1974.0,77.0,www.mario'ssecret68.com
+Rosa's Traditional,"Staten Island, NYC",Pepperoni,$,,3.6,Non,Yes,2014.0,43.0,www.rosa'straditional55.com
+Antonio's Gourmet,"Bronx, NYC",Veggie,$$$$,3.7,3.7,No,No,1955.0,75.0,www.antonio'sgourmet45.com
+Antonio's Secret,"Queens, NYC",Buffalo Chicken,$,4.6,4.6,Non,Yes,1972.0,,
+Giovanni's Garden,"Manhattan, NYC",,$$$$,3.6,3.6,Non,Yes,,64.0,www.giovanni'sgarden1.com
+Antonio's Garden,,Margherita,$$,3.4,3.4,Yes,No,1992.0,19.0,www.antonio'sgarden21.com
+Rosa's Secret,,Veggie,$$$,,4.9,No,No,1972.0,51.0,www.rosa'ssecret83.com
+Giovanni's Urban,"Queens, NYC",Hawaiian,,,,Yes,Non,1979.0,50.0,www.giovanni'surban21.com
+Giovanni's Slice of Heaven,"Bronx, NYC",Margherita,$$$$,,,Yes,No,1967.0,86.0,www.giovanni'ssliceofheaven52.com
+Rosa's Slice of Heaven,"Staten Island, NYC",Veggie,$$$,4.4,4.4,Yes,Yes,1970.0,78.0,www.rosa'ssliceofheaven82.com
+Luigi's Slice of Heaven,"Staten Island, NYC",Veggie,$$$$,4.7,4.7,Yes,Yes,,,www.luigi'ssliceofheaven43.com
+Rosa's Gourmet,,,,3.6,3.6,No,Yes,1972.0,19.0,
+Mario's Secret,"Brooklyn, NYC",Buffalo Chicken,$$$,,,No,No,1994.0,,www.mario'ssecret67.com
+Rosa's Secret,"Staten Island, NYC",,$$$,4.5,4.5,No,Non,1993.0,60.0,www.rosa'ssecret44.com
+Antonio's Secret,"Queens, NYC",Buffalo Chicken,$$$,4.7,4.7,No,No,1996.0,30.0,www.antonio'ssecret32.com
+Luigi's Secret,"Brooklyn, NYC",Margherita,$$$$,,4.5,Yes,Yes,,,www.luigi'ssecret10.com
+Giovanni's Secret,"Queens, NYC",Buffalo Chicken,$$$,,,Yes,No,2000.0,74.0,
+Mario's Traditional,"Manhattan, NYC",Pepperoni,$$$,4.5,4.5,Non,Yes,1991.0,87.0,
+Antonio's Gourmet,"Brooklyn, NYC",,,4.5,4.5,No,Yes,1956.0,94.0,www.antonio'sgourmet69.com
+Giovanni's Secret,"Staten Island, NYC",,$,,4.3,Non,No,1999.0,,www.giovanni'ssecret68.com
+Giovanni's Secret,"Brooklyn, NYC",Hawaiian,$,4.5,,Non,Yes,1997.0,94.0,www.giovanni'ssecret28.com
+Mario's Garden,,Buffalo Chicken,$$,,,No,No,1955.0,58.0,www.mario'sgarden53.com
+Antonio's Slice of Heaven,"Brooklyn, NYC",Veggie,$$,4.2,4.2,Yes,Yes,1958.0,18.0,www.antonio'ssliceofheaven51.com
+Luigi's Garden,"Brooklyn, NYC",Buffalo Chicken,,,,No,Yes,,26.0,www.luigi'sgarden53.com
+Giovanni's Garden,"Queens, NYC",Pepperoni,$$$$,,,Yes,No,1980.0,,www.giovanni'sgarden4.com
+Antonio's Slice of Heaven,"Manhattan, NYC",Margherita,$$$$,,,Yes,No,,67.0,www.antonio'ssliceofheaven79.com
+Antonio's Traditional,,Veggie,$$,3.8,3.8,Non,Yes,1989.0,66.0,www.antonio'straditional17.com
+Rosa's Urban,"Brooklyn, NYC",Pepperoni,$$,3.8,3.8,Yes,Non,,71.0,www.rosa'surban67.com
+Mario's Urban,"Staten Island, NYC",Pepperoni,$$$,3.1,3.1,No,Yes,1998.0,,www.mario'surban74.com
+Antonio's Garden,"Brooklyn, NYC",Veggie,$$$$,3.7,3.7,Yes,Non,1969.0,70.0,www.antonio'sgarden47.com
+Rosa's Traditional,"Staten Island, NYC",,$$$$,3.2,3.2,No,Yes,,49.0,www.rosa'straditional56.com
+Giovanni's Gourmet,"Queens, NYC",Pepperoni,$$$$,4.6,4.6,Non,Yes,1977.0,47.0,www.giovanni'sgourmet23.com
+Rosa's Traditional,"Staten Island, NYC",Hawaiian,$,4.9,,No,Non,1990.0,52.0,www.rosa'straditional18.com
+Antonio's Traditional,,Pepperoni,$$$,,,Yes,No,2015.0,72.0,
+Luigi's Garden,"Manhattan, NYC",Buffalo Chicken,$$$$,,,Yes,No,1974.0,28.0,www.luigi'sgarden35.com
+Luigi's Secret,"Staten Island, NYC",,$$$$,4.0,4.0,No,Yes,,59.0,www.luigi'ssecret64.com
+Giovanni's Gourmet,"Staten Island, NYC",,$$$$,,,Yes,Yes,1990.0,42.0,www.giovanni'sgourmet58.com
+Rosa's Slice of Heaven,"Manhattan, NYC",Pepperoni,$,3.2,3.2,No,Yes,1955.0,22.0,
+Antonio's Secret,"Bronx, NYC",Buffalo Chicken,$,,,No,No,1987.0,87.0,www.antonio'ssecret59.com
+Antonio's Secret,"Brooklyn, NYC",Veggie,$$,4.6,4.6,Non,No,1955.0,,www.antonio'ssecret1.com
+Luigi's Slice of Heaven,"Staten Island, NYC",Margherita,$$$,4.4,4.4,Non,Non,1994.0,52.0,www.luigi'ssliceofheaven3.com
+Rosa's Gourmet,,Margherita,$$,3.1,3.1,Yes,Non,1963.0,58.0,
+Antonio's Urban,"Queens, NYC",Margherita,$$$,3.1,3.1,No,No,2015.0,45.0,
+Mario's Secret,"Manhattan, NYC",Pepperoni,$,3.8,3.8,Non,No,1989.0,19.0,www.mario'ssecret83.com
+Antonio's Gourmet,"Queens, NYC",Hawaiian,$$$$,3.6,3.6,Non,No,1952.0,15.0,www.antonio'sgourmet29.com
+Antonio's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,$$,3.5,3.5,Non,Yes,1973.0,,
+Giovanni's Garden,"Brooklyn, NYC",Veggie,$$$$,3.6,,Non,Yes,1968.0,10.0,www.giovanni'sgarden33.com
+Mario's Secret,"Manhattan, NYC",Veggie,$$,4.6,,No,Yes,1967.0,80.0,
+Rosa's Slice of Heaven,"Staten Island, NYC",Pepperoni,,,4.9,No,No,,67.0,www.rosa'ssliceofheaven93.com
+Rosa's Slice of Heaven,"Bronx, NYC",,$,,,Yes,No,1984.0,30.0,www.rosa'ssliceofheaven90.com
+Luigi's Traditional,"Manhattan, NYC",Pepperoni,$,4.8,4.8,No,Yes,2011.0,89.0,
+Rosa's Slice of Heaven,,Hawaiian,,3.6,3.6,Yes,Yes,,65.0,www.rosa'ssliceofheaven14.com
+Antonio's Traditional,"Manhattan, NYC",Hawaiian,$$$,4.0,4.0,No,No,1974.0,96.0,www.antonio'straditional91.com
+Giovanni's Traditional,"Queens, NYC",Buffalo Chicken,$$,,,Yes,Yes,,29.0,www.giovanni'straditional33.com
+Mario's Garden,"Manhattan, NYC",Buffalo Chicken,,4.3,,No,No,1998.0,63.0,
+Mario's Garden,"Manhattan, NYC",Hawaiian,$$,5.0,5.0,No,Non,1965.0,,
+Rosa's Slice of Heaven,"Manhattan, NYC",Hawaiian,$$,,4.2,No,Yes,,37.0,www.rosa'ssliceofheaven3.com
+Luigi's Garden,"Bronx, NYC",Hawaiian,$,,3.7,Yes,Non,,14.0,www.luigi'sgarden87.com
+Giovanni's Urban,"Manhattan, NYC",,,4.3,4.3,Yes,Yes,1974.0,30.0,www.giovanni'surban85.com
+Mario's Secret,,Hawaiian,$$$$,3.2,,Yes,No,1965.0,27.0,www.mario'ssecret23.com
+Giovanni's Gourmet,"Queens, NYC",Veggie,$$$,4.8,4.8,Yes,No,2003.0,56.0,www.giovanni'sgourmet68.com
+Antonio's Garden,"Queens, NYC",Margherita,$$$$,4.0,4.0,No,Yes,1950.0,79.0,
+Mario's Urban,,Hawaiian,$$,,3.9,Non,No,1991.0,66.0,www.mario'surban43.com
+Luigi's Slice of Heaven,"Bronx, NYC",Margherita,$$,4.2,4.2,Yes,Yes,1968.0,28.0,www.luigi'ssliceofheaven95.com
+Giovanni's Traditional,,,,4.2,4.2,Yes,Yes,1983.0,74.0,www.giovanni'straditional85.com
+Rosa's Gourmet,"Staten Island, NYC",Margherita,$,3.1,3.1,Non,Non,2004.0,12.0,www.rosa'sgourmet26.com
+Antonio's Secret,"Manhattan, NYC",Pepperoni,$$$$,4.4,4.4,No,Yes,1967.0,51.0,www.antonio'ssecret41.com
+Mario's Garden,"Queens, NYC",,$$$,3.5,,Yes,Yes,1983.0,30.0,
+Rosa's Slice of Heaven,"Bronx, NYC",Pepperoni,$$$$,,,Non,Yes,1994.0,49.0,www.rosa'ssliceofheaven88.com
+Giovanni's Urban,"Manhattan, NYC",Pepperoni,$$$$,,,No,Yes,1955.0,76.0,www.giovanni'surban11.com
+Luigi's Urban,,Buffalo Chicken,$$$$,4.6,4.6,Non,Yes,1970.0,34.0,www.luigi'surban29.com
+Antonio's Urban,,Hawaiian,$$$$,4.1,4.1,Yes,Yes,2019.0,64.0,www.antonio'surban60.com
+Giovanni's Secret,"Queens, NYC",Hawaiian,,4.0,4.0,No,No,1997.0,93.0,www.giovanni'ssecret67.com
+Luigi's Urban,"Brooklyn, NYC",Veggie,$$$,3.3,,Yes,Yes,1988.0,61.0,www.luigi'surban65.com
+Giovanni's Gourmet,"Staten Island, NYC",Veggie,$$,,,No,No,1980.0,53.0,www.giovanni'sgourmet61.com
+Luigi's Urban,"Staten Island, NYC",Hawaiian,$$$,,3.5,Yes,No,1959.0,94.0,
+Mario's Urban,"Queens, NYC",Buffalo Chicken,$,,4.0,Yes,Yes,1979.0,65.0,www.mario'surban46.com
+Mario's Gourmet,"Bronx, NYC",,$$$$,3.6,,Yes,No,1967.0,,
+Giovanni's Garden,,,$$,,3.3,Yes,No,2009.0,96.0,www.giovanni'sgarden22.com
+Rosa's Gourmet,"Bronx, NYC",Veggie,$$$,4.3,,No,Yes,1964.0,79.0,www.rosa'sgourmet78.com
+Giovanni's Garden,"Queens, NYC",Margherita,$,,3.1,No,Non,1953.0,86.0,www.giovanni'sgarden57.com
+Luigi's Urban,"Staten Island, NYC",Veggie,$,,4.5,No,Yes,2012.0,96.0,
+Mario's Gourmet,"Bronx, NYC",,$$$$,3.6,3.6,No,No,1989.0,82.0,www.mario'sgourmet44.com
+Giovanni's Urban,"Staten Island, NYC",Pepperoni,,,3.0,Yes,No,1958.0,90.0,www.giovanni'surban16.com
+Rosa's Urban,"Manhattan, NYC",Pepperoni,,4.0,,Yes,Yes,1958.0,75.0,www.rosa'surban97.com
+Mario's Urban,"Staten Island, NYC",Pepperoni,$$$$,3.1,3.1,No,Yes,1975.0,28.0,
+Rosa's Secret,,Pepperoni,,,3.6,No,No,1953.0,92.0,www.rosa'ssecret12.com
+Luigi's Traditional,,Buffalo Chicken,$,4.4,4.4,Non,No,,16.0,www.luigi'straditional55.com
+Rosa's Garden,"Brooklyn, NYC",Hawaiian,,,3.1,Non,No,,72.0,
+Mario's Urban,"Brooklyn, NYC",Margherita,$$,,,No,No,2001.0,51.0,www.mario'surban39.com
+Mario's Garden,"Staten Island, NYC",Veggie,,3.0,3.0,Yes,Non,2018.0,51.0,www.mario'sgarden33.com
+Rosa's Gourmet,,Buffalo Chicken,$$,3.5,3.5,Yes,No,1954.0,68.0,www.rosa'sgourmet33.com
+Luigi's Traditional,"Staten Island, NYC",Margherita,$$$$,4.5,4.5,Yes,Non,1969.0,29.0,www.luigi'straditional29.com
+Giovanni's Traditional,"Queens, NYC",Buffalo Chicken,$,3.6,,No,No,1967.0,82.0,www.giovanni'straditional69.com
+Antonio's Gourmet,"Queens, NYC",Buffalo Chicken,$$$$,,3.2,No,No,1951.0,26.0,www.antonio'sgourmet70.com
+Luigi's Gourmet,"Brooklyn, NYC",Veggie,$$$$,,,No,Yes,1962.0,36.0,
+Giovanni's Garden,"Bronx, NYC",Hawaiian,$$$,3.5,3.5,No,Yes,1953.0,56.0,www.giovanni'sgarden80.com
+Giovanni's Slice of Heaven,,Pepperoni,,4.7,4.7,Non,No,1991.0,11.0,
+Mario's Traditional,"Brooklyn, NYC",,$,3.6,3.6,Yes,Non,2010.0,72.0,www.mario'straditional89.com
+Antonio's Gourmet,"Brooklyn, NYC",Veggie,$$$$,4.6,4.6,No,Yes,1957.0,71.0,www.antonio'sgourmet46.com
+Giovanni's Urban,"Bronx, NYC",Veggie,$,4.8,4.8,Yes,Yes,2016.0,28.0,www.giovanni'surban97.com
+Antonio's Garden,"Manhattan, NYC",Veggie,,3.9,3.9,Yes,No,2012.0,,www.antonio'sgarden77.com
+Giovanni's Traditional,"Staten Island, NYC",Margherita,$$,4.8,,No,No,1958.0,,www.giovanni'straditional52.com
+Luigi's Traditional,,Hawaiian,$$$$,,3.8,No,Yes,1960.0,48.0,www.luigi'straditional10.com
+Antonio's Gourmet,"Brooklyn, NYC",,$$,,,No,Yes,1991.0,,www.antonio'sgourmet88.com
+Rosa's Urban,"Manhattan, NYC",Buffalo Chicken,$$$,,,No,Yes,1962.0,80.0,www.rosa'surban74.com
+Mario's Traditional,"Brooklyn, NYC",Buffalo Chicken,$$$,4.4,4.4,No,Yes,,90.0,www.mario'straditional41.com
+Mario's Secret,"Queens, NYC",Buffalo Chicken,$,4.0,,No,Yes,1962.0,,www.mario'ssecret95.com
+Antonio's Gourmet,"Brooklyn, NYC",Veggie,$$$$,,,Yes,Yes,1961.0,45.0,www.antonio'sgourmet77.com
+Mario's Garden,"Brooklyn, NYC",Hawaiian,$,,4.3,Yes,No,1986.0,49.0,www.mario'sgarden3.com
+Mario's Secret,"Staten Island, NYC",Veggie,$$$,4.4,4.4,No,Yes,2001.0,54.0,www.mario'ssecret59.com
+Luigi's Urban,,Margherita,$$,3.0,3.0,Yes,Yes,,13.0,www.luigi'surban52.com
+Rosa's Secret,"Staten Island, NYC",Buffalo Chicken,,,,No,Yes,1951.0,34.0,www.rosa'ssecret34.com
+Antonio's Slice of Heaven,"Queens, NYC",Veggie,$,,4.4,No,Yes,2005.0,78.0,www.antonio'ssliceofheaven49.com
+Mario's Traditional,"Staten Island, NYC",,$$,4.3,4.3,No,Non,2009.0,39.0,www.mario'straditional28.com
+Luigi's Slice of Heaven,"Manhattan, NYC",Margherita,$,,,No,No,1972.0,85.0,
+Mario's Traditional,"Bronx, NYC",Pepperoni,$$,4.5,4.5,Yes,Yes,1989.0,77.0,www.mario'straditional87.com
+Luigi's Urban,"Manhattan, NYC",Hawaiian,$$$$,4.9,,Non,No,2013.0,97.0,www.luigi'surban96.com
+Mario's Secret,"Manhattan, NYC",Pepperoni,$$,4.4,4.4,Yes,No,1972.0,38.0,www.mario'ssecret13.com
+Giovanni's Urban,,Buffalo Chicken,$$$$,3.6,,No,No,1978.0,82.0,www.giovanni'surban97.com
+Rosa's Gourmet,"Bronx, NYC",Veggie,$$,,3.2,No,No,2000.0,,www.rosa'sgourmet98.com
+Giovanni's Secret,"Bronx, NYC",Margherita,$$$,,,Non,No,2018.0,60.0,www.giovanni'ssecret97.com
+Antonio's Slice of Heaven,"Bronx, NYC",Margherita,,4.3,4.3,Yes,No,1980.0,,www.antonio'ssliceofheaven69.com
+Rosa's Urban,,Hawaiian,$$$$,3.1,3.1,No,Yes,1999.0,23.0,www.rosa'surban67.com
+Giovanni's Gourmet,"Staten Island, NYC",Pepperoni,$$$$,3.7,3.7,No,Non,1969.0,78.0,www.giovanni'sgourmet61.com
+Giovanni's Slice of Heaven,,Hawaiian,$$$,4.9,4.9,No,Yes,2004.0,27.0,www.giovanni'ssliceofheaven60.com
+Giovanni's Gourmet,"Queens, NYC",Veggie,$$$$,,4.0,Non,Yes,,51.0,www.giovanni'sgourmet71.com
+Mario's Secret,"Brooklyn, NYC",Hawaiian,$$,3.9,3.9,Yes,Yes,1974.0,66.0,
+Antonio's Traditional,"Brooklyn, NYC",Margherita,$$,3.9,3.9,Yes,No,1962.0,92.0,www.antonio'straditional63.com
+Antonio's Urban,"Queens, NYC",Margherita,$$$,,,No,Yes,2019.0,21.0,www.antonio'surban86.com
+Antonio's Secret,"Queens, NYC",Buffalo Chicken,$,,3.7,Yes,Yes,2016.0,91.0,www.antonio'ssecret61.com
+Rosa's Traditional,"Staten Island, NYC",Buffalo Chicken,,3.7,3.7,No,No,2007.0,26.0,www.rosa'straditional23.com
+Luigi's Slice of Heaven,"Staten Island, NYC",Veggie,$$$$,3.1,3.1,Yes,No,2013.0,39.0,www.luigi'ssliceofheaven30.com
+Giovanni's Urban,"Brooklyn, NYC",Pepperoni,$,4.5,,Yes,Yes,2018.0,97.0,www.giovanni'surban60.com
+Luigi's Traditional,"Bronx, NYC",Hawaiian,$,3.8,3.8,Non,No,2008.0,84.0,www.luigi'straditional18.com
+Rosa's Garden,"Brooklyn, NYC",Veggie,$$,,,Yes,No,2009.0,,www.rosa'sgarden96.com
+Rosa's Gourmet,"Bronx, NYC",Buffalo Chicken,$$,4.7,4.7,No,No,2011.0,90.0,www.rosa'sgourmet56.com
+Giovanni's Traditional,"Bronx, NYC",Hawaiian,$,3.4,3.4,No,No,1965.0,10.0,www.giovanni'straditional53.com
+Luigi's Urban,"Staten Island, NYC",Buffalo Chicken,$,,,Yes,Yes,2017.0,,www.luigi'surban7.com
+Mario's Slice of Heaven,"Manhattan, NYC",Hawaiian,,3.9,,No,No,,41.0,www.mario'ssliceofheaven97.com
+Luigi's Slice of Heaven,"Manhattan, NYC",Pepperoni,$$$$,4.8,,No,Non,2004.0,18.0,www.luigi'ssliceofheaven69.com
+Rosa's Slice of Heaven,"Queens, NYC",Veggie,,3.4,3.4,Yes,Yes,1984.0,24.0,www.rosa'ssliceofheaven92.com
+Giovanni's Slice of Heaven,"Staten Island, NYC",Hawaiian,$$,,,Yes,No,2004.0,37.0,www.giovanni'ssliceofheaven72.com
+Antonio's Urban,"Bronx, NYC",,$$$,,4.2,No,No,1963.0,33.0,www.antonio'surban79.com
+Mario's Garden,"Manhattan, NYC",Margherita,$$$,3.6,3.6,Yes,No,1998.0,69.0,www.mario'sgarden52.com
+Rosa's Slice of Heaven,"Bronx, NYC",Hawaiian,$$$,3.3,,No,Yes,1956.0,44.0,www.rosa'ssliceofheaven4.com
+Luigi's Secret,,Hawaiian,$$$,4.3,4.3,No,No,,95.0,www.luigi'ssecret34.com
+Mario's Garden,"Manhattan, NYC",Hawaiian,$$$$,,4.5,Non,No,1998.0,36.0,www.mario'sgarden69.com
+Rosa's Gourmet,"Manhattan, NYC",Margherita,$$$$,3.6,3.6,Yes,No,,,www.rosa'sgourmet33.com
+Giovanni's Traditional,"Staten Island, NYC",,$,,,Yes,No,,85.0,www.giovanni'straditional69.com
+Mario's Slice of Heaven,,Hawaiian,$$,3.8,,Yes,No,2021.0,29.0,www.mario'ssliceofheaven38.com
+Mario's Gourmet,"Bronx, NYC",Buffalo Chicken,,4.4,,No,Yes,,74.0,www.mario'sgourmet98.com
+Mario's Urban,"Staten Island, NYC",Buffalo Chicken,$,,3.4,No,No,1966.0,94.0,www.mario'surban26.com
+Luigi's Garden,"Staten Island, NYC",,$,4.8,4.8,Yes,Non,2012.0,58.0,
+Giovanni's Secret,"Staten Island, NYC",Veggie,,3.6,3.6,Yes,No,1994.0,10.0,www.giovanni'ssecret4.com
+Rosa's Slice of Heaven,"Staten Island, NYC",Buffalo Chicken,$$$$,,3.7,No,Non,,19.0,
+Antonio's Garden,"Staten Island, NYC",Margherita,$$$,3.1,,No,No,1976.0,56.0,www.antonio'sgarden54.com
+Giovanni's Secret,,Buffalo Chicken,,,3.2,Non,Yes,1959.0,68.0,www.giovanni'ssecret90.com
+Giovanni's Secret,"Bronx, NYC",Pepperoni,$$,4.0,4.0,No,Yes,1983.0,71.0,
+Mario's Garden,"Staten Island, NYC",Pepperoni,$$$,3.5,3.5,Yes,No,1985.0,95.0,
+Luigi's Gourmet,,Veggie,$$$,,,No,No,1974.0,27.0,www.luigi'sgourmet72.com
+Antonio's Traditional,"Queens, NYC",Buffalo Chicken,$,,,No,No,1955.0,55.0,www.antonio'straditional20.com
+Giovanni's Secret,"Queens, NYC",Margherita,$$,,,Non,Yes,1973.0,41.0,
+Rosa's Slice of Heaven,"Bronx, NYC",Margherita,,,3.7,No,Yes,,36.0,www.rosa'ssliceofheaven21.com
+Antonio's Secret,"Manhattan, NYC",Hawaiian,$$$$,,,No,Yes,1955.0,27.0,www.antonio'ssecret45.com
+Antonio's Traditional,"Brooklyn, NYC",Margherita,$$$,3.2,3.2,Yes,Yes,1978.0,48.0,www.antonio'straditional90.com
+Luigi's Secret,"Manhattan, NYC",Veggie,$,3.8,3.8,Yes,Yes,1974.0,58.0,www.luigi'ssecret87.com
+Mario's Secret,"Manhattan, NYC",Veggie,$$$$,,,Yes,Yes,2004.0,91.0,www.mario'ssecret82.com
+Rosa's Urban,,Margherita,$,,3.8,No,No,,53.0,www.rosa'surban62.com
+Rosa's Gourmet,"Staten Island, NYC",Margherita,$$$,4.1,4.1,Non,No,1973.0,81.0,www.rosa'sgourmet31.com
+Rosa's Secret,"Queens, NYC",Hawaiian,$$$$,4.2,4.2,Yes,Yes,1975.0,63.0,www.rosa'ssecret42.com
+Rosa's Secret,"Manhattan, NYC",,$$,3.0,3.0,Yes,Non,1977.0,,www.rosa'ssecret12.com
+Luigi's Garden,"Queens, NYC",Hawaiian,$$,,3.9,No,No,1952.0,80.0,www.luigi'sgarden65.com
+Rosa's Urban,"Bronx, NYC",,$$$$,,,Yes,Yes,,45.0,www.rosa'surban73.com
+Antonio's Garden,"Brooklyn, NYC",Margherita,$$$$,4.0,,Yes,Yes,2010.0,27.0,www.antonio'sgarden3.com
+Antonio's Slice of Heaven,"Bronx, NYC",Pepperoni,$,4.4,4.4,Non,No,2000.0,47.0,www.antonio'ssliceofheaven90.com
+Rosa's Garden,"Bronx, NYC",Pepperoni,$$$$,3.6,3.6,No,Yes,1997.0,68.0,www.rosa'sgarden9.com
+Rosa's Secret,"Staten Island, NYC",Hawaiian,$,4.5,4.5,No,Yes,1970.0,18.0,www.rosa'ssecret51.com
+Luigi's Urban,"Brooklyn, NYC",Margherita,$$$,4.5,4.5,No,No,2003.0,82.0,www.luigi'surban16.com
+Giovanni's Garden,"Bronx, NYC",,$,4.0,4.0,No,Non,,81.0,
+Antonio's Secret,"Bronx, NYC",Margherita,$$$$,5.0,,No,No,2008.0,60.0,www.antonio'ssecret78.com
+Rosa's Garden,"Brooklyn, NYC",Margherita,$$$$,,,No,No,2021.0,44.0,www.rosa'sgarden3.com
+Antonio's Slice of Heaven,"Brooklyn, NYC",Margherita,$$$,3.0,3.0,Yes,No,2000.0,91.0,www.antonio'ssliceofheaven98.com
+Antonio's Traditional,"Bronx, NYC",Buffalo Chicken,$$$$,4.5,4.5,No,No,1969.0,14.0,www.antonio'straditional97.com
+Giovanni's Traditional,"Brooklyn, NYC",Margherita,$$$$,4.6,4.6,No,No,2008.0,23.0,www.giovanni'straditional24.com
+Giovanni's Gourmet,"Bronx, NYC",Buffalo Chicken,,3.2,3.2,Yes,Yes,,39.0,www.giovanni'sgourmet73.com
+Antonio's Gourmet,"Bronx, NYC",Hawaiian,$$,3.5,3.5,No,Yes,1958.0,13.0,
+Luigi's Garden,"Staten Island, NYC",Pepperoni,$$$,3.0,,No,Yes,1950.0,48.0,www.luigi'sgarden2.com
+Giovanni's Traditional,,Pepperoni,$,3.6,3.6,Yes,Yes,,93.0,www.giovanni'straditional71.com
+Rosa's Secret,"Bronx, NYC",Pepperoni,$$,,,Yes,Non,2012.0,73.0,www.rosa'ssecret21.com
+Rosa's Gourmet,,Pepperoni,$,,4.0,Yes,No,2021.0,34.0,www.rosa'sgourmet19.com
+Rosa's Traditional,"Manhattan, NYC",Pepperoni,$$$$,3.7,3.7,No,Yes,2005.0,37.0,www.rosa'straditional89.com
+Giovanni's Garden,"Manhattan, NYC",Pepperoni,$$,3.7,3.7,Yes,No,2017.0,85.0,www.giovanni'sgarden47.com
+Mario's Traditional,"Manhattan, NYC",Pepperoni,,3.0,,No,Non,1984.0,75.0,
+Giovanni's Garden,"Staten Island, NYC",,$$$,3.6,3.6,No,Yes,1952.0,87.0,www.giovanni'sgarden75.com
+Mario's Garden,"Bronx, NYC",,$$$,4.3,4.3,No,Yes,1956.0,31.0,www.mario'sgarden33.com
+Antonio's Urban,"Staten Island, NYC",Veggie,$$,,4.9,No,No,1976.0,40.0,www.antonio'surban32.com
+Antonio's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,$,4.7,4.7,Yes,Non,,32.0,www.antonio'ssliceofheaven64.com
+Mario's Secret,"Staten Island, NYC",,$$$$,3.0,3.0,Yes,Non,2020.0,57.0,
+Giovanni's Slice of Heaven,"Staten Island, NYC",Veggie,$,4.8,,No,No,1993.0,29.0,www.giovanni'ssliceofheaven39.com
+Giovanni's Urban,"Queens, NYC",Margherita,$,4.6,,Yes,Yes,1990.0,47.0,www.giovanni'surban84.com
+Mario's Secret,"Staten Island, NYC",Margherita,$$$$,4.6,4.6,No,No,1991.0,,www.mario'ssecret72.com
+Giovanni's Gourmet,"Brooklyn, NYC",Margherita,$$$$,3.9,3.9,No,No,1982.0,77.0,www.giovanni'sgourmet42.com
+Luigi's Gourmet,"Queens, NYC",Pepperoni,$$,3.8,3.8,No,No,1999.0,88.0,
+Mario's Urban,"Staten Island, NYC",Hawaiian,$$,,,Non,Yes,2012.0,97.0,
+Antonio's Urban,,Pepperoni,$$,3.1,3.1,Non,Yes,1986.0,98.0,www.antonio'surban89.com
+Mario's Traditional,"Brooklyn, NYC",Hawaiian,$$,3.5,3.5,No,No,2008.0,10.0,www.mario'straditional97.com
+Luigi's Secret,"Brooklyn, NYC",Hawaiian,$$,3.5,3.5,Yes,No,1997.0,,www.luigi'ssecret2.com
+Rosa's Slice of Heaven,"Brooklyn, NYC",Veggie,$$$$,,4.0,Yes,No,1954.0,66.0,www.rosa'ssliceofheaven19.com
+Giovanni's Garden,"Queens, NYC",Veggie,$,4.5,,Yes,Non,1997.0,21.0,www.giovanni'sgarden20.com
+Luigi's Garden,"Staten Island, NYC",Hawaiian,$$,3.9,3.9,Yes,Yes,1952.0,14.0,www.luigi'sgarden93.com
+Giovanni's Secret,"Staten Island, NYC",Hawaiian,$$,,3.1,No,Non,1996.0,59.0,www.giovanni'ssecret70.com
+Rosa's Gourmet,"Manhattan, NYC",,$,4.9,4.9,Yes,Non,2011.0,51.0,www.rosa'sgourmet17.com
+Mario's Garden,,Pepperoni,$$,4.9,4.9,Non,No,1963.0,,www.mario'sgarden89.com
+Rosa's Garden,,,$,4.6,4.6,Non,Yes,2012.0,27.0,www.rosa'sgarden68.com
+Mario's Gourmet,"Manhattan, NYC",Margherita,$,5.0,,Non,Non,2010.0,75.0,www.mario'sgourmet94.com
+Giovanni's Urban,"Queens, NYC",Hawaiian,,4.1,4.1,Yes,No,1980.0,83.0,www.giovanni'surban84.com
+Antonio's Gourmet,"Staten Island, NYC",Pepperoni,$$$,4.9,4.9,Yes,No,1966.0,88.0,www.antonio'sgourmet3.com
+Antonio's Garden,,Veggie,$$$$,3.2,3.2,Yes,No,1973.0,26.0,www.antonio'sgarden87.com
+Mario's Urban,"Manhattan, NYC",Pepperoni,$$$,,3.7,Yes,No,1972.0,77.0,www.mario'surban51.com
+Luigi's Gourmet,"Queens, NYC",Hawaiian,$$$,3.5,3.5,No,No,1999.0,80.0,
+Mario's Urban,"Queens, NYC",Hawaiian,$$$,3.4,,Yes,Yes,2019.0,71.0,www.mario'surban26.com
+Antonio's Secret,,Buffalo Chicken,$$,3.3,3.3,Yes,Yes,1976.0,50.0,www.antonio'ssecret56.com
+Rosa's Gourmet,,Margherita,$$$$,4.2,4.2,Yes,Yes,1964.0,43.0,www.rosa'sgourmet64.com
+Giovanni's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$$,4.6,,Yes,No,1999.0,,www.giovanni'sgourmet8.com
+Giovanni's Slice of Heaven,,Veggie,$,,4.2,No,Yes,1985.0,,www.giovanni'ssliceofheaven81.com
+Giovanni's Gourmet,"Manhattan, NYC",Pepperoni,$$,,,Yes,Yes,1957.0,,www.giovanni'sgourmet95.com
+Antonio's Gourmet,"Queens, NYC",Veggie,,,4.6,Yes,Yes,1952.0,60.0,www.antonio'sgourmet37.com
+Mario's Traditional,,Hawaiian,$$$,4.3,4.3,Yes,No,2011.0,43.0,
+Mario's Traditional,"Staten Island, NYC",Buffalo Chicken,$,3.8,3.8,Yes,Non,1996.0,53.0,www.mario'straditional27.com
+Rosa's Urban,"Bronx, NYC",Buffalo Chicken,,4.3,,Non,Yes,2010.0,24.0,www.rosa'surban45.com
+Antonio's Gourmet,,Buffalo Chicken,$$$$,3.5,3.5,Yes,No,1981.0,87.0,
+Giovanni's Gourmet,"Staten Island, NYC",Veggie,$$,3.7,3.7,No,Yes,1962.0,,www.giovanni'sgourmet86.com
+Luigi's Gourmet,"Staten Island, NYC",Hawaiian,$$$$,4.8,4.8,Yes,Yes,1950.0,,www.luigi'sgourmet90.com
+Luigi's Urban,"Queens, NYC",Pepperoni,$$,,,No,Yes,1983.0,41.0,
+Giovanni's Gourmet,"Staten Island, NYC",Pepperoni,$$$,3.9,,No,Yes,2011.0,76.0,www.giovanni'sgourmet88.com
+Antonio's Gourmet,,Veggie,$$,,,Yes,No,2020.0,12.0,www.antonio'sgourmet37.com
+Mario's Gourmet,"Staten Island, NYC",,$,,,Yes,No,1980.0,95.0,www.mario'sgourmet96.com
+Luigi's Slice of Heaven,"Staten Island, NYC",Margherita,$$,,,No,No,2013.0,95.0,www.luigi'ssliceofheaven71.com
+Mario's Secret,"Brooklyn, NYC",Veggie,$,3.3,3.3,No,No,1974.0,83.0,www.mario'ssecret33.com
+Luigi's Secret,"Brooklyn, NYC",,$$,3.0,3.0,Yes,Yes,1987.0,60.0,www.luigi'ssecret31.com
+Mario's Gourmet,"Queens, NYC",Hawaiian,$$$$,4.3,4.3,No,No,1963.0,76.0,www.mario'sgourmet55.com
+Rosa's Urban,"Manhattan, NYC",Pepperoni,$$$,,3.9,No,Yes,1957.0,,www.rosa'surban12.com
+Rosa's Slice of Heaven,"Staten Island, NYC",Veggie,$,3.3,3.3,Non,No,,57.0,www.rosa'ssliceofheaven11.com
+Antonio's Urban,"Manhattan, NYC",,$$,4.9,4.9,Non,No,1951.0,,
+Antonio's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$,4.1,,No,No,2005.0,,www.antonio'sgourmet72.com
+Giovanni's Garden,"Queens, NYC",Buffalo Chicken,$$,3.5,3.5,No,Yes,2010.0,22.0,www.giovanni'sgarden32.com
+Giovanni's Garden,,Margherita,$$$$,,4.0,No,Yes,1971.0,75.0,www.giovanni'sgarden57.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Hawaiian,$$$$,4.4,4.4,Yes,Yes,1984.0,13.0,www.antonio'ssliceofheaven38.com
+Mario's Urban,"Bronx, NYC",Margherita,$,3.2,3.2,Yes,Yes,1965.0,19.0,www.mario'surban60.com
+Rosa's Slice of Heaven,,Buffalo Chicken,$,3.5,3.5,No,No,1999.0,97.0,www.rosa'ssliceofheaven86.com
+Luigi's Gourmet,"Manhattan, NYC",,$$$$,4.6,4.6,Non,Yes,,26.0,www.luigi'sgourmet98.com
+Giovanni's Secret,"Brooklyn, NYC",Buffalo Chicken,$,3.9,3.9,No,Yes,1966.0,,
+Mario's Traditional,"Bronx, NYC",Hawaiian,$$$,4.1,4.1,Yes,No,,15.0,www.mario'straditional84.com
+Mario's Traditional,,Buffalo Chicken,$$$,,3.9,Non,No,1951.0,92.0,www.mario'straditional56.com
+Rosa's Slice of Heaven,"Brooklyn, NYC",Hawaiian,$$$$,3.1,,No,Non,1953.0,78.0,www.rosa'ssliceofheaven14.com
+Giovanni's Gourmet,"Brooklyn, NYC",Hawaiian,$,,,Yes,Non,1988.0,83.0,www.giovanni'sgourmet33.com
+Luigi's Urban,"Queens, NYC",Hawaiian,,3.9,3.9,Yes,Yes,1955.0,,www.luigi'surban10.com
+Rosa's Traditional,"Queens, NYC",Hawaiian,$$$,,3.4,Yes,No,2018.0,86.0,www.rosa'straditional80.com
+Mario's Urban,"Brooklyn, NYC",Hawaiian,$$$$,3.1,,No,Yes,,,
+Luigi's Traditional,"Bronx, NYC",,$,,4.7,Yes,Yes,1969.0,30.0,www.luigi'straditional64.com
+Luigi's Garden,"Manhattan, NYC",Margherita,$$$$,5.0,5.0,Yes,Yes,2013.0,33.0,www.luigi'sgarden62.com
+Antonio's Gourmet,"Bronx, NYC",Veggie,$$,4.6,4.6,No,Yes,1965.0,,
+Luigi's Gourmet,"Staten Island, NYC",Margherita,$$$,4.7,4.7,Yes,Yes,2000.0,33.0,www.luigi'sgourmet91.com
+Mario's Secret,"Queens, NYC",Hawaiian,$$$$,3.5,3.5,Yes,No,,68.0,www.mario'ssecret92.com
+Rosa's Gourmet,"Manhattan, NYC",Pepperoni,$$$$,,4.9,Yes,Yes,2018.0,12.0,www.rosa'sgourmet43.com
+Luigi's Gourmet,"Manhattan, NYC",Buffalo Chicken,$$$$,3.4,3.4,Non,Yes,1991.0,,
+Giovanni's Garden,"Staten Island, NYC",Pepperoni,$$,4.9,,Yes,Yes,2006.0,49.0,www.giovanni'sgarden59.com
+Antonio's Traditional,,Hawaiian,$$$$,5.0,5.0,No,Yes,2015.0,57.0,www.antonio'straditional52.com
+Giovanni's Garden,"Brooklyn, NYC",Pepperoni,$$,,,No,Yes,1958.0,63.0,www.giovanni'sgarden97.com
+Luigi's Garden,"Queens, NYC",Pepperoni,$$,,5.0,Yes,No,2013.0,44.0,www.luigi'sgarden19.com
+Giovanni's Secret,"Queens, NYC",Hawaiian,$$,4.1,4.1,Yes,No,1971.0,65.0,www.giovanni'ssecret21.com
+Giovanni's Urban,"Bronx, NYC",Pepperoni,,,,Yes,Yes,1983.0,98.0,www.giovanni'surban22.com
+Rosa's Traditional,"Brooklyn, NYC",Veggie,$$$,3.9,3.9,No,No,2004.0,49.0,www.rosa'straditional9.com
+Antonio's Urban,"Brooklyn, NYC",Veggie,$$$$,,,No,Non,1978.0,,www.antonio'surban9.com
+Rosa's Urban,,Pepperoni,$$$$,3.1,3.1,Yes,Non,,77.0,www.rosa'surban73.com
+Giovanni's Secret,"Brooklyn, NYC",Buffalo Chicken,,,4.2,Yes,No,1967.0,55.0,www.giovanni'ssecret27.com
+Luigi's Urban,"Queens, NYC",Hawaiian,$,,5.0,No,Yes,2020.0,87.0,www.luigi'surban17.com
+Luigi's Traditional,"Queens, NYC",,$$$,3.4,3.4,Non,No,2014.0,,www.luigi'straditional44.com
+Giovanni's Garden,,,$$,4.6,4.6,No,No,1950.0,36.0,www.giovanni'sgarden45.com
+Mario's Garden,"Bronx, NYC",Pepperoni,$$$,4.8,4.8,No,Non,1953.0,15.0,www.mario'sgarden8.com
+Rosa's Secret,"Manhattan, NYC",Buffalo Chicken,$$,4.9,4.9,Yes,Yes,,26.0,www.rosa'ssecret80.com
+Mario's Slice of Heaven,"Manhattan, NYC",Margherita,$$$$,4.9,4.9,Non,Non,1976.0,,www.mario'ssliceofheaven18.com
+Mario's Garden,"Bronx, NYC",Veggie,,,4.0,Yes,No,1992.0,90.0,www.mario'sgarden33.com
+Rosa's Slice of Heaven,"Brooklyn, NYC",Pepperoni,$$$$,5.0,5.0,Yes,No,2008.0,11.0,www.rosa'ssliceofheaven1.com
+Giovanni's Gourmet,,,,4.5,,Yes,Yes,1981.0,86.0,www.giovanni'sgourmet76.com
+Rosa's Slice of Heaven,"Manhattan, NYC",Pepperoni,$$,,,Non,No,1982.0,61.0,www.rosa'ssliceofheaven6.com
+Giovanni's Gourmet,"Staten Island, NYC",,$$,4.0,,Yes,No,1977.0,75.0,www.giovanni'sgourmet41.com
+Antonio's Urban,"Staten Island, NYC",Pepperoni,$,,4.4,Yes,No,2004.0,61.0,www.antonio'surban55.com
+Luigi's Traditional,"Bronx, NYC",Buffalo Chicken,$$$,,,No,Yes,,52.0,www.luigi'straditional5.com
+Giovanni's Gourmet,,,,4.3,4.3,No,Yes,2019.0,,
+Antonio's Slice of Heaven,"Manhattan, NYC",Buffalo Chicken,$$$$,,4.3,No,Yes,2011.0,31.0,www.antonio'ssliceofheaven80.com
+Antonio's Slice of Heaven,"Brooklyn, NYC",Margherita,,3.3,,Non,Yes,1983.0,,www.antonio'ssliceofheaven18.com
+Giovanni's Slice of Heaven,"Manhattan, NYC",Hawaiian,$$$$,4.1,4.1,Non,No,,76.0,www.giovanni'ssliceofheaven49.com
+Luigi's Slice of Heaven,"Bronx, NYC",Buffalo Chicken,$,,4.5,No,Yes,1962.0,69.0,www.luigi'ssliceofheaven82.com
+Mario's Gourmet,"Bronx, NYC",Margherita,$$$$,4.0,,No,No,2005.0,67.0,www.mario'sgourmet65.com
+Giovanni's Gourmet,"Staten Island, NYC",Hawaiian,$$,,,No,Non,,21.0,
+Mario's Secret,"Brooklyn, NYC",Pepperoni,$$$,,,Yes,No,2003.0,97.0,
+Antonio's Traditional,"Staten Island, NYC",Margherita,,3.7,,No,No,1992.0,78.0,
+Giovanni's Slice of Heaven,"Brooklyn, NYC",Veggie,,,4.9,Yes,Yes,1988.0,93.0,www.giovanni'ssliceofheaven8.com
+Luigi's Secret,"Staten Island, NYC",Margherita,,3.5,3.5,Non,Yes,2010.0,48.0,www.luigi'ssecret3.com
+Luigi's Slice of Heaven,"Queens, NYC",Margherita,$$,,4.3,Yes,Yes,1991.0,22.0,www.luigi'ssliceofheaven25.com
+Giovanni's Urban,"Queens, NYC",Hawaiian,$$$,3.4,3.4,Yes,Non,1967.0,,www.giovanni'surban69.com
+Mario's Secret,"Queens, NYC",Pepperoni,$$$$,3.6,3.6,No,Non,1972.0,66.0,www.mario'ssecret55.com
+Rosa's Secret,"Queens, NYC",Veggie,$,4.7,4.7,Yes,No,2003.0,62.0,www.rosa'ssecret40.com
+Luigi's Garden,,,$$$,,4.5,Yes,Yes,1979.0,21.0,www.luigi'sgarden83.com
+Giovanni's Urban,"Queens, NYC",Buffalo Chicken,$$$$,,,No,Yes,2007.0,22.0,www.giovanni'surban82.com
+Giovanni's Traditional,"Bronx, NYC",Margherita,$$$,3.9,3.9,No,Yes,2017.0,83.0,
+Giovanni's Garden,"Bronx, NYC",Hawaiian,$$$,3.1,3.1,No,Yes,,66.0,www.giovanni'sgarden95.com
+Luigi's Secret,"Manhattan, NYC",Hawaiian,,,4.0,Yes,No,2020.0,,www.luigi'ssecret33.com
+Antonio's Slice of Heaven,"Queens, NYC",Buffalo Chicken,$,4.3,4.3,Yes,No,1967.0,89.0,www.antonio'ssliceofheaven18.com
+Giovanni's Secret,"Queens, NYC",,$$$$,3.2,3.2,Yes,No,1956.0,,www.giovanni'ssecret57.com
+Mario's Urban,"Queens, NYC",Pepperoni,$$,3.6,,No,No,1989.0,44.0,www.mario'surban16.com
+Rosa's Gourmet,"Staten Island, NYC",Veggie,$,3.8,3.8,Yes,Non,2019.0,12.0,www.rosa'sgourmet80.com
+Giovanni's Garden,"Brooklyn, NYC",Pepperoni,$,,,Yes,Yes,2014.0,14.0,www.giovanni'sgarden38.com
+Rosa's Gourmet,"Staten Island, NYC",Buffalo Chicken,$,,,Yes,No,2017.0,99.0,www.rosa'sgourmet41.com
+Antonio's Urban,"Brooklyn, NYC",Pepperoni,$$,3.1,3.1,Yes,No,1998.0,20.0,www.antonio'surban7.com
+Rosa's Gourmet,"Queens, NYC",Hawaiian,$$$$,4.5,4.5,Yes,No,2001.0,80.0,www.rosa'sgourmet78.com
+Antonio's Slice of Heaven,"Queens, NYC",Margherita,$$$$,,3.7,Yes,Yes,,65.0,www.antonio'ssliceofheaven53.com
+Antonio's Urban,"Staten Island, NYC",Margherita,$$$$,,,Non,Yes,1970.0,19.0,
+Antonio's Traditional,"Staten Island, NYC",Buffalo Chicken,$$$,4.5,4.5,No,No,1958.0,43.0,www.antonio'straditional89.com
+Luigi's Slice of Heaven,"Brooklyn, NYC",Hawaiian,$$$,4.8,,No,Non,1996.0,76.0,www.luigi'ssliceofheaven32.com
+Rosa's Gourmet,"Bronx, NYC",Veggie,$$$,,,No,Yes,1991.0,81.0,www.rosa'sgourmet38.com
+Luigi's Gourmet,"Brooklyn, NYC",,$$,4.2,,Non,No,2000.0,40.0,www.luigi'sgourmet22.com
+Luigi's Secret,,Margherita,$$$,,,Yes,Yes,2005.0,84.0,www.luigi'ssecret16.com
+Rosa's Secret,"Staten Island, NYC",Margherita,$$,4.6,4.6,Non,Yes,2000.0,80.0,www.rosa'ssecret52.com
+Antonio's Urban,"Manhattan, NYC",,,3.5,3.5,Non,Yes,2019.0,75.0,www.antonio'surban29.com
+Rosa's Urban,"Staten Island, NYC",Hawaiian,$$$,4.1,4.1,No,No,,79.0,www.rosa'surban16.com
+Luigi's Secret,"Manhattan, NYC",Margherita,,,3.7,Yes,Non,1976.0,50.0,www.luigi'ssecret76.com
+Luigi's Urban,"Bronx, NYC",,$,,,Yes,No,1987.0,72.0,
+Giovanni's Gourmet,,Buffalo Chicken,$$,,3.5,No,Yes,2021.0,41.0,www.giovanni'sgourmet64.com
+Rosa's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$$$,3.4,3.4,Non,No,2014.0,29.0,www.rosa'sgourmet91.com
+Antonio's Secret,"Manhattan, NYC",Hawaiian,,,,No,Yes,2003.0,66.0,www.antonio'ssecret89.com
+Rosa's Secret,"Brooklyn, NYC",Buffalo Chicken,$,3.2,3.2,Non,Yes,1973.0,59.0,www.rosa'ssecret13.com
+Rosa's Secret,"Staten Island, NYC",Margherita,$$$$,4.0,4.0,No,Yes,1996.0,89.0,www.rosa'ssecret72.com
+Antonio's Slice of Heaven,,Margherita,$,,3.4,Yes,No,2020.0,,www.antonio'ssliceofheaven56.com
+Mario's Secret,"Manhattan, NYC",Hawaiian,,3.1,3.1,Yes,No,2012.0,21.0,www.mario'ssecret5.com
+Giovanni's Gourmet,"Brooklyn, NYC",,$$,3.1,3.1,Yes,No,2006.0,80.0,www.giovanni'sgourmet12.com
+Rosa's Garden,"Manhattan, NYC",Hawaiian,$$$,,3.4,Non,No,2004.0,48.0,www.rosa'sgarden41.com
+Mario's Urban,"Manhattan, NYC",Veggie,,4.7,4.7,Non,Yes,,26.0,www.mario'surban3.com
+Luigi's Traditional,"Queens, NYC",Buffalo Chicken,$$$,3.6,3.6,No,No,2011.0,54.0,www.luigi'straditional33.com
+Rosa's Traditional,"Staten Island, NYC",Hawaiian,$,,,No,Non,1979.0,20.0,www.rosa'straditional86.com
+Giovanni's Secret,"Manhattan, NYC",Pepperoni,$$,4.2,4.2,No,No,1971.0,79.0,www.giovanni'ssecret50.com
+Luigi's Slice of Heaven,"Brooklyn, NYC",Pepperoni,$$,3.9,3.9,No,No,1978.0,32.0,www.luigi'ssliceofheaven56.com
+Rosa's Traditional,"Bronx, NYC",,$$,,4.2,Non,No,1990.0,79.0,www.rosa'straditional9.com
+Luigi's Slice of Heaven,"Manhattan, NYC",,$,4.0,4.0,Yes,Yes,1991.0,47.0,www.luigi'ssliceofheaven82.com
+Giovanni's Traditional,"Manhattan, NYC",,$$,4.5,,Yes,Yes,,11.0,www.giovanni'straditional50.com
+Antonio's Secret,"Queens, NYC",Pepperoni,$,,,Yes,Yes,1980.0,95.0,www.antonio'ssecret29.com
+Luigi's Slice of Heaven,,Buffalo Chicken,$$$,3.7,3.7,Yes,Non,,93.0,
+Giovanni's Urban,"Bronx, NYC",,$,4.8,4.8,No,Yes,1967.0,98.0,www.giovanni'surban91.com
+Antonio's Garden,,Veggie,$$$,4.9,4.9,Non,No,1966.0,,www.antonio'sgarden45.com
+Luigi's Secret,"Bronx, NYC",Buffalo Chicken,$,,,No,Yes,1987.0,81.0,www.luigi'ssecret17.com
+Mario's Secret,"Brooklyn, NYC",Buffalo Chicken,$$$,,,No,Yes,1963.0,46.0,www.mario'ssecret56.com
+Antonio's Gourmet,"Staten Island, NYC",Veggie,$$,4.6,4.6,No,Yes,2005.0,58.0,www.antonio'sgourmet98.com
+Luigi's Traditional,"Brooklyn, NYC",Buffalo Chicken,$$$,4.0,4.0,No,Yes,1971.0,61.0,www.luigi'straditional46.com
+Luigi's Garden,,,,,,Yes,No,2016.0,42.0,
+Luigi's Gourmet,"Queens, NYC",Margherita,$$,3.4,3.4,No,Yes,2005.0,31.0,www.luigi'sgourmet69.com
+Luigi's Gourmet,"Queens, NYC",Veggie,$$$,,4.2,No,Non,1968.0,14.0,www.luigi'sgourmet14.com
+Antonio's Secret,"Queens, NYC",Hawaiian,$,3.4,3.4,No,No,2006.0,27.0,www.antonio'ssecret67.com
+Rosa's Gourmet,"Bronx, NYC",Pepperoni,,3.7,,No,Non,,47.0,www.rosa'sgourmet23.com
+Rosa's Slice of Heaven,"Staten Island, NYC",,$$$$,4.7,,Yes,Yes,1984.0,46.0,www.rosa'ssliceofheaven94.com
+Antonio's Gourmet,"Brooklyn, NYC",Buffalo Chicken,,3.4,3.4,Yes,No,1950.0,73.0,
+Rosa's Gourmet,"Brooklyn, NYC",Pepperoni,$$$$,3.1,3.1,No,Yes,2001.0,,www.rosa'sgourmet23.com
+Mario's Garden,"Queens, NYC",Veggie,,3.1,3.1,Yes,Yes,2019.0,88.0,
+Mario's Traditional,"Queens, NYC",Veggie,$,4.9,4.9,Yes,Yes,1986.0,51.0,www.mario'straditional54.com
+Rosa's Traditional,"Manhattan, NYC",Pepperoni,$$,4.0,4.0,No,Yes,2014.0,57.0,www.rosa'straditional10.com
+Antonio's Urban,"Staten Island, NYC",Margherita,$$$$,,3.8,Non,Yes,2000.0,53.0,www.antonio'surban89.com
+Rosa's Gourmet,"Bronx, NYC",Pepperoni,$,4.6,4.6,No,No,1950.0,91.0,www.rosa'sgourmet77.com
+Giovanni's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$$$,,4.7,Non,No,1970.0,96.0,www.giovanni'sgourmet16.com
+Luigi's Gourmet,"Manhattan, NYC",Margherita,$$,,3.7,No,Non,2002.0,25.0,
+Luigi's Garden,"Manhattan, NYC",,$$,,4.4,Yes,Non,1965.0,63.0,www.luigi'sgarden98.com
+Giovanni's Garden,"Brooklyn, NYC",,$$$$,4.5,4.5,Non,Yes,2010.0,44.0,
+Mario's Gourmet,"Bronx, NYC",,$$,,4.3,Non,No,2003.0,,www.mario'sgourmet61.com
+Antonio's Slice of Heaven,"Manhattan, NYC",Hawaiian,$$$,3.3,3.3,No,No,,11.0,www.antonio'ssliceofheaven86.com
+Rosa's Garden,,Buffalo Chicken,$$$,4.8,4.8,Yes,No,1975.0,22.0,www.rosa'sgarden81.com
+Antonio's Gourmet,"Staten Island, NYC",Hawaiian,$$,4.1,,Non,No,2014.0,,www.antonio'sgourmet87.com
+Giovanni's Traditional,"Bronx, NYC",Pepperoni,$$$,,3.6,No,No,2013.0,,www.giovanni'straditional49.com
+Rosa's Traditional,"Manhattan, NYC",,,3.9,3.9,No,Yes,,,
+Giovanni's Garden,,Hawaiian,$$$$,3.1,3.1,Non,Yes,1966.0,78.0,www.giovanni'sgarden52.com
+Rosa's Traditional,"Brooklyn, NYC",Pepperoni,$,3.3,3.3,No,No,2008.0,62.0,www.rosa'straditional2.com
+Giovanni's Traditional,"Queens, NYC",Buffalo Chicken,$$$$,,4.5,No,Non,1972.0,54.0,www.giovanni'straditional96.com
+Luigi's Garden,"Manhattan, NYC",,$$,3.0,3.0,No,No,1956.0,,
+Giovanni's Traditional,"Staten Island, NYC",,$,3.8,3.8,Yes,Yes,1993.0,33.0,www.giovanni'straditional86.com
+Luigi's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$,,,No,No,2002.0,70.0,www.luigi'sgourmet43.com
+Giovanni's Urban,"Bronx, NYC",Pepperoni,$$,3.1,,No,Non,2020.0,67.0,www.giovanni'surban77.com
+Rosa's Secret,"Brooklyn, NYC",Margherita,,,4.9,No,No,1983.0,36.0,www.rosa'ssecret8.com
+Luigi's Gourmet,"Manhattan, NYC",Pepperoni,$$$$,3.5,3.5,Yes,Yes,1995.0,35.0,www.luigi'sgourmet59.com
+Giovanni's Urban,"Bronx, NYC",Veggie,$$$$,,,No,Non,,16.0,www.giovanni'surban65.com
+Rosa's Traditional,"Queens, NYC",Pepperoni,,,,No,No,1965.0,51.0,www.rosa'straditional81.com
+Giovanni's Slice of Heaven,"Brooklyn, NYC",Pepperoni,$$$,3.5,3.5,No,No,2020.0,56.0,www.giovanni'ssliceofheaven12.com
+Rosa's Garden,,,$$$$,3.0,3.0,Yes,Yes,1968.0,62.0,www.rosa'sgarden4.com
+Luigi's Traditional,"Staten Island, NYC",Margherita,$$$$,4.5,4.5,Yes,Yes,1951.0,68.0,www.luigi'straditional77.com
+Giovanni's Gourmet,"Bronx, NYC",Pepperoni,$,4.9,4.9,No,Yes,1959.0,47.0,www.giovanni'sgourmet95.com
+Luigi's Urban,"Brooklyn, NYC",Margherita,$$$$,,,Non,Yes,1999.0,78.0,www.luigi'surban41.com
+Rosa's Secret,"Brooklyn, NYC",Hawaiian,$,4.3,4.3,Non,Yes,,96.0,www.rosa'ssecret7.com
+Giovanni's Secret,"Queens, NYC",Veggie,$$,,,Yes,No,2019.0,62.0,
+Luigi's Urban,"Queens, NYC",Margherita,$$$$,4.7,4.7,No,Yes,1971.0,,
+Mario's Garden,"Staten Island, NYC",Hawaiian,,3.8,3.8,No,Non,1981.0,35.0,www.mario'sgarden69.com
+Luigi's Traditional,"Staten Island, NYC",Margherita,$$,3.6,3.6,Yes,No,1950.0,57.0,www.luigi'straditional69.com
+Antonio's Slice of Heaven,"Manhattan, NYC",,$$,3.7,3.7,Yes,Yes,2003.0,28.0,www.antonio'ssliceofheaven81.com
+Giovanni's Traditional,"Manhattan, NYC",Veggie,$$,4.4,4.4,Yes,Yes,2007.0,18.0,www.giovanni'straditional30.com
+Luigi's Traditional,"Staten Island, NYC",Buffalo Chicken,$$$$,4.6,4.6,No,No,2019.0,,
+Rosa's Secret,"Staten Island, NYC",,$$$,3.4,3.4,No,Yes,1967.0,63.0,www.rosa'ssecret6.com
+Mario's Slice of Heaven,"Bronx, NYC",Margherita,$$$,3.7,3.7,Yes,Non,1955.0,,www.mario'ssliceofheaven89.com
+Luigi's Urban,"Queens, NYC",Pepperoni,$$$,4.8,4.8,Yes,Non,1994.0,48.0,www.luigi'surban19.com
+Luigi's Secret,"Manhattan, NYC",Hawaiian,$$$$,4.6,,Yes,Yes,1972.0,,www.luigi'ssecret80.com
+Luigi's Gourmet,"Queens, NYC",Pepperoni,$$,,5.0,Yes,Yes,1972.0,12.0,www.luigi'sgourmet85.com
+Luigi's Gourmet,"Queens, NYC",Pepperoni,$$$$,4.5,,No,No,1975.0,73.0,www.luigi'sgourmet66.com
+Giovanni's Slice of Heaven,"Staten Island, NYC",Margherita,$$,3.8,3.8,Yes,Yes,1956.0,38.0,www.giovanni'ssliceofheaven10.com
+Mario's Urban,"Bronx, NYC",Margherita,$$$$,4.2,4.2,No,No,1993.0,,www.mario'surban16.com
+Mario's Traditional,"Brooklyn, NYC",Margherita,$$$$,4.3,4.3,Non,Yes,1976.0,67.0,www.mario'straditional37.com
+Antonio's Garden,"Bronx, NYC",Margherita,,3.2,3.2,Yes,No,1975.0,84.0,www.antonio'sgarden79.com
+Giovanni's Urban,,,$$$,,4.1,Yes,Non,,36.0,www.giovanni'surban77.com
+Giovanni's Garden,"Queens, NYC",Margherita,$$,4.4,4.4,Yes,No,2004.0,30.0,www.giovanni'sgarden77.com
+Mario's Secret,"Bronx, NYC",Buffalo Chicken,$,3.3,,Yes,No,2013.0,48.0,www.mario'ssecret32.com
+Rosa's Urban,"Manhattan, NYC",Buffalo Chicken,$,4.6,4.6,Non,Non,2006.0,55.0,www.rosa'surban47.com
+Rosa's Traditional,,Margherita,$$,4.2,4.2,Non,No,2018.0,75.0,www.rosa'straditional72.com
+Antonio's Traditional,,Veggie,,4.9,4.9,Yes,Non,,45.0,www.antonio'straditional43.com
+Rosa's Garden,"Brooklyn, NYC",Hawaiian,$,3.1,3.1,Yes,Non,1951.0,,www.rosa'sgarden82.com
+Mario's Urban,"Queens, NYC",Pepperoni,$,3.5,3.5,No,Yes,2004.0,,www.mario'surban36.com
+Antonio's Traditional,"Brooklyn, NYC",,$$$$,4.2,4.2,No,No,1987.0,74.0,www.antonio'straditional26.com
+Antonio's Garden,"Queens, NYC",Hawaiian,$$$$,3.6,,No,No,1978.0,72.0,www.antonio'sgarden10.com
+Antonio's Traditional,"Staten Island, NYC",Veggie,$$$,4.4,4.4,No,No,1975.0,44.0,www.antonio'straditional31.com
+Rosa's Urban,,Pepperoni,$$$$,,4.5,Yes,Yes,1984.0,40.0,www.rosa'surban97.com
+Antonio's Urban,"Staten Island, NYC",Pepperoni,$$,3.2,3.2,Yes,Yes,2016.0,37.0,www.antonio'surban29.com
+Antonio's Traditional,"Brooklyn, NYC",Buffalo Chicken,$$,,,Yes,Yes,1978.0,10.0,
+Rosa's Slice of Heaven,"Bronx, NYC",Margherita,$$$,4.0,4.0,No,Non,1983.0,34.0,www.rosa'ssliceofheaven77.com
+Giovanni's Urban,"Queens, NYC",,$,3.7,3.7,Yes,Yes,1990.0,52.0,www.giovanni'surban1.com
+Antonio's Secret,"Bronx, NYC",Buffalo Chicken,$,,,Yes,Yes,1990.0,93.0,www.antonio'ssecret87.com
+Rosa's Gourmet,"Manhattan, NYC",Veggie,$$$$,4.7,4.7,No,No,,76.0,www.rosa'sgourmet3.com
+Luigi's Slice of Heaven,"Bronx, NYC",Margherita,$$,4.4,4.4,Non,Non,2020.0,72.0,www.luigi'ssliceofheaven67.com
+Antonio's Gourmet,,,$,4.4,4.4,Non,Non,1952.0,60.0,www.antonio'sgourmet71.com
+Mario's Traditional,"Bronx, NYC",Buffalo Chicken,$$$,3.9,3.9,Yes,No,,11.0,www.mario'straditional35.com
+Giovanni's Slice of Heaven,"Manhattan, NYC",Margherita,$$$,4.8,,Yes,No,1981.0,91.0,www.giovanni'ssliceofheaven15.com
+Rosa's Gourmet,"Brooklyn, NYC",Hawaiian,$$,,,No,No,1980.0,73.0,www.rosa'sgourmet67.com
+Antonio's Slice of Heaven,"Staten Island, NYC",Pepperoni,$$$,,,Yes,No,1992.0,,www.antonio'ssliceofheaven93.com
+Luigi's Gourmet,"Queens, NYC",,$$$,,,No,Yes,,78.0,www.luigi'sgourmet30.com
+Rosa's Gourmet,"Bronx, NYC",Veggie,$$,3.5,3.5,No,No,1950.0,18.0,www.rosa'sgourmet82.com
+Giovanni's Secret,"Staten Island, NYC",,$$$$,4.6,4.6,Yes,Yes,2010.0,11.0,www.giovanni'ssecret75.com
+Rosa's Urban,"Queens, NYC",Buffalo Chicken,$$$$,3.4,3.4,No,Yes,1963.0,43.0,www.rosa'surban43.com
+Giovanni's Secret,"Queens, NYC",Margherita,$$$,,3.7,No,Yes,2001.0,69.0,www.giovanni'ssecret60.com
+Rosa's Garden,"Manhattan, NYC",Margherita,$$$$,3.7,3.7,No,Yes,1955.0,70.0,www.rosa'sgarden40.com
+Mario's Gourmet,"Brooklyn, NYC",,$$$$,5.0,5.0,Yes,No,1959.0,,www.mario'sgourmet65.com
+Giovanni's Traditional,"Brooklyn, NYC",Margherita,$$$,4.7,,No,No,2020.0,19.0,www.giovanni'straditional29.com
+Antonio's Traditional,"Staten Island, NYC",Veggie,,,4.4,No,No,1979.0,85.0,www.antonio'straditional74.com
+Rosa's Urban,"Brooklyn, NYC",Hawaiian,$$$,4.5,4.5,No,Yes,1970.0,,www.rosa'surban92.com
+Antonio's Garden,,Pepperoni,$,4.1,4.1,No,Yes,2009.0,94.0,www.antonio'sgarden95.com
+Mario's Slice of Heaven,"Brooklyn, NYC",Veggie,$$,4.9,,No,Yes,,58.0,
+Giovanni's Garden,"Staten Island, NYC",Veggie,$$,,,No,No,1991.0,79.0,www.giovanni'sgarden3.com
+Mario's Secret,"Brooklyn, NYC",Pepperoni,$$$$,,,No,Yes,,58.0,www.mario'ssecret36.com
+Mario's Garden,"Bronx, NYC",Pepperoni,$$$$,,3.3,Yes,No,,12.0,www.mario'sgarden43.com
+Giovanni's Garden,"Manhattan, NYC",Margherita,$$$$,4.6,4.6,Yes,Non,2005.0,83.0,www.giovanni'sgarden15.com
+Mario's Urban,"Staten Island, NYC",Veggie,$$,4.5,4.5,No,No,1990.0,14.0,www.mario'surban97.com
+Luigi's Urban,"Manhattan, NYC",Buffalo Chicken,$,3.8,3.8,Yes,No,1981.0,99.0,www.luigi'surban41.com
+Giovanni's Slice of Heaven,"Manhattan, NYC",Pepperoni,$,3.1,,Yes,Yes,1964.0,70.0,www.giovanni'ssliceofheaven90.com
+Antonio's Gourmet,"Manhattan, NYC",Pepperoni,$$,4.7,4.7,No,No,2011.0,,www.antonio'sgourmet80.com
+Giovanni's Garden,"Queens, NYC",Hawaiian,$,3.0,3.0,Non,Yes,,99.0,www.giovanni'sgarden36.com
+Antonio's Traditional,"Queens, NYC",Buffalo Chicken,$$,4.4,4.4,No,No,1977.0,,www.antonio'straditional97.com
+Rosa's Garden,"Manhattan, NYC",Buffalo Chicken,$,4.9,4.9,No,Non,,81.0,www.rosa'sgarden84.com
+Giovanni's Urban,"Staten Island, NYC",Pepperoni,$$$,,,No,Yes,2008.0,14.0,www.giovanni'surban77.com
+Giovanni's Traditional,"Bronx, NYC",Margherita,,,,No,No,,24.0,www.giovanni'straditional33.com
+Luigi's Garden,,Hawaiian,$$,,4.4,No,No,1951.0,25.0,www.luigi'sgarden5.com
+Antonio's Secret,"Brooklyn, NYC",,$,4.6,4.6,Yes,No,1985.0,10.0,www.antonio'ssecret78.com
+Giovanni's Garden,"Staten Island, NYC",Pepperoni,$$$$,,4.1,No,Yes,2020.0,25.0,
+Giovanni's Gourmet,"Queens, NYC",Buffalo Chicken,,4.9,4.9,Yes,No,1962.0,,www.giovanni'sgourmet87.com
+Giovanni's Slice of Heaven,"Manhattan, NYC",,,3.1,3.1,No,No,1964.0,12.0,www.giovanni'ssliceofheaven14.com
+Rosa's Secret,"Brooklyn, NYC",Hawaiian,$$$,,,No,Yes,2009.0,61.0,www.rosa'ssecret68.com
+Rosa's Urban,"Bronx, NYC",Veggie,$,4.4,4.4,No,No,1971.0,56.0,www.rosa'surban83.com
+Rosa's Secret,"Queens, NYC",Pepperoni,,,,Non,Yes,2012.0,22.0,www.rosa'ssecret47.com
+Mario's Garden,"Queens, NYC",Hawaiian,$$$$,3.4,3.4,Non,No,1974.0,,www.mario'sgarden54.com
+Antonio's Gourmet,,Veggie,$$$$,4.6,4.6,Non,Non,1997.0,64.0,www.antonio'sgourmet4.com
+Giovanni's Gourmet,"Bronx, NYC",Veggie,$,,4.1,No,Non,1992.0,30.0,www.giovanni'sgourmet94.com
+Mario's Gourmet,"Staten Island, NYC",Buffalo Chicken,$,3.8,3.8,Non,No,1987.0,,www.mario'sgourmet83.com
+Giovanni's Secret,,Buffalo Chicken,,3.3,,Yes,Yes,1990.0,63.0,www.giovanni'ssecret95.com
+Mario's Secret,"Manhattan, NYC",Veggie,$,4.7,4.7,No,No,1994.0,36.0,www.mario'ssecret95.com
+Mario's Traditional,,Buffalo Chicken,$$,,3.3,Yes,No,1989.0,47.0,www.mario'straditional9.com
+Giovanni's Slice of Heaven,"Bronx, NYC",,$,3.6,3.6,No,Yes,1966.0,,www.giovanni'ssliceofheaven53.com
+Mario's Secret,"Queens, NYC",Margherita,$$$$,3.6,3.6,Yes,No,,67.0,www.mario'ssecret77.com
+Rosa's Traditional,,Hawaiian,$$$,4.7,4.7,Yes,Yes,1951.0,71.0,www.rosa'straditional78.com
+Rosa's Urban,,Veggie,$$,4.3,4.3,No,Yes,2011.0,55.0,www.rosa'surban60.com
+Antonio's Slice of Heaven,"Staten Island, NYC",,$,,,No,Yes,1958.0,98.0,www.antonio'ssliceofheaven46.com
+Mario's Secret,"Queens, NYC",Hawaiian,$$$,,,Yes,Yes,,20.0,www.mario'ssecret54.com
+Luigi's Secret,"Queens, NYC",Buffalo Chicken,$$,4.2,4.2,No,Yes,1966.0,,
+Luigi's Gourmet,"Brooklyn, NYC",Buffalo Chicken,$$$,,4.1,No,Yes,1999.0,17.0,
+Mario's Slice of Heaven,"Bronx, NYC",Veggie,$,4.7,4.7,No,Yes,1989.0,80.0,
+Giovanni's Slice of Heaven,"Manhattan, NYC",Pepperoni,$,4.8,4.8,Yes,Yes,2007.0,73.0,www.giovanni'ssliceofheaven23.com
+Antonio's Traditional,,Buffalo Chicken,,,,No,No,1970.0,30.0,
+Mario's Urban,"Brooklyn, NYC",Hawaiian,$,4.3,4.3,No,No,1967.0,81.0,www.mario'surban70.com
+Giovanni's Garden,"Manhattan, NYC",Buffalo Chicken,$,3.1,3.1,No,Yes,2004.0,72.0,www.giovanni'sgarden90.com
+Antonio's Secret,"Brooklyn, NYC",Hawaiian,$$,4.1,4.1,Yes,No,1978.0,94.0,www.antonio'ssecret66.com
+Luigi's Traditional,"Queens, NYC",Veggie,,3.6,3.6,No,Non,1973.0,73.0,www.luigi'straditional61.com
+Giovanni's Slice of Heaven,"Staten Island, NYC",Buffalo Chicken,$$,3.6,3.6,Yes,No,1966.0,29.0,www.giovanni'ssliceofheaven77.com
+Rosa's Traditional,,Hawaiian,$$$,,,No,No,1967.0,17.0,www.rosa'straditional51.com
+Antonio's Garden,"Manhattan, NYC",Veggie,$,4.2,4.2,Yes,No,1991.0,,www.antonio'sgarden50.com
+Antonio's Secret,"Manhattan, NYC",Pepperoni,$$$,3.7,3.7,No,Non,1994.0,55.0,www.antonio'ssecret19.com
+Antonio's Traditional,"Manhattan, NYC",Hawaiian,$$,4.5,4.5,No,Yes,1966.0,,www.antonio'straditional1.com
+Giovanni's Gourmet,"Manhattan, NYC",Pepperoni,$,3.8,,Yes,No,1963.0,18.0,www.giovanni'sgourmet40.com
+Antonio's Urban,"Brooklyn, NYC",Pepperoni,$,,,Yes,No,1998.0,24.0,www.antonio'surban32.com
+Giovanni's Slice of Heaven,"Staten Island, NYC",Margherita,$$,,4.6,Non,Non,,35.0,www.giovanni'ssliceofheaven22.com
+Antonio's Traditional,"Queens, NYC",Buffalo Chicken,$$,3.6,3.6,No,No,1953.0,19.0,www.antonio'straditional93.com
+Antonio's Garden,"Queens, NYC",Hawaiian,$$,,,No,Yes,,,www.antonio'sgarden66.com
+Luigi's Garden,"Queens, NYC",Pepperoni,$$,4.4,4.4,No,Yes,,89.0,www.luigi'sgarden40.com
+Antonio's Slice of Heaven,"Queens, NYC",Margherita,$$,,,No,Yes,1958.0,45.0,www.antonio'ssliceofheaven38.com
+Antonio's Secret,"Brooklyn, NYC",Veggie,,3.1,3.1,Non,Yes,1976.0,93.0,
+Antonio's Slice of Heaven,"Bronx, NYC",Hawaiian,$$,3.7,3.7,No,Non,,46.0,www.antonio'ssliceofheaven55.com
+Giovanni's Traditional,"Staten Island, NYC",,$,4.9,4.9,No,Yes,1968.0,95.0,www.giovanni'straditional75.com
+Giovanni's Garden,"Manhattan, NYC",Buffalo Chicken,$,,,No,Yes,2001.0,,www.giovanni'sgarden81.com
+Luigi's Garden,,Margherita,$$,4.3,,No,Yes,1975.0,32.0,www.luigi'sgarden55.com
+Giovanni's Traditional,"Queens, NYC",Pepperoni,,4.3,4.3,No,Yes,1975.0,,www.giovanni'straditional51.com
+Antonio's Secret,"Bronx, NYC",Buffalo Chicken,$$$$,,,No,No,1975.0,,www.antonio'ssecret60.com
+Giovanni's Secret,"Staten Island, NYC",Pepperoni,$,3.8,3.8,No,Yes,1995.0,37.0,www.giovanni'ssecret8.com
+Giovanni's Traditional,"Manhattan, NYC",Hawaiian,$$,,,Yes,No,1998.0,57.0,www.giovanni'straditional86.com
+Rosa's Slice of Heaven,"Manhattan, NYC",Hawaiian,$$,3.2,3.2,No,Non,2002.0,47.0,www.rosa'ssliceofheaven68.com
+Giovanni's Traditional,"Staten Island, NYC",Hawaiian,$$,,,Non,No,1952.0,40.0,
+Mario's Secret,"Staten Island, NYC",Margherita,,,3.6,Non,No,2015.0,23.0,www.mario'ssecret72.com
+Luigi's Secret,"Queens, NYC",Hawaiian,$$$$,,,Non,Yes,1991.0,82.0,www.luigi'ssecret9.com
+Luigi's Garden,"Manhattan, NYC",Buffalo Chicken,$$$,5.0,5.0,Yes,Yes,1968.0,97.0,
+Giovanni's Gourmet,"Bronx, NYC",Pepperoni,,3.1,,Yes,Yes,1966.0,86.0,www.giovanni'sgourmet2.com
+Luigi's Secret,"Brooklyn, NYC",Veggie,$$$,,4.0,Non,Non,1982.0,99.0,www.luigi'ssecret80.com
+Luigi's Urban,"Brooklyn, NYC",Buffalo Chicken,$$,,,Yes,No,1998.0,38.0,www.luigi'surban95.com
+Rosa's Traditional,"Staten Island, NYC",Buffalo Chicken,$$$$,,,Non,No,2005.0,60.0,www.rosa'straditional70.com
+Luigi's Gourmet,"Queens, NYC",Hawaiian,$$$$,3.2,3.2,Yes,Yes,2012.0,58.0,www.luigi'sgourmet85.com
+Mario's Gourmet,"Brooklyn, NYC",Margherita,$$$,,,No,Yes,1952.0,52.0,www.mario'sgourmet90.com
+Mario's Secret,"Manhattan, NYC",,$$$$,4.5,4.5,Yes,No,1998.0,81.0,
+Antonio's Urban,"Staten Island, NYC",Margherita,$$,,,Yes,Yes,2004.0,96.0,www.antonio'surban19.com
+Rosa's Gourmet,"Bronx, NYC",Pepperoni,$$$$,3.8,,No,No,,14.0,
+Rosa's Secret,"Staten Island, NYC",Pepperoni,$$$,,3.7,Yes,Yes,,,
+Antonio's Secret,"Bronx, NYC",Margherita,$$,,3.8,No,No,2001.0,16.0,www.antonio'ssecret14.com
+Giovanni's Gourmet,"Staten Island, NYC",,$$$,3.5,3.5,No,No,1956.0,51.0,www.giovanni'sgourmet24.com
+Giovanni's Urban,"Staten Island, NYC",,$$$$,3.4,3.4,Yes,No,1995.0,45.0,www.giovanni'surban44.com
+Rosa's Urban,"Staten Island, NYC",Margherita,$$$,4.0,4.0,No,No,,36.0,www.rosa'surban56.com
+Luigi's Urban,"Bronx, NYC",Pepperoni,$$$,3.5,3.5,Yes,No,1965.0,67.0,www.luigi'surban90.com
+Mario's Slice of Heaven,"Bronx, NYC",Veggie,$,3.6,3.6,Yes,Yes,1973.0,55.0,www.mario'ssliceofheaven95.com
+Mario's Traditional,"Staten Island, NYC",Buffalo Chicken,$$$$,4.3,4.3,No,No,2010.0,75.0,www.mario'straditional51.com
+Luigi's Secret,"Brooklyn, NYC",Hawaiian,$$$$,4.9,4.9,No,Yes,2003.0,34.0,www.luigi'ssecret32.com
+Mario's Urban,"Queens, NYC",Pepperoni,$$$,4.2,4.2,Yes,No,2011.0,82.0,www.mario'surban50.com
+Giovanni's Urban,,,$,3.2,,No,No,1950.0,36.0,www.giovanni'surban41.com
+Antonio's Secret,,Hawaiian,$$$$,3.2,3.2,No,Yes,1998.0,10.0,www.antonio'ssecret66.com
+Giovanni's Urban,"Bronx, NYC",Hawaiian,$$,,4.9,Yes,Yes,1974.0,96.0,www.giovanni'surban25.com
+Luigi's Slice of Heaven,"Bronx, NYC",,$$$,3.6,3.6,Yes,Yes,1959.0,83.0,www.luigi'ssliceofheaven61.com
+Rosa's Gourmet,"Brooklyn, NYC",,$$$$,,3.2,No,Non,1965.0,,www.rosa'sgourmet66.com
+Giovanni's Garden,"Queens, NYC",Pepperoni,$$,,4.2,Yes,No,2007.0,61.0,www.giovanni'sgarden42.com
+Antonio's Slice of Heaven,,Veggie,$$$$,4.2,4.2,Yes,Yes,2021.0,34.0,www.antonio'ssliceofheaven65.com
+Antonio's Gourmet,"Staten Island, NYC",Hawaiian,$$,4.3,4.3,Yes,Non,1978.0,63.0,
+Antonio's Gourmet,"Bronx, NYC",Pepperoni,$$$,3.5,3.5,Yes,Yes,1955.0,,www.antonio'sgourmet76.com
+Giovanni's Gourmet,,Margherita,$$$$,3.0,3.0,Non,Yes,1965.0,15.0,
+Luigi's Slice of Heaven,,Pepperoni,$$$$,,,Yes,No,,67.0,www.luigi'ssliceofheaven36.com
+Antonio's Garden,,,$,,,Yes,No,2020.0,,www.antonio'sgarden92.com
+Rosa's Traditional,,Margherita,,,,No,Yes,1992.0,62.0,www.rosa'straditional38.com
+Luigi's Traditional,"Bronx, NYC",Veggie,$$,4.4,4.4,Non,Non,1975.0,75.0,
+Rosa's Urban,"Brooklyn, NYC",,$$$$,,,Non,No,2020.0,67.0,www.rosa'surban42.com
+Rosa's Urban,"Staten Island, NYC",Pepperoni,$$$$,3.6,3.6,No,No,1982.0,91.0,www.rosa'surban61.com
+Antonio's Secret,"Brooklyn, NYC",Margherita,$$,3.5,,Non,No,1975.0,96.0,
+Luigi's Slice of Heaven,"Manhattan, NYC",Buffalo Chicken,$$$,,4.2,Yes,No,1994.0,,www.luigi'ssliceofheaven86.com
+Antonio's Slice of Heaven,"Manhattan, NYC",Margherita,$,4.7,,Yes,No,2012.0,85.0,www.antonio'ssliceofheaven89.com
+Rosa's Urban,"Bronx, NYC",Buffalo Chicken,$,4.9,4.9,No,No,2016.0,31.0,www.rosa'surban61.com
+Mario's Gourmet,"Queens, NYC",Veggie,$$$$,3.2,3.2,Yes,No,2001.0,46.0,www.mario'sgourmet18.com
