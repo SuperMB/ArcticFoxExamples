@@ -94,7 +94,7 @@ print(appleStockDf.head()) #)4
 # Example 3
 # Sort the rows on multiple columns and specify the order
 # and one column is specified by column number, not name
-# Seed being used: #> RowSort --columns Volume --order descending 
+# Seed being used: #> RowSort --columns High 4 --order descending ascending 
 # ******************************************************
 # ******************************************************
 
