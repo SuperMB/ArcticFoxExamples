@@ -68,7 +68,7 @@ appleStockDfQuantile3 = appleStockDfQuantile.iloc[3]
 # ******************************************************
 
 # Load in other dataframes
-#> Data weather.csv 
+#> Data Weather.csv 
 weatherDf = pd.read_csv('weather.csv') 
 
 #> Data Pizzerias.csv 
