@@ -1,5 +1,5 @@
 
-#> DontProcessFile  
+#> DontProcessFile 
 # Setup
 # ******************************************************
 # ******************************************************
@@ -57,19 +57,3 @@
 #> Visualize 
 
 
-
-# Example 4
-# Add a random series to the dataframe
-# Seed being used: #> ColumnAdd randomListSeries 
-# ******************************************************
-# ******************************************************
-
-#> Visualize 
-
-#> Random --list --count 2512 
-
-#> ToSeries 
-
-#> ColumnAdd randomListSeries 
-
-#> Visualize 

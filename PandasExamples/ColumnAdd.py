@@ -1,5 +1,4 @@
 
-import random
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -28,8 +27,7 @@ loginAttempts = bankTransactionsDf['LoginAttempts']
 
 # Then, remove those columns
 #> ColumnRemove --columns Location DeviceID IP  Address TransactionDuration LoginAttempts 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
+bankTransactionsDf.drop(columns= ['Location', 'DeviceID', 'IP Address', 'TransactionDuration', 'LoginAttempts'] , inplace=True) 
 
 
 
@@ -40,28 +38,13 @@ loginAttempts = bankTransactionsDf['LoginAttempts']
 # ******************************************************
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39
+print(bankTransactionsDf.head()) #)1 
 
 #> ColumnAdd --newColumnNames NewEmptyColumn 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
+bankTransactionsDf['NewEmptyColumn'] = pd.Series() 
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN
+print(bankTransactionsDf.head()) #)2 
 
 
 
@@ -72,28 +55,13 @@ loginAttempts = bankTransactionsDf['LoginAttempts']
 # ******************************************************
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN
+print(bankTransactionsDf.head()) #)3 
 
 #> ColumnAdd 1 --newColumnNames Columnof1s 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
+bankTransactionsDf['Columnof1s'] = 1 
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1
+print(bankTransactionsDf.head()) #)4 
 
 
 
@@ -104,64 +72,12 @@ loginAttempts = bankTransactionsDf['LoginAttempts']
 # ******************************************************
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1
+print(bankTransactionsDf.head()) #)5 
 
 #> ColumnAdd location 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
+bankTransactionsDf['location'] = location 
 
 #> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta
+print(bankTransactionsDf.head()) #)6 
 
 
-
-# Example 4
-# Add a random series to the dataframe
-# Seed being used: #> ColumnAdd randomListSeries 
-# ******************************************************
-# ******************************************************
-
-#> Visualize 
-#***Analyze loginAttempts to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta
-
-#> Random --list --count 2512 
-randomList = [random.random() for __ in range(2512)] 
-
-#> ToSeries 
-#***Analyze randomList to learn about: type
-#***#> `run script and gather data 
-
-#> ColumnAdd randomListSeries 
-#***Analyze randomList to learn about: type
-#***#> `run script and gather data 
-
-#> Visualize 
-#***Analyze randomList to learn about: type
-#***#> `run script and gather data 
-##***   TransactionID AccountID  TransactionAmount     TransactionDate TransactionType MerchantID Channel  CustomerAge CustomerOccupation  AccountBalance PreviousTransactionDate NewEmptyColumn  Columnof1s   location  randomListSeries
-##*** 0      TX000001   AC00128              14.09 2023-04-11 16:29:14           Debit       M015     ATM           70             Doctor         5112.21     2024-11-04 08:08:08            NaN           1  San Diego          0.848532
-##*** 1      TX000002   AC00455             376.24 2023-06-27 16:44:19           Debit       M052     ATM           68             Doctor        13758.91     2024-11-04 08:09:35            NaN           1    Houston          0.197302
-##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       M009  Online           19            Student         1122.35     2024-11-04 08:07:04            NaN           1       Mesa          0.373826
-##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit       M002  Online           26            Student         8569.06     2024-11-04 08:09:06            NaN           1    Raleigh          0.822673
-##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit       M091  Online           26            Student         7429.40     2024-11-04 08:06:39            NaN           1    Atlanta          0.001565

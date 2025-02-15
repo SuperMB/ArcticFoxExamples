@@ -1,31 +1,14 @@
 
-import pandas as pd
-import numpy as np  
-pd.set_option('display.width', 10000)
-pd.set_option('display.max_columns', None) 
-
-
+#> DontProcessFile 
 # Setup
 # ******************************************************
 # ******************************************************
 
 #> Data Pizzerias.csv 
-pizzeriasDf = pd.read_csv('Pizzerias.csv') 
 
 #> ColumnHeaders 
-# Pizzeria Name
-# Location
-# Specialty Pizza
-# Price Range
-# Rating
-# Delivery Options
-# Vegan Friendly
-# Established Year
-# Seating Capacity
-# Website 
 
 #> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 
 
@@ -56,27 +39,12 @@ pizzeriasDf = pd.read_csv('Pizzerias.csv')
 # ******************************************************
 
 #> RowRemove --missing 
-pizzeriasDf = pizzeriasDf.dropna() 
 
 #> Visualize 
-print(pizzeriasDf.head()) #)1 
 
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $     4.0              Yes             No            1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$     4.6              Non             No            1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$     3.4              Yes            Yes            2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$     4.0              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $     3.6               No             No            1989.0              37.0    www.antonio'straditional57.com
 #> ColumnCast Rating --type int 
-pizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int') 
 
 #> Visualize 
-print(pizzeriasDf.head()) #)2 
-##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating Delivery Options Vegan Friendly  Established Year  Seating Capacity                           Website
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $       4              Yes             No            1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$       4              Non             No            1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$       3              Yes            Yes            2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No            1989.0              37.0    www.antonio'straditional57.com
 
 
 
@@ -87,26 +55,10 @@ print(pizzeriasDf.head()) #)2
 # ******************************************************
 
 #> Visualize 
-print(pizzeriasDf.head()) #)3 
-##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating Delivery Options Vegan Friendly  Established Year  Seating Capacity                           Website
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $       4              Yes             No            1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$       4              Non             No            1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$       3              Yes            Yes            2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No            1989.0              37.0    www.antonio'straditional57.com
 
 #> ColumnCast Specialty  Pizza Established  Year --type string 
-pizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')
-pizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str') 
 
 #> Visualize 
-print(pizzeriasDf.head()) #)4 
-##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating Delivery Options Vegan Friendly Established Year  Seating Capacity                           Website
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $       4              Yes             No           1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$       4              Non             No           1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$       3              Yes            Yes           2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes           1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No           1989.0              37.0    www.antonio'straditional57.com
 
 
 
@@ -117,22 +69,9 @@ print(pizzeriasDf.head()) #)4
 # ******************************************************
 
 #> Visualize 
-print(pizzeriasDf.head()) #)5 
-##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating Delivery Options Vegan Friendly Established Year  Seating Capacity                           Website
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $       4              Yes             No           1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$       4              Non             No           1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$       3              Yes            Yes           2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes           1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No           1989.0              37.0    www.antonio'straditional57.com
 
 #> ColumnCast Seating  Capacity --type float 
-pizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float') 
 
 #> Visualize 
-print(pizzeriasDf.head()) #)6 
-##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating Delivery Options Vegan Friendly Established Year  Seating Capacity                           Website
-##*** 7   Antonio's Slice of Heaven         Queens, NYC       Margherita           $       4              Yes             No           1986.0              21.0  www.antonio'ssliceofheaven82.com
-##*** 12     Giovanni's Traditional  Staten Island, NYC  Buffalo Chicken          $$       4              Non             No           1983.0              87.0   www.giovanni'straditional30.com
-##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$       3              Yes            Yes           2015.0              35.0           www.mario'ssecret32.com
-##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes           1961.0              30.0      www.luigi'straditional86.com
-##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No           1989.0              37.0    www.antonio'straditional57.com
+
+
