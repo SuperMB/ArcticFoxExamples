@@ -56,7 +56,7 @@ pizzeriasDf = pd.read_csv('Pizzerias.csv')
 # ******************************************************
 
 #> RowRemove --missing 
-pizzeriasDf = pizzeriasDf.dropna() 
+pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
 print(pizzeriasDf.head()) #)1 
