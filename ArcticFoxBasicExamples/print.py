@@ -26,7 +26,7 @@ print(number3) #)1
 # Print the value instead of a specified variable, not the
 # default of the most recently set variable.
 #
-# Seed being used: #> print 
+# Seed being used: #> print number1 
 # ******************************************************
 # ******************************************************
 
@@ -40,7 +40,7 @@ print(number1) #)2
 # Print a message written and the print seed will
 # automatically perform the string interpolation.
 #
-# Seed being used: #> print 
+# Seed being used: #> print The numbers we have are number1 , number2 , and number3 
 # ******************************************************
 # ******************************************************
 
