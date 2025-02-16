@@ -18,7 +18,7 @@ valuesType = type(values)
 # Example 2
 # Get the type of the last variable and print the type
 #
-# Seed being used: #> GetType 
+# Seed being used: #> GetType --print 
 # ******************************************************
 # ******************************************************
 

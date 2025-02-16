@@ -46,7 +46,7 @@ for value in values:
 # Loop over the a specified variable, and include
 # the index of the loop
 #
-# Seed being used: #> for --start 20 --stop 30 
+# Seed being used: #> for --source otherValues --useIndex 
 # ******************************************************
 # ******************************************************
 
@@ -54,3 +54,5 @@ otherValues = [10, 11, 12, 13, 14]
 #> for --source otherValues --useIndex 
 for index, otherValue in enumerate(otherValues): 
     print(otherValue)
+
+    
