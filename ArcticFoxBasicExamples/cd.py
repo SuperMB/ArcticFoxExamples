@@ -1,7 +1,8 @@
 
 import os 
 
-
+#> HelloWorld 
+print('Hello World!') 
 
 # Example 1
 # Change the working directory of the interpreter to a

@@ -25,11 +25,11 @@ emailText = open('email.txt', "r").read() #< Read email.txt
 #> print 
 print(emailText) #)1 
 ##*** Hey <NAME>,
-##***
+##*** 
 ##*** Hope you're doing well! I was thinking it'd be great to catch up, want to meet at Starbucks at 10 AM? Let me know if that works for you or if another time is better.
-##***
+##*** 
 ##*** Looking forward to it!
-##***
+##*** 
 ##*** Cheers,
 ##*** Michael
 
@@ -45,10 +45,10 @@ checkEmailText = open('greg_email.txt', "r").read() #< Read greg_email.txt
 #> print 
 print(checkEmailText) #)2 
 ##*** Hey Greg,
-##***
+##*** 
 ##*** Hope you're doing well! I was thinking it'd be great to catch up, want to meet at Starbucks at 10 AM? Let me know if that works for you or if another time is better.
-##***
+##*** 
 ##*** Looking forward to it!
-##***
+##*** 
 ##*** Cheers,
 ##*** Michael
