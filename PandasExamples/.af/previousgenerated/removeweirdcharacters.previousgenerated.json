@@ -1,0 +1,74 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905482651786273": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905836219236273": [
+        {
+            "PreviouslyGenerated": "texasCensusDf = pd.read_csv('TexasCensus.csv') ",
+            "Existing": "texasCensusDf = pd.read_csv('TexasCensus.csv') "
+        }
+    ],
+    "013905201368776273": [
+        {
+            "PreviouslyGenerated": "# Label (Grouping)\n# Texas!!Total!!Estimate\n# Texas!!Total!!Margin of Error\n# Texas!!Percent!!Estimate\n# Texas!!Percent!!Margin of Error\n# Texas!!Male!!Estimate\n# Texas!!Male!!Margin of Error\n# Texas!!Percent Male!!Estimate\n# Texas!!Percent Male!!Margin of Error\n# Texas!!Female!!Estimate\n# Texas!!Female!!Margin of Error\n# Texas!!Percent Female!!Estimate\n# Texas!!Percent Female!!Margin of Error\n# Harris County, Texas!!Total!!Estimate\n# Harris County, Texas!!Total!!Margin of Error\n# Harris County, Texas!!Percent!!Estimate\n# Harris County, Texas!!Percent!!Margin of Error\n# Harris County, Texas!!Male!!Estimate\n# Harris County, Texas!!Male!!Margin of Error\n# Harris County, Texas!!Percent Male!!Estimate\n# Harris County, Texas!!Percent Male!!Margin of Error\n# Harris County, Texas!!Female!!Estimate\n# Harris County, Texas!!Female!!Margin of Error\n# Harris County, Texas!!Percent Female!!Estimate\n# Harris County, Texas!!Percent Female!!Margin of Error ",
+            "Existing": "# Label (Grouping)\n# Texas!!Total!!Estimate\n# Texas!!Total!!Margin of Error\n# Texas!!Percent!!Estimate\n# Texas!!Percent!!Margin of Error\n# Texas!!Male!!Estimate\n# Texas!!Male!!Margin of Error\n# Texas!!Percent Male!!Estimate\n# Texas!!Percent Male!!Margin of Error\n# Texas!!Female!!Estimate\n# Texas!!Female!!Margin of Error\n# Texas!!Percent Female!!Estimate\n# Texas!!Percent Female!!Margin of Error\n# Harris County, Texas!!Total!!Estimate\n# Harris County, Texas!!Total!!Margin of Error\n# Harris County, Texas!!Percent!!Estimate\n# Harris County, Texas!!Percent!!Margin of Error\n# Harris County, Texas!!Male!!Estimate\n# Harris County, Texas!!Male!!Margin of Error\n# Harris County, Texas!!Percent Male!!Estimate\n# Harris County, Texas!!Percent Male!!Margin of Error\n# Harris County, Texas!!Female!!Estimate\n# Harris County, Texas!!Female!!Margin of Error\n# Harris County, Texas!!Percent Female!!Estimate\n# Harris County, Texas!!Percent Female!!Margin of Error "
+        }
+    ],
+    "013905482651786273": [
+        {
+            "PreviouslyGenerated": "print(texasCensusDf.head()) #)1 ",
+            "Existing": "print(texasCensusDf.head()) #)1 "
+        }
+    ],
+    "013905237089816273": [
+        {
+            "PreviouslyGenerated": "for column in texasCensusDf.columns:\n    texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\\x00-\\x7F]+', '', regex=True) ",
+            "Existing": "for column in texasCensusDf.columns:\n    texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\\x00-\\x7F]+', '', regex=True) "
+        }
+    ],
+    "013905106122116273": [
+        {
+            "PreviouslyGenerated": "print(texasCensusDf.head()) #)2 ",
+            "Existing": "print(texasCensusDf.head()) #)2 "
+        }
+    ],
+    "013905561218936273": [
+        {
+            "PreviouslyGenerated": "texasCensusDf = pd.read_csv('TexasCensus.csv') ",
+            "Existing": "texasCensusDf = pd.read_csv('TexasCensus.csv') "
+        }
+    ],
+    "013905178088356273": [
+        {
+            "PreviouslyGenerated": "texasCensusDf.columns = texasCensusDf.columns.str.replace('!!', ' ') ",
+            "Existing": "texasCensusDf.columns = texasCensusDf.columns.str.replace('!!', ' ') "
+        }
+    ],
+    "013905922733486273": [
+        {
+            "PreviouslyGenerated": "print(texasCensusDf.head()) #)3 ",
+            "Existing": "print(texasCensusDf.head()) #)3 "
+        }
+    ],
+    "013905781764776273": [
+        {
+            "PreviouslyGenerated": "texasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)\ntexasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True) ",
+            "Existing": "texasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)\ntexasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True) "
+        }
+    ],
+    "013905766624236273": [
+        {
+            "PreviouslyGenerated": "print(texasCensusDf.head()) #)4 ",
+            "Existing": "print(texasCensusDf.head()) #)4 "
+        }
+    ]
+}

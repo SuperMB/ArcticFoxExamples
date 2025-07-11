@@ -1,4 +1,4 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -11,9 +11,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Weather.csv 
 weatherDf = pd.read_csv('Weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -61,12 +58,12 @@ print(weatherDf.head()) #)1
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
 #> ColumnConvert --columns MaxTemp --from celsius --to fahrenheit 
-# User changes detected
-weatherDf['MaxTemp'] = weatherDf['MaxTemp'] * 9/5 + 32 
+weatherDf['MaxTemp'] = weatherDf['MaxTemp'] * 9/5 + 32
+weatherDf['MaxTemp'] = Unsupported unit celsius. 
 
 #> ColumnConvert --columns MinTemp --from celsius --to fahrenheit 
-# User changes detected
-weatherDf['MinTemp'] = weatherDf['MinTemp'] * 9/5 + 32 
+weatherDf['MinTemp'] = weatherDf['MinTemp'] * 9/5 + 32
+weatherDf['MinTemp'] = Unsupported unit celsius. 
 
 #> Visualize 
 print(weatherDf.head()) #)2 

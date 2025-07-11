@@ -1,4 +1,4 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -12,9 +12,6 @@ pd.set_option('display.max_columns', None)
 #> Data ModifiedPizzerias.csv 
 modifiedPizzeriasDf = pd.read_csv('ModifiedPizzerias.csv') 
 
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
-
 #> ColumnHeaders 
 # Pizzeria Name
 # Location
@@ -27,6 +24,7 @@ modifiedPizzeriasDf = pd.read_csv('ModifiedPizzerias.csv')
 # Established Year
 # Seating Capacity
 # Website 
+
 
 
 
@@ -70,7 +68,7 @@ print(modifiedPizzeriasDf.head(n=20)) #)1
 ##*** 18              Rosa's Gourmet      Manhattan, NYC        Pepperoni         $$$                  4.2                   4.2              Non            Yes            1997.0              49.0            www.rosa'sgourmet31.com
 ##*** 19             Mario's Gourmet          Bronx, NYC         Hawaiian          $$                  NaN                   NaN              Yes             No            1969.0              75.0                                NaN
 
-#> ColumnCombine First  Person  Rating Second  Person  Rating --keepNonNull 
+#> ColumnCombine First  Person  Rating Second  Person  Rating --keepNonNull --example 
 modifiedPizzeriasDf['First Person Rating'] = modifiedPizzeriasDf['First Person Rating'].combine_first(modifiedPizzeriasDf['Second Person Rating'])
 modifiedPizzeriasDf = modifiedPizzeriasDf.drop(columns='Second Person Rating') 
 

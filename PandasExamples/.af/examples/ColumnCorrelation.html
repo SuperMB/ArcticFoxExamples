@@ -1,0 +1,35 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnCorrelation</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Calculates the correlation between columns within the dataframe</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to calculate the correlation for, if not specified, the correlation will be computed for the entire dataframe</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for removing rows</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation<span>
+AFLEFT 
+appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])
+appleStockDfCorrelation = appleStockDfNumericOnly.corr() AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume<span>
+AFLEFT 
+appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open<span>
+AFLEFT 
+appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() AFRIGHT</span></code></pre>
+</div>  
+

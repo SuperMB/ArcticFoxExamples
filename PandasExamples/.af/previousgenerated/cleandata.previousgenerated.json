@@ -1,0 +1,118 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905438999995743": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905877746775743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        },
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('Pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('Pizzerias.csv') "
+        }
+    ],
+    "013905438999995743": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905121294815743": [
+        {
+            "PreviouslyGenerated": "#ISSUE: Cannot convert [\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Pizzeria Name\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Location\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Specialty Pizza\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Price Range\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Rating\",\n#ISSUE:     \"ColumnType\": 2\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Delivery Options\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Vegan Friendly\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Established Year\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Seating Capacity\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Website\",\n#ISSUE:     \"ColumnType\": 5\n#ISSUE:   }\n#ISSUE: ] to type of Pandas.DataColumn ",
+            "Existing": "#ISSUE: Cannot convert [\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Pizzeria Name\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Location\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Specialty Pizza\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Price Range\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Rating\",\n#ISSUE:     \"ColumnType\": 2\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Delivery Options\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Vegan Friendly\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Established Year\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Seating Capacity\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Website\",\n#ISSUE:     \"ColumnType\": 5\n#ISSUE:   }\n#ISSUE: ] to type of Pandas.DataColumn "
+        }
+    ],
+    "013905872237195743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905688737325743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) "
+        }
+    ],
+    "013905849949605743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)2 ",
+            "Existing": "print(pizzeriasDf.head()) #)2 "
+        }
+    ],
+    "013905342842175743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905973822985743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905831657695743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fillna(col.mean())) ",
+            "Existing": "pizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fillna(col.mean())) "
+        }
+    ],
+    "013905148356505743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)4 ",
+            "Existing": "print(pizzeriasDf.head()) #)4 "
+        }
+    ],
+    "013905347926795743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905711045745743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905254093375743": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf[['Rating']] = pizzeriasDf[['Rating']].interpolate() ",
+            "Existing": "pizzeriasDf[['Rating']] = pizzeriasDf[['Rating']].interpolate() "
+        }
+    ],
+    "013905200016365743": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)6 ",
+            "Existing": "print(pizzeriasDf.head()) #)6 "
+        }
+    ],
+    "013905124952765743": [
+        {
+            "PreviouslyGenerated": "#ISSUE: Cannot convert [\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Pizzeria Name\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Location\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Specialty Pizza\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Price Range\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Rating\",\n#ISSUE:     \"ColumnType\": 2\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Delivery Options\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Vegan Friendly\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Established Year\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Seating Capacity\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Website\",\n#ISSUE:     \"ColumnType\": 5\n#ISSUE:   }\n#ISSUE: ] to type of Pandas.DataColumn ",
+            "Existing": "#ISSUE: Cannot convert [\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Pizzeria Name\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Location\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Specialty Pizza\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Price Range\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Rating\",\n#ISSUE:     \"ColumnType\": 2\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Delivery Options\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Vegan Friendly\",\n#ISSUE:     \"ColumnType\": 4\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Established Year\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Seating Capacity\",\n#ISSUE:     \"ColumnType\": 1\n#ISSUE:   },\n#ISSUE:   {\n#ISSUE:     \"Name\": \"Website\",\n#ISSUE:     \"ColumnType\": 5\n#ISSUE:   }\n#ISSUE: ] to type of Pandas.DataColumn "
+        },
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "243905872237195743": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905920189800518": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905789038980518": [
+        {
+            "PreviouslyGenerated": "banktransactionsDf = pd.read_csv('banktransactions.csv')\nbanktransactionsDf['TransactionDate'] = pd.to_datetime(banktransactionsDf['TransactionDate'])\nbanktransactionsDf['PreviousTransactionDate'] = pd.to_datetime(banktransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "banktransactionsDf = pd.read_csv('banktransactions.csv')\nbanktransactionsDf['TransactionDate'] = pd.to_datetime(banktransactionsDf['TransactionDate'])\nbanktransactionsDf['PreviousTransactionDate'] = pd.to_datetime(banktransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905155941520518": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905920189800518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDf.head()) #)1 ",
+            "Existing": "print(banktransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905422596940518": [
+        {
+            "PreviouslyGenerated": "banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() ",
+            "Existing": "banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() "
+        }
+    ],
+    "013905147761600518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDfMax) #)2 ",
+            "Existing": "print(banktransactionsDfMax) #)2 "
+        }
+    ],
+    "013905483753950518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDf.head()) #)3 ",
+            "Existing": "print(banktransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905962795520518": [
+        {
+            "PreviouslyGenerated": "banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max() ",
+            "Existing": "banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max() "
+        }
+    ],
+    "013905676225660518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDfMax) #)4 ",
+            "Existing": "print(banktransactionsDfMax) #)4 "
+        }
+    ],
+    "013905529000720518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDf.head()) #)5 ",
+            "Existing": "print(banktransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905161059410518": [
+        {
+            "PreviouslyGenerated": "banktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5 ",
+            "Existing": "banktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5 "
+        }
+    ],
+    "013905599420800518": [
+        {
+            "PreviouslyGenerated": "print(banktransactionsDf.head(n=15)) #)6 ",
+            "Existing": "print(banktransactionsDf.head(n=15)) #)6 "
+        }
+    ]
+}

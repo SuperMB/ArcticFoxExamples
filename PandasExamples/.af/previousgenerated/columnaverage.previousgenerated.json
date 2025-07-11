@@ -1,0 +1,80 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905221008774403": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905504989394403": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('weather.csv') "
+        }
+    ],
+    "013905221008774403": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905275457554403": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905580622694403": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905660309104403": [
+        {
+            "PreviouslyGenerated": "weatherDfMean = weatherDf['MaxTemp'].mean()\nprint(weatherDfMean) #)2 ",
+            "Existing": "weatherDfMean = weatherDf['MaxTemp'].mean()\nprint(weatherDfMean) #)2 "
+        }
+    ],
+    "013905851710054403": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905531392684403": [
+        {
+            "PreviouslyGenerated": "weatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()\nprint(weatherDfMean) #)4 ",
+            "Existing": "weatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()\nprint(weatherDfMean) #)4 "
+        }
+    ],
+    "013905241461904403": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ],
+    "013905821239324403": [
+        {
+            "PreviouslyGenerated": "weatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()\nweatherDf['SunshineMeanRolling5'] = pd.Series()\nweatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5 ",
+            "Existing": "weatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()\nweatherDf['SunshineMeanRolling5'] = pd.Series()\nweatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5 "
+        }
+    ],
+    "013905429161034403": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head(n=15)) #)6 ",
+            "Existing": "print(weatherDf.head(n=15)) #)6 "
+        }
+    ],
+    "243905580622694403": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

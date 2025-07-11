@@ -1,0 +1,86 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905775722548081": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905282596608081": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905767570248081": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905775722548081": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905809088578081": [
+        {
+            "PreviouslyGenerated": "weatherDfQuantile = weatherDf['MaxTemp'].quantile( [ .25, .5, .75, 1 ] )\nprint(weatherDfQuantile) #)2 ",
+            "Existing": "weatherDfQuantile = weatherDf['MaxTemp'].quantile( [ .25, .5, .75, 1 ] )\nprint(weatherDfQuantile) #)2 "
+        }
+    ],
+    "013905600460388081": [
+        {
+            "PreviouslyGenerated": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) ",
+            "Existing": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) "
+        }
+    ],
+    "013905642935348081": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['MaxTempCategorized', 'MaxTemp']\ncolumnsToMove = columnsToMove + [column for column in weatherDf.columns if column not in columnsToMove]\nweatherDf = weatherDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['MaxTempCategorized', 'MaxTemp']\ncolumnsToMove = columnsToMove + [column for column in weatherDf.columns if column not in columnsToMove]\nweatherDf = weatherDf[columnsToMove] "
+        }
+    ],
+    "013905470138048081": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905106295808081": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('weather.csv') "
+        }
+    ],
+    "013905235009958081": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)4 ",
+            "Existing": "print(weatherDf.head()) #)4 "
+        }
+    ],
+    "013905707107778081": [
+        {
+            "PreviouslyGenerated": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) ",
+            "Existing": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) "
+        }
+    ],
+    "013905614817858081": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['MaxTempCategorized', 'MaxTemp']\ncolumnsToMove = columnsToMove + [column for column in weatherDf.columns if column not in columnsToMove]\nweatherDf = weatherDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['MaxTempCategorized', 'MaxTemp']\ncolumnsToMove = columnsToMove + [column for column in weatherDf.columns if column not in columnsToMove]\nweatherDf = weatherDf[columnsToMove] "
+        }
+    ],
+    "013905264237418081": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ]
+}

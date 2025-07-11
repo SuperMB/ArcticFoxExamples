@@ -1,0 +1,62 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905882637079732": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905425124969732": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905138948069732": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905882637079732": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905269428419732": [
+        {
+            "PreviouslyGenerated": "appleStockDf.to_csv('appleStockDf.csv', index=False) ",
+            "Existing": "appleStockDf.to_csv('appleStockDf.csv', index=False) "
+        }
+    ],
+    "013905124458579732": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)2 ",
+            "Existing": "print(appleStockDf.head()) #)2 "
+        }
+    ],
+    "013905665604939732": [
+        {
+            "PreviouslyGenerated": "appleStockDf.to_csv('NewAppleStock.csv', index=False) ",
+            "Existing": "appleStockDf.to_csv('NewAppleStock.csv', index=False) "
+        }
+    ],
+    "013905207820709732": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905292333219732": [
+        {
+            "PreviouslyGenerated": "appleStockDf.to_csv('SecondNewAppleStock.csv', index=False) ",
+            "Existing": "appleStockDf.to_csv('SecondNewAppleStock.csv', index=False) "
+        }
+    ]
+}

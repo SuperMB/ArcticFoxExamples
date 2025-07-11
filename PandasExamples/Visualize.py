@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -13,9 +14,6 @@ pd.set_option('display.max_columns', None)
 appleStockDf = pd.read_csv('AppleStock.csv')
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) 
 
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
-
 
 
 # Example 1
@@ -24,7 +22,7 @@ appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 # ******************************************************
 # ******************************************************
 
-#> Visualize 
+#> Visualize --example 
 print(appleStockDf.head()) #)1 
 ##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
 ##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600
@@ -41,7 +39,7 @@ print(appleStockDf.head()) #)1
 # ******************************************************
 # ******************************************************
 
-#> Visualize --count 10 
+#> Visualize --count 10 --example 
 print(appleStockDf.head(n=10)) #)2 
 ##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
 ##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600

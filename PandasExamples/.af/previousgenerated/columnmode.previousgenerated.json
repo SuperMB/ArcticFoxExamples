@@ -1,0 +1,68 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905931596191377": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905915516691377": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905173262121377": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905931596191377": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905584370231377": [
+        {
+            "PreviouslyGenerated": "weatherDfMode = weatherDf['Cloud3pm'].mode()\nprint(weatherDfMode) #)2 ",
+            "Existing": "weatherDfMode = weatherDf['Cloud3pm'].mode()\nprint(weatherDfMode) #)2 "
+        }
+    ],
+    "013905748564821377": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905675040241377": [
+        {
+            "PreviouslyGenerated": "weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()\nprint(weatherDfMode) #)4 ",
+            "Existing": "weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()\nprint(weatherDfMode) #)4 "
+        }
+    ],
+    "013905513255561377": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ],
+    "013905856341421377": [
+        {
+            "PreviouslyGenerated": "weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()\nweatherDfMode = pd.DataFrame(weatherDfMode).reset_index()\nweatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'\n\nweatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left') ",
+            "Existing": "weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()\nweatherDfMode = pd.DataFrame(weatherDfMode).reset_index()\nweatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'\n\nweatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left') "
+        }
+    ],
+    "013905713656081377": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head(n=10)) #)6 ",
+            "Existing": "print(weatherDf.head(n=10)) #)6 "
+        }
+    ]
+}

@@ -1,0 +1,152 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905518455913931": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905617739543931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905412534663931": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905518455913931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905162003963931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() "
+        }
+    ],
+    "013905137520053931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile) #)2 ",
+            "Existing": "print(bankTransactionsDfQuantile) #)2 "
+        }
+    ],
+    "013905289926453931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905963381323931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) "
+        }
+    ],
+    "013905815888423931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile) #)4 ",
+            "Existing": "print(bankTransactionsDfQuantile) #)4 "
+        }
+    ],
+    "013905721955263931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)5 ",
+            "Existing": "print(bankTransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905810315103931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )\nbankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]\nbankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]\nbankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]\nbankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3] ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )\nbankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]\nbankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]\nbankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]\nbankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3] "
+        }
+    ],
+    "013905309403153931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile) #)6 ",
+            "Existing": "print(bankTransactionsDfQuantile) #)6 "
+        }
+    ],
+    "013905373430763931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile0) #)7 ",
+            "Existing": "print(bankTransactionsDfQuantile0) #)7 "
+        }
+    ],
+    "013905312050543931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile1) #)8 ",
+            "Existing": "print(bankTransactionsDfQuantile1) #)8 "
+        }
+    ],
+    "013905398959523931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile2) #)9 ",
+            "Existing": "print(bankTransactionsDfQuantile2) #)9 "
+        }
+    ],
+    "013905104392133931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile3) #)10 ",
+            "Existing": "print(bankTransactionsDfQuantile3) #)10 "
+        }
+    ],
+    "013905360283133931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)11 ",
+            "Existing": "print(bankTransactionsDf.head()) #)11 "
+        }
+    ],
+    "013905249065273931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() "
+        }
+    ],
+    "013905687995903931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile) #)12 ",
+            "Existing": "print(bankTransactionsDfQuantile) #)12 "
+        }
+    ],
+    "013905497515173931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)13 ",
+            "Existing": "print(bankTransactionsDf.head()) #)13 "
+        }
+    ],
+    "013905768684503931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) "
+        }
+    ],
+    "013905872760223931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfQuantile) #)14 ",
+            "Existing": "print(bankTransactionsDfQuantile) #)14 "
+        }
+    ],
+    "013905125832873931": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)15 ",
+            "Existing": "print(bankTransactionsDf.head()) #)15 "
+        }
+    ],
+    "013905600573683931": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )\nbankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']\nbankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration'] ",
+            "Existing": "bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )\nbankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']\nbankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration'] "
+        }
+    ]
+}

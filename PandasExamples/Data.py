@@ -1,16 +1,14 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
 
+
 # Setup
 # ******************************************************
 # ******************************************************
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 
 
@@ -20,7 +18,7 @@ pd.set_option('display.max_columns', None)
 # ******************************************************
 # ******************************************************
 
-#> Data Pizzerias.csv 
+#> Data Pizzerias.csv --example 
 pizzeriasDf = pd.read_csv('Pizzerias.csv') 
 
 #> Visualize 

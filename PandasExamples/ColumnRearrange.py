@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -13,9 +14,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -54,7 +52,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange DeviceID 
+#> ColumnRearrange DeviceID --example 
 columnsToMove = ['DeviceID']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -93,7 +91,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange TransactionDate MerchantID Channel 
+#> ColumnRearrange TransactionDate MerchantID Channel --example 
 columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -132,7 +130,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange 3 
+#> ColumnRearrange 3 --example 
 columnsToMove = [bankTransactionsDf.columns[3]]
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -171,7 +169,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange CustomerAge 4 5 CustomerOccupation 
+#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --example 
 columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -209,13 +207,14 @@ print(bankTransactionsDf.head()) #)9
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange --columns IP  Address --indexes 3 
+#> ColumnRearrange --columns IP  Address --indexes 3 --example 
 columnsToMove = ['IP Address']
-indexes = [3]
+[3] = [3]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
-for column,targetIndex in zip(columnsToMove, indexes):
+for column,targetIndex in zip(columnsToMove, [3]):
     remaining_columns.insert(targetIndex, column)
 bankTransactionsDf = bankTransactionsDf[remaining_columns] 
+
 
 #> Visualize 
 print(bankTransactionsDf.head()) #)10 
@@ -250,13 +249,14 @@ print(bankTransactionsDf.head()) #)11
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 
+#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --example 
 columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']
-indexes = [2, 4, 6]
+[2, 4, 6] = [2, 4, 6]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
-for column,targetIndex in zip(columnsToMove, indexes):
+for column,targetIndex in zip(columnsToMove, [2, 4, 6]):
     remaining_columns.insert(targetIndex, column)
 bankTransactionsDf = bankTransactionsDf[remaining_columns] 
+
 
 #> Visualize 
 print(bankTransactionsDf.head()) #)12 
@@ -291,7 +291,7 @@ print(bankTransactionsDf.head()) #)13
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange TransactionID AccountID 4  --back 
+#> ColumnRearrange TransactionID AccountID 4  --back --example 
 columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]
 columnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 

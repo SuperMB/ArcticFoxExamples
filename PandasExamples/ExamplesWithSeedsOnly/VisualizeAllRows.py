@@ -1,5 +1,5 @@
 
-#> DontProcessFile  
+#> DontProcessFile 
 # Setup
 # ******************************************************
 # ******************************************************
@@ -18,7 +18,7 @@
 
 #> VisualizeAllRows 
 # !!!*** USE WITH CAUTION ***!!!
-# Code added to start of file to display all rows for dataframes 
+# Code added to start of file to display all rows for dataframes
 
 # Remove all but the first 100 rows so the dataframe isn't too large
 #> RowRemove --indexStart 100 

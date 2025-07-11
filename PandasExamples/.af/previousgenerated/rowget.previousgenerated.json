@@ -1,0 +1,134 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905450115095886": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905510259435886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('Pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('Pizzerias.csv') "
+        }
+    ],
+    "013905734518555886": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905450115095886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905786122455886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRow10 = pizzeriasDf.iloc[10] ",
+            "Existing": "pizzeriasDfRow10 = pizzeriasDf.iloc[10] "
+        }
+    ],
+    "013905419683565886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRow10) #)2 ",
+            "Existing": "print(pizzeriasDfRow10) #)2 "
+        }
+    ],
+    "013905745647895886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905638581645886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] ",
+            "Existing": "pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] "
+        }
+    ],
+    "013905156880605886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRowsFrom20To30) #)4 ",
+            "Existing": "print(pizzeriasDfRowsFrom20To30) #)4 "
+        }
+    ],
+    "013905245590225886": [
+        {
+            "PreviouslyGenerated": "# Setting focus to pizzeriasDf ",
+            "Existing": "# Setting focus to pizzeriasDf "
+        }
+    ],
+    "013905290231975886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905399103075886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] ",
+            "Existing": "pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] "
+        }
+    ],
+    "013905968319435886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRowsStartingAt200) #)6 ",
+            "Existing": "print(pizzeriasDfRowsStartingAt200) #)6 "
+        }
+    ],
+    "013905449460195886": [
+        {
+            "PreviouslyGenerated": "# Setting focus to pizzeriasDf ",
+            "Existing": "# Setting focus to pizzeriasDf "
+        }
+    ],
+    "013905538131485886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)7 ",
+            "Existing": "print(pizzeriasDf.head()) #)7 "
+        }
+    ],
+    "013905621415915886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] ",
+            "Existing": "pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] "
+        }
+    ],
+    "013905744714525886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRowsStoppingAt30) #)8 ",
+            "Existing": "print(pizzeriasDfRowsStoppingAt30) #)8 "
+        }
+    ],
+    "013905103496045886": [
+        {
+            "PreviouslyGenerated": "# Setting focus to pizzeriasDf ",
+            "Existing": "# Setting focus to pizzeriasDf "
+        }
+    ],
+    "013905507095045886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)9 ",
+            "Existing": "print(pizzeriasDf.head()) #)9 "
+        }
+    ],
+    "013905651611255886": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)] ",
+            "Existing": "pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)] "
+        }
+    ],
+    "013905571948255886": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf) #)10 ",
+            "Existing": "print(pizzeriasDf) #)10 "
+        }
+    ]
+}

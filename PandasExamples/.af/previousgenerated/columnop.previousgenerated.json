@@ -1,0 +1,68 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905888885426525": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905540885436525": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905635041596525": [
+        {
+            "PreviouslyGenerated": "#***VisualizeAllColumns: Makes following dataframe head calls print all columns\n#***\n#***Useful to use with the Visualize seed to see all columns.\n#***No options are needed.\n#***\n#***Example:\n#***#> VisualizeAllColumns\n#***\n#***- Done ? #> `select",
+            "Existing": "#***VisualizeAllColumns: Makes following dataframe head calls print all columns\n#***\n#***Useful to use with the Visualize seed to see all columns.\n#***No options are needed.\n#***\n#***Example:\n#***#> VisualizeAllColumns\n#***\n#***- Done ? #> `select"
+        }
+    ],
+    "013905512398706525": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905888885426525": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905378338706525": [
+        {
+            "PreviouslyGenerated": "whereCondition = bankTransactionsDf['CustomerAge'] > 35\nbankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10 ",
+            "Existing": "whereCondition = bankTransactionsDf['CustomerAge'] > 35\nbankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10 "
+        }
+    ],
+    "013905483364506525": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=15)) #)2 ",
+            "Existing": "print(bankTransactionsDf.head(n=15)) #)2 "
+        }
+    ],
+    "013905422506146525": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905840431986525": [
+        {
+            "PreviouslyGenerated": "whereCondition = bankTransactionsDf['CustomerAge'] < 20\nbankTransactionsDf['LoginAttempts'][whereCondition] = 6 ",
+            "Existing": "whereCondition = bankTransactionsDf['CustomerAge'] < 20\nbankTransactionsDf['LoginAttempts'][whereCondition] = 6 "
+        }
+    ],
+    "013905628513156525": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=15)) #)4 ",
+            "Existing": "print(bankTransactionsDf.head(n=15)) #)4 "
+        }
+    ]
+}

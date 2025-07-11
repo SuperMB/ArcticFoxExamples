@@ -1,16 +1,14 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
 
+
 # Setup
 # ******************************************************
 # ******************************************************
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 
 
@@ -64,7 +62,9 @@ print(salesDf.head()) #)2
 ##*** 4       5         639   Daisy         2         15 2023-06-29       15
 
 
-#> Join --column StoreId --join left 
+#> Join --column StoreId --join left --example 
+# selected left  table: storesDf
+# selected right table: salesDf
 storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') 
 
 #> Visualize 
@@ -84,7 +84,7 @@ print(storesDfSalesDfJoin.head()) #)3
 # ******************************************************
 # ******************************************************
 
-#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left 
+#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --example 
 salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') 
 
 #> Visualize 

@@ -1,0 +1,104 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905654467724472": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905206001254472": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905654467724472": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905731782014472": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905886207924472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905196461454472": [
+        {
+            "PreviouslyGenerated": "appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])\nappleStockDfCorrelation = appleStockDfNumericOnly.corr() ",
+            "Existing": "appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])\nappleStockDfCorrelation = appleStockDfNumericOnly.corr() "
+        }
+    ],
+    "013905186314044472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDfCorrelation) #)2 ",
+            "Existing": "print(appleStockDfCorrelation) #)2 "
+        }
+    ],
+    "013905995089514472": [
+        {
+            "PreviouslyGenerated": "# Setting focus to appleStockDf ",
+            "Existing": "# Setting focus to appleStockDf "
+        }
+    ],
+    "013905761420784472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905768602184472": [
+        {
+            "PreviouslyGenerated": "appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() ",
+            "Existing": "appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() "
+        }
+    ],
+    "013905390047724472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDfCorrelation) #)4 ",
+            "Existing": "print(appleStockDfCorrelation) #)4 "
+        }
+    ],
+    "013905890850334472": [
+        {
+            "PreviouslyGenerated": "# Setting focus to appleStockDf ",
+            "Existing": "# Setting focus to appleStockDf "
+        }
+    ],
+    "013905593065344472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)5 ",
+            "Existing": "print(appleStockDf.head()) #)5 "
+        }
+    ],
+    "013905496063454472": [
+        {
+            "PreviouslyGenerated": "appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() ",
+            "Existing": "appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() "
+        }
+    ],
+    "013905413339014472": [
+        {
+            "PreviouslyGenerated": "print(appleStockDfCorrelation) #)6 ",
+            "Existing": "print(appleStockDfCorrelation) #)6 "
+        }
+    ],
+    "243905886207924472": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905675120602938": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905747444832938": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905711873762938": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905675120602938": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905908477402938": [
+        {
+            "PreviouslyGenerated": "weatherDfMedian = weatherDf['Pressure3pm'].median()\nprint(weatherDfMedian) #)2 ",
+            "Existing": "weatherDfMedian = weatherDf['Pressure3pm'].median()\nprint(weatherDfMedian) #)2 "
+        }
+    ],
+    "013905873862172938": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905163379912938": [
+        {
+            "PreviouslyGenerated": "weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()\nprint(weatherDfMedian) #)4 ",
+            "Existing": "weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()\nprint(weatherDfMedian) #)4 "
+        }
+    ],
+    "013905182322402938": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ],
+    "013905593299372938": [
+        {
+            "PreviouslyGenerated": "weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()\nweatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()\nweatherDfMedian.name = 'SunshineMedian'\n\nweatherDf = pd.merge(weatherDf, weatherDfMedian, on='WindGustDir', how='left') ",
+            "Existing": "weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()\nweatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()\nweatherDfMedian.name = 'SunshineMedian'\n\nweatherDf = pd.merge(weatherDf, weatherDfMedian, on='WindGustDir', how='left') "
+        }
+    ],
+    "013905344377342938": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head(n=20)) #)6 ",
+            "Existing": "print(weatherDf.head(n=20)) #)6 "
+        }
+    ]
+}

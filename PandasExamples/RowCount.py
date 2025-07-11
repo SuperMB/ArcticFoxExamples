@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data pizzerias.csv 
 pizzeriasDf = pd.read_csv('pizzerias.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Pizzeria Name
@@ -44,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --print 
+#> RowCount --print --example 
 pizzeriasDfRowCount = pizzeriasDf.shape[0]
 print(pizzeriasDfRowCount) #)2 
 ##*** 1000
@@ -66,7 +64,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --missing 
+#> RowCount --missing --example 
 pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() 
 
 #> print 
@@ -114,7 +112,7 @@ print(pizzeriasDf.head()) #)7
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --values 3.0 
+#> RowCount --values 3.0 --example 
 pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) 
 
 #> print 
@@ -138,9 +136,10 @@ print(pizzeriasDf.head()) #)9
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --where _Specialty  Pizza_ == Hawaiian and _Rating_ < 3.5 
+#> RowCount --where _Specialty  Pizza_ == Hawaiian and _Rating_ < 3.5 --example 
 pizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0] 
 
 #> print 
 print(pizzeriasDfRowCount_2) #)10 
 ##*** 35
+

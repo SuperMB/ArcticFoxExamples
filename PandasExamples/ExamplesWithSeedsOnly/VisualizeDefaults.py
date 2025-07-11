@@ -1,5 +1,5 @@
 
-#> DontProcessFile  
+#> DontProcessFile 
 # Setup
 # ******************************************************
 # ******************************************************
@@ -18,7 +18,7 @@
 #
 # Note: The seed is commented out below since it is a global
 # seed. If it was uncommented, it would impact every Visualize
-# seed in the workspace. 
+# seed in the workspace.
 #
 # Seed being used: #> VisualizeDefaults --allColumns --count 20 
 # ******************************************************

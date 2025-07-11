@@ -1,0 +1,62 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905909460110421": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905878661830421": [
+        {
+            "PreviouslyGenerated": "modifiedPizzeriasDf = pd.read_csv('ModifiedPizzerias.csv') ",
+            "Existing": "modifiedPizzeriasDf = pd.read_csv('ModifiedPizzerias.csv') "
+        }
+    ],
+    "013905909460110421": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905615599270421": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# First Person Rating\n# Second Person Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# First Person Rating\n# Second Person Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905747105460421": [
+        {
+            "PreviouslyGenerated": "print(modifiedPizzeriasDf.head(n=20)) #)1 ",
+            "Existing": "print(modifiedPizzeriasDf.head(n=20)) #)1 "
+        }
+    ],
+    "013905927464760421": [
+        {
+            "PreviouslyGenerated": "modifiedPizzeriasDf['First Person Rating'] = modifiedPizzeriasDf['First Person Rating'].combine_first(modifiedPizzeriasDf['Second Person Rating'])\nmodifiedPizzeriasDf = modifiedPizzeriasDf.drop(columns='Second Person Rating') ",
+            "Existing": "modifiedPizzeriasDf['First Person Rating'] = modifiedPizzeriasDf['First Person Rating'].combine_first(modifiedPizzeriasDf['Second Person Rating'])\nmodifiedPizzeriasDf = modifiedPizzeriasDf.drop(columns='Second Person Rating') "
+        }
+    ],
+    "013905217175830421": [
+        {
+            "PreviouslyGenerated": "modifiedPizzeriasDf = modifiedPizzeriasDf.rename(columns={'First Person Rating': 'Total Rating'}) ",
+            "Existing": "modifiedPizzeriasDf = modifiedPizzeriasDf.rename(columns={'First Person Rating': 'Total Rating'}) "
+        }
+    ],
+    "013905946641910421": [
+        {
+            "PreviouslyGenerated": "print(modifiedPizzeriasDf.head(n=20)) #)2 ",
+            "Existing": "print(modifiedPizzeriasDf.head(n=20)) #)2 "
+        }
+    ],
+    "243905747105460421": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

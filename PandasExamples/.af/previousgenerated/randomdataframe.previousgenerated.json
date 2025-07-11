@@ -1,0 +1,50 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905112878871276": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905112878871276": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905535403211276": [
+        {
+            "PreviouslyGenerated": "dfRandomData = {\n    'Column1': np.random.randint(1, 101, size=10000),\n    'Column2': np.random.randint(1, 101, size=10000),\n    'Column3': np.random.randint(1, 101, size=10000),\n    'Column4': np.random.randint(1, 101, size=10000),\n    'Column5': np.random.randint(1, 101, size=10000),\n    'Column6': np.random.randint(1, 101, size=10000),\n    'Column7': np.random.randint(1, 101, size=10000),\n    'Column8': np.random.randint(1, 101, size=10000),\n    'Column9': np.random.randint(1, 101, size=10000),\n    'Column10': np.random.randint(1, 101, size=10000),\n}\n\ndf = pd.DataFrame(dfRandomData) ",
+            "Existing": "dfRandomData = {\n    'Column1': np.random.randint(1, 101, size=10000),\n    'Column2': np.random.randint(1, 101, size=10000),\n    'Column3': np.random.randint(1, 101, size=10000),\n    'Column4': np.random.randint(1, 101, size=10000),\n    'Column5': np.random.randint(1, 101, size=10000),\n    'Column6': np.random.randint(1, 101, size=10000),\n    'Column7': np.random.randint(1, 101, size=10000),\n    'Column8': np.random.randint(1, 101, size=10000),\n    'Column9': np.random.randint(1, 101, size=10000),\n    'Column10': np.random.randint(1, 101, size=10000),\n}\n\ndf = pd.DataFrame(dfRandomData) "
+        }
+    ],
+    "013905611351641276": [
+        {
+            "PreviouslyGenerated": "print(df.head()) #)1 ",
+            "Existing": "print(df.head()) #)1 "
+        }
+    ],
+    "013905790594261276": [
+        {
+            "PreviouslyGenerated": "dfRandomData_1 = {\n    'Column1': np.random.randint(1, 101, size=10),\n    'Column2': np.random.randint(1, 101, size=10),\n    'Column3': np.random.randint(1, 101, size=10),\n}\n\ndf_1 = pd.DataFrame(dfRandomData_1) ",
+            "Existing": "dfRandomData_1 = {\n    'Column1': np.random.randint(1, 101, size=10),\n    'Column2': np.random.randint(1, 101, size=10),\n    'Column3': np.random.randint(1, 101, size=10),\n}\n\ndf_1 = pd.DataFrame(dfRandomData_1) "
+        }
+    ],
+    "013905116139901276": [
+        {
+            "PreviouslyGenerated": "print(df_1.head(n=10)) #)2 ",
+            "Existing": "print(df_1.head(n=10)) #)2 "
+        }
+    ],
+    "243905611351641276": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

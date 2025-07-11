@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data pizzerias.csv 
 pizzeriasDf = pd.read_csv('pizzerias.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Pizzeria Name
@@ -26,8 +24,6 @@ pizzeriasDf = pd.read_csv('pizzerias.csv')
 # Established Year
 # Seating Capacity
 # Website 
-
-
 
 # Example 1
 # Remove rows with missing values from any column
@@ -44,8 +40,8 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --missing 
-pizzeriasDf = pizzeriasDf.dropna() 
+#> RowRemove --missing --example 
+pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
 print(pizzeriasDf.head()) #)2 
@@ -77,8 +73,8 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --missing --columns Rating Established  Year 
-pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']) 
+#> RowRemove --missing --columns Rating Established  Year --example 
+pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) 
 
 #> Visualize --count 10 
 print(pizzeriasDf.head(n=10)) #)4 
@@ -115,8 +111,8 @@ print(pizzeriasDf.head()) #)5
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --index 3 
-pizzeriasDf = pizzeriasDf.drop(3) 
+#> RowRemove --index 3 --example 
+pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) 
 
 #> Visualize 
 print(pizzeriasDf.head()) #)6 
@@ -148,7 +144,7 @@ print(pizzeriasDf.head()) #)7
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStart 3 
+#> RowRemove --indexStart 3 --example 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) 
 
 #> Visualize --count 10 
@@ -179,8 +175,8 @@ print(pizzeriasDf.head()) #)9
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStop 50 
-pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]) 
+#> RowRemove --indexStop 50 --example 
+pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) 
 
 #> Visualize 
 print(pizzeriasDf.head()) #)10 
@@ -212,8 +208,8 @@ print(pizzeriasDf.head()) #)11
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStart 5 --indexStop 10 
-pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]) 
+#> RowRemove --indexStart 5 --indexStop 10 --example 
+pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) 
 
 #> Visualize --count 10 
 print(pizzeriasDf.head(n=10)) #)12 
@@ -255,8 +251,8 @@ print(pizzeriasDf.head(n=10)) #)13
 ##*** 8     Luigi's Slice of Heaven         Queens, NYC         Hawaiian           $     3.2              Yes            Yes            1971.0              99.0                                NaN
 ##*** 9          Giovanni's Gourmet  Staten Island, NYC              NaN           $     4.3              Non            Yes            2006.0              53.0        www.giovanni'sgourmet90.com
 
-#> RowRemove --where _Pizzeria  Name_ contains Antonio 
-pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].str.contains('Antonio').fillna(False))] 
+#> RowRemove --where _Pizzeria  Name_ contains Antonio --example 
+pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) 
 
 #> Visualize --count 10 
 print(pizzeriasDf.head(n=10)) #)14 

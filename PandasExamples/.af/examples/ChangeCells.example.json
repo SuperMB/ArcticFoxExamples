@@ -1,0 +1,19 @@
+{
+    "ChangeCells": [
+        {
+            "KitText": "#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive --example",
+            "CodeAfterKit": "\nbankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive'",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location --example",
+            "CodeAfterKit": "\nbankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles')",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows --example",
+            "CodeAfterKit": "\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > \"06 - 01 - 2023\", 'TransactionType' ] = 'Cash'",
+            "Explainer": ""
+        }
+    ]
+}

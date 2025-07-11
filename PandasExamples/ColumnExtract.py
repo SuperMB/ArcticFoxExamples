@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -13,9 +15,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -52,7 +51,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 #Example 1: Extarct single column
-#> ColumnExtract DeviceID 
+#> ColumnExtract DeviceID --example 
 bankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ] 
 
 #> Visualize 
@@ -87,7 +86,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnExtract Location AccountBalance TransactionDuration 
+#> ColumnExtract Location AccountBalance TransactionDuration --example 
 bankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance', 'TransactionDuration' ] ] 
 
 #> Visualize 

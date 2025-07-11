@@ -1,0 +1,74 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905642350294924": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905350800524924": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905670605384924": [
+        {
+            "PreviouslyGenerated": "appleStockDf.drop(columns=appleStockDf.columns[3:], axis=1, inplace=True) ",
+            "Existing": "appleStockDf.drop(columns=appleStockDf.columns[3:], axis=1, inplace=True) "
+        }
+    ],
+    "013905642350294924": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905369732664924": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905506967864924": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)2 ",
+            "Existing": "print(bankTransactionsDf.head()) #)2 "
+        }
+    ],
+    "013905314082754924": [
+        {
+            "PreviouslyGenerated": "# Setting focus to appleStockDf ",
+            "Existing": "# Setting focus to appleStockDf "
+        }
+    ],
+    "013905642003954924": [
+        {
+            "PreviouslyGenerated": "appleStockDfQuantile = appleStockDf['High'].quantile( [ .25, .5, .6, .7 ] )\nappleStockDfQuantile0 = appleStockDfQuantile.iloc[0]\nappleStockDfQuantile1 = appleStockDfQuantile.iloc[1]\nappleStockDfQuantile2 = appleStockDfQuantile.iloc[2]\nappleStockDfQuantile3 = appleStockDfQuantile.iloc[3] ",
+            "Existing": "appleStockDfQuantile = appleStockDf['High'].quantile( [ .25, .5, .6, .7 ] )\nappleStockDfQuantile0 = appleStockDfQuantile.iloc[0]\nappleStockDfQuantile1 = appleStockDfQuantile.iloc[1]\nappleStockDfQuantile2 = appleStockDfQuantile.iloc[2]\nappleStockDfQuantile3 = appleStockDfQuantile.iloc[3] "
+        }
+    ],
+    "013905586975344924": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905726577324924": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('Pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('Pizzerias.csv') "
+        }
+    ],
+    "013905579145674924": [
+        {
+            "PreviouslyGenerated": "#***Focus: Changes the focus for following seeds to the specified dataframe or variable\n#***\n#***Please select which variable to make the Focus:\n#***- appleStockDf #> `select appleStockDf\n#***- bankTransactionsDf #> `select bankTransactionsDf\n#***- appleStockDfQuantile #> `select appleStockDfQuantile\n#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0\n#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1\n#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2\n#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3\n#***- weatherDf #> `select weatherDf\n#***- pizzeriasDf #> `select pizzeriasDf",
+            "Existing": "#***Focus: Changes the focus for following seeds to the specified dataframe or variable\n#***\n#***Please select which variable to make the Focus:\n#***- appleStockDf #> `select appleStockDf\n#***- bankTransactionsDf #> `select bankTransactionsDf\n#***- appleStockDfQuantile #> `select appleStockDfQuantile\n#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0\n#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1\n#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2\n#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3\n#***- weatherDf #> `select weatherDf\n#***- pizzeriasDf #> `select pizzeriasDf"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905559329105520": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905894724695520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905924933145520": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905559329105520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905987727575520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf.drop(columns='CustomerAge', inplace=True) ",
+            "Existing": "bankTransactionsDf.drop(columns='CustomerAge', inplace=True) "
+        }
+    ],
+    "013905285563595520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)2 ",
+            "Existing": "print(bankTransactionsDf.head()) #)2 "
+        }
+    ],
+    "013905120552645520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905274229605520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) ",
+            "Existing": "bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) "
+        }
+    ],
+    "013905842756255520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)4 ",
+            "Existing": "print(bankTransactionsDf.head()) #)4 "
+        }
+    ],
+    "013905161869585520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)5 ",
+            "Existing": "print(bankTransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905134981165520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) ",
+            "Existing": "bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) "
+        }
+    ],
+    "013905686494535520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)6 ",
+            "Existing": "print(bankTransactionsDf.head()) #)6 "
+        }
+    ],
+    "013905518841525520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905742015495520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)7 ",
+            "Existing": "print(bankTransactionsDf.head()) #)7 "
+        }
+    ],
+    "013905581338915520": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number']) ",
+            "Existing": "bankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number']) "
+        }
+    ],
+    "013905362467525520": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)8 ",
+            "Existing": "print(bankTransactionsDf.head()) #)8 "
+        }
+    ]
+}

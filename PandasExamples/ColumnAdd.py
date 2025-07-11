@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -13,9 +14,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 # Get some of the columns from the data frame
 #> ColumnGet --columns Location DeviceID IP  Address TransactionDuration LoginAttempts 
@@ -40,7 +38,7 @@ bankTransactionsDf.drop(columns= ['Location', 'DeviceID', 'IP Address', 'Transac
 #> Visualize 
 print(bankTransactionsDf.head()) #)1 
 
-#> ColumnAdd --newColumnNames NewEmptyColumn 
+#> ColumnAdd --newColumnNames NewEmptyColumn --example 
 bankTransactionsDf['NewEmptyColumn'] = pd.Series() 
 
 #> Visualize 
@@ -57,7 +55,7 @@ print(bankTransactionsDf.head()) #)2
 #> Visualize 
 print(bankTransactionsDf.head()) #)3 
 
-#> ColumnAdd 1 --newColumnNames Columnof1s 
+#> ColumnAdd 1 --newColumnNames Columnof1s --example 
 bankTransactionsDf['Columnof1s'] = 1 
 
 #> Visualize 
@@ -74,7 +72,7 @@ print(bankTransactionsDf.head()) #)4
 #> Visualize 
 print(bankTransactionsDf.head()) #)5 
 
-#> ColumnAdd location 
+#> ColumnAdd location --example 
 bankTransactionsDf['location'] = location 
 
 #> Visualize 

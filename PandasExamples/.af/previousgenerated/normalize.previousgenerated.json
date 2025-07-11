@@ -1,0 +1,124 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxNormalize\nfrom sklearn.preprocessing import MinMaxScaler\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxNormalize\nfrom sklearn.preprocessing import MinMaxScaler\nfrom pandas.api.types import is_numeric_dtype "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nfrom sklearn.preprocessing import MinMaxScaler\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nfrom sklearn.preprocessing import MinMaxScaler\nfrom pandas.api.types import is_numeric_dtype "
+        }
+    ],
+    "243905597513106535": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905283491926535": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905979393736535": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905597513106535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905533290346535": [
+        {
+            "PreviouslyGenerated": "minMaxScaler = MinMaxScaler()\nfor column in appleStockDf.columns:\n    if is_numeric_dtype(appleStockDf[column]):\n        appleStockDf[column] = minMaxScaler.fit_transform(appleStockDf[ [column] ]) ",
+            "Existing": "minMaxScaler = MinMaxScaler()\nfor column in appleStockDf.columns:\n    if is_numeric_dtype(appleStockDf[column]):\n        appleStockDf[column] = minMaxScaler.fit_transform(appleStockDf[ [column] ]) "
+        }
+    ],
+    "013905469178146535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)2 ",
+            "Existing": "print(appleStockDf.head()) #)2 "
+        }
+    ],
+    "013905669051656535": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905154129976535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905891650136535": [
+        {
+            "PreviouslyGenerated": "scaleColumn = appleStockDf[ ['High', 'Low'] ]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf[ ['High', 'Low'] ] = scaleColumn ",
+            "Existing": "scaleColumn = appleStockDf[ ['High', 'Low'] ]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf[ ['High', 'Low'] ] = scaleColumn "
+        }
+    ],
+    "013905337314916535": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905970414116535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)5 ",
+            "Existing": "print(appleStockDf.head()) #)5 "
+        }
+    ],
+    "013905989842276535": [
+        {
+            "PreviouslyGenerated": "scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn ",
+            "Existing": "scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn "
+        }
+    ],
+    "033905115063196535": [
+        {
+            "PreviouslyGenerated": "arcticFoxNormalize.analyzeVariables([ (value, eval(value)) for value in arcticFoxNormalize.variables(dir() + ['appleStockDf'] )] ) ",
+            "Existing": "arcticFoxNormalize.analyzeVariables([ (value, eval(value)) for value in arcticFoxNormalize.variables(dir() + ['appleStockDf'] )] ) "
+        },
+        {
+            "PreviouslyGenerated": "arcticFoxNormalize.analyzeVariables([ (value, eval(value)) for value in arcticFoxNormalize.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxNormalize.analyzeVariables([ (value, eval(value)) for value in arcticFoxNormalize.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905115063196535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)4 ",
+            "Existing": "print(appleStockDf.head()) #)4 "
+        }
+    ],
+    "013905337828356535": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905755606206535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)5 ",
+            "Existing": "print(appleStockDf.head()) #)5 "
+        }
+    ],
+    "013905996478006535": [
+        {
+            "PreviouslyGenerated": "scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn ",
+            "Existing": "scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn "
+        }
+    ],
+    "013905895317046535": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)6 ",
+            "Existing": "print(appleStockDf.head()) #)6 "
+        }
+    ]
+}

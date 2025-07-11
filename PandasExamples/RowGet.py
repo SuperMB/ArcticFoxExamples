@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Pizzerias.csv 
 pizzeriasDf = pd.read_csv('Pizzerias.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Pizzeria Name
@@ -44,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --index 10 
+#> RowGet --index 10 --example 
 pizzeriasDfRow10 = pizzeriasDf.iloc[10] 
 
 #> print 
@@ -78,7 +76,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --indexStart 20 --indexStop 30 
+#> RowGet --indexStart 20 --indexStop 30 --example 
 pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] 
 
 #> print 
@@ -116,7 +114,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --indexStart 200 
+#> RowGet --indexStart 200 --example 
 pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] 
 
 #> print 
@@ -133,7 +131,7 @@ print(pizzeriasDfRowsStartingAt200) #)6
 ##*** 997  Antonio's Slice of Heaven  Manhattan, NYC       Margherita           $     4.7              Yes             No            2012.0              85.0  www.antonio'ssliceofheaven89.com
 ##*** 998               Rosa's Urban      Bronx, NYC  Buffalo Chicken           $     4.9               No             No            2016.0              31.0             www.rosa'surban61.com
 ##*** 999            Mario's Gourmet     Queens, NYC           Veggie        $$$$     3.2              Yes             No            2001.0              46.0          www.mario'sgourmet18.com
-##*** 
+##***
 ##*** [800 rows x 10 columns]
 
 
@@ -157,7 +155,7 @@ print(pizzeriasDf.head()) #)7
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --indexStop 30 
+#> RowGet --indexStop 30 --example 
 pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] 
 
 #> print 
@@ -215,8 +213,8 @@ print(pizzeriasDf.head()) #)9
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --where _Location_ contains Queens 
-pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].str.contains('Queens').fillna(False)] 
+#> RowGet --where _Location_ contains Queens --example 
+pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)] 
 
 #> print 
 print(pizzeriasDf) #)10 
@@ -232,5 +230,5 @@ print(pizzeriasDf) #)10
 ##*** 978              Mario's Urban  Queens, NYC       Pepperoni         $$$     4.2              Yes             No            2011.0              82.0            www.mario'surban50.com
 ##*** 984          Giovanni's Garden  Queens, NYC       Pepperoni          $$     4.2              Yes             No            2007.0              61.0        www.giovanni'sgarden42.com
 ##*** 999            Mario's Gourmet  Queens, NYC          Veggie        $$$$     3.2              Yes             No            2001.0              46.0          www.mario'sgourmet18.com
-##*** 
+##***
 ##*** [159 rows x 10 columns]

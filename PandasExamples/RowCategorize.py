@@ -1,9 +1,10 @@
-
+ 
 import sys
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -12,9 +13,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Weather.csv 
 weatherDf = pd.read_csv('Weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -70,7 +68,7 @@ print(weatherDfQuantile) #)2
 ##*** 1.00    35.800
 ##*** Name: MaxTemp, dtype: float64
 
-#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40 
+#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40 --example 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) 
 
 #> ColumnRearrange MaxTempCategorized MaxTemp 
@@ -105,7 +103,7 @@ weatherDf = pd.read_csv('weather.csv')
 #> Visualize 
 print(weatherDf.head()) #)4 
 
-#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30 
+#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30 --example 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) 
 
 #> ColumnRearrange MaxTempCategorized MaxTemp 

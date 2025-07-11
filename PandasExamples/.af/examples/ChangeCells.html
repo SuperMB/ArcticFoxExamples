@@ -1,0 +1,41 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ChangeCells</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Change the value of one or more cells. Can change a specific cell, cells in a row, cells in a column, a mix of those, or cells that meet a condition</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: ColumnName(s) to be used, either a single column or a list of columns.</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition to be met for setting the value.</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">value</span>: Value to be set, can be a constant or a variable.</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">rows</span>: Row indices to be used, either a single row or a list of rows.</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">initialValues</span>: Use with --newValues, specifies the value to find in cells to replace</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">newValues</span>: Use with --initialValues, specifies the replacement value to replace the --initialValues with</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">allMatchingRows</span>: Flag indicating all rows matching the condition should be updated.</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">allColumns</span>: Flag indicating all columns should be updated.</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive<span>
+AFLEFT 
+bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location<span>
+AFLEFT 
+bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles') AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows<span>
+AFLEFT 
+bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
+bankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > "06 - 01 - 2023", 'TransactionType' ] = 'Cash' AFRIGHT</span></code></pre>
+</div>  
+

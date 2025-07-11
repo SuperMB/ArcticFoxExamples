@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -13,9 +14,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -60,7 +58,6 @@ print(bankTransactionsDf.head(n=10)) #)1
 ##*** 8      TX000009   AC00135             106.23 2023-03-21 16:59:46          Credit        Detroit  D000690    24.148.92.177       M035  Branch           51           Engineer                   86              1         9095.14     2024-11-04 08:11:14
 ##*** 9      TX000010   AC00385             815.96 2023-03-31 16:06:57           Debit      Nashville  D000199     32.169.88.41       M007     ATM           55             Doctor                  120              1         1021.88     2024-11-04 08:06:32
 
-bankTransactionsDf = bankTransactionsDf.drop(bankTransactionsDf.index[3:9])
 
 #> Visualize --count 10 
 print(bankTransactionsDf.head(n=10)) #)2 
@@ -76,7 +73,7 @@ print(bankTransactionsDf.head(n=10)) #)2
 ##*** 14      TX000015   AC00085             166.99 2023-02-13 16:53:57           Debit   Louisville  D000309  188.124.181.12       M017  Online           18            Student                  134              1          299.93     2024-11-04 08:10:09
 ##*** 15      TX000016   AC00270             465.45 2023-12-12 16:23:31           Debit       Denver  D000466  221.169.49.152       M025     ATM           36           Engineer                  129              1         3465.54     2024-11-04 08:12:19
 
-#> ResetIndexes 
+#> ResetIndexes --example 
 bankTransactionsDf = bankTransactionsDf.reset_index(drop=True) 
 
 #> Visualize --count 10 

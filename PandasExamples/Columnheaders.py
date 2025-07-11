@@ -1,11 +1,12 @@
-
+ 
 import pandas as pd
 import numpy as np 
 
 
 
+
 # Example 1
-# Get the column headers of the pizzeria dataset 
+# Get the column headers of the pizzeria dataset
 # Seed being used: #> ColumnHeaders 
 # ******************************************************
 # ******************************************************
@@ -13,7 +14,7 @@ import numpy as np
 #> Data pizzerias.csv 
 pizzeriasDf = pd.read_csv('pizzerias.csv') 
 
-#> ColumnHeaders 
+#> ColumnHeaders --example 
 # Pizzeria Name
 # Location
 # Specialty Pizza
@@ -27,8 +28,9 @@ pizzeriasDf = pd.read_csv('pizzerias.csv')
 
 
 
+
 # Example 2
-# Switch datasets, and get the column headers of the bank transaction dataset 
+# Switch datasets, and get the column headers of the bank transaction dataset
 # Seed being used: #> ColumnHeaders 
 # ******************************************************
 # ******************************************************
@@ -38,7 +40,7 @@ bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
 
-#> ColumnHeaders 
+#> ColumnHeaders --example 
 # TransactionID
 # AccountID
 # TransactionAmount
@@ -55,3 +57,4 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # LoginAttempts
 # AccountBalance
 # PreviousTransactionDate 
+

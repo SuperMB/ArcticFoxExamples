@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -12,9 +13,6 @@ pd.set_option('display.max_columns', None)
 #> Data AppleStock.csv 
 appleStockDf = pd.read_csv('AppleStock.csv')
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Unnamed
@@ -43,7 +41,7 @@ print(appleStockDf.head()) #)1
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
 
-#> RowSort --columns High 
+#> RowSort --columns High --example 
 appleStockDf = appleStockDf.sort_values(by='High') 
 
 #> Visualize 
@@ -77,7 +75,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> RowSort --columns Volume --order descending 
+#> RowSort --columns Volume --order descending --example 
 appleStockDf = appleStockDf.sort_values(by='Volume', ascending=False) 
 
 #> Visualize 
@@ -112,7 +110,7 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> RowSort --columns High 4 --order descending ascending 
+#> RowSort --columns High 4 --order descending ascending --example 
 appleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True]) 
 
 #> Visualize 

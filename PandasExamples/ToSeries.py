@@ -1,6 +1,4 @@
 
-import pandas as pd 
-
 
 
 # Example 1
@@ -12,5 +10,4 @@ import pandas as pd
 myList = [i ** 2 for i in range(25)]
 
 #> ToSeries 
-iSeries = pd.Series(i) 
 

@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -13,9 +15,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('bankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -36,7 +35,6 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # PreviousTransactionDate 
 
 
-
 # Example 1
 # Get the data types of all columns, and print the result into the file
 # Seed being used: #> ColumnDataTypes --print 
@@ -52,7 +50,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes --print 
+#> ColumnDataTypes --print --example 
 bankTransactionsDfDataTypes = bankTransactionsDf.dtypes
 print(bankTransactionsDfDataTypes) #)2 
 ##*** TransactionID                      object
@@ -90,7 +88,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes TransactionAmount --print 
+#> ColumnDataTypes TransactionAmount --print --example 
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'TransactionAmount' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)4 
 ##*** TransactionAmount    float64
@@ -113,7 +111,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print 
+#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --example 
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'PreviousTransactionDate' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)6 
 ##*** AccountID                          object

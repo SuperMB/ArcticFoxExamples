@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -13,9 +15,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -42,7 +41,7 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # in the dataframe. The column variable will be a string
 # for each column name in the dataframe. The column variable
 # can then be used in other seeds or to do column wise operations
-# within the dataframe. 
+# within the dataframe.
 #
 # Seed being used: #> ColumnFor 
 # ******************************************************
@@ -57,11 +56,10 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnFor 
+#> ColumnFor --example 
 for column in bankTransactionsDf.columns: 
     if 'ID' in column:
         #> ColumnRename --columns column --replace ID --with Number 
-        # User changes detected
         bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')}) 
 
 #> Visualize 
@@ -72,3 +70,4 @@ print(bankTransactionsDf.head()) #)2
 ##*** 2          TX000003       AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa      D000235  215.97.143.157           M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3          TX000004       AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh      D000187  200.13.225.150           M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4          TX000005       AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta      D000308    65.164.3.100           M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
+

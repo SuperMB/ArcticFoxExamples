@@ -1,4 +1,4 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -12,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Weather.csv 
 weatherDf = pd.read_csv('Weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -56,7 +53,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMode Cloud3pm --print 
+#> ColumnMode Cloud3pm --print --example 
 weatherDfMode = weatherDf['Cloud3pm'].mode()
 print(weatherDfMode) #)2 
 ##*** 0    1
@@ -79,7 +76,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMode Humidity3pm Humidity9am Temp3pm --print 
+#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --example 
 weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()
 print(weatherDfMode) #)4 
 ##***    Humidity3pm  Humidity9am  Temp3pm
@@ -104,11 +101,14 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe 
-weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].mode()
-weatherDfMode.name = 'MaxTempMode'
+#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe --example 
+weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()
+weatherDfMode = pd.DataFrame(weatherDfMode).reset_index()
+weatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'
 
 weatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left') 
+
+
 
 #> Visualize --count 10 
 print(weatherDf.head(n=10)) #)6 

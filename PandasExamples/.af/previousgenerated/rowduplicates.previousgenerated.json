@@ -1,0 +1,152 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowDuplicates ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowDuplicates "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905693914120302": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905779855760302": [
+        {
+            "PreviouslyGenerated": "dfRandomData = {\n    'Column1': np.random.randint(1, 101, size=10000),\n    'Column2': np.random.randint(1, 101, size=10000),\n    'Column3': np.random.randint(1, 101, size=10000),\n}\n\ndf = pd.DataFrame(dfRandomData) ",
+            "Existing": "dfRandomData = {\n    'Column1': np.random.randint(1, 101, size=10000),\n    'Column2': np.random.randint(1, 101, size=10000),\n    'Column3': np.random.randint(1, 101, size=10000),\n}\n\ndf = pd.DataFrame(dfRandomData) "
+        }
+    ],
+    "013905693914120302": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905510974810302": [
+        {
+            "PreviouslyGenerated": "# Column1\n# Column2\n# Column3 ",
+            "Existing": "# Column1\n# Column2\n# Column3 "
+        }
+    ],
+    "013905714261190302": [
+        {
+            "PreviouslyGenerated": "print(type) #)1 ",
+            "Existing": "print(type) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(type) #)2 ",
+            "Existing": "print(type) #)2 "
+        },
+        {
+            "PreviouslyGenerated": "print(duplicateRowsCount) #)2 ",
+            "Existing": "print(duplicateRowsCount) #)2 "
+        }
+    ],
+    "013905718425010302": [
+        {
+            "PreviouslyGenerated": "print(type) #)3 ",
+            "Existing": "print(type) #)3 "
+        },
+        {
+            "PreviouslyGenerated": "print(type) #)4 ",
+            "Existing": "print(type) #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(duplicateRows) #)4 ",
+            "Existing": "print(duplicateRows) #)4 "
+        }
+    ],
+    "013905981258020302": [
+        {
+            "PreviouslyGenerated": "print(duplicateRows.head()) #)4 ",
+            "Existing": "print(duplicateRows.head()) #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(duplicateRows.head()) #)5 ",
+            "Existing": "print(duplicateRows.head()) #)5 "
+        }
+    ],
+    "013905454760480302": [
+        {
+            "PreviouslyGenerated": "duplicateRowsRowCount = duplicateRows.shape[0]\nprint(duplicateRowsRowCount) #)5 ",
+            "Existing": "duplicateRowsRowCount = duplicateRows.shape[0]\nprint(duplicateRowsRowCount) #)5 "
+        },
+        {
+            "PreviouslyGenerated": "duplicateRowsRowCount = duplicateRows.shape[0]\nprint(duplicateRowsRowCount) #)6 ",
+            "Existing": "duplicateRowsRowCount = duplicateRows.shape[0]\nprint(duplicateRowsRowCount) #)6 "
+        }
+    ],
+    "013905999226040302": [
+        {
+            "PreviouslyGenerated": "duplicateRows = duplicateRows.drop_duplicates(keep='first') ",
+            "Existing": "duplicateRows = duplicateRows.drop_duplicates(keep='first') "
+        }
+    ],
+    "013905340931840302": [
+        {
+            "PreviouslyGenerated": "duplicateRowsRowCount_1 = duplicateRows.shape[0]\nprint(duplicateRowsRowCount_1) #)6 ",
+            "Existing": "duplicateRowsRowCount_1 = duplicateRows.shape[0]\nprint(duplicateRowsRowCount_1) #)6 "
+        },
+        {
+            "PreviouslyGenerated": "duplicateRowsRowCount_1 = duplicateRows.shape[0]\nprint(duplicateRowsRowCount_1) #)7 ",
+            "Existing": "duplicateRowsRowCount_1 = duplicateRows.shape[0]\nprint(duplicateRowsRowCount_1) #)7 "
+        }
+    ],
+    "013905301368160302": [
+        {
+            "PreviouslyGenerated": "print(duplicateRows.head()) #)7 ",
+            "Existing": "print(duplicateRows.head()) #)7 "
+        },
+        {
+            "PreviouslyGenerated": "print(duplicateRows.head()) #)8 ",
+            "Existing": "print(duplicateRows.head()) #)8 "
+        }
+    ],
+    "033905416754740302": [
+        {
+            "PreviouslyGenerated": "arcticFoxRowDuplicates.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowDuplicates.variables(dir() + ['columns', 'type'] )] ) ",
+            "Existing": "arcticFoxRowDuplicates.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowDuplicates.variables(dir() + ['columns', 'type'] )] ) "
+        }
+    ],
+    "033905465317440302": [
+        {
+            "PreviouslyGenerated": "arcticFoxRowDuplicates.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowDuplicates.variables(dir() + ['columns'] )] ) ",
+            "Existing": "arcticFoxRowDuplicates.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowDuplicates.variables(dir() + ['columns'] )] ) "
+        }
+    ],
+    "013905465317440302": [
+        {
+            "PreviouslyGenerated": "print(df.head()) #)1 ",
+            "Existing": "print(df.head()) #)1 "
+        }
+    ],
+    "013905416754740302": [
+        {
+            "PreviouslyGenerated": "duplicateRowsCount = df[df.duplicated()].shape[0] ",
+            "Existing": "duplicateRowsCount = df[df.duplicated()].shape[0] "
+        }
+    ],
+    "013905164821370302": [
+        {
+            "PreviouslyGenerated": "print(df.head()) #)3 ",
+            "Existing": "print(df.head()) #)3 "
+        }
+    ],
+    "013905131412220302": [
+        {
+            "PreviouslyGenerated": "duplicateRows = df[df.duplicated()] ",
+            "Existing": "duplicateRows = df[df.duplicated()] "
+        }
+    ],
+    "243905465317440302": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

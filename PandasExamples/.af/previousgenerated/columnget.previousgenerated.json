@@ -1,0 +1,92 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnGet ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnGet "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905143736389468": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905327610759468": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905143736389468": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905529670849468": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905720964089468": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905164459719468": [
+        {
+            "PreviouslyGenerated": "rating = pizzeriasDf['Rating'] ",
+            "Existing": "rating = pizzeriasDf['Rating'] "
+        }
+    ],
+    "013905116331669468": [
+        {
+            "PreviouslyGenerated": "print(rating) #)2 ",
+            "Existing": "print(rating) #)2 "
+        }
+    ],
+    "013905849016869468": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905976853989468": [
+        {
+            "PreviouslyGenerated": "print('location') #)4 ",
+            "Existing": "print('location') #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(location) #)4 ",
+            "Existing": "print(location) #)4 "
+        }
+    ],
+    "013905148672789468": [
+        {
+            "PreviouslyGenerated": "print('specialtyPizza') #)5 ",
+            "Existing": "print('specialtyPizza') #)5 "
+        },
+        {
+            "PreviouslyGenerated": "print(specialtyPizza) #)5 ",
+            "Existing": "print(specialtyPizza) #)5 "
+        }
+    ],
+    "033905962358919468": [
+        {
+            "PreviouslyGenerated": "arcticFoxColumnGet.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnGet.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxColumnGet.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnGet.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905962358919468": [
+        {
+            "PreviouslyGenerated": "location = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza'] ",
+            "Existing": "location = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza'] "
+        }
+    ]
+}

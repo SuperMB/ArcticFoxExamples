@@ -1,0 +1,74 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905151310407808": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905559762197808": [
+        {
+            "PreviouslyGenerated": "storesDf = pd.read_csv('stores.csv')\nstoresDf['DateOpened'] = pd.to_datetime(storesDf['DateOpened']) ",
+            "Existing": "storesDf = pd.read_csv('stores.csv')\nstoresDf['DateOpened'] = pd.to_datetime(storesDf['DateOpened']) "
+        }
+    ],
+    "013905341699397808": [
+        {
+            "PreviouslyGenerated": "# StoreId\n# Name\n# Address\n# DateOpened ",
+            "Existing": "# StoreId\n# Name\n# Address\n# DateOpened "
+        }
+    ],
+    "013905151310407808": [
+        {
+            "PreviouslyGenerated": "print(storesDf.head()) #)1 ",
+            "Existing": "print(storesDf.head()) #)1 "
+        }
+    ],
+    "013905833825837808": [
+        {
+            "PreviouslyGenerated": "salesDf = pd.read_csv('sales.csv')\nsalesDf['SaleDate'] = pd.to_datetime(salesDf['SaleDate']) ",
+            "Existing": "salesDf = pd.read_csv('sales.csv')\nsalesDf['SaleDate'] = pd.to_datetime(salesDf['SaleDate']) "
+        }
+    ],
+    "013905748900737808": [
+        {
+            "PreviouslyGenerated": "# SaleId\n# CustomerId\n# Flower\n# Quantity\n# TotalSale\n# SaleDate\n# StoreId ",
+            "Existing": "# SaleId\n# CustomerId\n# Flower\n# Quantity\n# TotalSale\n# SaleDate\n# StoreId "
+        }
+    ],
+    "013905784337387808": [
+        {
+            "PreviouslyGenerated": "print(salesDf.head()) #)2 ",
+            "Existing": "print(salesDf.head()) #)2 "
+        }
+    ],
+    "013905578618907808": [
+        {
+            "PreviouslyGenerated": "# selected left  table: storesDf\n# selected right table: salesDf\nstoresDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') ",
+            "Existing": "# selected left  table: storesDf\n# selected right table: salesDf\nstoresDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') "
+        }
+    ],
+    "013905485344227808": [
+        {
+            "PreviouslyGenerated": "print(storesDfSalesDfJoin.head()) #)3 ",
+            "Existing": "print(storesDfSalesDfJoin.head()) #)3 "
+        }
+    ],
+    "013905584386987808": [
+        {
+            "PreviouslyGenerated": "salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') ",
+            "Existing": "salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') "
+        }
+    ],
+    "013905115238337808": [
+        {
+            "PreviouslyGenerated": "print(salesDfStoresDfJoin.head()) #)4 ",
+            "Existing": "print(salesDfStoresDfJoin.head()) #)4 "
+        }
+    ]
+}

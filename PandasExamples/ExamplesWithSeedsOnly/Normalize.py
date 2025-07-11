@@ -1,5 +1,5 @@
 
-#> DontProcessFile  
+#> DontProcessFile 
 # Setup
 # ******************************************************
 # ******************************************************
@@ -39,7 +39,7 @@
 
 #> Normalize --columns High Low --minMax 
 
-#> Visualize  
+#> Visualize 
 
 
 

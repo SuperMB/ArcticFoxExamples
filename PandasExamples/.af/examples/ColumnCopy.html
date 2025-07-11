@@ -1,0 +1,27 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnCopy</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a copy of a column within a datframe</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to copy</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for column copy</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">to</span>: Specifies the new column name</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCopy Specialty Pizza --to Old Specialty Pizza<span>
+AFLEFT 
+pizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza'] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCopy Rating Website --to PreviousRating PreviousWebsite<span>
+AFLEFT 
+pizzeriasDf['PreviousRating'] = pizzeriasDf['Rating']
+pizzeriasDf['PreviousWebsite'] = pizzeriasDf['Website'] AFRIGHT</span></code></pre>
+</div>  
+

@@ -1,21 +1,16 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
 
-
-
 # Setup
 # ******************************************************
 # ******************************************************
 
-#> Data pizzerias.csv 
-pizzeriasDf = pd.read_csv('pizzerias.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
+#> Data Pizzerias.csv 
+pizzeriasDf = pd.read_csv('Pizzerias.csv') 
 
 #> ColumnHeaders 
 # Pizzeria Name
@@ -28,6 +23,7 @@ pizzeriasDf = pd.read_csv('pizzerias.csv')
 # Established Year
 # Seating Capacity
 # Website 
+
 
 
 
@@ -46,8 +42,8 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> CleanData --removeMissing 
-pizzeriasDf = pizzeriasDf.dropna() 
+#> CleanData --removeMissing --example 
+pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
 print(pizzeriasDf.head()) #)2 

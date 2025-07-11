@@ -1,0 +1,44 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905265999302363": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905604913242363": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905584753122363": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905265999302363": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905863746062363": [
+        {
+            "PreviouslyGenerated": "for row in appleStockDf.iterrows(): ",
+            "Existing": "for row in appleStockDf.iterrows(): "
+        }
+    ],
+    "013905106040822363": [
+        {
+            "PreviouslyGenerated": "print(maxDifference) #)2 ",
+            "Existing": "print(maxDifference) #)2 "
+        }
+    ]
+}

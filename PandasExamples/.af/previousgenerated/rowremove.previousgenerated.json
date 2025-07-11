@@ -1,0 +1,572 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905411512431382": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905218935931382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905411512431382": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905809393431382": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905424815941382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905280655221382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) "
+        }
+    ],
+    "013905514319041382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)2 ",
+            "Existing": "print(pizzeriasDf.head()) #)2 "
+        }
+    ],
+    "013905780466961382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905929866811382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905194135191382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) "
+        }
+    ],
+    "013905587496761382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)4 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)4 "
+        }
+    ],
+    "013905506387131382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905875383851382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905466464041382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) "
+        }
+    ],
+    "013905684469771382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)6 ",
+            "Existing": "print(pizzeriasDf.head()) #)6 "
+        }
+    ],
+    "013905226588041382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905684178651382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)7 ",
+            "Existing": "print(pizzeriasDf.head()) #)7 "
+        }
+    ],
+    "013905489159441382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) "
+        }
+    ],
+    "013905898913401382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)8 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)8 "
+        }
+    ],
+    "013905193171381382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905687011481382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)9 ",
+            "Existing": "print(pizzeriasDf.head()) #)9 "
+        }
+    ],
+    "013905253601211382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905431043231382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)10 ",
+            "Existing": "print(pizzeriasDf.head()) #)10 "
+        }
+    ],
+    "013905326660251382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905707650251382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)11 ",
+            "Existing": "print(pizzeriasDf.head()) #)11 "
+        }
+    ],
+    "013905361578611382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905896559641382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)12 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)12 "
+        }
+    ],
+    "013905784602351382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905330974281382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)13 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)13 "
+        }
+    ],
+    "013905850114291382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) "
+        }
+    ],
+    "013905698286691382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)14 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)14 "
+        }
+    ],
+    "243905139771351382": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905184668951382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905139771351382": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905306186141382": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905363898741382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905792225161382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) "
+        }
+    ],
+    "013905618301921382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)2 ",
+            "Existing": "print(pizzeriasDf.head()) #)2 "
+        }
+    ],
+    "013905929380521382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905707473191382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905461069081382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) "
+        }
+    ],
+    "013905485779401382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)4 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)4 "
+        }
+    ],
+    "013905931162791382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905476052281382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905446840631382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) "
+        }
+    ],
+    "013905230550271382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)6 ",
+            "Existing": "print(pizzeriasDf.head()) #)6 "
+        }
+    ],
+    "013905681423561382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905223430601382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)7 ",
+            "Existing": "print(pizzeriasDf.head()) #)7 "
+        }
+    ],
+    "013905360442821382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) "
+        }
+    ],
+    "013905418965161382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)8 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)8 "
+        }
+    ],
+    "013905167613671382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905427713961382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)9 ",
+            "Existing": "print(pizzeriasDf.head()) #)9 "
+        }
+    ],
+    "013905936471551382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905249448301382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)10 ",
+            "Existing": "print(pizzeriasDf.head()) #)10 "
+        }
+    ],
+    "013905982723281382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905968348391382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)11 ",
+            "Existing": "print(pizzeriasDf.head()) #)11 "
+        }
+    ],
+    "013905235201631382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905147189441382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)12 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)12 "
+        }
+    ],
+    "013905517684651382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905664903611382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)13 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)13 "
+        }
+    ],
+    "013905424548531382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) "
+        }
+    ],
+    "013905482179851382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)14 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)14 "
+        }
+    ],
+    "243905604141981382": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905680215221382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905604141981382": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905260682521382": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905329401321382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905507429311382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) "
+        }
+    ],
+    "013905742477431382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)2 ",
+            "Existing": "print(pizzeriasDf.head()) #)2 "
+        }
+    ],
+    "013905303377611382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905478261351382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905807926031382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) "
+        }
+    ],
+    "013905600644001382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)4 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)4 "
+        }
+    ],
+    "013905900010101382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905440509361382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905738935841382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) "
+        }
+    ],
+    "013905573321041382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)6 ",
+            "Existing": "print(pizzeriasDf.head()) #)6 "
+        }
+    ],
+    "013905838415721382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905681065421382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)7 ",
+            "Existing": "print(pizzeriasDf.head()) #)7 "
+        }
+    ],
+    "013905260256231382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) "
+        }
+    ],
+    "013905293422341382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)8 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)8 "
+        }
+    ],
+    "013905235258021382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905783604141382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)9 ",
+            "Existing": "print(pizzeriasDf.head()) #)9 "
+        }
+    ],
+    "013905166070401382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905550599181382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)10 ",
+            "Existing": "print(pizzeriasDf.head()) #)10 "
+        }
+    ],
+    "013905971462111382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905690198611382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)11 ",
+            "Existing": "print(pizzeriasDf.head()) #)11 "
+        }
+    ],
+    "013905298455141382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) "
+        }
+    ],
+    "013905389555011382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)12 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)12 "
+        }
+    ],
+    "013905127844621382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905260021791382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)13 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)13 "
+        }
+    ],
+    "013905214661921382": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) ",
+            "Existing": "pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) "
+        }
+    ],
+    "013905408231091382": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head(n=10)) #)14 ",
+            "Existing": "print(pizzeriasDf.head(n=10)) #)14 "
+        }
+    ],
+    "243905329401321382": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

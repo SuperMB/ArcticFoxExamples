@@ -1,0 +1,116 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905280437566875": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905493051766875": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905646993276875": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905280437566875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905199946876875": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') ",
+            "Existing": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') "
+        }
+    ],
+    "013905274524576875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfPivot) #)2 ",
+            "Existing": "print(bankTransactionsDfPivot) #)2 "
+        }
+    ],
+    "013905731537386875": [
+        {
+            "PreviouslyGenerated": "# Setting focus to bankTransactionsDf ",
+            "Existing": "# Setting focus to bankTransactionsDf "
+        }
+    ],
+    "013905681642546875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905639467326875": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') ",
+            "Existing": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') "
+        }
+    ],
+    "013905335083406875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfPivot) #)4 ",
+            "Existing": "print(bankTransactionsDfPivot) #)4 "
+        }
+    ],
+    "013905465382266875": [
+        {
+            "PreviouslyGenerated": "# Setting focus to bankTransactionsDf ",
+            "Existing": "# Setting focus to bankTransactionsDf "
+        }
+    ],
+    "013905302088056875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)5 ",
+            "Existing": "print(bankTransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905471996736875": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') ",
+            "Existing": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') "
+        }
+    ],
+    "013905952003456875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfPivot) #)6 ",
+            "Existing": "print(bankTransactionsDfPivot) #)6 "
+        }
+    ],
+    "013905789815306875": [
+        {
+            "PreviouslyGenerated": "# Setting focus to bankTransactionsDf ",
+            "Existing": "# Setting focus to bankTransactionsDf "
+        }
+    ],
+    "013905409514306875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)7 ",
+            "Existing": "print(bankTransactionsDf.head()) #)7 "
+        }
+    ],
+    "013905778734386875": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum') ",
+            "Existing": "bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum') "
+        }
+    ],
+    "013905355926466875": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfPivot) #)8 ",
+            "Existing": "print(bankTransactionsDfPivot) #)8 "
+        }
+    ]
+}

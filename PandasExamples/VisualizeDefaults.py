@@ -1,6 +1,9 @@
-
+ 
 import pandas as pd
-import numpy as np 
+import numpy as np  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -44,7 +47,7 @@ weatherDf = pd.read_csv('weather.csv')
 #
 # Note: The seed is commented out below since it is a global
 # seed. If it was uncommented, it would impact every Visualize
-# seed in the workspace. 
+# seed in the workspace.
 #
 # Seed being used: #> VisualizeDefaults --allColumns --count 20 
 # ******************************************************

@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -28,7 +30,6 @@ pizzeriasDf = pd.read_csv('pizzerias.csv')
 # Website 
 
 
-
 # Example 1
 # Get a single column
 # Seed being used: #> ColumnGet Rating 
@@ -44,7 +45,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> ColumnGet Rating 
+#> ColumnGet Rating --example 
 rating = pizzeriasDf['Rating'] 
 
 #> print 
@@ -54,7 +55,7 @@ print(rating) #)2
 ##*** 2      3.1
 ##*** 3      3.1
 ##*** 4      NaN
-##***       ... 
+##***       ...
 ##*** 995    3.5
 ##*** 996    4.2
 ##*** 997    4.7
@@ -79,8 +80,9 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> ColumnGet Location Specialty  Pizza 
-location = pizzeriasDf['Location'] 
+#> ColumnGet Location Specialty  Pizza --example 
+location = pizzeriasDf['Location']
+specialtyPizza = pizzeriasDf['Specialty Pizza'] 
 
 #> print location 
 print(location) #)4 
@@ -89,7 +91,7 @@ print(location) #)4
 ##*** 2             Queens, NYC
 ##*** 3                     NaN
 ##*** 4      Staten Island, NYC
-##***               ...        
+##***               ...
 ##*** 995         Brooklyn, NYC
 ##*** 996        Manhattan, NYC
 ##*** 997        Manhattan, NYC
@@ -98,5 +100,16 @@ print(location) #)4
 ##*** Name: Location, Length: 1000, dtype: object
 
 #> print specialtyPizza 
-print('specialtyPizza') #)5 
-##*** specialtyPizza
+print(specialtyPizza) #)5 
+##*** 0             Hawaiian
+##*** 1             Hawaiian
+##*** 2                  NaN
+##*** 3             Hawaiian
+##*** 4      Buffalo Chicken
+##***             ...
+##*** 995         Margherita
+##*** 996    Buffalo Chicken
+##*** 997         Margherita
+##*** 998    Buffalo Chicken
+##*** 999             Veggie
+##*** Name: Specialty Pizza, Length: 1000, dtype: object

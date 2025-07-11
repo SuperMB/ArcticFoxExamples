@@ -1,0 +1,74 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905540906200776": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905884687660776": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('weather.csv') "
+        }
+    ],
+    "013905468784750776": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905540906200776": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905408324340776": [
+        {
+            "PreviouslyGenerated": "weatherDfMin = weatherDf['WindGustSpeed'].min()\nprint(weatherDfMin) #)2 ",
+            "Existing": "weatherDfMin = weatherDf['WindGustSpeed'].min()\nprint(weatherDfMin) #)2 "
+        }
+    ],
+    "013905547622010776": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905702050940776": [
+        {
+            "PreviouslyGenerated": "weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()\nprint(weatherDfMin) #)4 ",
+            "Existing": "weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()\nprint(weatherDfMin) #)4 "
+        }
+    ],
+    "013905854435690776": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ],
+    "013905287281350776": [
+        {
+            "PreviouslyGenerated": "weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()\nweatherDfMinRolling3.name = 'SunshineMinRolling3'\nweatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3'] ",
+            "Existing": "weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()\nweatherDfMinRolling3.name = 'SunshineMinRolling3'\nweatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3'] "
+        }
+    ],
+    "013905205427610776": [
+        {
+            "PreviouslyGenerated": "# Setting focus to weatherDf ",
+            "Existing": "# Setting focus to weatherDf "
+        }
+    ],
+    "013905950745870776": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head(n=30)) #)6 ",
+            "Existing": "print(weatherDf.head(n=30)) #)6 "
+        }
+    ]
+}

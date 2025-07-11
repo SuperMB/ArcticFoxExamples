@@ -1,0 +1,170 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905728256323404": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905589111483404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905965512783404": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905728256323404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905512009843404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf[appleStockDf['Open'] > 150] ",
+            "Existing": "appleStockDf = appleStockDf[appleStockDf['Open'] > 150] "
+        }
+    ],
+    "013905458008093404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)2 ",
+            "Existing": "print(appleStockDf.head()) #)2 "
+        }
+    ],
+    "013905371617673404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905679043543404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905282471323404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] ",
+            "Existing": "appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] "
+        }
+    ],
+    "013905398548543404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)4 ",
+            "Existing": "print(appleStockDf.head()) #)4 "
+        }
+    ],
+    "013905852436183404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905234604653404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)5 ",
+            "Existing": "print(appleStockDf.head()) #)5 "
+        }
+    ],
+    "013905461441253404": [
+        {
+            "PreviouslyGenerated": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] ",
+            "Existing": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] "
+        }
+    ],
+    "013905665358023404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)6 ",
+            "Existing": "print(appleStockDf.head()) #)6 "
+        }
+    ],
+    "013905448218383404": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905713715463404": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)7 ",
+            "Existing": "print(bankTransactionsDf.head()) #)7 "
+        }
+    ],
+    "013905857838513404": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] ",
+            "Existing": "bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] "
+        }
+    ],
+    "013905433629743404": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)8 ",
+            "Existing": "print(bankTransactionsDf.head()) #)8 "
+        }
+    ],
+    "013905444655853404": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905266916503404": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)9 ",
+            "Existing": "print(bankTransactionsDf.head()) #)9 "
+        }
+    ],
+    "013905636486383404": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] ",
+            "Existing": "bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] "
+        }
+    ],
+    "013905835715333404": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)10 ",
+            "Existing": "print(bankTransactionsDf.head()) #)10 "
+        }
+    ],
+    "013905574271253404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905701293183404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)11 ",
+            "Existing": "print(appleStockDf.head()) #)11 "
+        }
+    ],
+    "013905447954333404": [
+        {
+            "PreviouslyGenerated": "appleStockDfMedian = appleStockDf['High'].median() ",
+            "Existing": "appleStockDfMedian = appleStockDf['High'].median() "
+        }
+    ],
+    "013905803598183404": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] ",
+            "Existing": "appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] "
+        }
+    ],
+    "013905978170783404": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)12 ",
+            "Existing": "print(appleStockDf.head()) #)12 "
+        }
+    ]
+}

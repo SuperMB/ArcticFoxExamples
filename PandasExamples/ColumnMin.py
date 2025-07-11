@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -11,9 +13,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data weather.csv 
 weatherDf = pd.read_csv('weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -55,7 +54,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMin WindGustSpeed --print 
+#> ColumnMin WindGustSpeed --print --example 
 weatherDfMin = weatherDf['WindGustSpeed'].min()
 print(weatherDfMin) #)2 
 ##*** 13.0
@@ -77,7 +76,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMin Humidity3pm Humidity9am Temp3pm --print 
+#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --example 
 weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
 print(weatherDfMin) #)4 
 ##*** Humidity3pm    13.0
@@ -103,7 +102,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe 
+#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe --example 
 weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()
 weatherDfMinRolling3.name = 'SunshineMinRolling3'
 weatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)
@@ -111,10 +110,11 @@ weatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()
 weatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})
 weatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')
 weatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()
-weatherDfMinRolling3['SunshineMinRolling3'] = weatherDfMinRolling3Df['SunshineMinRolling3'] 
+weatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3'] 
 
 #> Focus weatherDf 
 # Setting focus to weatherDf 
+
 
 #> Visualize --count 30 
 print(weatherDf.head(n=30)) #)6 

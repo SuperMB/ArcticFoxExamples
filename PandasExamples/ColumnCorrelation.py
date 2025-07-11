@@ -1,4 +1,4 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -14,9 +14,6 @@ pd.set_option('display.max_columns', None)
 #> Data AppleStock.csv 
 appleStockDf = pd.read_csv('AppleStock.csv')
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Unnamed
@@ -44,7 +41,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation 
+#> ColumnCorrelation --example 
 appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])
 appleStockDfCorrelation = appleStockDfNumericOnly.corr() 
 
@@ -79,7 +76,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation --columns High Low Volume 
+#> ColumnCorrelation --columns High Low Volume --example 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() 
 
 #> print 
@@ -110,7 +107,7 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation --columns High Low Volume --where _High_ > 1.10 * _Open_ 
+#> ColumnCorrelation --columns High Low Volume --where _High_ > 1.10 * _Open_  --example 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() 
 
 #> print 

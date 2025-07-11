@@ -1,0 +1,80 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905629628393258": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905512042513258": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905653596983258": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905629628393258": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905841590363258": [
+        {
+            "PreviouslyGenerated": "weatherDfStd = weatherDf['Humidity3pm'].std() ",
+            "Existing": "weatherDfStd = weatherDf['Humidity3pm'].std() "
+        }
+    ],
+    "013905279807813258": [
+        {
+            "PreviouslyGenerated": "print(weatherDfStd) #)2 ",
+            "Existing": "print(weatherDfStd) #)2 "
+        }
+    ],
+    "013905346176433258": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)3 ",
+            "Existing": "print(weatherDf.head()) #)3 "
+        }
+    ],
+    "013905427804533258": [
+        {
+            "PreviouslyGenerated": "weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() ",
+            "Existing": "weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() "
+        }
+    ],
+    "013905799218653258": [
+        {
+            "PreviouslyGenerated": "print(weatherDfStd) #)4 ",
+            "Existing": "print(weatherDfStd) #)4 "
+        }
+    ],
+    "013905875073633258": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)5 ",
+            "Existing": "print(weatherDf.head()) #)5 "
+        }
+    ],
+    "013905986978323258": [
+        {
+            "PreviouslyGenerated": "weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()\nweatherDfStd = pd.DataFrame(weatherDfStd).reset_index() ",
+            "Existing": "weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()\nweatherDfStd = pd.DataFrame(weatherDfStd).reset_index() "
+        }
+    ],
+    "013905312077093258": [
+        {
+            "PreviouslyGenerated": "print(weatherDfStd) #)6 ",
+            "Existing": "print(weatherDfStd) #)6 "
+        }
+    ]
+}

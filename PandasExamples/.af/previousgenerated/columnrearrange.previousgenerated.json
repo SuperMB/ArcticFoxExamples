@@ -1,0 +1,188 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905279785106735": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905633320776735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905132931456735": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905279785106735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905950320376735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['DeviceID']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['DeviceID']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] "
+        }
+    ],
+    "013905306520996735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)2 ",
+            "Existing": "print(bankTransactionsDf.head()) #)2 "
+        }
+    ],
+    "013905796879776735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905719500256735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905679430946735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] "
+        }
+    ],
+    "013905511767716735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)4 ",
+            "Existing": "print(bankTransactionsDf.head()) #)4 "
+        }
+    ],
+    "013905662708966735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905862948206735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)5 ",
+            "Existing": "print(bankTransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905433548286735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = [bankTransactionsDf.columns[3]]\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] ",
+            "Existing": "columnsToMove = [bankTransactionsDf.columns[3]]\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] "
+        }
+    ],
+    "013905198432776735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)6 ",
+            "Existing": "print(bankTransactionsDf.head()) #)6 "
+        }
+    ],
+    "013905313904426735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905464399176735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)7 ",
+            "Existing": "print(bankTransactionsDf.head()) #)7 "
+        }
+    ],
+    "013905507280546735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove] "
+        }
+    ],
+    "013905338867586735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)8 ",
+            "Existing": "print(bankTransactionsDf.head()) #)8 "
+        }
+    ],
+    "013905522666606735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905639994566735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)9 ",
+            "Existing": "print(bankTransactionsDf.head()) #)9 "
+        }
+    ],
+    "013905281933006735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['IP Address']\n[3] = [3]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [3]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns] ",
+            "Existing": "columnsToMove = ['IP Address']\n[3] = [3]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [3]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns] "
+        }
+    ],
+    "013905678542146735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)10 ",
+            "Existing": "print(bankTransactionsDf.head()) #)10 "
+        }
+    ],
+    "013905735727586735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905593771866735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)11 ",
+            "Existing": "print(bankTransactionsDf.head()) #)11 "
+        }
+    ],
+    "013905510257126735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']\n[2, 4, 6] = [2, 4, 6]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [2, 4, 6]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns] ",
+            "Existing": "columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']\n[2, 4, 6] = [2, 4, 6]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [2, 4, 6]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns] "
+        }
+    ],
+    "013905270071656735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)12 ",
+            "Existing": "print(bankTransactionsDf.head()) #)12 "
+        }
+    ],
+    "013905964223556735": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905119114836735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)13 ",
+            "Existing": "print(bankTransactionsDf.head()) #)13 "
+        }
+    ],
+    "013905356571776735": [
+        {
+            "PreviouslyGenerated": "columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]\ncolumnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove\nbankTransactionsDf = bankTransactionsDf[columnsToMove] ",
+            "Existing": "columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]\ncolumnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove\nbankTransactionsDf = bankTransactionsDf[columnsToMove] "
+        }
+    ],
+    "013905127733876735": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)14 ",
+            "Existing": "print(bankTransactionsDf.head()) #)14 "
+        }
+    ]
+}

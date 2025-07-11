@@ -1,16 +1,16 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
 
+
 # Setup
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
+# None
 
 
 
@@ -48,7 +48,7 @@ print(bankTransactionsDf.head()) #)2
 # Decide you want to switch back to the first dataframe
 # Use the Focus seed to shift Arctic Fox's variable target
 # back to the original dataframe
-#> Focus appleStockDf 
+#> Focus appleStockDf --example 
 # Setting focus to appleStockDf 
 
 # Do operations on the dataframe in focus
@@ -69,7 +69,7 @@ appleStockDfQuantile3 = appleStockDfQuantile.iloc[3]
 
 # Load in other dataframes
 #> Data Weather.csv 
-weatherDf = pd.read_csv('weather.csv') 
+weatherDf = pd.read_csv('Weather.csv') 
 
 #> Data Pizzerias.csv 
 pizzeriasDf = pd.read_csv('Pizzerias.csv') 
@@ -77,14 +77,18 @@ pizzeriasDf = pd.read_csv('Pizzerias.csv')
 # Use Focus guide to get prepopulated list of variables
 # to select from
 
-#> Focus ? 
+#> Focus ? --example 
+#***Focus: Changes the focus for following seeds to the specified dataframe or variable
+#***
 #***Please select which variable to make the Focus:
-#***- appleStockDf #> `select appleStockDf 
-#***- bankTransactionsDf #> `select bankTransactionsDf 
-#***- appleStockDfQuantile #> `select appleStockDfQuantile 
-#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0 
-#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1 
-#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2 
-#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3 
-#***- weatherDf #> `select weatherDf 
-#***- pizzeriasDf #> `select pizzeriasDf 
+#***- appleStockDf #> `select appleStockDf
+#***- bankTransactionsDf #> `select bankTransactionsDf
+#***- appleStockDfQuantile #> `select appleStockDfQuantile
+#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0
+#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1
+#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2
+#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3
+#***- weatherDf #> `select weatherDf
+#***- pizzeriasDf #> `select pizzeriasDf
+
+

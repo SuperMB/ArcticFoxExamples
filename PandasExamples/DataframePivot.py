@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -13,9 +14,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -53,7 +51,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> DataframePivot --rows Location --cells TransactionAmount --sum 
+#> DataframePivot --rows Location --cells TransactionAmount --sum --example 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') 
 
 #> print 
@@ -126,7 +124,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max 
+#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max --example 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') 
 
 #> print 
@@ -200,7 +198,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count 
+#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count --example 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') 
 
 #> print 
@@ -274,7 +272,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum 
+#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum --example 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum') 
 
 #> print 

@@ -1,0 +1,56 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905797054125532": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905498322965532": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905797054125532": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905913115925532": [
+        {
+            "PreviouslyGenerated": "appleStockDfCopy = appleStockDf.copy() ",
+            "Existing": "appleStockDfCopy = appleStockDf.copy() "
+        }
+    ],
+    "013905200766335532": [
+        {
+            "PreviouslyGenerated": "print(appleStockDfCopy.head()) #)2 ",
+            "Existing": "print(appleStockDfCopy.head()) #)2 "
+        }
+    ],
+    "013905886577915532": [
+        {
+            "PreviouslyGenerated": "# Setting focus to appleStockDf ",
+            "Existing": "# Setting focus to appleStockDf "
+        }
+    ],
+    "013905199421125532": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905982778145532": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)4 ",
+            "Existing": "print(appleStockDf.head()) #)4 "
+        }
+    ]
+}

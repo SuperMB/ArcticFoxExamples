@@ -1,0 +1,78 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnFor ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnFor "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905312415552991": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905811481542991": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905312415552991": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905544088732991": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905669219152991": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905529036152991": [
+        {
+            "PreviouslyGenerated": "for column in bankTransactionsDf.columns: ",
+            "Existing": "for column in bankTransactionsDf.columns: "
+        }
+    ],
+    "013905732076502991": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)2 ",
+            "Existing": "print(bankTransactionsDf.head()) #)2 "
+        }
+    ],
+    "033905834039452991": [
+        {
+            "PreviouslyGenerated": "arcticFoxColumnFor.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnFor.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxColumnFor.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnFor.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905669219152991": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905834039452991": [
+        {
+            "PreviouslyGenerated": "        bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')}) ",
+            "Existing": "# User changes detected\n        bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')})\n\n        bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')}) "
+        }
+    ],
+    "013905454770482991": [
+        {
+            "PreviouslyGenerated": "        bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')}) ",
+            "Existing": "        bankTransactionsDf = bankTransactionsDf.rename(columns={column: column.replace('ID', 'Number')}) "
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxDataframeConcat ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxDataframeConcat "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905646541902291": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905250518812291": [
+        {
+            "PreviouslyGenerated": "df2021_FinalDf = pd.read_csv('2021_Final.csv') ",
+            "Existing": "df2021_FinalDf = pd.read_csv('2021_Final.csv') "
+        }
+    ],
+    "013905487575192291": [
+        {
+            "PreviouslyGenerated": "df2020_FinalDf = pd.read_csv('2020_Final.csv') ",
+            "Existing": "df2020_FinalDf = pd.read_csv('2020_Final.csv') "
+        }
+    ],
+    "013905359444192291": [
+        {
+            "PreviouslyGenerated": "dfsList = [df2021_FinalDf, df2020_FinalDf]\ndfsConcat = pd.concat(dfsList, ignore_index=True) ",
+            "Existing": "dfsList = [df2021_FinalDf, df2020_FinalDf]\ndfsConcat = pd.concat(dfsList, ignore_index=True) "
+        }
+    ],
+    "033905646541902291": [
+        {
+            "PreviouslyGenerated": "arcticFoxDataframeConcat.analyzeVariables([ (value, eval(value)) for value in arcticFoxDataframeConcat.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxDataframeConcat.analyzeVariables([ (value, eval(value)) for value in arcticFoxDataframeConcat.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905646541902291": [
+        {
+            "PreviouslyGenerated": "print(dfsConcat.head()) #)1 ",
+            "Existing": "print(dfsConcat.head()) #)1 "
+        }
+    ]
+}

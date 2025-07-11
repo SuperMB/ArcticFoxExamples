@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -14,8 +15,6 @@ bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
 
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 
 
@@ -35,7 +34,7 @@ print(bankTransactionsDf.head(n=6)) #)1
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit        Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 ##*** 5      TX000006   AC00393              92.15 2023-04-03 17:15:01           Debit  Oklahoma City  D000579  117.67.192.211       M054     ATM           18            Student                  172              1          781.68     2024-11-04 08:06:36
 
-#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive 
+#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive --example 
 bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' 
 
 #> Visualize --count 6 
@@ -65,7 +64,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005  Inactive              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ChangeCells --initialValues San  Diego --newValues Los  Angeles --columns Location 
+#> ChangeCells --initialValues San  Diego --newValues Los  Angeles --columns Location --example 
 bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles') 
 
 #> Visualize 
@@ -95,9 +94,9 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit      Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005  Inactive              13.45 2023-10-16 17:51:24          Credit      Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ChangeCells --columns TransactionType --value Cash --where _TransactionDate_ > 06-01-2023 --allMatchingRows 
+#> ChangeCells --columns TransactionType --value Cash --where _TransactionDate_ > 06-01-2023 --allMatchingRows --example 
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
-bankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > "06-01-2023", 'TransactionType' ] = 'Cash' 
+bankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > "06 - 01 - 2023", 'TransactionType' ] = 'Cash' 
 
 #> Visualize 
 print(bankTransactionsDf.head()) #)6 

@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Weather.csv 
 weatherDf = pd.read_csv('Weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -56,7 +54,7 @@ print(weatherDf.head()) #)1
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> DataframeShuffle 
+#> DataframeShuffle --example 
 weatherDf = weatherDf.sample(frac=1).reset_index(drop=True) 
 
 #> Visualize 

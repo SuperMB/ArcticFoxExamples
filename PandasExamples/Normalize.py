@@ -1,10 +1,11 @@
-
+ 
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from pandas.api.types import is_numeric_dtype  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -14,9 +15,6 @@ pd.set_option('display.max_columns', None)
 #> Data AppleStock.csv 
 appleStockDf = pd.read_csv('AppleStock.csv')
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Unnamed
@@ -44,7 +42,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Normalize --all --minMax 
+#> Normalize --all --minMax --example 
 minMaxScaler = MinMaxScaler()
 for column in appleStockDf.columns:
     if is_numeric_dtype(appleStockDf[column]):
@@ -81,19 +79,13 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Normalize --columns High Low --minMax 
+#> Normalize --columns High Low --minMax --example 
 scaleColumn = appleStockDf[ ['High', 'Low'] ]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf[ ['High', 'Low'] ] = scaleColumn 
 
-#> Visualize  
+#> Visualize 
 print(appleStockDf.head()) #)4 
-##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
-##*** 0           0 1980-12-12  0.099058  0.000258  0.000262  0.099058  469033600
-##*** 1           1 1980-12-15  0.094321  0.000236  0.000240  0.093890  175884800
-##*** 2           2 1980-12-16  0.087429  0.000207  0.000211  0.086999  105728000
-##*** 3           3 1980-12-17  0.089152  0.000216  0.000220  0.089152   86441600
-##*** 4           4 1980-12-18  0.091737  0.000227  0.000231  0.091737   73449600
 
 
 
@@ -112,24 +104,13 @@ appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 #> Visualize 
 print(appleStockDf.head()) #)5 
 ##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
-##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600
-##*** 1           1 1980-12-15  0.094321  0.094321  0.093890  0.093890  175884800
 ##*** 2           2 1980-12-16  0.087429  0.087429  0.086999  0.086999  105728000
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
-##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Normalize --columns Open  --minMax --where _High_ > 100 
+#> Normalize --columns Open  --minMax --where _High_ > 100 --example 
 scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn 
 
 #> Visualize 
 print(appleStockDf.head()) #)6 
-##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
-##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600
-##*** 1           1 1980-12-15  0.094321  0.094321  0.093890  0.093890  175884800
-##*** 2           2 1980-12-16  0.087429  0.087429  0.086999  0.086999  105728000
-##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
-##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
-
-

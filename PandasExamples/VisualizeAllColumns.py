@@ -1,11 +1,9 @@
-
+ 
 import pandas as pd
-import numpy as np
-
+import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
-pd.set_option('display.width', 10000)
-pd.set_option('display.max_columns', None)
+
 
 
 # Setup
@@ -27,7 +25,7 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllColumns 
+#> VisualizeAllColumns --example 
 # Code added to start of file to display all columns for dataframes 
 
 #> Visualize 

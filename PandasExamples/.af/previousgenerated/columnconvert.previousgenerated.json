@@ -1,0 +1,62 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905448730568695": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905622888998695": [
+        {
+            "PreviouslyGenerated": "weatherDf = pd.read_csv('Weather.csv') ",
+            "Existing": "weatherDf = pd.read_csv('Weather.csv') "
+        }
+    ],
+    "013905448730568695": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905155605938695": [
+        {
+            "PreviouslyGenerated": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow ",
+            "Existing": "# MinTemp\n# MaxTemp\n# Rainfall\n# Evaporation\n# Sunshine\n# WindGustDir\n# WindGustSpeed\n# WindDir9am\n# WindDir3pm\n# WindSpeed9am\n# WindSpeed3pm\n# Humidity9am\n# Humidity3pm\n# Pressure9am\n# Pressure3pm\n# Cloud9am\n# Cloud3pm\n# Temp9am\n# Temp3pm\n# RainToday\n# RISK_MM\n# RainTomorrow "
+        }
+    ],
+    "013905824654888695": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)1 ",
+            "Existing": "print(weatherDf.head()) #)1 "
+        }
+    ],
+    "013905380256168695": [
+        {
+            "PreviouslyGenerated": "weatherDf['MaxTemp'] = weatherDf['MaxTemp'] * 9/5 + 32\nweatherDf['MaxTemp'] = Unsupported unit celsius. ",
+            "Existing": "weatherDf['MaxTemp'] = weatherDf['MaxTemp'] * 9/5 + 32\nweatherDf['MaxTemp'] = Unsupported unit celsius. "
+        }
+    ],
+    "013905467240478695": [
+        {
+            "PreviouslyGenerated": "weatherDf['MinTemp'] = weatherDf['MinTemp'] * 9/5 + 32\nweatherDf['MinTemp'] = Unsupported unit celsius. ",
+            "Existing": "weatherDf['MinTemp'] = weatherDf['MinTemp'] * 9/5 + 32\nweatherDf['MinTemp'] = Unsupported unit celsius. "
+        }
+    ],
+    "013905597982968695": [
+        {
+            "PreviouslyGenerated": "print(weatherDf.head()) #)2 ",
+            "Existing": "print(weatherDf.head()) #)2 "
+        }
+    ],
+    "243905824654888695": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

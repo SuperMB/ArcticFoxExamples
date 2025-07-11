@@ -1,8 +1,9 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +12,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data weather.csv 
 weatherDf = pd.read_csv('weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -55,7 +53,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMean Temp3pm 
+#> ColumnMean Temp3pm --example 
 weatherDfMean = weatherDf['Temp3pm'].mean() 
 
 #> print 
@@ -79,7 +77,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp 
+#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --example 
 weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean() 
 
 #> print 
@@ -108,7 +106,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe 
+#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe --example 
 weatherDfMeanRolling7 = weatherDf['Sunshine'].rolling(window=7, min_periods=1).mean()
 weatherDf['SunshineMeanRolling7'] = pd.Series()
 weatherDf['SunshineMeanRolling7'] = weatherDfMeanRolling7 

@@ -1,0 +1,92 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905112506126412": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905820772516412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905428647916412": [
+        {
+            "PreviouslyGenerated": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume ",
+            "Existing": "# Unnamed\n# Date\n# Open\n# High\n# Low\n# Close\n# Volume "
+        }
+    ],
+    "013905112506126412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905422949026412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.sort_values(by='High') ",
+            "Existing": "appleStockDf = appleStockDf.sort_values(by='High') "
+        }
+    ],
+    "013905897338246412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)2 ",
+            "Existing": "print(appleStockDf.head()) #)2 "
+        }
+    ],
+    "013905425873456412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905487105926412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)3 ",
+            "Existing": "print(appleStockDf.head()) #)3 "
+        }
+    ],
+    "013905460569956412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.sort_values(by='Volume', ascending=False) ",
+            "Existing": "appleStockDf = appleStockDf.sort_values(by='Volume', ascending=False) "
+        }
+    ],
+    "013905611591516412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)4 ",
+            "Existing": "print(appleStockDf.head()) #)4 "
+        }
+    ],
+    "013905240339376412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "013905149413416412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)5 ",
+            "Existing": "print(appleStockDf.head()) #)5 "
+        }
+    ],
+    "013905490333136412": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True]) ",
+            "Existing": "appleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True]) "
+        }
+    ],
+    "013905283119846412": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)6 ",
+            "Existing": "print(appleStockDf.head()) #)6 "
+        }
+    ]
+}

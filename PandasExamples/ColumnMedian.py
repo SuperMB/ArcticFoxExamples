@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -11,9 +13,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Weather.csv 
 weatherDf = pd.read_csv('Weather.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # MinTemp
@@ -57,7 +56,7 @@ print(weatherDf.head()) #)1
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
 # Example 2: Calculates Column Median with single column
-#> ColumnMedian Pressure3pm --print 
+#> ColumnMedian Pressure3pm --print --example 
 weatherDfMedian = weatherDf['Pressure3pm'].median()
 print(weatherDfMedian) #)2 
 ##*** 1017.4
@@ -79,7 +78,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMedian Evaporation Rainfall Cloud9am --print 
+#> ColumnMedian Evaporation Rainfall Cloud9am --print --example 
 weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()
 print(weatherDfMedian) #)4 
 ##*** Evaporation    4.2
@@ -105,11 +104,14 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe 
+#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe --example 
 weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()
+weatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()
 weatherDfMedian.name = 'SunshineMedian'
 
 weatherDf = pd.merge(weatherDf, weatherDfMedian, on='WindGustDir', how='left') 
+
+
 
 #> Visualize --count 20 
 print(weatherDf.head(n=20)) #)6 

@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
+
 
 
 # Setup
@@ -12,9 +14,6 @@ pd.set_option('display.max_columns', None)
 #> Data AppleStock.csv 
 appleStockDf = pd.read_csv('AppleStock.csv')
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Unnamed
@@ -44,7 +43,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Open_ > 150 
+#> Query _Open_ > 150 --example 
 appleStockDf = appleStockDf[appleStockDf['Open'] > 150] 
 
 #> Visualize 
@@ -78,7 +77,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Low_ > 100 and _High_ < 110 
+#> Query _Low_ > 100 and _High_ < 110 --example 
 appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] 
 
 #> Visualize 
@@ -113,9 +112,9 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Date_ > 2022 or _Low_ > 300 
+#> Query _Date_ > 2022 or _Low_ > 300 --example 
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
-appleStockDf = appleStockDf[(appleStockDf['Date'] > "2022") | (appleStockDf['Low'] > 300)] 
+appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] 
 
 #> Visualize 
 print(appleStockDf.head()) #)6 
@@ -149,8 +148,8 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> Query _Location_ contains San 
-bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].str.contains('San').fillna(False)] 
+#> Query _Location_ contains San --example 
+bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] 
 
 #> Visualize 
 print(bankTransactionsDf.head()) #)8 
@@ -186,10 +185,9 @@ print(bankTransactionsDf.head()) #)9
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-endsWithValue = "4"
 
-#> Query _DeviceID_ ends with endsWithValue 
-bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].str.endswith(endsWithValue).fillna(False)] 
+#> Query _DeviceID_ ends with endsWithValue --example 
+bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] 
 
 #> Visualize 
 print(bankTransactionsDf.head()) #)10 
@@ -205,7 +203,7 @@ print(bankTransactionsDf.head()) #)10
 # Example 5
 # More of a fuller example, this time, let's get the median of
 # a column, and then find rows within 10% of the median
-# Seed being used: #> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian  
+# Seed being used: #> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian 
 # ******************************************************
 # ******************************************************
 
@@ -226,7 +224,7 @@ print(appleStockDf.head()) #)11
 #> ColumnMedian High 
 appleStockDfMedian = appleStockDf['High'].median() 
 
-#> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian 
+#> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian --example 
 appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] 
 
 #> Visualize 

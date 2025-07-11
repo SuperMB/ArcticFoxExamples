@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
-import numpy as np  
+import numpy as np
+import arcticFoxDataframesEqual  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
+
 
 
 # Setup
@@ -11,9 +13,6 @@ pd.set_option('display.max_columns', None)
 
 #> Data Pizzerias.csv 
 pizzeriasDf = pd.read_csv('Pizzerias.csv') 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # Pizzeria Name
@@ -45,10 +44,9 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-pizzeriasCloneDf = pizzeriasDf.copy() #< DataframeCopy 
-
 #> DataframesEqual 
-dataframesEqual = pizzeriasCloneDf.equals(pizzeriasDf) 
+dataframesEqual = pizzeriasDf.equals()
+#ISSUE: Could not find a target automation, Dataframe, Data automation(s), or a variable assignment 
 
 #> print 
 print(dataframesEqual) #)2 
@@ -76,12 +74,11 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-modifiedDf = pizzeriasDf.copy() #< DataframeCopy 
 #> ColumnRemove 5 --throughLastColumn 
-modifiedDf.drop(columns=modifiedDf.columns[5:], axis=1, inplace=True) 
+pizzeriasDf.drop(columns=pizzeriasDf.columns[5:], axis=1, inplace=True) 
 
 #> Visualize 
-print(modifiedDf.head()) #)4 
+print(pizzeriasDf.head()) #)4 
 ##***                 Pizzeria Name            Location  Specialty Pizza Price Range  Rating
 ##*** 0             Antonio's Urban          Bronx, NYC         Hawaiian        $$$$     5.0
 ##*** 1           Giovanni's Secret  Staten Island, NYC         Hawaiian         $$$     NaN
@@ -90,9 +87,12 @@ print(modifiedDf.head()) #)4
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN
 
 #> DataframesEqual 
-dataframesEqual_1 = modifiedDf.equals(pizzeriasDf) 
+#***run script to analyze variables - need to analyze dataframesEqual for type 
 
 #> print 
-print(dataframesEqual_1) #)5 
+print(dataframesEqual) #)5 
 ##*** False
 
+
+ 
+arcticFoxDataframesEqual.analyzeVariables([ (value, eval(value)) for value in arcticFoxDataframesEqual.variables(dir() + [] )] ) 

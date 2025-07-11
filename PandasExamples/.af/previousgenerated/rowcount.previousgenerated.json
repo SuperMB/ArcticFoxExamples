@@ -1,0 +1,136 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowCount ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowCount "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905203544546843": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905862415576843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('pizzerias.csv') "
+        }
+    ],
+    "013905406839056843": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905203544546843": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905503173716843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowCount = pizzeriasDf.shape[0]\nprint(pizzeriasDfRowCount) #)2 ",
+            "Existing": "pizzeriasDfRowCount = pizzeriasDf.shape[0]\nprint(pizzeriasDfRowCount) #)2 "
+        }
+    ],
+    "013905325824246843": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905619764906843": [
+        {
+            "PreviouslyGenerated": "print(type) #)4 ",
+            "Existing": "print(type) #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfMissingRowCount) #)4 ",
+            "Existing": "print(pizzeriasDfMissingRowCount) #)4 "
+        }
+    ],
+    "013905743143926843": [
+        {
+            "PreviouslyGenerated": "print(type) #)6 ",
+            "Existing": "print(type) #)6 "
+        },
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfNotMissingRowCount) #)6 ",
+            "Existing": "print(pizzeriasDfNotMissingRowCount) #)6 "
+        }
+    ],
+    "013905863892666843": [
+        {
+            "PreviouslyGenerated": "print(type) #)8 ",
+            "Existing": "print(type) #)8 "
+        },
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRowCount_1) #)8 ",
+            "Existing": "print(pizzeriasDfRowCount_1) #)8 "
+        }
+    ],
+    "013905606696736843": [
+        {
+            "PreviouslyGenerated": "print(type) #)10 ",
+            "Existing": "print(type) #)10 "
+        },
+        {
+            "PreviouslyGenerated": "print(pizzeriasDfRowCount_2) #)10 ",
+            "Existing": "print(pizzeriasDfRowCount_2) #)10 "
+        }
+    ],
+    "033905655120926843": [
+        {
+            "PreviouslyGenerated": "arcticFoxRowCount.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowCount.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxRowCount.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowCount.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905655120926843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() ",
+            "Existing": "pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() "
+        }
+    ],
+    "013905150276116843": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905419311576843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfNotMissingRowCount = pizzeriasDf.shape[0] - pizzeriasDf.isnull().any(axis=1).sum() ",
+            "Existing": "pizzeriasDfNotMissingRowCount = pizzeriasDf.shape[0] - pizzeriasDf.isnull().any(axis=1).sum() "
+        }
+    ],
+    "013905110004816843": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)7 ",
+            "Existing": "print(pizzeriasDf.head()) #)7 "
+        }
+    ],
+    "013905492217126843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) ",
+            "Existing": "pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) "
+        }
+    ],
+    "013905775621796843": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)9 ",
+            "Existing": "print(pizzeriasDf.head()) #)9 "
+        }
+    ],
+    "013905534536116843": [
+        {
+            "PreviouslyGenerated": "pizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0] ",
+            "Existing": "pizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0] "
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905595862787231": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905745182367231": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf = pd.read_csv('Pizzerias.csv') ",
+            "Existing": "pizzeriasDf = pd.read_csv('Pizzerias.csv') "
+        }
+    ],
+    "013905194512257231": [
+        {
+            "PreviouslyGenerated": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website ",
+            "Existing": "# Pizzeria Name\n# Location\n# Specialty Pizza\n# Price Range\n# Rating\n# Delivery Options\n# Vegan Friendly\n# Established Year\n# Seating Capacity\n# Website "
+        }
+    ],
+    "013905595862787231": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905357086897231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)1 ",
+            "Existing": "print(pizzeriasDf.head()) #)1 "
+        }
+    ],
+    "013905729904277231": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf['LocationCopy'] = pizzeriasDf['Location'] ",
+            "Existing": "pizzeriasDf['LocationCopy'] = pizzeriasDf['Location'] "
+        }
+    ],
+    "013905103991587231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)2 ",
+            "Existing": "print(pizzeriasDf.head()) #)2 "
+        }
+    ],
+    "013905539327437231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)3 ",
+            "Existing": "print(pizzeriasDf.head()) #)3 "
+        }
+    ],
+    "013905441466987231": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza'] ",
+            "Existing": "pizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza'] "
+        }
+    ],
+    "013905838108507231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)4 ",
+            "Existing": "print(pizzeriasDf.head()) #)4 "
+        }
+    ],
+    "013905804072777231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)5 ",
+            "Existing": "print(pizzeriasDf.head()) #)5 "
+        }
+    ],
+    "013905669072117231": [
+        {
+            "PreviouslyGenerated": "pizzeriasDf['PreviousRating'] = pizzeriasDf['Rating']\npizzeriasDf['PreviousWebsite'] = pizzeriasDf['Website'] ",
+            "Existing": "pizzeriasDf['PreviousRating'] = pizzeriasDf['Rating']\npizzeriasDf['PreviousWebsite'] = pizzeriasDf['Website'] "
+        }
+    ],
+    "013905446232247231": [
+        {
+            "PreviouslyGenerated": "print(pizzeriasDf.head()) #)6 ",
+            "Existing": "print(pizzeriasDf.head()) #)6 "
+        }
+    ],
+    "243905357086897231": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

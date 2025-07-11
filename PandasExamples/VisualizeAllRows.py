@@ -1,8 +1,10 @@
-
+ 
 import pandas as pd
-import numpy as np
+import numpy as np  
+pd.set_option('display.max_rows', None)  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None) 
 
-pd.set_option('display.max_rows', None) 
 
 
 # Setup
@@ -23,7 +25,7 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllRows 
+#> VisualizeAllRows --example 
 # !!!*** USE WITH CAUTION ***!!!
 # Code added to start of file to display all rows for dataframes 
 
@@ -39,7 +41,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019  ...         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070  ...         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411  ...         7429.40     2024-11-04 08:06:39
-##*** 
+##***
 ##*** [5 rows x 16 columns]
 
 

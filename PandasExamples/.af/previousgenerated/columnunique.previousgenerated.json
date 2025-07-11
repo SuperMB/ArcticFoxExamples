@@ -1,0 +1,92 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnUnique ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnUnique "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905188429936867": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905509827006867": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('bankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('bankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905685786996867": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905188429936867": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ],
+    "013905809235426867": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()\nprint(bankTransactionsDfUnique) #)2 ",
+            "Existing": "bankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()\nprint(bankTransactionsDfUnique) #)2 "
+        }
+    ],
+    "013905674320986867": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905908541256867": [
+        {
+            "PreviouslyGenerated": "print('bankTransactionsDfUnique_1_TransactionType') #)4 ",
+            "Existing": "print('bankTransactionsDfUnique_1_TransactionType') #)4 "
+        },
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfUnique_1_TransactionType) #)4 ",
+            "Existing": "print(bankTransactionsDfUnique_1_TransactionType) #)4 "
+        }
+    ],
+    "013905623468506867": [
+        {
+            "PreviouslyGenerated": "print('bankTransactionsDfUnique_1_Location') #)5 ",
+            "Existing": "print('bankTransactionsDfUnique_1_Location') #)5 "
+        },
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDfUnique_1_Location) #)5 ",
+            "Existing": "print(bankTransactionsDfUnique_1_Location) #)5 "
+        }
+    ],
+    "033905512613576867": [
+        {
+            "PreviouslyGenerated": "arcticFoxColumnUnique.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnUnique.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxColumnUnique.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnUnique.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905512613576867": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfUnique_1_TransactionType = bankTransactionsDf['TransactionType'].unique()\nbankTransactionsDfUnique_1_Location = bankTransactionsDf['Location'].unique() ",
+            "Existing": "bankTransactionsDfUnique_1_TransactionType = bankTransactionsDf['TransactionType'].unique()\nbankTransactionsDfUnique_1_Location = bankTransactionsDf['Location'].unique() "
+        }
+    ],
+    "013905405809526867": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)6 ",
+            "Existing": "print(bankTransactionsDf.head()) #)6 "
+        }
+    ],
+    "013905709663216867": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDfUnique_1 = bankTransactionsDf.nunique()\nprint(bankTransactionsDfUnique_1) #)7 ",
+            "Existing": "bankTransactionsDfUnique_1 = bankTransactionsDf.nunique()\nprint(bankTransactionsDfUnique_1) #)7 "
+        }
+    ]
+}

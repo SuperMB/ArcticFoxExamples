@@ -1,0 +1,86 @@
+{
+    "243905977090585859": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905783278665859": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905977090585859": [
+        {
+            "PreviouslyGenerated": "# Code added to start of file to display all columns for dataframes ",
+            "Existing": "# Code added to start of file to display all columns for dataframes "
+        }
+    ],
+    "013905988363465859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=6)) #)1 ",
+            "Existing": "print(bankTransactionsDf.head(n=6)) #)1 "
+        }
+    ],
+    "013905946396975859": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' ",
+            "Existing": "bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' "
+        }
+    ],
+    "013905987628235859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=6)) #)2 ",
+            "Existing": "print(bankTransactionsDf.head(n=6)) #)2 "
+        }
+    ],
+    "013905603261695859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)3 ",
+            "Existing": "print(bankTransactionsDf.head()) #)3 "
+        }
+    ],
+    "013905640334005859": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles') ",
+            "Existing": "bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles') "
+        }
+    ],
+    "013905349797685859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)4 ",
+            "Existing": "print(bankTransactionsDf.head()) #)4 "
+        }
+    ],
+    "013905632154055859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)5 ",
+            "Existing": "print(bankTransactionsDf.head()) #)5 "
+        }
+    ],
+    "013905939986185859": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > \"06 - 01 - 2023\", 'TransactionType' ] = 'Cash' ",
+            "Existing": "bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > \"06 - 01 - 2023\", 'TransactionType' ] = 'Cash' "
+        }
+    ],
+    "013905479620505859": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)6 ",
+            "Existing": "print(bankTransactionsDf.head()) #)6 "
+        }
+    ],
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905988363465859": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ]
+}

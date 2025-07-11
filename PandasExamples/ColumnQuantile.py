@@ -1,4 +1,4 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -14,9 +14,6 @@ pd.set_option('display.max_columns', None)
 bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 #> ColumnHeaders 
 # TransactionID
@@ -52,7 +49,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa  D000235  215.97.143.157       M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
-#> ColumnQuantile CustomerAge 
+#> ColumnQuantile CustomerAge --example 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() 
 
 #> print 
@@ -77,7 +74,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 
+#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --example 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) 
 
 #> print 
@@ -106,7 +103,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles 
+#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --example 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )
 bankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]
 bankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]
@@ -154,7 +151,7 @@ print(bankTransactionsDf.head()) #)11
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile AccountBalance TransactionDuration 
+#> ColumnQuantile AccountBalance TransactionDuration --example 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() 
 
 #> print 
@@ -181,7 +178,7 @@ print(bankTransactionsDf.head()) #)13
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 
+#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 --example 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) 
 
 #> print 
@@ -211,7 +208,12 @@ print(bankTransactionsDf.head()) #)15
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles 
-#ISSUE: name 'columns' is not defined
+#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles --example 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )
-bankTransactionsDfQuantile_AccountBalance0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance'] 
+bankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']
+bankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']
+bankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']
+bankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']
+bankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']
+bankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration'] 
+

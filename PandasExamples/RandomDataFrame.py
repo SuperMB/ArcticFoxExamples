@@ -1,16 +1,16 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
 
+
 # Setup
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
+# None
 
 
 
@@ -22,7 +22,7 @@ pd.set_option('display.max_columns', None)
 # ******************************************************
 # ******************************************************
 
-#> RandomDataFrame 
+#> RandomDataFrame --example 
 dfRandomData = {    
     'Column1': np.random.randint(1, 101, size=10000),    
     'Column2': np.random.randint(1, 101, size=10000),    
@@ -37,6 +37,7 @@ dfRandomData = {
 }
 
 df = pd.DataFrame(dfRandomData) 
+
 
 #> Visualize 
 print(df.head()) #)1 
@@ -56,7 +57,7 @@ print(df.head()) #)1
 # ******************************************************
 # ******************************************************
 
-#> RandomDataFrame --columnCount 3 --rowCount 10 
+#> RandomDataFrame --columnCount 3 --rowCount 10 --example 
 dfRandomData_1 = {    
     'Column1': np.random.randint(1, 101, size=10),    
     'Column2': np.random.randint(1, 101, size=10),    
@@ -64,6 +65,7 @@ dfRandomData_1 = {
 }
 
 df_1 = pd.DataFrame(dfRandomData_1) 
+
 
 #> Visualize --count 10 
 print(df_1.head(n=10)) #)2 
@@ -78,3 +80,4 @@ print(df_1.head(n=10)) #)2
 ##*** 7       55       29       95
 ##*** 8       98       35       99
 ##*** 9       39       69        8
+

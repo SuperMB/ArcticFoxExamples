@@ -1,0 +1,50 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905904702231273": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905209206131273": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905770599491273": [
+        {
+            "PreviouslyGenerated": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate ",
+            "Existing": "# TransactionID\n# AccountID\n# TransactionAmount\n# TransactionDate\n# TransactionType\n# Location\n# DeviceID\n# IP Address\n# MerchantID\n# Channel\n# CustomerAge\n# CustomerOccupation\n# TransactionDuration\n# LoginAttempts\n# AccountBalance\n# PreviousTransactionDate "
+        }
+    ],
+    "013905904702231273": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=10)) #)1 ",
+            "Existing": "print(bankTransactionsDf.head(n=10)) #)1 "
+        }
+    ],
+    "013905988553641273": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=10)) #)2 ",
+            "Existing": "print(bankTransactionsDf.head(n=10)) #)2 "
+        }
+    ],
+    "013905206429241273": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = bankTransactionsDf.reset_index(drop=True) ",
+            "Existing": "bankTransactionsDf = bankTransactionsDf.reset_index(drop=True) "
+        }
+    ],
+    "013905925921561273": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head(n=10)) #)3 ",
+            "Existing": "print(bankTransactionsDf.head(n=10)) #)3 "
+        }
+    ]
+}

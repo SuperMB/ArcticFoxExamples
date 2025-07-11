@@ -1,9 +1,8 @@
-
+ 
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
-
 
 # Setup
 # ******************************************************
@@ -23,9 +22,6 @@ pizzeriasDf = pd.read_csv('Pizzerias.csv')
 # Established Year
 # Seating Capacity
 # Website 
-
-#> VisualizeAllColumns 
-# Code added to start of file to display all columns for dataframes 
 
 
 
@@ -66,7 +62,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$     3.4              Yes            Yes            2015.0              35.0           www.mario'ssecret32.com
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$     4.0              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $     3.6               No             No            1989.0              37.0    www.antonio'straditional57.com
-#> ColumnCast Rating --type int 
+#> ColumnCast Rating --type int --example 
 pizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int') 
 
 #> Visualize 
@@ -95,7 +91,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No            1989.0              37.0    www.antonio'straditional57.com
 
-#> ColumnCast Specialty  Pizza Established  Year --type string 
+#> ColumnCast Specialty  Pizza Established  Year --type string --example 
 pizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')
 pizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str') 
 
@@ -125,7 +121,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes           1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No           1989.0              37.0    www.antonio'straditional57.com
 
-#> ColumnCast Seating  Capacity --type float 
+#> ColumnCast Seating  Capacity --type float --example 
 pizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float') 
 
 #> Visualize 

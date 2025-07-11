@@ -1,0 +1,44 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "243905586381045500": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.max_rows', None) ",
+            "Existing": "pd.set_option('display.max_rows', None) "
+        }
+    ],
+    "243905600391355500": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905306658755500": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) ",
+            "Existing": "bankTransactionsDf = pd.read_csv('BankTransactions.csv')\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) "
+        }
+    ],
+    "013905586381045500": [
+        {
+            "PreviouslyGenerated": "# !!!*** USE WITH CAUTION ***!!!\n# Code added to start of file to display all rows for dataframes ",
+            "Existing": "# !!!*** USE WITH CAUTION ***!!!\n# Code added to start of file to display all rows for dataframes "
+        }
+    ],
+    "013905226354255500": [
+        {
+            "PreviouslyGenerated": "bankTransactionsDf = bankTransactionsDf.drop(bankTransactionsDf.index[100:]) ",
+            "Existing": "bankTransactionsDf = bankTransactionsDf.drop(bankTransactionsDf.index[100:]) "
+        }
+    ],
+    "013905600391355500": [
+        {
+            "PreviouslyGenerated": "print(bankTransactionsDf.head()) #)1 ",
+            "Existing": "print(bankTransactionsDf.head()) #)1 "
+        }
+    ]
+}

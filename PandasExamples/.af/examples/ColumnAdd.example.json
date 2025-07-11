@@ -1,0 +1,19 @@
+{
+    "ColumnAdd": [
+        {
+            "KitText": "#> ColumnAdd --newColumnNames NewEmptyColumn --example",
+            "CodeAfterKit": "\nbankTransactionsDf['NewEmptyColumn'] = pd.Series()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnAdd 1 --newColumnNames Columnof1s --example",
+            "CodeAfterKit": "\nbankTransactionsDf['Columnof1s'] = 1",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnAdd location --example",
+            "CodeAfterKit": "\nbankTransactionsDf['location'] = location",
+            "Explainer": ""
+        }
+    ]
+}
