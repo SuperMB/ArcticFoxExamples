@@ -1,0 +1,24 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnExtract</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Selects the desired columns to remain in the target dataframe and removes the other columns. The columns to extract can be specified by name or column index. This is useful when a dataset has excess columns that are not needed for the current analysis and you only want to focus on columns of interest.<br>            </div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to extract data for</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnExtract DeviceID<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnExtract Location AccountBalance TransactionDuration<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance', 'TransactionDuration' ] ] AFRIGHT</span></code></pre>
+</div>  
+

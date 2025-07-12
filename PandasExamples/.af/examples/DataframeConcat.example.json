@@ -1,0 +1,9 @@
+{
+    "DataframeConcat": [
+        {
+            "KitText": "#> DataframeConcat df2021_FinalDf df2020_FinalDf --example",
+            "CodeAfterKit": "\ndfsList = [df2021_FinalDf, df2020_FinalDf]\ndfsConcat = pd.concat(dfsList, ignore_index=True)",
+            "Explainer": ""
+        }
+    ]
+}

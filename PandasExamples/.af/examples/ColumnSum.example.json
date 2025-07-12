@@ -1,0 +1,19 @@
+{
+    "ColumnSum": [
+        {
+            "KitText": "#> ColumnSum AccountBalance --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()\r\nprint(bankTransactionsDfSum) #)2",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnSum TransactionAmount AccountBalance --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf [ ['TransactionAmount', 'AccountBalance'] ].sum()\r\nprint(bankTransactionsDfSum) #)4",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnSum TransactionAmount AccountBalance CustomerAge --where TransactionAmount > 75 and CustomerAge > 20 --group TransactionType Channel --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()\nbankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()\r\nprint(bankTransactionsDfSum) #)6",
+            "Explainer": ""
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "RemoveWeirdCharacters": [
+        {
+            "KitText": "#> RemoveWeirdCharacters --example",
+            "CodeAfterKit": "\nfor column in texasCensusDf.columns:\n    texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error --example",
+            "CodeAfterKit": "\ntexasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)\ntexasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)",
+            "Explainer": ""
+        }
+    ]
+}

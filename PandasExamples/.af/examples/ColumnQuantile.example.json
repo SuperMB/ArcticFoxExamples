@@ -1,0 +1,34 @@
+{
+    "ColumnQuantile": [
+        {
+            "KitText": "#> ColumnQuantile CustomerAge --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )\nbankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]\nbankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]\nbankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]\nbankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnQuantile AccountBalance TransactionDuration --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] )",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles --example",
+            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )\nbankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']\nbankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration']",
+            "Explainer": ""
+        }
+    ]
+}

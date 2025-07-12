@@ -1,0 +1,14 @@
+{
+    "Visualize": [
+        {
+            "KitText": "#> Visualize --example",
+            "CodeAfterKit": "print(appleStockDf.head()) #)1",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Visualize --count 10 --example",
+            "CodeAfterKit": "print(appleStockDf.head(n=10)) #)2",
+            "Explainer": ""
+        }
+    ]
+}

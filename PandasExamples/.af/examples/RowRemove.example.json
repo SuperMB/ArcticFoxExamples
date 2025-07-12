@@ -1,0 +1,39 @@
+{
+    "RowRemove": [
+        {
+            "KitText": "#> RowRemove --missing --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --missing --columns Rating Established Year --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --index 3 --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --indexStart 3 --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:])",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --indexStop 50 --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --indexStart 5 --indexStop 10 --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowRemove --where Pizzeria Name contains Antonio --example",
+            "CodeAfterKit": "\npizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True)",
+            "Explainer": ""
+        }
+    ]
+}

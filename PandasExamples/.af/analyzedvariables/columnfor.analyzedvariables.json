@@ -1282,12 +1282,12 @@
                 "type": "pandas.core.frame.DataFrame",
                 "columns": [
                     {
-                        "Name": "TransactionNumber",
-                        "ColumnType": 0
+                        "Name": "TransactionID",
+                        "ColumnType": 5
                     },
                     {
-                        "Name": "AccountNumber",
-                        "ColumnType": 0
+                        "Name": "AccountID",
+                        "ColumnType": 5
                     },
                     {
                         "Name": "TransactionAmount",
@@ -1299,27 +1299,27 @@
                     },
                     {
                         "Name": "TransactionType",
-                        "ColumnType": 0
+                        "ColumnType": 4
                     },
                     {
                         "Name": "Location",
-                        "ColumnType": 0
+                        "ColumnType": 4
                     },
                     {
-                        "Name": "DeviceNumber",
-                        "ColumnType": 0
+                        "Name": "DeviceID",
+                        "ColumnType": 5
                     },
                     {
                         "Name": "IP Address",
-                        "ColumnType": 0
+                        "ColumnType": 5
                     },
                     {
-                        "Name": "MerchantNumber",
-                        "ColumnType": 0
+                        "Name": "MerchantID",
+                        "ColumnType": 5
                     },
                     {
                         "Name": "Channel",
-                        "ColumnType": 0
+                        "ColumnType": 4
                     },
                     {
                         "Name": "CustomerAge",
@@ -1327,7 +1327,7 @@
                     },
                     {
                         "Name": "CustomerOccupation",
-                        "ColumnType": 0
+                        "ColumnType": 4
                     },
                     {
                         "Name": "TransactionDuration",
@@ -1345,7 +1345,8 @@
                         "Name": "PreviousTransactionDate",
                         "ColumnType": 6
                     }
-                ]
+                ],
+                "hasHeaders": false
             },
             "arcticFoxColumnFor": {
                 "type": "module"
@@ -7196,6 +7197,13 @@
                     }
                 ],
                 "hasHeaders": false
+            }
+        }
+    },
+    "PandasExamples_ToSeries.py": {
+        "variables": {
+            "myList": {
+                "type": "list"
             }
         }
     }

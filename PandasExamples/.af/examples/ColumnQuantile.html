@@ -1,0 +1,75 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnQuantile</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Gets the maximum value of one or more columns</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to calculate quantile values</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for the calculation</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Groups the data before performing the operation</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">quantile</span>: One or more quantiles to extract</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">variablesForQuantiles</span>: Create a variable for each quantile for easy use</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile CustomerAge<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )
+bankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]
+bankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]
+bankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]
+bankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile AccountBalance TransactionDuration<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles<span>
+AFLEFT 
+bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )
+bankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']
+bankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']
+bankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']
+bankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']
+bankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']
+bankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration'] AFRIGHT</span></code></pre>
+</div>  
+

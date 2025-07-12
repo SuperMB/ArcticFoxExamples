@@ -997,7 +997,38 @@
     "PandasExamples_ColumnCorrelation.py": {
         "variables": {
             "appleStockDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Date",
+                        "ColumnType": 6
+                    },
+                    {
+                        "Name": "Open",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Close",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Volume",
+                        "ColumnType": 1
+                    }
+                ],
+                "hasHeaders": false
             }
         }
     },

@@ -1,0 +1,9 @@
+{
+    "DataframeCopy": [
+        {
+            "KitText": "#> DataframeCopy --example",
+            "CodeAfterKit": "\nappleStockDfCopy = appleStockDf.copy()",
+            "Explainer": ""
+        }
+    ]
+}

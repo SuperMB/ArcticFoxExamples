@@ -1,0 +1,75 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">RowRemove</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Removes rows that contain missing values or meet a given condition</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to remove rows, use with either --missing or --notMissing</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for removing rows</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">index</span>: Specifies the index for removing rows</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">indexStart</span>: Specifies the start index for removing rows</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">indexStop</span>: Specifies the stop index for removing rows</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">missing</span>: Specifies whether to remove rows where columns are missing</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">notMissing</span>: Specifies whether to remove rows where columns are not missing</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing --columns Rating Established Year<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --index 3<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 3<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStop 50<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 5 --indexStop 10<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --where Pizzeria Name contains Antonio<span>
+AFLEFT 
+pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) AFRIGHT</span></code></pre>
+</div>  
+

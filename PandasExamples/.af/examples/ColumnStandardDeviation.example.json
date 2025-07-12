@@ -1,0 +1,14 @@
+{
+    "ColumnStandardDeviation": [
+        {
+            "KitText": "#> ColumnStandardDeviation Temp3pm Temp9am Rainfall --example",
+            "CodeAfterKit": "\nweatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow --example",
+            "CodeAfterKit": "\nweatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()\nweatherDfStd = pd.DataFrame(weatherDfStd).reset_index()",
+            "Explainer": ""
+        }
+    ]
+}

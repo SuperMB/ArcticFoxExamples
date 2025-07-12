@@ -1,0 +1,19 @@
+{
+    "ColumnMin": [
+        {
+            "KitText": "#> ColumnMin WindGustSpeed --print --example",
+            "CodeAfterKit": "\nweatherDfMin = weatherDf['WindGustSpeed'].min()\r\nprint(weatherDfMin) #)2",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --example",
+            "CodeAfterKit": "\nweatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()\r\nprint(weatherDfMin) #)4",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe --example",
+            "CodeAfterKit": "\nweatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()\nweatherDfMinRolling3.name = 'SunshineMinRolling3'\nweatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3']",
+            "Explainer": ""
+        }
+    ]
+}

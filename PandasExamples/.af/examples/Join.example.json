@@ -1,0 +1,14 @@
+{
+    "Join": [
+        {
+            "KitText": "#> Join --column StoreId --join left --example",
+            "CodeAfterKit": "\n# selected left  table: storesDf\n# selected right table: salesDf\nstoresDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left')",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --example",
+            "CodeAfterKit": "\nsalesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left')",
+            "Explainer": ""
+        }
+    ]
+}

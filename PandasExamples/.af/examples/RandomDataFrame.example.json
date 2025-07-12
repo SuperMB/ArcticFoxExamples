@@ -1,0 +1,14 @@
+{
+    "RandomDataFrame": [
+        {
+            "KitText": "#> RandomDataFrame --example",
+            "CodeAfterKit": "\ndfRandomData = {    \n    'Column1': np.random.randint(1, 101, size=10000),    \n    'Column2': np.random.randint(1, 101, size=10000),    \n    'Column3': np.random.randint(1, 101, size=10000),    \n    'Column4': np.random.randint(1, 101, size=10000),    \n    'Column5': np.random.randint(1, 101, size=10000),    \n    'Column6': np.random.randint(1, 101, size=10000),    \n    'Column7': np.random.randint(1, 101, size=10000),    \n    'Column8': np.random.randint(1, 101, size=10000),    \n    'Column9': np.random.randint(1, 101, size=10000),    \n    'Column10': np.random.randint(1, 101, size=10000),\n}\n\ndf = pd.DataFrame(dfRandomData)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RandomDataFrame --columnCount 3 --rowCount 10 --example",
+            "CodeAfterKit": "\ndfRandomData_1 = {    \n    'Column1': np.random.randint(1, 101, size=10),    \n    'Column2': np.random.randint(1, 101, size=10),    \n    'Column3': np.random.randint(1, 101, size=10),\n}\n\ndf_1 = pd.DataFrame(dfRandomData_1)",
+            "Explainer": ""
+        }
+    ]
+}

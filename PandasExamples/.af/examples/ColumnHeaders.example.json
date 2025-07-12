@@ -1,0 +1,14 @@
+{
+    "ColumnHeaders": [
+        {
+            "KitText": "#> ColumnHeaders --example",
+            "CodeAfterKit": "\r\n# Pizzeria Name\r\n# Location\r\n# Specialty Pizza\r\n# Price Range\r\n# Rating\r\n# Delivery Options\r\n# Vegan Friendly\r\n# Established Year\r\n# Seating Capacity\r\n# Website",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnHeaders --example",
+            "CodeAfterKit": "\r\n# TransactionID\r\n# AccountID\r\n# TransactionAmount\r\n# TransactionDate\r\n# TransactionType\r\n# Location\r\n# DeviceID\r\n# IP Address\r\n# MerchantID\r\n# Channel\r\n# CustomerAge\r\n# CustomerOccupation\r\n# TransactionDuration\r\n# LoginAttempts\r\n# AccountBalance\r\n# PreviousTransactionDate",
+            "Explainer": ""
+        }
+    ]
+}

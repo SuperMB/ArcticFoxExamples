@@ -1,0 +1,56 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnRename</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Rearranges columns within a dataframe to place the stated columns as the first columns in the dataframe</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to rename</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">to</span>: Specifies the new column names</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">suffix</span>: Specifies a suffix to add to column names</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">prefix</span>: Specifies a prefix to add to column names</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">replace</span>: Use with --with, specifies the portion of column names to replace</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">with</span>: Use with --replace, specifies the replacement value for column names</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename CustomerAge --to Age<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'}) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionID AccountID --to tid aid<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'}) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionDate 4 5 --to Date Payment City<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date', bankTransactionsDf.columns[4]: 'Payment', bankTransactionsDf.columns[5]: 'City'}) AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --replace ID --with Identifier<span>
+AFLEFT 
+bankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Identifier') AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionAmount': 'TransactionAmount'.replace('Transaction', 'Payment'), 'TransactionType': 'TransactionType'.replace('Transaction', 'Payment')}) AFRIGHT</span></code></pre>
+</div>  
+

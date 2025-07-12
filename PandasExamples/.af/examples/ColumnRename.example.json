@@ -1,0 +1,29 @@
+{
+    "ColumnRename": [
+        {
+            "KitText": "#> ColumnRename CustomerAge --to Age --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'})",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnRename TransactionID AccountID --to tid aid --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'})",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnRename TransactionDate 4 5 --to Date Payment City --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date', bankTransactionsDf.columns[4]: 'Payment', bankTransactionsDf.columns[5]: 'City'})",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnRename --replace ID --with Identifier --example",
+            "CodeAfterKit": "\nbankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Identifier')",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionAmount': 'TransactionAmount'.replace('Transaction', 'Payment'), 'TransactionType': 'TransactionType'.replace('Transaction', 'Payment')})",
+            "Explainer": ""
+        }
+    ]
+}

@@ -7119,5 +7119,12 @@
                 "hasHeaders": false
             }
         }
+    },
+    "PandasExamples_ToSeries.py": {
+        "variables": {
+            "myList": {
+                "type": "list"
+            }
+        }
     }
 }

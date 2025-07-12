@@ -1,0 +1,9 @@
+{
+    "VisualizeAllColumns": [
+        {
+            "KitText": "#> VisualizeAllColumns --example",
+            "CodeAfterKit": "\n# Code added to start of file to display all columns for dataframes",
+            "Explainer": ""
+        }
+    ]
+}

@@ -1,6 +1,11 @@
 {
     "ColumnCopy": [
         {
+            "KitText": "#> ColumnCopy Location --example",
+            "CodeAfterKit": "\npizzeriasDf['LocationCopy'] = pizzeriasDf['Location']",
+            "Explainer": ""
+        },
+        {
             "KitText": "#> ColumnCopy Specialty Pizza --to Old Specialty Pizza --example",
             "CodeAfterKit": "\npizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza']",
             "Explainer": ""

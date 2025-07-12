@@ -1,0 +1,24 @@
+{
+    "RowCount": [
+        {
+            "KitText": "#> RowCount --print --example",
+            "CodeAfterKit": "\npizzeriasDfRowCount = pizzeriasDf.shape[0]\r\nprint(pizzeriasDfRowCount) #)2",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowCount --missing --example",
+            "CodeAfterKit": "\npizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowCount --values 3.0 --example",
+            "CodeAfterKit": "\npizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum())",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowCount --where Specialty Pizza == Hawaiian and Rating < 3.5 --example",
+            "CodeAfterKit": "\npizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0]",
+            "Explainer": ""
+        }
+    ]
+}

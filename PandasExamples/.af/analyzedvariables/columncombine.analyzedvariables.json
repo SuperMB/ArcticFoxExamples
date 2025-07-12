@@ -774,7 +774,54 @@
     "PandasExamples_ColumnCombine.py": {
         "variables": {
             "modifiedPizzeriasDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "Pizzeria Name",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Location",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Specialty Pizza",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Price Range",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "First Person Rating",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Second Person Rating",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Delivery Options",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Vegan Friendly",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Established Year",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Seating Capacity",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Website",
+                        "ColumnType": 5
+                    }
+                ],
+                "hasHeaders": false
             }
         }
     },

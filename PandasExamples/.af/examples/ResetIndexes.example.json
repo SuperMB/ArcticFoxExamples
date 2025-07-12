@@ -1,0 +1,9 @@
+{
+    "ResetIndexes": [
+        {
+            "KitText": "#> ResetIndexes --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.reset_index(drop=True)",
+            "Explainer": ""
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "ColumnGet": [
+        {
+            "KitText": "#> ColumnGet Rating --example",
+            "CodeAfterKit": "\nrating = pizzeriasDf['Rating']",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnGet Location Specialty Pizza --example",
+            "CodeAfterKit": "\nlocation = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza']",
+            "Explainer": ""
+        }
+    ]
+}

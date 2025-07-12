@@ -1,0 +1,14 @@
+{
+    "ColumnExtract": [
+        {
+            "KitText": "#> ColumnExtract DeviceID --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnExtract Location AccountBalance TransactionDuration --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance', 'TransactionDuration' ] ]",
+            "Explainer": ""
+        }
+    ]
+}

@@ -835,7 +835,98 @@
     "PandasExamples_ColumnConvert.py": {
         "variables": {
             "weatherDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "MinTemp",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "MaxTemp",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Rainfall",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Evaporation",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Sunshine",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "WindGustDir",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindGustSpeed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "WindDir9am",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindDir3pm",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindSpeed9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "WindSpeed3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Humidity9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Humidity3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Pressure9am",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Pressure3pm",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Cloud9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Cloud3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Temp9am",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Temp3pm",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "RainToday",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "RISK_MM",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "RainTomorrow",
+                        "ColumnType": 4
+                    }
+                ],
+                "hasHeaders": false
             }
         }
     },

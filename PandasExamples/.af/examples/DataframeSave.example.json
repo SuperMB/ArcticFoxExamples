@@ -1,0 +1,14 @@
+{
+    "DataframeSave": [
+        {
+            "KitText": "#> DataframeSave --fileName NewAppleStock.csv --example",
+            "CodeAfterKit": "\nappleStockDf.to_csv('NewAppleStock.csv', index=False)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> DataframeSave --fileName SecondNewAppleStock --example",
+            "CodeAfterKit": "\nappleStockDf.to_csv('SecondNewAppleStock.csv', index=False)",
+            "Explainer": ""
+        }
+    ]
+}

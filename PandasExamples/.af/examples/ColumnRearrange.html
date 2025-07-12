@@ -1,0 +1,92 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnRearrange</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Rearranges columns within a dataframe to place the stated columns as the first columns in the dataframe</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to move within the dataframe</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">indexes</span>: Specifies the indexes in which to place the specified columns</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">front</span>: Flag specifying to move the specified columns to the front of the dataframe</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">back</span>: Flag specifying to move the specified columns to the back of the dataframe</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange DeviceID<span>
+AFLEFT 
+columnsToMove = ['DeviceID']
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionDate MerchantID Channel<span>
+AFLEFT 
+columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange 3<span>
+AFLEFT 
+columnsToMove = [bankTransactionsDf.columns[3]]
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange CustomerAge 4 5 CustomerOccupation<span>
+AFLEFT 
+columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']
+columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns IP Address --indexes 3<span>
+AFLEFT 
+columnsToMove = ['IP Address']
+[3] = [3]
+remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+for column,targetIndex in zip(columnsToMove, [3]):
+    remaining_columns.insert(targetIndex, column)
+bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6<span>
+AFLEFT 
+columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']
+[2, 4, 6] = [2, 4, 6]
+remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
+for column,targetIndex in zip(columnsToMove, [2, 4, 6]):
+    remaining_columns.insert(targetIndex, column)
+bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionID AccountID 4 --back<span>
+AFLEFT 
+columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]
+columnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove
+bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
+</div>  
+

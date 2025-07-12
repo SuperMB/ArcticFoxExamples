@@ -1,0 +1,32 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Join</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Joins two dataframes together on a given or implied column</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">switchLeftAndRightTable</span>: Switches the positions of the left and right dataframes</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">join</span>: Specifies the type of join to perform</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">column</span>: Specifies the column to join on</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">leftColumn</span>: Specifies the column in the left dataframe to join on</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">rightColumn</span>: Specifies the column in the right dataframe to join on</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">leftTable</span>: Specifies the name of the left dataframe</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">rightTable</span>: Specifies the name of the right dataframe</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --column StoreId --join left<span>
+AFLEFT 
+# selected left  table: storesDf
+# selected right table: salesDf
+storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left<span>
+AFLEFT 
+salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
+</div>  
+

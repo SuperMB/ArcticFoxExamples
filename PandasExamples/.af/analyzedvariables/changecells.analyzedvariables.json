@@ -239,7 +239,74 @@
                 "type": "str"
             },
             "bankTransactionsDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "TransactionID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "AccountID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "TransactionAmount",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "TransactionDate",
+                        "ColumnType": 6
+                    },
+                    {
+                        "Name": "TransactionType",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Location",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "DeviceID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "IP Address",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "MerchantID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Channel",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "CustomerAge",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "CustomerOccupation",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "TransactionDuration",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "LoginAttempts",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "AccountBalance",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "PreviousTransactionDate",
+                        "ColumnType": 6
+                    }
+                ],
+                "hasHeaders": false
             }
         }
     },

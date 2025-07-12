@@ -1,0 +1,43 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnMedian</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Gets the median value of one or more columns. Furthermore, can get the median while being grouped by another column or category, perform a rolling median or sliding window median, can get the median for only rows that meet a condition, and can add the result to the dataframe as a new column<br>        </div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to calculate median values</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for the calculation</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Groups the data before performing the operation</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Pressure3pm --print<span>
+AFLEFT 
+weatherDfMedian = weatherDf['Pressure3pm'].median()
+print(weatherDfMedian) #)2 AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Evaporation Rainfall Cloud9am --print<span>
+AFLEFT 
+weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()
+print(weatherDfMedian) #)4 AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe<span>
+AFLEFT 
+weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()
+weatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()
+weatherDfMedian.name = 'SunshineMedian'
+
+weatherDf = pd.merge(weatherDf, weatherDfMedian, on='WindGustDir', how='left') AFRIGHT</span></code></pre>
+</div>  
+

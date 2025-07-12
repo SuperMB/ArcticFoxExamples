@@ -1,0 +1,14 @@
+{
+    "DataframeDescribe": [
+        {
+            "KitText": "#> DataframeDescribe --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfDescribe = bankTransactionsDf.describe()\r\nprint(bankTransactionsDfDescribe) #)2",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> DataframeDescribe TransactionAmount TransactionDate AccountBalance --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfDescribe = bankTransactionsDf [ ['TransactionAmount', 'TransactionDate', 'AccountBalance'] ].describe()\r\nprint(bankTransactionsDfDescribe) #)4",
+            "Explainer": ""
+        }
+    ]
+}

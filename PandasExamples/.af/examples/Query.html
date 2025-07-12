@@ -1,0 +1,59 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Query</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Returns a dataframe containing only rows that meet a specific criteria from a query / filter</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Open > 150<span>
+AFLEFT 
+appleStockDf = appleStockDf[appleStockDf['Open'] > 150] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Low > 100 and High < 110<span>
+AFLEFT 
+appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Date > 2022 or Low > 300<span>
+AFLEFT 
+appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
+appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Location contains San<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query DeviceID ends with endsWithValue<span>
+AFLEFT 
+bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+
+
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian<span>
+AFLEFT 
+appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] AFRIGHT</span></code></pre>
+</div>  
+

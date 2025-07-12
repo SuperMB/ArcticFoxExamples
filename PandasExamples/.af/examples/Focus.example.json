@@ -1,0 +1,19 @@
+{
+    "Focus": [
+        {
+            "KitText": "#> Focus appleStockDf --example",
+            "CodeAfterKit": "\n# Setting focus to appleStockDf",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Focus ? --example",
+            "CodeAfterKit": "",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> @@@@@ Focus ? --example",
+            "CodeAfterKit": "#***Focus: Changes the focus for following seeds to the specified dataframe or variable\n#***\n#***Please select which variable to make the Focus:\n#***- appleStockDf #> `select appleStockDf\n#***- bankTransactionsDf #> `select bankTransactionsDf\n#***- appleStockDfQuantile #> `select appleStockDfQuantile\n#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0\n#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1\n#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2\n#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3\n#***- weatherDf #> `select weatherDf\n#***- pizzeriasDf #> `select pizzeriasDf\n",
+            "Explainer": ""
+        }
+    ]
+}

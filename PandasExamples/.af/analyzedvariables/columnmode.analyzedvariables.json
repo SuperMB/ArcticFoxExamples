@@ -1984,7 +1984,98 @@
                 "type": "str"
             },
             "weatherDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "MinTemp",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "MaxTemp",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Rainfall",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Evaporation",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Sunshine",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "WindGustDir",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindGustSpeed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "WindDir9am",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindDir3pm",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "WindSpeed9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "WindSpeed3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Humidity9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Humidity3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Pressure9am",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Pressure3pm",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Cloud9am",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Cloud3pm",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Temp9am",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Temp3pm",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "RainToday",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "RISK_MM",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "RainTomorrow",
+                        "ColumnType": 4
+                    }
+                ],
+                "hasHeaders": false
             },
             "weatherDfMode": {
                 "type": "DataFrame"
@@ -7092,6 +7183,133 @@
                     {
                         "Name": "RainTomorrow",
                         "ColumnType": 4
+                    }
+                ],
+                "hasHeaders": false
+            }
+        }
+    },
+    "PandasExamples_ToSeries.py": {
+        "variables": {
+            "myList": {
+                "type": "list"
+            }
+        }
+    },
+    "PandasExamples_ColumnHeaders.py": {
+        "variables": {
+            "pizzeriasDf": {
+                "type": {},
+                "columns": [
+                    {
+                        "Name": "Pizzeria Name",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Location",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Specialty Pizza",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Price Range",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Rating",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Delivery Options",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Vegan Friendly",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Established Year",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Seating Capacity",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Website",
+                        "ColumnType": 5
+                    }
+                ],
+                "hasHeaders": false
+            },
+            "bankTransactionsDf": {
+                "type": {},
+                "columns": [
+                    {
+                        "Name": "TransactionID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "AccountID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "TransactionAmount",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "TransactionDate",
+                        "ColumnType": 6
+                    },
+                    {
+                        "Name": "TransactionType",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Location",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "DeviceID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "IP Address",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "MerchantID",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Channel",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "CustomerAge",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "CustomerOccupation",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "TransactionDuration",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "LoginAttempts",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "AccountBalance",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "PreviousTransactionDate",
+                        "ColumnType": 6
                     }
                 ],
                 "hasHeaders": false

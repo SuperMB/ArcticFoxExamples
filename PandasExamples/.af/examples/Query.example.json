@@ -1,0 +1,34 @@
+{
+    "Query": [
+        {
+            "KitText": "#> Query Open > 150 --example",
+            "CodeAfterKit": "\nappleStockDf = appleStockDf[appleStockDf['Open'] > 150]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Query Low > 100 and High < 110 --example",
+            "CodeAfterKit": "\nappleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Query Date > 2022 or Low > 300 --example",
+            "CodeAfterKit": "\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Query Location contains San --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Query DeviceID ends with endsWithValue --example",
+            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)]",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian --example",
+            "CodeAfterKit": "\nappleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)]",
+            "Explainer": ""
+        }
+    ]
+}

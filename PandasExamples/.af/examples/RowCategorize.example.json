@@ -1,0 +1,14 @@
+{
+    "RowCategorize": [
+        {
+            "KitText": "#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40 --example",
+            "CodeAfterKit": "\nweatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True)",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30 --example",
+            "CodeAfterKit": "\nweatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True)",
+            "Explainer": ""
+        }
+    ]
+}

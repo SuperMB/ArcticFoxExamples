@@ -1,0 +1,19 @@
+{
+    "ColumnUnique": [
+        {
+            "KitText": "#> ColumnUnique CustomerAge --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()\r\nprint(bankTransactionsDfUnique) #)2",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnUnique TransactionType Location --example",
+            "CodeAfterKit": "\nbankTransactionsDfUnique_1_TransactionType = bankTransactionsDf['TransactionType'].unique()\nbankTransactionsDfUnique_1_Location = bankTransactionsDf['Location'].unique()",
+            "Explainer": ""
+        },
+        {
+            "KitText": "#> ColumnUnique --print --example",
+            "CodeAfterKit": "\nbankTransactionsDfUnique_1 = bankTransactionsDf.nunique()\r\nprint(bankTransactionsDfUnique_1) #)7",
+            "Explainer": ""
+        }
+    ]
+}

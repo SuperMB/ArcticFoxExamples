@@ -1361,7 +1361,50 @@
     "PandasExamples_ColumnGet.py": {
         "variables": {
             "pizzeriasDf": {
-                "type": "DataFrame"
+                "type": "DataFrame",
+                "columns": [
+                    {
+                        "Name": "Pizzeria Name",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Location",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Specialty Pizza",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Price Range",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Rating",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Delivery Options",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Vegan Friendly",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Established Year",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Seating Capacity",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Website",
+                        "ColumnType": 5
+                    }
+                ],
+                "hasHeaders": false
             }
         }
     },
@@ -7133,6 +7176,13 @@
                     }
                 ],
                 "hasHeaders": false
+            }
+        }
+    },
+    "PandasExamples_ToSeries.py": {
+        "variables": {
+            "myList": {
+                "type": "list"
             }
         }
     }
