@@ -1,6 +1,6 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Focus</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Changes the focus for following seeds to the specified dataframe or variable</div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.<br>            </div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">focus</span>: Specifies the dataframe or variable to focus on for the following seeds. The option tag does not need to be specified, the 1st unspecified option will be used as the focus.</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
@@ -26,7 +26,8 @@ AFLEFT  AFRIGHT</span></code></pre>
 
 <div>
     <pre style="background-color: #1e1e1e;"><code class="language-python">#> @@@@@ Focus ?<span>
-AFLEFT #***Focus: Changes the focus for following seeds to the specified dataframe or variable
+AFLEFT #***Focus: 
+#***Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.
 #***
 #***Please select which variable to make the Focus:
 #***- appleStockDf #> `select appleStockDf
