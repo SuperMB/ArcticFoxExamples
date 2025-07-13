@@ -3,27 +3,32 @@
         {
             "KitText": "#> RowGet --index 10 --example",
             "CodeAfterKit": "\npizzeriasDfRow10 = pizzeriasDf.iloc[10]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowGet --indexStart 20 --indexStop 30 --example",
             "CodeAfterKit": "\npizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowGet --indexStart 200 --example",
             "CodeAfterKit": "\npizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowGet --indexStop 30 --example",
             "CodeAfterKit": "\npizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowGet --where Location contains Queens --example",
             "CodeAfterKit": "\npizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

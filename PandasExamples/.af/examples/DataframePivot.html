@@ -1,6 +1,6 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">DataframePivot</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rows</span>: Specifies columns to use as rows in the pivot table</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to use as columns in the pivot table</div>
@@ -17,7 +17,7 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">first</span>: Gets the first value in each group of the pivot table</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">last</span>: Gets the last value in each group of the pivot table</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -26,7 +26,7 @@ AFLEFT
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -35,7 +35,7 @@ AFLEFT
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -44,7 +44,7 @@ AFLEFT
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>

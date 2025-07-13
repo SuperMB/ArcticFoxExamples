@@ -3,22 +3,26 @@
         {
             "KitText": "#> ColumnRemove CustomerAge --example",
             "CodeAfterKit": "bankTransactionsDf.drop(columns='CustomerAge', inplace=True)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRemove TransactionID TransactionDuration --example",
             "CodeAfterKit": "bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRemove TransactionType 2 3 --example",
             "CodeAfterKit": "bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRemove --nonNumeric --example",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number'])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

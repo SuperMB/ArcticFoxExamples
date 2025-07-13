@@ -3,27 +3,32 @@
         {
             "KitText": "#> ColumnRound --example",
             "CodeAfterKit": "\nfor column in bankTransactionsDf.select_dtypes(include=['number']).columns:\n    bankTransactionsDf[column] = round(bankTransactionsDf[column])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRound AccountBalance --example",
             "CodeAfterKit": "\nbankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRound AccountBalance TransactionAmount --example",
             "CodeAfterKit": "\nbankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])\nbankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRound --columns TransactionAmount AccountBalance --to 5.5 --example",
             "CodeAfterKit": "\nbankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'] / 5.5) * 5.5\nbankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'] / 5.5) * 5.5",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where TransactionAmount > 100 --example",
             "CodeAfterKit": "\nbankTransactionsDf['TransactionAmount'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionAmount'] / 10) * 10\nbankTransactionsDf['TransactionDuration'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionDuration'] / 10) * 10",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

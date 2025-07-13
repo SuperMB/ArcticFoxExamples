@@ -1,12 +1,12 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnRound</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Rounds each value in one or more columns up or down to the nearest multiple of a number. The number being rounded to can be an integer or decimal number. The default multiple is 1, rounding each number to the nearest integer. If a different number is specified, say 2.5, then each number would be rounded to the nearest multiple of 2.5 -> 0, 2.5, 5, 7.5, 10, etc.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Rounds each value in one or more columns up or down to the nearest multiple of a number. The number being rounded to can be an integer or decimal number. The default multiple is 1, rounding each number to the nearest integer. If a different number is specified, say 2.5, then each number would be rounded to the nearest multiple of 2.5 -> 0, 2.5, 5, 7.5, 10, etc.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to round</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for rounding columns</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">to</span>: Specifies the number of decimal places to round to</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -16,7 +16,7 @@ for column in bankTransactionsDf.select_dtypes(include=['number']).columns:
     bankTransactionsDf[column] = round(bankTransactionsDf[column]) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -25,7 +25,7 @@ AFLEFT
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance']) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -35,7 +35,7 @@ bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount']) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>
@@ -45,7 +45,7 @@ bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionA
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'] / 5.5) * 5.5 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
 
 
 <div>

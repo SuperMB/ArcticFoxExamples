@@ -1,10 +1,10 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">RemoveWeirdCharacters</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Not all datasets are clean from the start. One of the ways data is dirty is the column names. We created the RemoveWeirdColumn kit to remove non standard character from column namers. The kit can remove weird characters from either specified column names or the entire dataframe.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Not all datasets are clean from the start. One of the ways data is dirty is the column names. We created the RemoveWeirdColumn kit to remove non standard character from column namers. The kit can remove weird characters from either specified column names or the entire dataframe.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to remove weird characters from, if not used, weird characters will be removed from the entire dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -14,7 +14,7 @@ for column in texasCensusDf.columns:
     texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\x00-\x7F]+', '', regex=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>

@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnVariance RISK_MM --print --example",
             "CodeAfterKit": "\nweatherDfVar = weatherDf['RISK_MM'].var()\r\nprint(weatherDfVar) #)2",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnVariance WindSpeed3pm Evaporation --print --example",
             "CodeAfterKit": "\nweatherDfVar = weatherDf [ ['WindSpeed3pm', 'Evaporation'] ].var()\r\nprint(weatherDfVar) #)4",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print --example",
             "CodeAfterKit": "\nweatherDfVar = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].var()\nweatherDfVar = pd.DataFrame(weatherDfVar).reset_index()\r\nprint(weatherDfVar) #)6",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

@@ -3,12 +3,14 @@
         {
             "KitText": "#> ColumnExtract DeviceID --example",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnExtract Location AccountBalance TransactionDuration --example",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance', 'TransactionDuration' ] ]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

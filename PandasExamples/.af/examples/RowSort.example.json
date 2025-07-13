@@ -3,17 +3,20 @@
         {
             "KitText": "#> RowSort --columns High --example",
             "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by='High')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowSort --columns Volume --order descending --example",
             "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by='Volume', ascending=False)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowSort --columns High 4 --order descending ascending --example",
             "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

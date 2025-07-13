@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnMax TransactionAmount --example",
             "CodeAfterKit": "\nbanktransactionsDfMax = banktransactionsDf['TransactionAmount'].max()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMax CustomerAge AccountBalance TransactionDate --example",
             "CodeAfterKit": "\nbanktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe --example",
             "CodeAfterKit": "\nbanktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

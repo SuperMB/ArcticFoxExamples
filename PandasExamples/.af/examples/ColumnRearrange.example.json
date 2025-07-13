@@ -3,37 +3,44 @@
         {
             "KitText": "#> ColumnRearrange DeviceID --example",
             "CodeAfterKit": "\ncolumnsToMove = ['DeviceID']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange TransactionDate MerchantID Channel --example",
             "CodeAfterKit": "\ncolumnsToMove = ['TransactionDate', 'MerchantID', 'Channel']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange 3 --example",
             "CodeAfterKit": "\ncolumnsToMove = [bankTransactionsDf.columns[3]]\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --example",
             "CodeAfterKit": "\ncolumnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange --columns IP Address --indexes 3 --example",
             "CodeAfterKit": "\ncolumnsToMove = ['IP Address']\n[3] = [3]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [3]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --example",
             "CodeAfterKit": "\ncolumnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']\n[2, 4, 6] = [2, 4, 6]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [2, 4, 6]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnRearrange TransactionID AccountID 4 --back --example",
             "CodeAfterKit": "\ncolumnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]\ncolumnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

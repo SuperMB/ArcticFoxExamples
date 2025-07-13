@@ -3,12 +3,14 @@
         {
             "KitText": "#> ColumnOp AccountBalance * 10 --where CustomerAge > 35 --example",
             "CodeAfterKit": "\nwhereCondition = bankTransactionsDf['CustomerAge'] > 35\nbankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnOp LoginAttempts = 6 --where CustomerAge < 20 --example",
             "CodeAfterKit": "\nwhereCondition = bankTransactionsDf['CustomerAge'] < 20\nbankTransactionsDf['LoginAttempts'][whereCondition] = 6",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

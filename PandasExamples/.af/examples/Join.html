@@ -1,6 +1,6 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Join</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Joins two dataframes together based on the similarity of values in a single column in each dataframe, called the column being joined on. Most often, the column being joined on is a type of unique identifier that connects the rows from different data frames. For example, although likely too generic to be an identifier, you may join to dataframes on the column address. One table might be owner, and the other business name, and the two dataframes could be joined on address to connect the owners with the business names at an address.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">column</span>: Specifies the column to join on</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">leftColumn</span>: Specifies the column in the left dataframe to join on</div>
@@ -10,7 +10,7 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rightTable</span>: Specifies the name of the right dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">switchLeftAndRightTable</span>: Switches the positions of the left and right dataframes</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -21,7 +21,7 @@ AFLEFT
 storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>

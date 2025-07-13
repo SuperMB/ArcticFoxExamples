@@ -3,7 +3,8 @@
         {
             "KitText": "#> ColumnFor --example",
             "CodeAfterKit": "\nfor column in bankTransactionsDf.columns:",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

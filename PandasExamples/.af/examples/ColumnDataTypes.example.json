@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnDataTypes --print --example",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf.dtypes\r\nprint(bankTransactionsDfDataTypes) #)2",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnDataTypes TransactionAmount --print --example",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf[ [ 'TransactionAmount' ] ].dtypes\r\nprint(bankTransactionsDfDataTypes) #)4",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --example",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'PreviousTransactionDate' ] ].dtypes\r\nprint(bankTransactionsDfDataTypes) #)6",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

@@ -3,7 +3,8 @@
         {
             "KitText": "#> RowFor --example",
             "CodeAfterKit": "\nfor row in appleStockDf.iterrows():",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

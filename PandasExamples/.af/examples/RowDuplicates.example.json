@@ -3,17 +3,20 @@
         {
             "KitText": "#> RowDuplicates --count --example",
             "CodeAfterKit": "\nduplicateRowsCount = df[df.duplicated()].shape[0]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowDuplicates --example",
             "CodeAfterKit": "\nduplicateRows = df[df.duplicated()]",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> RowDuplicates --remove --example",
             "CodeAfterKit": "\nduplicateRows = duplicateRows.drop_duplicates(keep='first')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

@@ -3,22 +3,26 @@
         {
             "KitText": "#> DataframePivot --rows Location --cells TransactionAmount --sum --example",
             "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max --example",
             "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count --example",
             "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum --example",
             "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

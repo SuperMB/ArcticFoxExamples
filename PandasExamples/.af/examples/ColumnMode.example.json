@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnMode Cloud3pm --print --example",
             "CodeAfterKit": "\nweatherDfMode = weatherDf['Cloud3pm'].mode()\r\nprint(weatherDfMode) #)2",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --example",
             "CodeAfterKit": "\nweatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()\r\nprint(weatherDfMode) #)4",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe --example",
             "CodeAfterKit": "\nweatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()\nweatherDfMode = pd.DataFrame(weatherDfMode).reset_index()\nweatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'\n\nweatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

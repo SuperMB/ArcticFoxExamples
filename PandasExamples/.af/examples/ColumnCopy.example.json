@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnCopy Location --example",
             "CodeAfterKit": "\npizzeriasDf['LocationCopy'] = pizzeriasDf['Location']",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCopy Specialty Pizza --to Old Specialty Pizza --example",
             "CodeAfterKit": "\npizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza']",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCopy Rating Website --to PreviousRating PreviousWebsite --example",
             "CodeAfterKit": "\npizzeriasDf['PreviousRating'] = pizzeriasDf['Rating']\npizzeriasDf['PreviousWebsite'] = pizzeriasDf['Website']",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

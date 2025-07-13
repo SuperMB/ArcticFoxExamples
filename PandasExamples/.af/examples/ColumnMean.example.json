@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnMean Temp3pm --example",
             "CodeAfterKit": "\nweatherDfMean = weatherDf['Temp3pm'].mean()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --example",
             "CodeAfterKit": "\nweatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe --example",
             "CodeAfterKit": "\nweatherDfMeanRolling7 = weatherDf['Sunshine'].rolling(window=7, min_periods=1).mean()\nweatherDf['SunshineMeanRolling7'] = pd.Series()\nweatherDf['SunshineMeanRolling7'] = weatherDfMeanRolling7",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

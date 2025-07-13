@@ -1,6 +1,6 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">RowCount</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Counts the number of rows in the dataframe. This kit can count the rows within a dataframe as follows:<br>            - Count the number of total rows<br>            - Count the rows grouped by a column<br>            - Count the rows where a value appears<br>            - Count the rows that match a criteria<br>            - Count the rows with missing data<br>            - Count the rows without missing data<br>        </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Counts the number of rows in the dataframe. This kit can count the rows within a dataframe as follows:<br>- Count the number of total rows<br>- Count the rows grouped by a column<br>- Count the rows where a value appears<br>- Count the rows that match a criteria<br>- Count the rows with missing data<br>- Count the rows without missing data</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for counting rows</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">values</span>: Specifies values for counting rows</div>
@@ -8,7 +8,7 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">notMissing</span>: Specifies whether to count rows with non-missing values</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">missing</span>: Specifies whether to count rows with missing values</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -18,7 +18,7 @@ pizzeriasDfRowCount = pizzeriasDf.shape[0]
 print(pizzeriasDfRowCount) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -27,7 +27,7 @@ AFLEFT
 pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -36,7 +36,7 @@ AFLEFT
 pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>

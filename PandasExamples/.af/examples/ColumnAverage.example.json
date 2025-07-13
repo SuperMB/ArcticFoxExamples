@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnAverage MaxTemp --print --example",
             "CodeAfterKit": "\nweatherDfMean = weatherDf['MaxTemp'].mean()\r\nprint(weatherDfMean) #)2",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnAverage WindGustSpeed MinTemp Evaporation --print --example",
             "CodeAfterKit": "\nweatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()\r\nprint(weatherDfMean) #)4",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe --example",
             "CodeAfterKit": "\nweatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()\nweatherDf['SunshineMeanRolling5'] = pd.Series()\nweatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

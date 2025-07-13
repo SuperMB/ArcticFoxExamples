@@ -3,17 +3,20 @@
         {
             "KitText": "#> Normalize --all --minMax --example",
             "CodeAfterKit": "\nminMaxScaler = MinMaxScaler()\nfor column in appleStockDf.columns:\n    if is_numeric_dtype(appleStockDf[column]):\n        appleStockDf[column] = minMaxScaler.fit_transform(appleStockDf[ [column] ])",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> Normalize --columns High Low --minMax --example",
             "CodeAfterKit": "\nscaleColumn = appleStockDf[ ['High', 'Low'] ]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf[ ['High', 'Low'] ] = scaleColumn",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> Normalize --columns Open --minMax --where High > 100 --example",
             "CodeAfterKit": "\nscaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

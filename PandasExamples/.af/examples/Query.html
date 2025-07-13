@@ -1,8 +1,8 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Query</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Modifies a dataframe by retaining only the rows within the dataframe that met the desired crtieria. The conditions provide may implement one or more of the following:<br>            - >, <, >=, <=, ==, !=<br>            - starts with<br>            - ends with<br>            - contains<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Modifies a dataframe by retaining only the rows within the dataframe that met the desired crtieria. The conditions provide may implement one or more of the following:<br>- >, <, >=, <=, ==, !=<br>- starts with<br>- ends with<br>- contains</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -11,7 +11,7 @@ AFLEFT
 appleStockDf = appleStockDf[appleStockDf['Open'] > 150] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -20,7 +20,7 @@ AFLEFT
 appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -30,7 +30,7 @@ appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>
@@ -39,7 +39,7 @@ AFLEFT
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
 
 
 <div>
@@ -48,7 +48,7 @@ AFLEFT
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
 
 
 <div>

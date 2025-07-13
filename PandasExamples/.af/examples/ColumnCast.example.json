@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnCast Rating --type int --example",
             "CodeAfterKit": "\npizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCast Specialty Pizza Established Year --type string --example",
             "CodeAfterKit": "\npizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')\npizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCast Seating Capacity --type float --example",
             "CodeAfterKit": "\npizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

@@ -3,7 +3,8 @@
         {
             "KitText": "#> VisualizeAllRows --example",
             "CodeAfterKit": "\n# !!!*** USE WITH CAUTION ***!!!\n# Code added to start of file to display all rows for dataframes",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

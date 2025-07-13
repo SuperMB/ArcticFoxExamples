@@ -3,7 +3,8 @@
         {
             "KitText": "#> CleanData --removeMissing --example",
             "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

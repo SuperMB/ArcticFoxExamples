@@ -1,6 +1,6 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnQuantile</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Gets the values for a numerical column that corresponding to the amount for a given quantile. The user provides the given quantile percentage and code is written to find that quantile. The quantile can be computed for specified one or more columns, or for all numerical columns. Additionally, you can specify 1 or more demical value to get the quantiles for.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Gets the values for a numerical column that corresponding to the amount for a given quantile. The user provides the given quantile percentage and code is written to find that quantile. The quantile can be computed for specified one or more columns, or for all numerical columns. Additionally, you can specify 1 or more demical value to get the quantiles for.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to calculate quantile values</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for the calculation</div>
@@ -9,7 +9,7 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">quantile</span>: One or more quantiles to extract</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">variablesForQuantiles</span>: Create a variable for each quantile for easy use</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -18,7 +18,7 @@ AFLEFT
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -27,7 +27,7 @@ AFLEFT
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -40,7 +40,7 @@ bankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]
 bankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>
@@ -49,7 +49,7 @@ AFLEFT
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
 
 
 <div>
@@ -58,7 +58,7 @@ AFLEFT
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
 
 
 <div>

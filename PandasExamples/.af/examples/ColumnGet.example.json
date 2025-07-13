@@ -3,12 +3,14 @@
         {
             "KitText": "#> ColumnGet Rating --example",
             "CodeAfterKit": "\nrating = pizzeriasDf['Rating']",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnGet Location Specialty Pizza --example",
             "CodeAfterKit": "\nlocation = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza']",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

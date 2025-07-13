@@ -1,13 +1,13 @@
 <div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=pandas&kit=pandas">&lt-pandas</a></span></div>
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">ColumnRearrange</h1></div>
-<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;"><br>            Modifies the order of columns within a dataframe by either placing column at the front or back of a dataframe, or at a specified index. You can specify one or more columns to move. If no index is specified, the columns are placed at the front of the dataframe. Otherwise, the index can be specified using either the front, back, or indexes options.<br>            </div></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Modifies the order of columns within a dataframe by either placing column at the front or back of a dataframe, or at a specified index. You can specify one or more columns to move. If no index is specified, the columns are placed at the front of the dataframe. Otherwise, the index can be specified using either the front, back, or indexes options.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to move within the dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">indexes</span>: Specifies the indexes in which to place the specified columns</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">front</span>: Flag specifying to move the specified columns to the front of the dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">back</span>: Flag specifying to move the specified columns to the back of the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:0;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 
 <div>
@@ -18,7 +18,7 @@ columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
@@ -29,7 +29,7 @@ columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
@@ -40,7 +40,7 @@ columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>
@@ -51,7 +51,7 @@ columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
 
 
 <div>
@@ -65,7 +65,7 @@ for column,targetIndex in zip(columnsToMove, [3]):
 bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
 
 
 <div>
@@ -79,7 +79,7 @@ for column,targetIndex in zip(columnsToMove, [2, 4, 6]):
 bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:0;margin-bottom:0;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
 
 
 <div>

@@ -3,7 +3,8 @@
         {
             "KitText": "#> Data Pizzerias.csv --example",
             "CodeAfterKit": "\r\npizzeriasDf = pd.read_csv('Pizzerias.csv')",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

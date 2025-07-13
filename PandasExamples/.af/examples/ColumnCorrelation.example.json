@@ -3,17 +3,20 @@
         {
             "KitText": "#> ColumnCorrelation --example",
             "CodeAfterKit": "\nappleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])\nappleStockDfCorrelation = appleStockDfNumericOnly.corr()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCorrelation --columns High Low Volume --example",
             "CodeAfterKit": "\nappleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open --example",
             "CodeAfterKit": "\nappleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr()",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

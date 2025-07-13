@@ -3,7 +3,8 @@
         {
             "KitText": "#> DataframeShuffle --example",
             "CodeAfterKit": "\nweatherDf = weatherDf.sample(frac=1).reset_index(drop=True)",
-            "Explainer": ""
+            "ExampleDescription": "",
+            "ExampleTitle": ""
         }
     ]
 }

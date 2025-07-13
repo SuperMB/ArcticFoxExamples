@@ -1,19 +1,22 @@
 {
     "ChangeCells": [
         {
-            "KitText": "#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive --example",
+            "KitText": "#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive --exampleTitle Change Cell by Row and Column --example Change specific rows within one or more columns to a new value. In this case, in the column AcountID we are changing rows with index 2, 4, and 5 to Inactive to mark that those accounts are no longer used.",
             "CodeAfterKit": "\nbankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive'",
-            "Explainer": ""
+            "ExampleDescription": "Change specific rows within one or more columns to a new value. In this case, in the column AcountID we are changing rows with index 2, 4, and 5 to Inactive to mark that those accounts are no longer used.",
+            "ExampleTitle": "Change Cell by Row and Column"
         },
         {
-            "KitText": "#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location --example",
+            "KitText": "#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location --exampleTitle Change Cells by String Match and Replace --example Modify all cells in a column that match a given string with a new value. In this case, we want to replace San Diego with Los Angeles in the column Location. If the entire cell was San Diego, than the entire cell would be change to Los Angeles. However, if the cell contained other text in addition to San Diego, the other text would remain the same, and only San Diego in the cell would change to Los Angeles.",
             "CodeAfterKit": "\nbankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles')",
-            "Explainer": ""
+            "ExampleDescription": "Modify all cells in a column that match a given string with a new value. In this case, we want to replace San Diego with Los Angeles in the column Location. If the entire cell was San Diego, than the entire cell would be change to Los Angeles. However, if the cell contained other text in addition to San Diego, the other text would remain the same, and only San Diego in the cell would change to Los Angeles.",
+            "ExampleTitle": "Change Cells by String Match and Replace"
         },
         {
-            "KitText": "#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows --example",
+            "KitText": "#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows --exampleTitle Change Cells That Meet Condition --example Set all cells in a column to a new value if the cell meets the desired condition. Here, the condition is that the TransactionDate in a row is after (greater than) 06-01-2023. Therefore, if the TransactionDate is after 06-01-2023, then we set the TransactionType cell to Cash in the row. This would replace then entire contents of the cell TransactionType in the row.",
             "CodeAfterKit": "\nbankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])\nbankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > \"06 - 01 - 2023\", 'TransactionType' ] = 'Cash'",
-            "Explainer": ""
+            "ExampleDescription": "Set all cells in a column to a new value if the cell meets the desired condition. Here, the condition is that the TransactionDate in a row is after (greater than) 06-01-2023. Therefore, if the TransactionDate is after 06-01-2023, then we set the TransactionType cell to Cash in the row. This would replace then entire contents of the cell TransactionType in the row.",
+            "ExampleTitle": "Change Cells That Meet Condition"
         }
     ]
 }
