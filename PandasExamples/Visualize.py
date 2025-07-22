@@ -22,7 +22,7 @@ appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 # ******************************************************
 # ******************************************************
 
-#> Visualize --example 
+#> Visualize --exampleTitle View Most Recent Dataframe --example The Visualize kit is frequently used to view data in a dataframe once it has been loaded, or once edits have been made to the dataframe. The kit simplifies seeing changes made to your data by printing the first lines of the current dataframe to your file as comments under the kit. 
 print(appleStockDf.head()) #)1 
 ##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
 ##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600
@@ -39,7 +39,7 @@ print(appleStockDf.head()) #)1
 # ******************************************************
 # ******************************************************
 
-#> Visualize --count 10 --example 
+#> Visualize --count 10 --exampleTitle Set Line Count to View --example Sometimes, you want to see more than the first five lines of your dataset. To do this, you can use the count option to specify how many lines to view. 
 print(appleStockDf.head(n=10)) #)2 
 ##***    Unnamed: 0       Date      Open      High       Low     Close     Volume
 ##*** 0           0 1980-12-12  0.099058  0.099488  0.099058  0.099058  469033600

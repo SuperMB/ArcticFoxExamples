@@ -54,7 +54,7 @@ print(weatherDf.head()) #)1
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> DataframeShuffle --example 
+#> DataframeShuffle --exampleTitle Randomize the Order of Rows in a Dataframe --example When exploring or analyzing data, it’s sometimes helpful to work with the rows in a different order. The DataframeShuffle kit randomizes the order of all rows in the dataframe. This is useful when you want to remove ordering effects or prepare the data for sampling or testing. The original data is unchanged except for the new row order.
 weatherDf = weatherDf.sample(frac=1).reset_index(drop=True) 
 
 #> Visualize 

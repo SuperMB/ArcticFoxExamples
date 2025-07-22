@@ -10,59 +10,57 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">missing</span>: Specifies whether to remove rows where columns are missing</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">notMissing</span>: Specifies whether to remove rows where columns are not missing</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Remove Rows with Empty Cells</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Data is often not clean and there might be rows within a dataframe that are missing values from one or more columns. To simply remove all rows with missing cells, use the RowRemove kit with the missing option.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Remove Rows with Missing Cells in Specified Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than removing rows with any missing cells, sometimes we only want to clean up a dataframe that is missing values in specific columns. In this example, we only remove rows that have missing values in the Rating or Established Year columns.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing --columns Rating Established Year<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing --columns Rating Established Year<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Remove All Rows Starting At an Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than remove a single row from the dataframe, sometimes you want to remove many, many more rows. Using the indexStart option, without the indexStop option, will remove the row at the specified index and all rows after it. In this example, the row at index 3 through the end of the dataframe are removed.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --index 3<span>AFLEFT 
-pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 3<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 3<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Remove All Rows Up To an Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">The previous example removed rows at and after an index. This time, we remove all rows starting at the first row up to, and including, the specified row index. In this example, we rows from the start of the dataframe up to and including the row at index 50. This is done when you use the indexStop option without the indexStart option.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStop 50<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStop 50<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Remove All Rows Starting at an Index to a Second Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Combining the previous two examples, this time we use both the indexStart and indexStop options. This will remove only rows from the row at the indexStart index to the indexStop index. It will be inclusive of both indexes. Therefore, this example will remove rows from and including the row at index 5 to the row at index 10.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 5 --indexStop 10<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 5 --indexStop 10<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6 - Remove Rows That Match a Criteria</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than specifying certain rows indexes, or rows with missing data, other times you want to remove rows that fit into a specified criteria. In this example, we remove all rows where the Pizzeria Name contains the word Antonio.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --where Pizzeria Name contains Antonio<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --where Pizzeria Name contains Antonio<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 

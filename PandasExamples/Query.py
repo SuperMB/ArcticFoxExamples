@@ -43,7 +43,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Open_ > 150 --example 
+#> Query _Open_ > 150 --exampleTitle Query with the Greater Than Operator --example Selects all rows where the value in the Open column is greater than 150. This is a common pattern for identifying records above a specified cutoff.
 appleStockDf = appleStockDf[appleStockDf['Open'] > 150] 
 
 #> Visualize 
@@ -77,7 +77,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Low_ > 100 and _High_ < 110 --example 
+#> Query _Low_ > 100 and _High_ < 110 --exampleTitle Filter Rows Between Two Numeric Bounds --example Retrieves rows where Low is greater than 100 and High is less than 110. Combines two numeric conditions using AND logic to isolate a range of interest.
 appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] 
 
 #> Visualize 
@@ -112,7 +112,7 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Query _Date_ > 2022 or _Low_ > 300 --example 
+#> Query _Date_ > 2022 or _Low_ > 300 --exampleTitle Filter Rows with Mixed Conditions Using OR --example Applies a compound filter where either a date is after 2022 or a numeric value in Low exceeds 300. Demonstrates how to combine conditions across different column types.
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] 
 
@@ -148,7 +148,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> Query _Location_ contains San --example 
+#> Query _Location_ contains San --exampleTitle Filter Rows by Substring Match in Text Columns --example Returns rows where the Location column contains the substring "San". Useful for partial string matching in text-based data.
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] 
 
 #> Visualize 
@@ -186,7 +186,7 @@ print(bankTransactionsDf.head()) #)9
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
 
-#> Query _DeviceID_ ends with endsWithValue --example 
+#> Query _DeviceID_ ends with endsWithValue --exampleTitle Filter Rows Where Text Column Ends With a Specific Value --example Returns rows where the DeviceID column ends with a specific string. Demonstrates how to apply suffix-based matching for filtering text data.
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] 
 
 #> Visualize 
@@ -224,7 +224,7 @@ print(appleStockDf.head()) #)11
 #> ColumnMedian High 
 appleStockDfMedian = appleStockDf['High'].median() 
 
-#> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian --example 
+#> Query _High_ > .9 * appleStockDfMedian and _High_ < 1.1 * appleStockDfMedian --exampleTitle Filter Rows with Greater Than and Less Than Operators with Mathematical Operations --example In this example, we get the values that are within 10 percent above or below the median of the Apple stock.
 appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] 
 
 #> Visualize 

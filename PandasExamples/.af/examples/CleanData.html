@@ -10,11 +10,12 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">missing</span>: Specifies whether to remove rows where columns are missing</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">notMissing</span>: Specifies whether to remove rows where columns are not missing</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Remove Rows with Missing Cells</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --removeMissing<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --removeMissing  Remove Rows with Missing Cells<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -22,7 +23,8 @@ pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code><
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than removing missing cells from a dataframe, it may be beneficial to keep those rows and fill the missing cells with a statistical value. In this case, we fill the missing cells with the mean of the colum.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --fill --columns Rating --mean<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --fill --columns Rating --mean<span>
+AFLEFT 
 pizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fillna(col.mean())) AFRIGHT</span></code></pre>
 </div>  
 
@@ -30,7 +32,8 @@ pizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fill
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">Another approach to cleaning a data set with missing cells is to fill the cells with a midpoint value based on the surrounding cells. This process is known as interpoloation. Rather than being replace with a statistical value, each cell will receive an interpolated value based on the cells arround it.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --interpolate --columns Rating<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> CleanData --interpolate --columns Rating<span>
+AFLEFT 
 pizzeriasDf[['Rating']] = pizzeriasDf[['Rating']].interpolate() AFRIGHT</span></code></pre>
 </div>  
 

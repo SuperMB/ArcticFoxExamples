@@ -1,22 +1,22 @@
 {
     "Focus": [
         {
-            "KitText": "#> Focus appleStockDf --example",
+            "KitText": "#> Focus appleStockDf --exampleTitle Set Focus to Previously Loaded Dataframe --example When working with multiple dataframes, it is often necessary to switch the focus from one to another. The Focus kit allows you to explicitly tell Arctic Fox which dataframe to apply subsequent transformations to. In this example, we load and modify two separate dataframes and then use Focus to return attention to appleStockDf so further kits act on it.",
             "CodeAfterKit": "\n# Setting focus to appleStockDf",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When working with multiple dataframes, it is often necessary to switch the focus from one to another. The Focus kit allows you to explicitly tell Arctic Fox which dataframe to apply subsequent transformations to. In this example, we load and modify two separate dataframes and then use Focus to return attention to appleStockDf so further kits act on it.",
+            "ExampleTitle": "Set Focus to Previously Loaded Dataframe"
         },
         {
-            "KitText": "#> Focus ? --example",
+            "KitText": "#> Focus ? --exampleTitle Get List of Variables for Focus Selection --example If you are unsure which dataframes or variables are currently available, the Focus kit can help. By using Focus with a question mark (?), you will active the guide which will show candidate variables to focus on. This makes it easier to select the correct target for subsequent operations.",
             "CodeAfterKit": "",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "If you are unsure which dataframes or variables are currently available, the Focus kit can help. By using Focus with a question mark (?), you will active the guide which will show candidate variables to focus on. This makes it easier to select the correct target for subsequent operations.",
+            "ExampleTitle": "Get List of Variables for Focus Selection"
         },
         {
-            "KitText": "#> @@@@@ Focus ? --example",
+            "KitText": "#> @@@@@ Focus ? --exampleTitle Get List of Variables for Focus Selection --example If you are unsure which dataframes or variables are currently available, the Focus kit can help. By using Focus with a question mark (?), you will active the guide which will show candidate variables to focus on. This makes it easier to select the correct target for subsequent operations.",
             "CodeAfterKit": "#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.\n#***\n#***Please select which variable to make the Focus:\n#***- appleStockDf #> `select appleStockDf\n#***- bankTransactionsDf #> `select bankTransactionsDf\n#***- appleStockDfQuantile #> `select appleStockDfQuantile\n#***- appleStockDfQuantile0 #> `select appleStockDfQuantile0\n#***- appleStockDfQuantile1 #> `select appleStockDfQuantile1\n#***- appleStockDfQuantile2 #> `select appleStockDfQuantile2\n#***- appleStockDfQuantile3 #> `select appleStockDfQuantile3\n#***- weatherDf #> `select weatherDf\n#***- pizzeriasDf #> `select pizzeriasDf\n",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "If you are unsure which dataframes or variables are currently available, the Focus kit can help. By using Focus with a question mark (?), you will active the guide which will show candidate variables to focus on. This makes it easier to select the correct target for subsequent operations.",
+            "ExampleTitle": "Get List of Variables for Focus Selection"
         }
     ]
 }

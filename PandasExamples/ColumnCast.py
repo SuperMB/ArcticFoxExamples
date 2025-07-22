@@ -62,7 +62,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 14             Mario's Secret          Bronx, NYC           Veggie         $$$     3.4              Yes            Yes            2015.0              35.0           www.mario'ssecret32.com
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$     4.0              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $     3.6               No             No            1989.0              37.0    www.antonio'straditional57.com
-#> ColumnCast Rating --type int --example 
+#> ColumnCast Rating --type int --exampleTitle Cast Single Column --example Our rating was initially a decimal number, but we would rather it be an integer. We cast the Rating column to an integer to remove the decimal values. 
 pizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int') 
 
 #> Visualize 
@@ -91,7 +91,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes            1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No            1989.0              37.0    www.antonio'straditional57.com
 
-#> ColumnCast Specialty  Pizza Established  Year --type string --example 
+#> ColumnCast Specialty  Pizza Established  Year --type string --exampleTitle Cast Multiple Columns --example Rather than casting a single columns, cast multiple columns to a data type simply by specifying multiiple column names. 
 pizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')
 pizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str') 
 
@@ -121,7 +121,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 15        Luigi's Traditional       Brooklyn, NYC       Margherita         $$$       4              Yes            Yes           1961.0              30.0      www.luigi'straditional86.com
 ##*** 16      Antonio's Traditional          Bronx, NYC  Buffalo Chicken           $       3               No             No           1989.0              37.0    www.antonio'straditional57.com
 
-#> ColumnCast Seating  Capacity --type float --example 
+#> ColumnCast Seating  Capacity --type float  
 pizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float') 
 
 #> Visualize 

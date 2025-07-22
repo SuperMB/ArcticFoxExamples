@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -4287,42 +4303,52 @@
                 "columns": [
                     {
                         "Name": "Pizzeria Name",
+                        "ColumnName": "Pizzeria Name",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Location",
+                        "ColumnName": "Location",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Specialty Pizza",
+                        "ColumnName": "Specialty Pizza",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Price Range",
+                        "ColumnName": "Price Range",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Rating",
+                        "ColumnName": "Rating",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Delivery Options",
+                        "ColumnName": "Delivery Options",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Vegan Friendly",
+                        "ColumnName": "Vegan Friendly",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Established Year",
+                        "ColumnName": "Established Year",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Seating Capacity",
+                        "ColumnName": "Seating Capacity",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Website",
+                        "ColumnName": "Website",
                         "ColumnType": 5
                     }
                 ],

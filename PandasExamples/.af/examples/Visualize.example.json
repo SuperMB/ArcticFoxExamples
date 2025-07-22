@@ -1,16 +1,16 @@
 {
     "Visualize": [
         {
-            "KitText": "#> Visualize --example",
+            "KitText": "#> Visualize --exampleTitle View Most Recent Dataframe --example The Visualize kit is frequently used to view data in a dataframe once it has been loaded, or once edits have been made to the dataframe. The kit simplifies seeing changes made to your data by printing the first lines of the current dataframe to your file as comments under the kit.",
             "CodeAfterKit": "print(appleStockDf.head()) #)1",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "The Visualize kit is frequently used to view data in a dataframe once it has been loaded, or once edits have been made to the dataframe. The kit simplifies seeing changes made to your data by printing the first lines of the current dataframe to your file as comments under the kit.",
+            "ExampleTitle": "View Most Recent Dataframe"
         },
         {
-            "KitText": "#> Visualize --count 10 --example",
+            "KitText": "#> Visualize --count 10 --exampleTitle Set Line Count to View --example Sometimes, you want to see more than the first five lines of your dataset. To do this, you can use the count option to specify how many lines to view.",
             "CodeAfterKit": "print(appleStockDf.head(n=10)) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes, you want to see more than the first five lines of your dataset. To do this, you can use the count option to specify how many lines to view.",
+            "ExampleTitle": "Set Line Count to View"
         }
     ]
 }

@@ -1,40 +1,40 @@
 {
     "Query": [
         {
-            "KitText": "#> Query Open > 150 --example",
+            "KitText": "#> Query Open > 150 --exampleTitle Query with the Greater Than Operator --example Selects all rows where the value in the Open column is greater than 150. This is a common pattern for identifying records above a specified cutoff.",
             "CodeAfterKit": "\nappleStockDf = appleStockDf[appleStockDf['Open'] > 150]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Selects all rows where the value in the Open column is greater than 150. This is a common pattern for identifying records above a specified cutoff.",
+            "ExampleTitle": "Query with the Greater Than Operator"
         },
         {
-            "KitText": "#> Query Low > 100 and High < 110 --example",
+            "KitText": "#> Query Low > 100 and High < 110 --exampleTitle Filter Rows Between Two Numeric Bounds --example Retrieves rows where Low is greater than 100 and High is less than 110. Combines two numeric conditions using AND logic to isolate a range of interest.",
             "CodeAfterKit": "\nappleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Retrieves rows where Low is greater than 100 and High is less than 110. Combines two numeric conditions using AND logic to isolate a range of interest.",
+            "ExampleTitle": "Filter Rows Between Two Numeric Bounds"
         },
         {
-            "KitText": "#> Query Date > 2022 or Low > 300 --example",
+            "KitText": "#> Query Date > 2022 or Low > 300 --exampleTitle Filter Rows with Mixed Conditions Using OR --example Applies a compound filter where either a date is after 2022 or a numeric value in Low exceeds 300. Demonstrates how to combine conditions across different column types.",
             "CodeAfterKit": "\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Applies a compound filter where either a date is after 2022 or a numeric value in Low exceeds 300. Demonstrates how to combine conditions across different column types.",
+            "ExampleTitle": "Filter Rows with Mixed Conditions Using OR"
         },
         {
-            "KitText": "#> Query Location contains San --example",
+            "KitText": "#> Query Location contains San --exampleTitle Filter Rows by Substring Match in Text Columns --example Returns rows where the Location column contains the substring \"San\". Useful for partial string matching in text-based data.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Returns rows where the Location column contains the substring \"San\". Useful for partial string matching in text-based data.",
+            "ExampleTitle": "Filter Rows by Substring Match in Text Columns"
         },
         {
-            "KitText": "#> Query DeviceID ends with endsWithValue --example",
+            "KitText": "#> Query DeviceID ends with endsWithValue --exampleTitle Filter Rows Where Text Column Ends With a Specific Value --example Returns rows where the DeviceID column ends with a specific string. Demonstrates how to apply suffix-based matching for filtering text data.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Returns rows where the DeviceID column ends with a specific string. Demonstrates how to apply suffix-based matching for filtering text data.",
+            "ExampleTitle": "Filter Rows Where Text Column Ends With a Specific Value"
         },
         {
-            "KitText": "#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian --example",
+            "KitText": "#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian --exampleTitle Filter Rows with Greater Than and Less Than Operators with Mathematical Operations --example In this example, we get the values that are within 10 percent above or below the median of the Apple stock.",
             "CodeAfterKit": "\nappleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "In this example, we get the values that are within 10 percent above or below the median of the Apple stock.",
+            "ExampleTitle": "Filter Rows with Greater Than and Less Than Operators with Mathematical Operations"
         }
     ]
 }

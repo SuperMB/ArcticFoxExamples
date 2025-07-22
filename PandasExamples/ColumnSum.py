@@ -50,7 +50,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnSum AccountBalance --print --example 
+#> ColumnSum AccountBalance --print --exampleTitle Compute Sum of a Single Column --example Summing the values in a single numeric column gives a quick understanding of total magnitude. In this example, we compute the sum of the AccountBalance column and print the result. This can be used for reporting, summaries, or validation checks.
 bankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()
 print(bankTransactionsDfSum) #)2 
 ##*** 12847129.049999999
@@ -72,7 +72,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnSum TransactionAmount AccountBalance --print --example 
+#> ColumnSum TransactionAmount AccountBalance --print --exampleTitle Compute Sums of Multiple Columns --example When more than one column needs to be summarized, we can pass multiple column names to the ColumnSum kit. This example calculates and prints the sums of both the TransactionAmount and AccountBalance columns, giving us an overview of total transactions and total account holdings.
 bankTransactionsDfSum = bankTransactionsDf [ ['TransactionAmount', 'AccountBalance'] ].sum()
 print(bankTransactionsDfSum) #)4 
 ##*** TransactionAmount      747555.57
@@ -97,7 +97,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnSum TransactionAmount AccountBalance CustomerAge --where _TransactionAmount_ > 75 and _CustomerAge_ > 20 --group TransactionType Channel --print --example 
+#> ColumnSum TransactionAmount AccountBalance CustomerAge --where _TransactionAmount_ > 75 and _CustomerAge_ > 20 --group TransactionType Channel --print --exampleTitle Compute Grouped Sums with Conditions --example To better analyze data trends, we can combine filtering, grouping, and aggregation. In this example, we first filter for transactions above $75 and customers older than 20. Then we group by TransactionType and Channel, and compute the sum for TransactionAmount, AccountBalance, and CustomerAge in each group.
 bankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()
 bankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()
 print(bankTransactionsDfSum) #)6 

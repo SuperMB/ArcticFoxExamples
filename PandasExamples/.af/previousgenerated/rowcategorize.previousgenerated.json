@@ -69,6 +69,10 @@
         {
             "PreviouslyGenerated": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) ",
             "Existing": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) "
+        },
+        {
+            "PreviouslyGenerated": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,sys.float_info.max], labels=['newCold','newCool','newWarm','newHot'], include_lowest=True) ",
+            "Existing": "weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,sys.float_info.max], labels=['newCold','newCool','newWarm','newHot'], include_lowest=True) "
         }
     ],
     "013905614817858081": [

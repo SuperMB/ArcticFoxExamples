@@ -7,27 +7,30 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">ascending</span>: Specifies whether to sort rows in ascending order</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">order</span>: Specifies the order of sorting rows</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Sort Dataframe by Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">We often want to sort a dataframe according to the values in a column. To sort by a single column, simply pass in the column name. If the direction, ascending or descending, is not specified, as in this example, the default direction will be ascending, going from smalles to largest.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns High<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns High<span>
+AFLEFT 
 appleStockDf = appleStockDf.sort_values(by='High') AFRIGHT</span></code></pre>
 </div>  
 
 <div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Similar to the previous, this example sorts the dataframe on a single column. However, this time we specify the order in which to sort, which is descending in this case. This causes the column to be sorted from largest to smallest.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns Volume --order descending<span>AFLEFT 
-appleStockDf = appleStockDf.sort_values(by='Volume', ascending=False) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns Volume --order descending -exampleTitle Sort by Single Column and Specify Direction<span>
+AFLEFT 
+appleStockDf = appleStockDf.sort_values(by='Volume', ascending=[False, False, False, False, False, False, False, False]) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Sort on Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than sorting on a single column, it is not uncommon to want to sort first on one column, and then sort on a second column when the values of the first column are the same. In this example, we first sort on the column High, and second, we sort on the column with index 4 when the column High has the same value. Additionally, we specify to sort High in descending order, and then column with index 4 in ascending order.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns High 4 --order descending ascending<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowSort --columns High 4 --order descending ascending<span>
+AFLEFT 
 appleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True]) AFRIGHT</span></code></pre>
 </div>  
 

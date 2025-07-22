@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -5273,102 +5289,127 @@
                 "columns": [
                     {
                         "Name": "Label (Grouping)",
+                        "ColumnName": "Label (Grouping)",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Total!!Estimate",
+                        "ColumnName": "Texas!!Total!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Texas!!Total!!Margin of Error",
+                        "ColumnName": "Texas!!Total!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent!!Estimate",
+                        "ColumnName": "Texas!!Percent!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent!!Margin of Error",
+                        "ColumnName": "Texas!!Percent!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Male!!Estimate",
+                        "ColumnName": "Texas!!Male!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Texas!!Male!!Margin of Error",
+                        "ColumnName": "Texas!!Male!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent Male!!Estimate",
+                        "ColumnName": "Texas!!Percent Male!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent Male!!Margin of Error",
+                        "ColumnName": "Texas!!Percent Male!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Female!!Estimate",
+                        "ColumnName": "Texas!!Female!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Texas!!Female!!Margin of Error",
+                        "ColumnName": "Texas!!Female!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent Female!!Estimate",
+                        "ColumnName": "Texas!!Percent Female!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Texas!!Percent Female!!Margin of Error",
+                        "ColumnName": "Texas!!Percent Female!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Total!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Total!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Harris County, Texas!!Total!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Total!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Percent!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Percent!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Male!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Male!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Harris County, Texas!!Male!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Male!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent Male!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Percent Male!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent Male!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Percent Male!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Female!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Female!!Estimate",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Harris County, Texas!!Female!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Female!!Margin of Error",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent Female!!Estimate",
+                        "ColumnName": "Harris County, Texas!!Percent Female!!Estimate",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Harris County, Texas!!Percent Female!!Margin of Error",
+                        "ColumnName": "Harris County, Texas!!Percent Female!!Margin of Error",
                         "ColumnType": 4
                     }
                 ],

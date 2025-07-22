@@ -40,7 +40,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --missing --example 
+#> RowRemove --missing --exampleTitle Remove Rows with Empty Cells --example Data is often not clean and there might be rows within a dataframe that are missing values from one or more columns. To simply remove all rows with missing cells, use the RowRemove kit with the missing option. 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
@@ -73,7 +73,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --missing --columns Rating Established  Year --example 
+#> RowRemove --missing --columns Rating Established  Year --exampleTitle Remove Rows with Missing Cells in Specified Columns --example Rather than removing rows with any missing cells, sometimes we only want to clean up a dataframe that is missing values in specific columns. In this example, we only remove rows that have missing values in the Rating or Established Year columns.
 pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) 
 
 #> Visualize --count 10 
@@ -111,7 +111,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --index 3 --example 
+#> RowRemove --index 3 --exampleTitle Remove Row at Index --example When you have specific rows that you want to remove, you can remove them from the dataframe by specifying the row's index with the index option. 
 pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) 
 
 #> Visualize 
@@ -144,7 +144,7 @@ print(pizzeriasDf.head()) #)7
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStart 3 --example 
+#> RowRemove --indexStart 3 --exampleTitle Remove All Rows Starting At an Index --example Rather than remove a single row from the dataframe, sometimes you want to remove many, many more rows. Using the indexStart option, without the indexStop option, will remove the row at the specified index and all rows after it. In this example, the row at index 3 through the end of the dataframe are removed. 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) 
 
 #> Visualize --count 10 
@@ -175,7 +175,7 @@ print(pizzeriasDf.head()) #)9
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStop 50 --example 
+#> RowRemove --indexStop 50 --exampleTitle Remove All Rows Up To an Index --example The previous example removed rows at and after an index. This time, we remove all rows starting at the first row up to, and including, the specified row index. In this example, we rows from the start of the dataframe up to and including the row at index 50. This is done when you use the indexStop option without the indexStart option.
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) 
 
 #> Visualize 
@@ -208,7 +208,7 @@ print(pizzeriasDf.head()) #)11
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowRemove --indexStart 5 --indexStop 10 --example 
+#> RowRemove --indexStart 5 --indexStop 10 --exampleTitle Remove All Rows Starting at an Index to a Second Index --example Combining the previous two examples, this time we use both the indexStart and indexStop options. This will remove only rows from the row at the indexStart index to the indexStop index. It will be inclusive of both indexes. Therefore, this example will remove rows from and including the row at index 5 to the row at index 10. 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) 
 
 #> Visualize --count 10 
@@ -251,7 +251,7 @@ print(pizzeriasDf.head(n=10)) #)13
 ##*** 8     Luigi's Slice of Heaven         Queens, NYC         Hawaiian           $     3.2              Yes            Yes            1971.0              99.0                                NaN
 ##*** 9          Giovanni's Gourmet  Staten Island, NYC              NaN           $     4.3              Non            Yes            2006.0              53.0        www.giovanni'sgourmet90.com
 
-#> RowRemove --where _Pizzeria  Name_ contains Antonio --example 
+#> RowRemove --where _Pizzeria  Name_ contains Antonio --exampleTitle Remove Rows That Match a Criteria --example Rather than specifying certain rows indexes, or rows with missing data, other times you want to remove rows that fit into a specified criteria. In this example, we remove all rows where the Pizzeria Name contains the word Antonio.  
 pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) 
 
 #> Visualize --count 10 

@@ -48,7 +48,7 @@ print(bankTransactionsDf.head()) #)2
 # Decide you want to switch back to the first dataframe
 # Use the Focus seed to shift Arctic Fox's variable target
 # back to the original dataframe
-#> Focus appleStockDf --example 
+#> Focus appleStockDf --exampleTitle Set Focus to Previously Loaded Dataframe --example When working with multiple dataframes, it is often necessary to switch the focus from one to another. The Focus kit allows you to explicitly tell Arctic Fox which dataframe to apply subsequent transformations to. In this example, we load and modify two separate dataframes and then use Focus to return attention to appleStockDf so further kits act on it.
 # Setting focus to appleStockDf 
 
 # Do operations on the dataframe in focus
@@ -77,8 +77,8 @@ pizzeriasDf = pd.read_csv('Pizzerias.csv')
 # Use Focus guide to get prepopulated list of variables
 # to select from
 
-#> Focus ? --example 
-#***Focus: Changes the focus for following seeds to the specified dataframe or variable
+#> Focus ? --exampleTitle Get List of Variables for Focus Selection --example If you are unsure which dataframes or variables are currently available, the Focus kit can help. By using Focus with a question mark (?), you will active the guide which will show candidate variables to focus on. This makes it easier to select the correct target for subsequent operations.
+#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.
 #***
 #***Please select which variable to make the Focus:
 #***- appleStockDf #> `select appleStockDf

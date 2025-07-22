@@ -1,16 +1,16 @@
 {
     "ColumnExtract": [
         {
-            "KitText": "#> ColumnExtract DeviceID --example",
+            "KitText": "#> ColumnExtract DeviceID --exampleTitle Extract a Single Column from a Dataframe --example Sometimes you only need one specific column from a dataframe to simplify downstream operations. This example shows how to isolate the DeviceID column and drop the rest of the dataset.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'DeviceID' ] ]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes you only need one specific column from a dataframe to simplify downstream operations. This example shows how to isolate the DeviceID column and drop the rest of the dataset.",
+            "ExampleTitle": "Extract a Single Column from a Dataframe"
         },
         {
-            "KitText": "#> ColumnExtract Location AccountBalance TransactionDuration --example",
+            "KitText": "#> ColumnExtract Location AccountBalance TransactionDuration --exampleTitle Extract Multiple Columns from a Dataframe --example In many cases, you want to keep only a subset of columns that are relevant for your analysis. This example shows how to extract three specific columns: Location, AccountBalance, and TransactionDuration.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf[ [ 'Location', 'AccountBalance', 'TransactionDuration' ] ]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "In many cases, you want to keep only a subset of columns that are relevant for your analysis. This example shows how to extract three specific columns: Location, AccountBalance, and TransactionDuration.",
+            "ExampleTitle": "Extract Multiple Columns from a Dataframe"
         }
     ]
 }

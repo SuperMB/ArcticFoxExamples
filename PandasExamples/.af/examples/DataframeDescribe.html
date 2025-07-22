@@ -6,21 +6,13 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for describing data</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Specifies columns to group by</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Describe All Columns in the Dataframe</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When exploring a new dataset, it’s useful to get summary statistics across all numeric and datetime columns. The describe function returns metrics such as count, mean, min, and max for each column. This provides a high-level overview of the dataset and helps identify anomalies or outliers early in the analysis process.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeDescribe --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeDescribe --print<span>
+AFLEFT 
 bankTransactionsDfDescribe = bankTransactionsDf.describe()
 print(bankTransactionsDfDescribe) #)2 AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeDescribe TransactionAmount TransactionDate AccountBalance --print<span>AFLEFT 
-bankTransactionsDfDescribe = bankTransactionsDf [ ['TransactionAmount', 'TransactionDate', 'AccountBalance'] ].describe()
-print(bankTransactionsDfDescribe) #)4 AFRIGHT</span></code></pre>
 </div>  
 

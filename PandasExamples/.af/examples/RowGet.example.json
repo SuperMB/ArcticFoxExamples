@@ -1,16 +1,16 @@
 {
     "RowGet": [
         {
-            "KitText": "#> RowGet --index 10 --example",
+            "KitText": "#> RowGet --index 10 --exampleTitle Get a Row at an Index --example When you want to get rows at soecified indexes, you can use RowGet with the index option to get the rows at the specified indexes. Here, we get the row at index 10.",
             "CodeAfterKit": "\npizzeriasDfRow10 = pizzeriasDf.iloc[10]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When you want to get rows at soecified indexes, you can use RowGet with the index option to get the rows at the specified indexes. Here, we get the row at index 10.",
+            "ExampleTitle": "Get a Row at an Index"
         },
         {
-            "KitText": "#> RowGet --indexStart 20 --indexStop 30 --example",
+            "KitText": "#> RowGet --indexStart 20 --indexStop 30 --exampleTitle Get Rows From One Index Up To a Second Index --example Rather then only getting rows at only specified indexes,",
             "CodeAfterKit": "\npizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather then only getting rows at only specified indexes,",
+            "ExampleTitle": "Get Rows From One Index Up To a Second Index"
         },
         {
             "KitText": "#> RowGet --indexStart 200 --example",

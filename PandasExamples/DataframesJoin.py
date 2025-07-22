@@ -62,7 +62,7 @@ print(salesDf.head()) #)2
 ##*** 4       5         639   Daisy         2         15 2023-06-29       15
 
 
-#> Join --column StoreId --join left --example 
+#> Join --column StoreId --join left --exampleTitle Join Two Most Recent Dataframes on a Column --example When no table names are specified, Arctic Fox will assume you want to join the two most recently loaded dataframes. In this example, we join the most recent datasets, storesDf and salesDf, on the StoreId column using a left join. All rows from the left dataframe are preserved, and any matching rows from the right dataframe are brought in.
 # selected left  table: storesDf
 # selected right table: salesDf
 storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') 
@@ -84,7 +84,7 @@ print(storesDfSalesDfJoin.head()) #)3
 # ******************************************************
 # ******************************************************
 
-#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --example 
+#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --exampleTitle Join Specified Dataframes on a Column --example Instead of relying on Arctic Fox to choose the most recent dataframes, you can explicitly specify the left and right tables. Here, we join salesDf to storesDf using a left join on the StoreId column. This makes it clear which dataset is being expanded and which one is being used for lookup.
 salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') 
 
 #> Visualize 

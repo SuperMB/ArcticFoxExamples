@@ -8,19 +8,30 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Standard Deviation of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Standard deviation provides insight into the variability or spread of values in a column. In this example, we compute the standard deviation of the Humidity3pm column to understand how much the afternoon humidity tends to vary day to day.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Temp3pm Temp9am Rainfall<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Humidity3pm<span>
+AFLEFT 
+weatherDfStd = weatherDf['Humidity3pm'].std() AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Standard Deviation of Multiple Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When multiple columns are of interest, we can compute their standard deviations in a single step. This example evaluates the variation in morning temperature, afternoon temperature, and rainfall across the entire dataset.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Temp3pm Temp9am Rainfall<span>
+AFLEFT 
 weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Get Grouped Standard Deviations</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">To compare how variability differs across groups, we can compute the standard deviation within each group. In this example, we group by RainTomorrow and calculate the standard deviations of Sunshine and Rainfall to understand how weather variability differs between rainy and non-rainy days.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow<span>
+AFLEFT 
 weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()
 weatherDfStd = pd.DataFrame(weatherDfStd).reset_index() AFRIGHT</span></code></pre>
 </div>  

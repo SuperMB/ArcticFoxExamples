@@ -88,5 +88,21 @@
             "PreviouslyGenerated": "location = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza'] ",
             "Existing": "location = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza'] "
         }
+    ],
+    "013905532240799468": [
+        {
+            "PreviouslyGenerated": "rating_1 = pizzeriasDf['Rating'] ",
+            "Existing": "rating_1 = pizzeriasDf['Rating'] "
+        },
+        {
+            "PreviouslyGenerated": "rating = pizzeriasDf['Rating'] ",
+            "Existing": "rating = pizzeriasDf['Rating'] "
+        }
+    ],
+    "033905849016869468": [
+        {
+            "PreviouslyGenerated": "arcticFoxColumnGet.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnGet.variables(dir() + ['rating'] )] ) ",
+            "Existing": "arcticFoxColumnGet.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnGet.variables(dir() + ['rating'] )] ) "
+        }
     ]
 }

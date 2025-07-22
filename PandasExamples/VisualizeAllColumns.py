@@ -25,7 +25,7 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllColumns --example 
+#> VisualizeAllColumns 
 # Code added to start of file to display all columns for dataframes 
 
 #> Visualize 

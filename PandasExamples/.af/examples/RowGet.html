@@ -10,19 +10,21 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">missing</span>: Specifies whether to retrieve rows where columns are missing</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">notMissing</span>: Specifies whether to retrieve rows where columns are not missing</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get a Row at an Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When you want to get rows at soecified indexes, you can use RowGet with the index option to get the rows at the specified indexes. Here, we get the row at index 10.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --index 10<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --index 10<span>
+AFLEFT 
 pizzeriasDfRow10 = pizzeriasDf.iloc[10] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Rows From One Index Up To a Second Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather then only getting rows at only specified indexes,</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 20 --indexStop 30<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 20 --indexStop 30<span>
+AFLEFT 
 pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] AFRIGHT</span></code></pre>
 </div>  
 
@@ -30,7 +32,8 @@ pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 200<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 200<span>
+AFLEFT 
 pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] AFRIGHT</span></code></pre>
 </div>  
 
@@ -38,7 +41,8 @@ pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] AFRIGHT</span></code></pre
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStop 30<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStop 30<span>
+AFLEFT 
 pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] AFRIGHT</span></code></pre>
 </div>  
 
@@ -46,7 +50,8 @@ pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --where Location contains Queens<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --where Location contains Queens<span>
+AFLEFT 
 pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 

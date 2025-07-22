@@ -17,35 +17,43 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">first</span>: Gets the first value in each group of the pivot table</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">last</span>: Gets the last value in each group of the pivot table</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Sum Values by Row Categories</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A pivot table can be used to aggregate values based on categorical groupings. In this example, we group all rows by the Location column and calculate the total sum of TransactionAmount for each location. This is useful for understanding total volume by location without adding column-level grouping.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --cells TransactionAmount --sum<span>AFLEFT 
-bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --cells TransactionAmount --sum<span>
+AFLEFT 
+bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum')
+bankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Max Value by Row and Column Grouping</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Pivot tables can also be used with both row and column categories. In this case, we group by Location as the rows and TransactionType as the columns, and compute the maximum AccountBalance within each group. This helps to identify the largest account balances for each type of transaction in every location.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max<span>AFLEFT 
-bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max<span>
+AFLEFT 
+bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max')
+bankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Count Occurrences by Multi-Column Groups</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">We can create pivot tables using multiple columns for both rows and columns. Here, we group by Location (row), and both Channel and TransactionType (columns), counting how many AccountID entries exist in each group. This gives insight into the number of transactions by channel and type at each location.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count<span>AFLEFT 
-bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count<span>
+AFLEFT 
+bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count')
+bankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Multi-Level Pivot with Multiple Rows and Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Pivot tables can be constructed using several row and column dimensions at once. In this example, we group by CustomerAge and TransactionType (rows), and Channel, LoginAttempts, and CustomerOccupation (columns), then compute the total TransactionAmount in each group. This structure enables fine-grained analysis across behavioral and demographic dimensions.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum<span>AFLEFT 
-bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum') AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum<span>
+AFLEFT 
+bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum')
+bankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False) AFRIGHT</span></code></pre>
 </div>  
 

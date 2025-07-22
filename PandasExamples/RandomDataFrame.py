@@ -22,7 +22,7 @@ pd.set_option('display.max_columns', None)
 # ******************************************************
 # ******************************************************
 
-#> RandomDataFrame --example 
+#> RandomDataFrame --exampleTitle Generate a Full-Size Random DataFrame --example Creates a quick 10,000-row dataframe with 10 numerical columns, ideal for testing scripts, visualizations, or performance when real data isn't available.
 dfRandomData = {    
     'Column1': np.random.randint(1, 101, size=10000),    
     'Column2': np.random.randint(1, 101, size=10000),    
@@ -57,7 +57,7 @@ print(df.head()) #)1
 # ******************************************************
 # ******************************************************
 
-#> RandomDataFrame --columnCount 3 --rowCount 10 --example 
+#> RandomDataFrame --columnCount 3 --rowCount 10 --exampleTitle Generate a Custom-Sized Random DataFrame --example Generates a lightweight dataframe with 3 columns and 10 rows. Useful for demoing logic, formatting, or functionality in a quick and controlled setup.
 dfRandomData_1 = {    
     'Column1': np.random.randint(1, 101, size=10),    
     'Column2': np.random.randint(1, 101, size=10),    

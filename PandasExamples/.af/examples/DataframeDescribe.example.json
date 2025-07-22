@@ -1,16 +1,10 @@
 {
     "DataframeDescribe": [
         {
-            "KitText": "#> DataframeDescribe --print --example",
+            "KitText": "#> DataframeDescribe --print --exampleTitle Describe All Columns in the Dataframe --example When exploring a new dataset, it’s useful to get summary statistics across all numeric and datetime columns. The describe function returns metrics such as count, mean, min, and max for each column. This provides a high-level overview of the dataset and helps identify anomalies or outliers early in the analysis process.",
             "CodeAfterKit": "\nbankTransactionsDfDescribe = bankTransactionsDf.describe()\r\nprint(bankTransactionsDfDescribe) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> DataframeDescribe TransactionAmount TransactionDate AccountBalance --print --example",
-            "CodeAfterKit": "\nbankTransactionsDfDescribe = bankTransactionsDf [ ['TransactionAmount', 'TransactionDate', 'AccountBalance'] ].describe()\r\nprint(bankTransactionsDfDescribe) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When exploring a new dataset, it’s useful to get summary statistics across all numeric and datetime columns. The describe function returns metrics such as count, mean, min, and max for each column. This provides a high-level overview of the dataset and helps identify anomalies or outliers early in the analysis process.",
+            "ExampleTitle": "Describe All Columns in the Dataframe"
         }
     ]
 }

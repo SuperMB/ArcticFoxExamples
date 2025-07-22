@@ -1,28 +1,28 @@
 {
     "ColumnRemove": [
         {
-            "KitText": "#> ColumnRemove CustomerAge --example",
+            "KitText": "#> ColumnRemove CustomerAge --exampleTitle Remove a Single Column --example Remove a single column from the dataframe by specifying its column name. This is helpful when a column is no longer needed in the analysis or is being removed to reduce dimensionality.",
             "CodeAfterKit": "bankTransactionsDf.drop(columns='CustomerAge', inplace=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Remove a single column from the dataframe by specifying its column name. This is helpful when a column is no longer needed in the analysis or is being removed to reduce dimensionality.",
+            "ExampleTitle": "Remove a Single Column"
         },
         {
-            "KitText": "#> ColumnRemove TransactionID TransactionDuration --example",
+            "KitText": "#> ColumnRemove TransactionID TransactionDuration --exampleTitle Remove Multiple Columns by Name --example Remove more than one column at once by specifying the column names you want to drop. In this case, both TransactionID and TransactionDuration are removed from the dataframe.",
             "CodeAfterKit": "bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Remove more than one column at once by specifying the column names you want to drop. In this case, both TransactionID and TransactionDuration are removed from the dataframe.",
+            "ExampleTitle": "Remove Multiple Columns by Name"
         },
         {
-            "KitText": "#> ColumnRemove TransactionType 2 3 --example",
+            "KitText": "#> ColumnRemove TransactionType 2 3 --exampleTitle Remove Columns by Name and Index --example You can remove columns by mixing column names and their index positions. In this example, we remove TransactionType by name and the columns at index 2 and 3 to eliminate specific features from the dataframe.",
             "CodeAfterKit": "bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "You can remove columns by mixing column names and their index positions. In this example, we remove TransactionType by name and the columns at index 2 and 3 to eliminate specific features from the dataframe.",
+            "ExampleTitle": "Remove Columns by Name and Index"
         },
         {
-            "KitText": "#> ColumnRemove --nonNumeric --example",
+            "KitText": "#> ColumnRemove --nonNumeric --exampleTitle Remove All Non-Numeric Columns --example If your analysis or model requires only numeric data, you can remove all columns that are not numeric. This operation filters the dataframe to retain only columns with numeric data types, such as integers or floats.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number'])",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "If your analysis or model requires only numeric data, you can remove all columns that are not numeric. This operation filters the dataframe to retain only columns with numeric data types, such as integers or floats.",
+            "ExampleTitle": "Remove All Non-Numeric Columns"
         }
     ]
 }

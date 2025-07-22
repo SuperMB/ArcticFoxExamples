@@ -5,19 +5,21 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies column to categorize its rows, currently, only one column supported for RowCategorize</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">categories</span>: Formatted list of breakpoints and category names on which to categorize a column</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Categorize Rows Based on Maximum Thresholds</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Use RowCategorize to assign category labels to rows based on the values in a specified column. In this case, we assign the labels cold, cool, warm, or hot based on the value of MaxTemp. Since no default category was given for values above 40, the MaxTempCategorized column for those values would be empty.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40<span>
+AFLEFT 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Categorize Rows Based on Minimum Thresholds</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than using upper-bound conditions, you can define categories based on lower thresholds. In this example, we assign each row a category of newCold, newCool, newWarm, or newHot depending on whether MaxTemp exceeds each successive value. Any values below the first threshold fall into the first listed category.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30<span>AFLEFT 
-weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories newCold, 10 < newCool, 20 < newWarm, 30 < newHot<span>
+AFLEFT 
+weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,sys.float_info.max], labels=['newCold','newCool','newWarm','newHot'], include_lowest=True) AFRIGHT</span></code></pre>
 </div>  
 

@@ -1,22 +1,16 @@
 {
     "ColumnMin": [
         {
-            "KitText": "#> ColumnMin WindGustSpeed --print --example",
+            "KitText": "#> ColumnMin WindGustSpeed --print --exampleTitle Get Minimum of a Single Column --example When exploring a dataset, it is often useful to determine the smallest value in a specific column. In this case, we calculate the minimum value of WindGustSpeed to see the lowest recorded wind gust in the dataset.",
             "CodeAfterKit": "\nweatherDfMin = weatherDf['WindGustSpeed'].min()\r\nprint(weatherDfMin) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When exploring a dataset, it is often useful to determine the smallest value in a specific column. In this case, we calculate the minimum value of WindGustSpeed to see the lowest recorded wind gust in the dataset.",
+            "ExampleTitle": "Get Minimum of a Single Column"
         },
         {
-            "KitText": "#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --example",
-            "CodeAfterKit": "\nweatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()\r\nprint(weatherDfMin) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe --example",
-            "CodeAfterKit": "\nweatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()\nweatherDfMinRolling3.name = 'SunshineMinRolling3'\nweatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')\nweatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()\nweatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --exampleTitle Get Minimum of Multiple Columns --example Instead of inspecting a single column, we can compute the minimum values for several columns at once. This example retrieves the smallest values for Humidity3pm, Humidity9am, and Temp3pm, giving a quick snapshot of their respective ranges.",
+            "CodeAfterKit": "\nweatherDfMin = weatherDf [ [Humidity3pm, Humidity9am, 'Temp3pm'] ].min()\r\nprint(weatherDfMin) #)4",
+            "ExampleDescription": "Instead of inspecting a single column, we can compute the minimum values for several columns at once. This example retrieves the smallest values for Humidity3pm, Humidity9am, and Temp3pm, giving a quick snapshot of their respective ranges.",
+            "ExampleTitle": "Get Minimum of Multiple Columns"
         }
     ]
 }

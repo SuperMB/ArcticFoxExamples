@@ -41,7 +41,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation --example 
+#> ColumnCorrelation --exampleTitle Correlation of All Numeric Columns --example Dataframes often contain many numeric columns and we want to see the correlation between all of the numerical columns. Using ColumnCorrelation without any options will get the correlation between all numeric columns in a dataframe.
 appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])
 appleStockDfCorrelation = appleStockDfNumericOnly.corr() 
 
@@ -76,7 +76,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation --columns High Low Volume --example 
+#> ColumnCorrelation --columns High Low Volume --exampleTitle Correlation Between Specific Columns --example Rather than getting the correlation between all columns in the dataframe, sometimes we only want to see how correlated specific columns are. This can be done be passing in the names of each column that you want to see the correlation of. 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() 
 
 #> print 
@@ -107,7 +107,7 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> ColumnCorrelation --columns High Low Volume --where _High_ > 1.10 * _Open_  --example 
+#> ColumnCorrelation --columns High Low Volume --where _High_ > 1.10 * _Open_ --exampleTitle Correlation Only Between Desired Rows --example Data between columns is not always correlated throughout the entire column, but sometimes only specific sections of the data contains a correlation. Specifying a where clause will limit the data to rows that meet the condition to see the correlation between those rows. 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() 
 
 #> print 

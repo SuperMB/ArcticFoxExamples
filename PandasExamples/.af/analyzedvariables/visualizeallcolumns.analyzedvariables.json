@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -6936,66 +6952,82 @@
                 "columns": [
                     {
                         "Name": "TransactionID",
+                        "ColumnName": "TransactionID",
                         "ColumnType": 5
                     },
                     {
                         "Name": "AccountID",
+                        "ColumnName": "AccountID",
                         "ColumnType": 5
                     },
                     {
                         "Name": "TransactionAmount",
+                        "ColumnName": "TransactionAmount",
                         "ColumnType": 2
                     },
                     {
                         "Name": "TransactionDate",
+                        "ColumnName": "TransactionDate",
                         "ColumnType": 6
                     },
                     {
                         "Name": "TransactionType",
+                        "ColumnName": "TransactionType",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Location",
+                        "ColumnName": "Location",
                         "ColumnType": 4
                     },
                     {
                         "Name": "DeviceID",
+                        "ColumnName": "DeviceID",
                         "ColumnType": 5
                     },
                     {
                         "Name": "IP Address",
+                        "ColumnName": "IP Address",
                         "ColumnType": 5
                     },
                     {
                         "Name": "MerchantID",
+                        "ColumnName": "MerchantID",
                         "ColumnType": 5
                     },
                     {
                         "Name": "Channel",
+                        "ColumnName": "Channel",
                         "ColumnType": 4
                     },
                     {
                         "Name": "CustomerAge",
+                        "ColumnName": "CustomerAge",
                         "ColumnType": 1
                     },
                     {
                         "Name": "CustomerOccupation",
+                        "ColumnName": "CustomerOccupation",
                         "ColumnType": 4
                     },
                     {
                         "Name": "TransactionDuration",
+                        "ColumnName": "TransactionDuration",
                         "ColumnType": 1
                     },
                     {
                         "Name": "LoginAttempts",
+                        "ColumnName": "LoginAttempts",
                         "ColumnType": 1
                     },
                     {
                         "Name": "AccountBalance",
+                        "ColumnName": "AccountBalance",
                         "ColumnType": 2
                     },
                     {
                         "Name": "PreviousTransactionDate",
+                        "ColumnName": "PreviousTransactionDate",
                         "ColumnType": 6
                     }
                 ],

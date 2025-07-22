@@ -45,7 +45,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> ColumnGet Rating --example 
+#> ColumnGet Rating --exampleTitle Get a Single Column --example Sometimes you only want to look at a single column within a dataframe. This example shows how to extract the values of the Rating column on its own, allowing you to work with it independently of the rest of the dataset.
 rating = pizzeriasDf['Rating'] 
 
 #> print 
@@ -80,7 +80,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> ColumnGet Location Specialty  Pizza --example 
+#> ColumnGet Location Specialty  Pizza --exampleTitle Get Multiple Columns --example You may want to pull out specific columns from the dataframe to examine or work with side-by-side. This example extracts the Location and Specialty Pizza columns so that we can focus only on those fields and ignore the others.
 location = pizzeriasDf['Location']
 specialtyPizza = pizzeriasDf['Specialty Pizza'] 
 

@@ -1,16 +1,22 @@
 {
     "ColumnStandardDeviation": [
         {
-            "KitText": "#> ColumnStandardDeviation Temp3pm Temp9am Rainfall --example",
-            "CodeAfterKit": "\nweatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnStandardDeviation Humidity3pm --exampleTitle Get Standard Deviation of a Single Column --example Standard deviation provides insight into the variability or spread of values in a column. In this example, we compute the standard deviation of the Humidity3pm column to understand how much the afternoon humidity tends to vary day to day.",
+            "CodeAfterKit": "\nweatherDfStd = weatherDf['Humidity3pm'].std()",
+            "ExampleDescription": "Standard deviation provides insight into the variability or spread of values in a column. In this example, we compute the standard deviation of the Humidity3pm column to understand how much the afternoon humidity tends to vary day to day.",
+            "ExampleTitle": "Get Standard Deviation of a Single Column"
         },
         {
-            "KitText": "#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow --example",
+            "KitText": "#> ColumnStandardDeviation Temp3pm Temp9am Rainfall --exampleTitle Get Standard Deviation of Multiple Columns --example When multiple columns are of interest, we can compute their standard deviations in a single step. This example evaluates the variation in morning temperature, afternoon temperature, and rainfall across the entire dataset.",
+            "CodeAfterKit": "\nweatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std()",
+            "ExampleDescription": "When multiple columns are of interest, we can compute their standard deviations in a single step. This example evaluates the variation in morning temperature, afternoon temperature, and rainfall across the entire dataset.",
+            "ExampleTitle": "Get Standard Deviation of Multiple Columns"
+        },
+        {
+            "KitText": "#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow --exampleTitle Get Grouped Standard Deviations --example To compare how variability differs across groups, we can compute the standard deviation within each group. In this example, we group by RainTomorrow and calculate the standard deviations of Sunshine and Rainfall to understand how weather variability differs between rainy and non-rainy days.",
             "CodeAfterKit": "\nweatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()\nweatherDfStd = pd.DataFrame(weatherDfStd).reset_index()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "To compare how variability differs across groups, we can compute the standard deviation within each group. In this example, we group by RainTomorrow and calculate the standard deviations of Sunshine and Rainfall to understand how weather variability differs between rainy and non-rainy days.",
+            "ExampleTitle": "Get Grouped Standard Deviations"
         }
     ]
 }

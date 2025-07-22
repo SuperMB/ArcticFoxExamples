@@ -5,28 +5,22 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: ColumnName(s) to be cast, either a single column or a list of columns.</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">type</span>: The specific data type to cast to, such as int, float, string, bool, datetime, category</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Cast Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Our rating was initially a decimal number, but we would rather it be an integer. We cast the Rating column to an integer to remove the decimal values.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCast Rating --type int<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCast Rating --type int<span>
+AFLEFT 
 pizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Cast Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than casting a single columns, cast multiple columns to a data type simply by specifying multiiple column names.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCast Specialty Pizza Established Year --type string<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCast Specialty Pizza Established Year --type string<span>
+AFLEFT 
 pizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')
 pizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str') AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCast Seating Capacity --type float<span>AFLEFT 
-pizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float') AFRIGHT</span></code></pre>
 </div>  
 

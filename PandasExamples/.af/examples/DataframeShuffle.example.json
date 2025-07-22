@@ -1,10 +1,10 @@
 {
     "DataframeShuffle": [
         {
-            "KitText": "#> DataframeShuffle --example",
+            "KitText": "#> DataframeShuffle --exampleTitle Randomize the Order of Rows in a Dataframe --example When exploring or analyzing data, it’s sometimes helpful to work with the rows in a different order. The DataframeShuffle kit randomizes the order of all rows in the dataframe. This is useful when you want to remove ordering effects or prepare the data for sampling or testing. The original data is unchanged except for the new row order.",
             "CodeAfterKit": "\nweatherDf = weatherDf.sample(frac=1).reset_index(drop=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When exploring or analyzing data, it’s sometimes helpful to work with the rows in a different order. The DataframeShuffle kit randomizes the order of all rows in the dataframe. This is useful when you want to remove ordering effects or prepare the data for sampling or testing. The original data is unchanged except for the new row order.",
+            "ExampleTitle": "Randomize the Order of Rows in a Dataframe"
         }
     ]
 }

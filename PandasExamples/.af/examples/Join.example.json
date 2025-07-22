@@ -1,16 +1,16 @@
 {
     "Join": [
         {
-            "KitText": "#> Join --column StoreId --join left --example",
+            "KitText": "#> Join --column StoreId --join left --exampleTitle Join Two Most Recent Dataframes on a Column --example When no table names are specified, Arctic Fox will assume you want to join the two most recently loaded dataframes. In this example, we join the most recent datasets, storesDf and salesDf, on the StoreId column using a left join. All rows from the left dataframe are preserved, and any matching rows from the right dataframe are brought in.",
             "CodeAfterKit": "\n# selected left  table: storesDf\n# selected right table: salesDf\nstoresDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When no table names are specified, Arctic Fox will assume you want to join the two most recently loaded dataframes. In this example, we join the most recent datasets, storesDf and salesDf, on the StoreId column using a left join. All rows from the left dataframe are preserved, and any matching rows from the right dataframe are brought in.",
+            "ExampleTitle": "Join Two Most Recent Dataframes on a Column"
         },
         {
-            "KitText": "#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --example",
+            "KitText": "#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left --exampleTitle Join Specified Dataframes on a Column --example Instead of relying on Arctic Fox to choose the most recent dataframes, you can explicitly specify the left and right tables. Here, we join salesDf to storesDf using a left join on the StoreId column. This makes it clear which dataset is being expanded and which one is being used for lookup.",
             "CodeAfterKit": "\nsalesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Instead of relying on Arctic Fox to choose the most recent dataframes, you can explicitly specify the left and right tables. Here, we join salesDf to storesDf using a left join on the StoreId column. This makes it clear which dataset is being expanded and which one is being used for lookup.",
+            "ExampleTitle": "Join Specified Dataframes on a Column"
         }
     ]
 }

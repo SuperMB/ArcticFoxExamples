@@ -1,7 +1,6 @@
  
 import pandas as pd
-import numpy as np
-import arcticFoxDataframesEqual  
+import numpy as np  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None) 
 
@@ -93,6 +92,3 @@ print(pizzeriasDf.head()) #)4
 print(dataframesEqual) #)5 
 ##*** False
 
-
- 
-arcticFoxDataframesEqual.analyzeVariables([ (value, eval(value)) for value in arcticFoxDataframesEqual.variables(dir() + [] )] ) 

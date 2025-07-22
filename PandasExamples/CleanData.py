@@ -42,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> CleanData --removeMissing --exampleTitle Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells. 
+#> CleanData --removeMissing  Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells. 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
@@ -59,7 +59,7 @@ print(pizzeriasDf.head()) #)2
 # Example 2
 # Fill missing Rating values with mean of the column
 # Seed being used: #> CleanData --fill --columns Rating --mean 
-# ****************************************************** 
+# ******************************************************
 # ******************************************************
 
 # Reload the data since the last example removed the missing value

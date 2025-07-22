@@ -52,7 +52,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange DeviceID --example 
+#> ColumnRearrange DeviceID --exampleTitle Move a Single Column to the Front --example When a single column is specified, and no other options are used, that column will be moved to the very front of the dataframe. All other columns will retain their order behind it. This is helpful when highlighting a specific column of interest for analysis or visualization.
 columnsToMove = ['DeviceID']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -91,7 +91,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange TransactionDate MerchantID Channel --example 
+#> ColumnRearrange TransactionDate MerchantID Channel --exampleTitle Move Multiple Columns to the Front --example When multiple columns are listed without specifying target indexes, they will be moved to the front of the dataframe in the order provided. This is useful when you want key columns to appear first without altering the remaining column order.
 columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -130,7 +130,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange 3 --example 
+#> ColumnRearrange 3 --exampleTitle Move Column by Index Position --example Instead of specifying a column name, you can specify a column by its index position. This will move the column at the given index, in this case column at index 3, to the front of the dataframe. 
 columnsToMove = [bankTransactionsDf.columns[3]]
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -169,7 +169,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --example 
+#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --exampleTitle Move a Mix of Column Names and Indexes --example A mix of column names and index references can be passed in a single call. Each listed column will be moved to the front in the order provided, regardless of whether it was specified by name or by index.
 columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 
@@ -207,7 +207,7 @@ print(bankTransactionsDf.head()) #)9
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange --columns IP  Address --indexes 3 --example 
+#> ColumnRearrange --columns IP  Address --indexes 3 --exampleTitle Move Column to a Specified Index --example By pairing each column name with a specific index, you can move that column to an exact location within the dataframe. In this case, the IP Address column is moved to the 3rd position (zero-based index), while preserving the order of all other columns.
 columnsToMove = ['IP Address']
 [3] = [3]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
@@ -249,7 +249,7 @@ print(bankTransactionsDf.head()) #)11
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --example 
+#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --exampleTitle Move Multiple Columns to Specific Indexes --example When you specify multiple columns and corresponding target indexes, each column is moved to the index specified. This allows fine-grained reordering where each column lands exactly where you want it.
 columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']
 [2, 4, 6] = [2, 4, 6]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
@@ -291,7 +291,7 @@ print(bankTransactionsDf.head()) #)13
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRearrange TransactionID AccountID 4  --back --example 
+#> ColumnRearrange TransactionID AccountID 4  --back --exampleTitle Move Columns to the End of the Dataframe --example When the back option is used, the specified columns (by name or index) will be moved to the end of the dataframe, while preserving the order of all other columns. This is useful for deprioritizing less important fields without dropping them.
 columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]
 columnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove
 bankTransactionsDf = bankTransactionsDf[columnsToMove] 

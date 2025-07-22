@@ -49,7 +49,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa  D000235  215.97.143.157       M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
-#> ColumnQuantile CustomerAge --example 
+#> ColumnQuantile CustomerAge --exampleTitle Get Default Quantile of a Single Column --example By default, quantile returns the median (0.5 quantile) when no specific value is provided. In this example, we compute the median CustomerAge to understand the central tendency of the column.
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() 
 
 #> print 
@@ -74,7 +74,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --example 
+#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --exampleTitle Get Specific Quantiles of a Single Column --example Rather than just retrieving the default median, we can specify the exact quantiles we want. Here we calculate the 25%, 50%, 75%, and 100% of CustomerAge to better understand its distribution.
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) 
 
 #> print 
@@ -103,7 +103,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --example 
+#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --exampleTitle Create Variables for Each Quantile --example In addition to computing quantiles, we can assign each quantile value to its own variable. This allows for easier use later in code when comparing or referencing specific thresholds.
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )
 bankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]
 bankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]
@@ -151,7 +151,7 @@ print(bankTransactionsDf.head()) #)11
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile AccountBalance TransactionDuration --example 
+#> ColumnQuantile AccountBalance TransactionDuration --exampleTitle Get Default Quantile of Multiple Columns --example When multiple columns are passed without specifying a quantile, the default behavior is to compute the 0.5 quantile (median) for each. This provides a quick snapshot of the central values across several numerical features.
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() 
 
 #> print 
@@ -178,7 +178,7 @@ print(bankTransactionsDf.head()) #)13
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 --example 
+#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 --exampleTitle Get Specific Quantiles Across Multiple Columns --example You can compute specific quantiles for multiple columns at once. This example includes both numeric and datetime data types to show how quantiles are calculated consistently across supported types.
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) 
 
 #> print 
@@ -208,7 +208,7 @@ print(bankTransactionsDf.head()) #)15
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles --example 
+#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles --exampleTitle Store Quantiles of Multiple Columns in Separate Variables --example After computing several quantiles across multiple columns, you can create separate variables for each quantile-column combination. This enables fine-grained control over how the results are used later in the analysis or logic flow.
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )
 bankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']
 bankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']

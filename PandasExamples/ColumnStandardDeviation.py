@@ -55,7 +55,7 @@ print(weatherDf.head()) #)1
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnStandardDeviation Humidity3pm 
+#> ColumnStandardDeviation Humidity3pm --exampleTitle Get Standard Deviation of a Single Column --example Standard deviation provides insight into the variability or spread of values in a column. In this example, we compute the standard deviation of the Humidity3pm column to understand how much the afternoon humidity tends to vary day to day.
 weatherDfStd = weatherDf['Humidity3pm'].std() 
 
 #> print 
@@ -79,7 +79,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnStandardDeviation Temp3pm Temp9am Rainfall --example 
+#> ColumnStandardDeviation Temp3pm Temp9am Rainfall --exampleTitle Get Standard Deviation of Multiple Columns --example When multiple columns are of interest, we can compute their standard deviations in a single step. This example evaluates the variation in morning temperature, afternoon temperature, and rainfall across the entire dataset.
 weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() 
 
 #> print 
@@ -107,7 +107,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow --example 
+#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow --exampleTitle Get Grouped Standard Deviations --example To compare how variability differs across groups, we can compute the standard deviation within each group. In this example, we group by RainTomorrow and calculate the standard deviations of Sunshine and Rainfall to understand how weather variability differs between rainy and non-rainy days.
 weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()
 weatherDfStd = pd.DataFrame(weatherDfStd).reset_index() 
 

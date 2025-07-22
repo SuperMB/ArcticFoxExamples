@@ -7,51 +7,56 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">front</span>: Flag specifying to move the specified columns to the front of the dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">back</span>: Flag specifying to move the specified columns to the back of the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Move a Single Column to the Front</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When a single column is specified, and no other options are used, that column will be moved to the very front of the dataframe. All other columns will retain their order behind it. This is helpful when highlighting a specific column of interest for analysis or visualization.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange DeviceID<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange DeviceID<span>
+AFLEFT 
 columnsToMove = ['DeviceID']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Move Multiple Columns to the Front</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When multiple columns are listed without specifying target indexes, they will be moved to the front of the dataframe in the order provided. This is useful when you want key columns to appear first without altering the remaining column order.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionDate MerchantID Channel<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionDate MerchantID Channel<span>
+AFLEFT 
 columnsToMove = ['TransactionDate', 'MerchantID', 'Channel']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Move Column by Index Position</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of specifying a column name, you can specify a column by its index position. This will move the column at the given index, in this case column at index 3, to the front of the dataframe.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange 3<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange 3<span>
+AFLEFT 
 columnsToMove = [bankTransactionsDf.columns[3]]
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Move a Mix of Column Names and Indexes</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A mix of column names and index references can be passed in a single call. Each listed column will be moved to the front in the order provided, regardless of whether it was specified by name or by index.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange CustomerAge 4 5 CustomerOccupation<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange CustomerAge 4 5 CustomerOccupation<span>
+AFLEFT 
 columnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']
 columnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Move Column to a Specified Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">By pairing each column name with a specific index, you can move that column to an exact location within the dataframe. In this case, the IP Address column is moved to the 3rd position (zero-based index), while preserving the order of all other columns.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns IP Address --indexes 3<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns IP Address --indexes 3<span>
+AFLEFT 
 columnsToMove = ['IP Address']
 [3] = [3]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
@@ -60,11 +65,12 @@ for column,targetIndex in zip(columnsToMove, [3]):
 bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6 - Move Multiple Columns to Specific Indexes</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When you specify multiple columns and corresponding target indexes, each column is moved to the index specified. This allows fine-grained reordering where each column lands exactly where you want it.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6<span>
+AFLEFT 
 columnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']
 [2, 4, 6] = [2, 4, 6]
 remaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]
@@ -73,11 +79,12 @@ for column,targetIndex in zip(columnsToMove, [2, 4, 6]):
 bankTransactionsDf = bankTransactionsDf[remaining_columns] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 7 - Move Columns to the End of the Dataframe</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When the back option is used, the specified columns (by name or index) will be moved to the end of the dataframe, while preserving the order of all other columns. This is useful for deprioritizing less important fields without dropping them.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionID AccountID 4 --back<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRearrange TransactionID AccountID 4 --back<span>
+AFLEFT 
 columnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]
 columnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove
 bankTransactionsDf = bankTransactionsDf[columnsToMove] AFRIGHT</span></code></pre>

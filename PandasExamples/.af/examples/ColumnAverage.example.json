@@ -1,22 +1,22 @@
 {
     "ColumnAverage": [
         {
-            "KitText": "#> ColumnAverage MaxTemp --print --example",
+            "KitText": "#> ColumnAverage MaxTemp --print --exampleTitle Get Average of a Single Column --example It is common to want to see the average value of a column to get a feel of the values in the column. Here, we have a weather dataset and we get the average value of the MaxTemp column.",
             "CodeAfterKit": "\nweatherDfMean = weatherDf['MaxTemp'].mean()\r\nprint(weatherDfMean) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "It is common to want to see the average value of a column to get a feel of the values in the column. Here, we have a weather dataset and we get the average value of the MaxTemp column.",
+            "ExampleTitle": "Get Average of a Single Column"
         },
         {
-            "KitText": "#> ColumnAverage WindGustSpeed MinTemp Evaporation --print --example",
+            "KitText": "#> ColumnAverage WindGustSpeed MinTemp Evaporation --print --exampleTitle Get Average of Multiple Columns --example Rather than getting the average of a single columns, we can get the average of multiple columns simplify by stating multiple columns.",
             "CodeAfterKit": "\nweatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()\r\nprint(weatherDfMean) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than getting the average of a single columns, we can get the average of multiple columns simplify by stating multiple columns.",
+            "ExampleTitle": "Get Average of Multiple Columns"
         },
         {
-            "KitText": "#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe --example",
+            "KitText": "#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe --exampleTitle Get Rolling Average and Add to Dataframe --example With sorted data according to an index or time, it is common to want to know an average over only the X most recent records. We get the column average over a rolling window of the last 5 rows. Additionally, we add the result back to the dataframe to align the windowed averages with the rows in which they occur.",
             "CodeAfterKit": "\nweatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()\nweatherDf['SunshineMeanRolling5'] = pd.Series()\nweatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "With sorted data according to an index or time, it is common to want to know an average over only the X most recent records. We get the column average over a rolling window of the last 5 rows. Additionally, we add the result back to the dataframe to align the windowed averages with the rows in which they occur.",
+            "ExampleTitle": "Get Rolling Average and Add to Dataframe"
         }
     ]
 }

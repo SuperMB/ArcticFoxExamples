@@ -7,10 +7,10 @@
             "ExampleTitle": "Add a New Empty Column"
         },
         {
-            "KitText": "#> ColumnAdd 1 --newColumnNames Columnof1s --exampleTile Added a Column With Set Value --example Add a column to the dataframe where every row in the column has the same value. In this case, the column name is Columnof1s and the value of each row for the column will be 1",
+            "KitText": "#> ColumnAdd 1 --newColumnNames Columnof1s --exampleTitle Added a Column With Set Value --example Add a column to the dataframe where every row in the column has the same value. In this case, the column name is Columnof1s and the value of each row for the column will be 1",
             "CodeAfterKit": "\nbankTransactionsDf['Columnof1s'] = 1",
             "ExampleDescription": "Add a column to the dataframe where every row in the column has the same value. In this case, the column name is Columnof1s and the value of each row for the column will be 1",
-            "ExampleTitle": ""
+            "ExampleTitle": "Added a Column With Set Value"
         },
         {
             "KitText": "#> ColumnAdd location --exampleTitle Adding a Variable as a Column --example Add a variable as a column to the dataframe. If a column name is not provided, the column name will be the same as the variable name. Here, the variable location is added to the dataframe as a new column names location.",

@@ -1,10 +1,10 @@
 {
     "DataframeCopy": [
         {
-            "KitText": "#> DataframeCopy --example",
+            "KitText": "#> DataframeCopy --exampleTitle Copy a DataFrame with Default Behavior --example Use this option to create a full copy of a dataframe without applying any modifications. This is useful when you want to make changes or perform analysis without altering the original dataset.",
             "CodeAfterKit": "\nappleStockDfCopy = appleStockDf.copy()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Use this option to create a full copy of a dataframe without applying any modifications. This is useful when you want to make changes or perform analysis without altering the original dataset.",
+            "ExampleTitle": "Copy a DataFrame with Default Behavior"
         }
     ]
 }

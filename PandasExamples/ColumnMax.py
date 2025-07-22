@@ -52,7 +52,7 @@ print(banktransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa  D000235  215.97.143.157       M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
-#> ColumnMax TransactionAmount --example 
+#> ColumnMax TransactionAmount --exampleTitle Get Max of a Single Column --example The maximum value in a column helps identify unusual or extreme entries. In this example, we compute the highest recorded TransactionAmount across all transactions.
 banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() 
 
 #> print 
@@ -76,7 +76,7 @@ print(banktransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnMax CustomerAge AccountBalance TransactionDate --example 
+#> ColumnMax CustomerAge AccountBalance TransactionDate --exampleTitle Get Max of Multiple Columns --example This example shows how to retrieve the maximum values across several columns at once. It helps identify the oldest customer, the largest account balance, and the most recent transaction date in the dataset.
 banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max() 
 
 #> print 
@@ -104,7 +104,7 @@ print(banktransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe --example 
+#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe --exampleTitle Add Rolling Max to Dataframe --example A rolling maximum provides a dynamic upper bound across a defined window of rows. Here, we compute the maximum TransactionAmount across the latest 5 entries in each row and add that result as a new column in trend analysis.
 banktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()
 banktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()
 banktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5 

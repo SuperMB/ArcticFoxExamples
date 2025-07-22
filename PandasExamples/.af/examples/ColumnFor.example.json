@@ -1,10 +1,10 @@
 {
     "ColumnFor": [
         {
-            "KitText": "#> ColumnFor --example",
+            "KitText": "#> ColumnFor --exampleTitle Loop Over Columns with a For Loop --example The ColumnFor kit creates a for loop that iterates through all columns in a dataframe. This gives you access to each column name as a string, which you can then use to apply transformations, checks, or other column-wise logic in a repeatable way.",
             "CodeAfterKit": "\nfor column in bankTransactionsDf.columns:",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "The ColumnFor kit creates a for loop that iterates through all columns in a dataframe. This gives you access to each column name as a string, which you can then use to apply transformations, checks, or other column-wise logic in a repeatable way.",
+            "ExampleTitle": "Loop Over Columns with a For Loop"
         }
     ]
 }

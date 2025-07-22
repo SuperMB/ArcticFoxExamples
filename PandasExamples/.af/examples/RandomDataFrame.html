@@ -7,38 +7,18 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">min</span>: Specifies the minimum value for random data</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">max</span>: Specifies the maximum value for random data</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Generate a Custom-Sized Random DataFrame</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Generates a lightweight dataframe with 3 columns and 10 rows. Useful for demoing logic, formatting, or functionality in a quick and controlled setup.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RandomDataFrame<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RandomDataFrame --columnCount 3 --rowCount 10<span>
+AFLEFT 
 dfRandomData = {    
-    'Column1': np.random.randint(1, 101, size=10000),    
-    'Column2': np.random.randint(1, 101, size=10000),    
-    'Column3': np.random.randint(1, 101, size=10000),    
-    'Column4': np.random.randint(1, 101, size=10000),    
-    'Column5': np.random.randint(1, 101, size=10000),    
-    'Column6': np.random.randint(1, 101, size=10000),    
-    'Column7': np.random.randint(1, 101, size=10000),    
-    'Column8': np.random.randint(1, 101, size=10000),    
-    'Column9': np.random.randint(1, 101, size=10000),    
-    'Column10': np.random.randint(1, 101, size=10000),
-}
-
-df = pd.DataFrame(dfRandomData) AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RandomDataFrame --columnCount 3 --rowCount 10<span>AFLEFT 
-dfRandomData_1 = {    
     'Column1': np.random.randint(1, 101, size=10),    
     'Column2': np.random.randint(1, 101, size=10),    
     'Column3': np.random.randint(1, 101, size=10),
 }
 
-df_1 = pd.DataFrame(dfRandomData_1) AFRIGHT</span></code></pre>
+df = pd.DataFrame(dfRandomData) AFRIGHT</span></code></pre>
 </div>  
 

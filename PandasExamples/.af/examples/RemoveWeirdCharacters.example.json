@@ -1,16 +1,16 @@
 {
     "RemoveWeirdCharacters": [
         {
-            "KitText": "#> RemoveWeirdCharacters --example",
+            "KitText": "#> RemoveWeirdCharacters --exampleTitle Remove Non-ASCII Characters from Entire DataFrame --example Cleans the full dataset by stripping out any characters outside the ASCII range. This is especially helpful when working with data where encoding issues may introduce stray symbols or formatting artifacts across all columns.",
             "CodeAfterKit": "\nfor column in texasCensusDf.columns:\n    texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Cleans the full dataset by stripping out any characters outside the ASCII range. This is especially helpful when working with data where encoding issues may introduce stray symbols or formatting artifacts across all columns.",
+            "ExampleTitle": "Remove Non-ASCII Characters from Entire DataFrame"
         },
         {
-            "KitText": "#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error --example",
+            "KitText": "#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error --exampleTitle Remove Non-ASCII Characters from Specific Columns --example Targets and removes strange or corrupted characters only from selected columns that are known to contain bad encodings. This provides a more precise fix when only a subset of the dataset is affected.",
             "CodeAfterKit": "\ntexasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)\ntexasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\\x00-\\x7F]+', '', regex=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Targets and removes strange or corrupted characters only from selected columns that are known to contain bad encodings. This provides a more precise fix when only a subset of the dataset is affected.",
+            "ExampleTitle": "Remove Non-ASCII Characters from Specific Columns"
         }
     ]
 }

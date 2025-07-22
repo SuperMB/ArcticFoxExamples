@@ -31,7 +31,7 @@ print(appleStockDf.head()) #)1
 ##*** 2           2 1980-12-16  0.087429  0.087429  0.086999  0.086999  105728000
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
-#> DataframeCopy --example 
+#> DataframeCopy --exampleTitle Copy a DataFrame with Default Behavior --example Use this option to create a full copy of a dataframe without applying any modifications. This is useful when you want to make changes or perform analysis without altering the original dataset.
 appleStockDfCopy = appleStockDf.copy() 
 
 # Show the new dataframe

@@ -44,7 +44,7 @@ print(df.head()) #)1
 ##*** 4       88       10       13
 
 
-#> RowDuplicates --count --example 
+#> RowDuplicates --count --exampleTitle Count the Number of Duplicate Rows --example It’s useful to identify how many rows in a dataset are exact duplicates. This example counts the number of duplicated rows so you can assess the extent of redundancy in the dataframe.
 duplicateRowsCount = df[df.duplicated()].shape[0] 
 
 #> print 
@@ -68,7 +68,7 @@ print(df.head()) #)3
 ##*** 3       97       11       65
 ##*** 4       88       10       13
 
-#> RowDuplicates --example 
+#> RowDuplicates --exampleTitle Extract Duplicate Rows from a Dataframe --example Alernaively, you may want to examine duplicate rows directly. This example extracts all duplicated rows from the dataframe so they can be inspected or processed separately.
 duplicateRows = df[df.duplicated()] 
 
 #> print 
@@ -146,7 +146,7 @@ duplicateRowsRowCount = duplicateRows.shape[0]
 print(duplicateRowsRowCount) #)6 
 ##*** 49
 
-#> RowDuplicates --remove --example 
+#> RowDuplicates --remove --exampleTitle Remove Duplicate Rows --example Instead, you may want to remove duplicate rows from a dataframe to make the dataframe unique. This operation removes all repeated rows while keeping only the first occurrence of each duplicated value set.
 duplicateRows = duplicateRows.drop_duplicates(keep='first') 
 
 #> RowCount --print 

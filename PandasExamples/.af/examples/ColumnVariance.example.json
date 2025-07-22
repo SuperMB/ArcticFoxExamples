@@ -1,22 +1,16 @@
 {
     "ColumnVariance": [
         {
-            "KitText": "#> ColumnVariance RISK_MM --print --example",
+            "KitText": "#> ColumnVariance RISK_MM --print --exampleTitle Get Variance of a Single Column --example You can calculate the variance of a single numeric column to understand the spread of values. In this example, we compute the variance of the RISK_MM column, which provides insight into how much the expected rainfall measurement varies day to day.",
             "CodeAfterKit": "\nweatherDfVar = weatherDf['RISK_MM'].var()\r\nprint(weatherDfVar) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "You can calculate the variance of a single numeric column to understand the spread of values. In this example, we compute the variance of the RISK_MM column, which provides insight into how much the expected rainfall measurement varies day to day.",
+            "ExampleTitle": "Get Variance of a Single Column"
         },
         {
-            "KitText": "#> ColumnVariance WindSpeed3pm Evaporation --print --example",
+            "KitText": "#> ColumnVariance WindSpeed3pm Evaporation --print --exampleTitle Get Variance for Multiple Columns --example You can also retrieve the variance for several columns at once. This example calculates the variance of both WindSpeed3pm and Evaporation, which helps evaluate the variability in those measurements.",
             "CodeAfterKit": "\nweatherDfVar = weatherDf [ ['WindSpeed3pm', 'Evaporation'] ].var()\r\nprint(weatherDfVar) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print --example",
-            "CodeAfterKit": "\nweatherDfVar = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].var()\nweatherDfVar = pd.DataFrame(weatherDfVar).reset_index()\r\nprint(weatherDfVar) #)6",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "You can also retrieve the variance for several columns at once. This example calculates the variance of both WindSpeed3pm and Evaporation, which helps evaluate the variability in those measurements.",
+            "ExampleTitle": "Get Variance for Multiple Columns"
         }
     ]
 }

@@ -73,7 +73,7 @@ print(bankTransactionsDf.head(n=10)) #)2
 ##*** 14      TX000015   AC00085             166.99 2023-02-13 16:53:57           Debit   Louisville  D000309  188.124.181.12       M017  Online           18            Student                  134              1          299.93     2024-11-04 08:10:09
 ##*** 15      TX000016   AC00270             465.45 2023-12-12 16:23:31           Debit       Denver  D000466  221.169.49.152       M025     ATM           36           Engineer                  129              1         3465.54     2024-11-04 08:12:19
 
-#> ResetIndexes --example 
+#> ResetIndexes --exampleTitle Reset Row Indexes After Row Removal --example When rows are removed from a DataFrame, or shuffled, the index values can become non-sequential or inconsistent. Use ResetIndexes to reassign the row indexes so they start from 0 and increase sequentially again. 
 bankTransactionsDf = bankTransactionsDf.reset_index(drop=True) 
 
 #> Visualize --count 10 

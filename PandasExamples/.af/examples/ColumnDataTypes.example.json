@@ -1,22 +1,22 @@
 {
     "ColumnDataTypes": [
         {
-            "KitText": "#> ColumnDataTypes --print --example",
+            "KitText": "#> ColumnDataTypes --print --exampleTitle Get Data Types of All Columns --example Quickly inspect the data types of each column in a dataframe. This is useful to understand the structure of your data and ensuring that numeric, string, and date fields are correctly typed before performing any operations.",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf.dtypes\r\nprint(bankTransactionsDfDataTypes) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Quickly inspect the data types of each column in a dataframe. This is useful to understand the structure of your data and ensuring that numeric, string, and date fields are correctly typed before performing any operations.",
+            "ExampleTitle": "Get Data Types of All Columns"
         },
         {
-            "KitText": "#> ColumnDataTypes TransactionAmount --print --example",
+            "KitText": "#> ColumnDataTypes TransactionAmount --print --exampleTitle Get Data Type of a Single Column --example Sometimes we only want to inspect the type of a specific column. This example shows how to print the data type of the TransactionAmount column without examining the entire dataframe.",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf[ [ 'TransactionAmount' ] ].dtypes\r\nprint(bankTransactionsDfDataTypes) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes we only want to inspect the type of a specific column. This example shows how to print the data type of the TransactionAmount column without examining the entire dataframe.",
+            "ExampleTitle": "Get Data Type of a Single Column"
         },
         {
-            "KitText": "#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --example",
+            "KitText": "#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --exampleTitle Get Data Types of Multiple Columns --example Instead of checking all columns, you can target just a few. Here, we retrieve the data types of the AccountID, LoginAttempts, and PreviousTransactionDate columns to verify how these specific fields are stored.",
             "CodeAfterKit": "\nbankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'PreviousTransactionDate' ] ].dtypes\r\nprint(bankTransactionsDfDataTypes) #)6",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Instead of checking all columns, you can target just a few. Here, we retrieve the data types of the AccountID, LoginAttempts, and PreviousTransactionDate columns to verify how these specific fields are stored.",
+            "ExampleTitle": "Get Data Types of Multiple Columns"
         }
     ]
 }

@@ -50,7 +50,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes --print --example 
+#> ColumnDataTypes --print --exampleTitle Get Data Types of All Columns --example Quickly inspect the data types of each column in a dataframe. This is useful to understand the structure of your data and ensuring that numeric, string, and date fields are correctly typed before performing any operations.
 bankTransactionsDfDataTypes = bankTransactionsDf.dtypes
 print(bankTransactionsDfDataTypes) #)2 
 ##*** TransactionID                      object
@@ -88,7 +88,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes TransactionAmount --print --example 
+#> ColumnDataTypes TransactionAmount --print --exampleTitle Get Data Type of a Single Column --example Sometimes we only want to inspect the type of a specific column. This example shows how to print the data type of the TransactionAmount column without examining the entire dataframe.
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'TransactionAmount' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)4 
 ##*** TransactionAmount    float64
@@ -111,7 +111,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --example 
+#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print --exampleTitle Get Data Types of Multiple Columns --example Instead of checking all columns, you can target just a few. Here, we retrieve the data types of the AccountID, LoginAttempts, and PreviousTransactionDate columns to verify how these specific fields are stored.
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'PreviousTransactionDate' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)6 
 ##*** AccountID                          object

@@ -3,6 +3,10 @@
         {
             "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
             "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnSum ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxColumnSum "
         }
     ],
     "243905676281528143": [
@@ -33,6 +37,10 @@
         {
             "PreviouslyGenerated": "bankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()\nprint(bankTransactionsDfSum) #)2 ",
             "Existing": "bankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()\nprint(bankTransactionsDfSum) #)2 "
+        },
+        {
+            "PreviouslyGenerated": "bankTransactionsDfSum = bankTransactionsDf[AccountBalance].sum()\nprint(bankTransactionsDfSum) #)2 ",
+            "Existing": "bankTransactionsDfSum = bankTransactionsDf[AccountBalance].sum()\nprint(bankTransactionsDfSum) #)2 "
         }
     ],
     "013905255458988143": [
@@ -57,6 +65,16 @@
         {
             "PreviouslyGenerated": "bankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()\nbankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()\nprint(bankTransactionsDfSum) #)6 ",
             "Existing": "bankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()\nbankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()\nprint(bankTransactionsDfSum) #)6 "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: Accessing the Value of a Value/Request with name: @X:\\Code\\GitHub\\ArcticFoxExamples\\PandasExamples\\ColumnSum.py_PYTHONSCRIPT.75, but the Value/Request has not been set ",
+            "Existing": "#ISSUE: Accessing the Value of a Value/Request with name: @X:\\Code\\GitHub\\ArcticFoxExamples\\PandasExamples\\ColumnSum.py_PYTHONSCRIPT.75, but the Value/Request has not been set "
+        }
+    ],
+    "033905255458988143": [
+        {
+            "PreviouslyGenerated": "arcticFoxColumnSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnSum.variables(dir() + ['reporting', 'summaries', 'or'] )] ) ",
+            "Existing": "arcticFoxColumnSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxColumnSum.variables(dir() + ['reporting', 'summaries', 'or'] )] ) "
         }
     ]
 }

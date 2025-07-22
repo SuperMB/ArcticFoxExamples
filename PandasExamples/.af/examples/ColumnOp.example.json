@@ -1,16 +1,16 @@
 {
     "ColumnOp": [
         {
-            "KitText": "#> ColumnOp AccountBalance * 10 --where CustomerAge > 35 --example",
+            "KitText": "#> ColumnOp AccountBalance * 10 --where CustomerAge > 35 --exampleTitle Multiply Column Based on a Condition --example Perform a column-level operation where values are updated only if a specified condition is met. In this case, we multiply AccountBalance by 10 for all rows where the CustomerAge is greater than 35. This allows for conditional transformations based on row-level attributes.",
             "CodeAfterKit": "\nwhereCondition = bankTransactionsDf['CustomerAge'] > 35\nbankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Perform a column-level operation where values are updated only if a specified condition is met. In this case, we multiply AccountBalance by 10 for all rows where the CustomerAge is greater than 35. This allows for conditional transformations based on row-level attributes.",
+            "ExampleTitle": "Multiply Column Based on a Condition"
         },
         {
-            "KitText": "#> ColumnOp LoginAttempts = 6 --where CustomerAge < 20 --example",
+            "KitText": "#> ColumnOp LoginAttempts = 6 --where CustomerAge < 20 --exampleTitle Set Column Value Based on a Condition --example Sometimes we want to overwrite a column value if a condition is met. Here, we set LoginAttempts to 6 for all customers under the age of 20. This kind of logic is often used to reset, flag, or standardize values for specific customer segments.",
             "CodeAfterKit": "\nwhereCondition = bankTransactionsDf['CustomerAge'] < 20\nbankTransactionsDf['LoginAttempts'][whereCondition] = 6",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes we want to overwrite a column value if a condition is met. Here, we set LoginAttempts to 6 for all customers under the age of 20. This kind of logic is often used to reset, flag, or standardize values for specific customer segments.",
+            "ExampleTitle": "Set Column Value Based on a Condition"
         }
     ]
 }

@@ -1,22 +1,22 @@
 {
     "RowDuplicates": [
         {
-            "KitText": "#> RowDuplicates --count --example",
+            "KitText": "#> RowDuplicates --count --exampleTitle Count the Number of Duplicate Rows --example It’s useful to identify how many rows in a dataset are exact duplicates. This example counts the number of duplicated rows so you can assess the extent of redundancy in the dataframe.",
             "CodeAfterKit": "\nduplicateRowsCount = df[df.duplicated()].shape[0]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "It’s useful to identify how many rows in a dataset are exact duplicates. This example counts the number of duplicated rows so you can assess the extent of redundancy in the dataframe.",
+            "ExampleTitle": "Count the Number of Duplicate Rows"
         },
         {
-            "KitText": "#> RowDuplicates --example",
+            "KitText": "#> RowDuplicates --exampleTitle Extract Duplicate Rows from a Dataframe --example Alernaively, you may want to examine duplicate rows directly. This example extracts all duplicated rows from the dataframe so they can be inspected or processed separately.",
             "CodeAfterKit": "\nduplicateRows = df[df.duplicated()]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Alernaively, you may want to examine duplicate rows directly. This example extracts all duplicated rows from the dataframe so they can be inspected or processed separately.",
+            "ExampleTitle": "Extract Duplicate Rows from a Dataframe"
         },
         {
-            "KitText": "#> RowDuplicates --remove --example",
+            "KitText": "#> RowDuplicates --remove --exampleTitle Remove Duplicate Rows --example Instead, you may want to remove duplicate rows from a dataframe to make the dataframe unique. This operation removes all repeated rows while keeping only the first occurrence of each duplicated value set.",
             "CodeAfterKit": "\nduplicateRows = duplicateRows.drop_duplicates(keep='first')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Instead, you may want to remove duplicate rows from a dataframe to make the dataframe unique. This operation removes all repeated rows while keeping only the first occurrence of each duplicated value set.",
+            "ExampleTitle": "Remove Duplicate Rows"
         }
     ]
 }

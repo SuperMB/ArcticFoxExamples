@@ -2,11 +2,12 @@
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">DataframeConcat</h1></div>
 <div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Combine one or more dataframes by concatentating them together. This takes the rows of each dataframe and places them one after another in a new dataframe. Data will be retained in columns of the same name. Therefore, if columns are not the same across dataframes, the new dataframe will have missing values for cells for corresponding sections that did not have a given column name.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Concatenate Two Dataframes Vertically</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When working with data from different time periods or sources, it is common to combine them into a single dataframe. This example concatenates two dataframes by stacking their rows on top of each other. The result is a new dataframe that contains all rows from both inputs, preserving the order and resetting the index to maintain consistency.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeConcat df2021_FinalDf df2020_FinalDf<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeConcat df2021_FinalDf df2020_FinalDf<span>
+AFLEFT 
 dfsList = [df2021_FinalDf, df2020_FinalDf]
 dfsConcat = pd.concat(dfsList, ignore_index=True) AFRIGHT</span></code></pre>
 </div>  

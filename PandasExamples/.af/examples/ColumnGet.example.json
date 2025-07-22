@@ -1,16 +1,16 @@
 {
     "ColumnGet": [
         {
-            "KitText": "#> ColumnGet Rating --example",
+            "KitText": "#> ColumnGet Rating --exampleTitle Get a Single Column --example Sometimes you only want to look at a single column within a dataframe. This example shows how to extract the values of the Rating column on its own, allowing you to work with it independently of the rest of the dataset.",
             "CodeAfterKit": "\nrating = pizzeriasDf['Rating']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes you only want to look at a single column within a dataframe. This example shows how to extract the values of the Rating column on its own, allowing you to work with it independently of the rest of the dataset.",
+            "ExampleTitle": "Get a Single Column"
         },
         {
-            "KitText": "#> ColumnGet Location Specialty Pizza --example",
+            "KitText": "#> ColumnGet Location Specialty Pizza --exampleTitle Get Multiple Columns --example You may want to pull out specific columns from the dataframe to examine or work with side-by-side. This example extracts the Location and Specialty Pizza columns so that we can focus only on those fields and ignore the others.",
             "CodeAfterKit": "\nlocation = pizzeriasDf['Location']\nspecialtyPizza = pizzeriasDf['Specialty Pizza']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "You may want to pull out specific columns from the dataframe to examine or work with side-by-side. This example extracts the Location and Specialty Pizza columns so that we can focus only on those fields and ignore the others.",
+            "ExampleTitle": "Get Multiple Columns"
         }
     ]
 }

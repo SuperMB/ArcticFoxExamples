@@ -43,7 +43,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> RowFor --example 
+#> RowFor --exampleTitle Iterate Over Rows in a Dataframe --example Use the RowFor kit to create a for-loop that iterates over each row of the dataframe. This structure is helpful when you need to write custom row-level logic. 
 for row in appleStockDf.iterrows(): 
     maxDifference = max(maxDifference, row['High'] - row['Low'])
 

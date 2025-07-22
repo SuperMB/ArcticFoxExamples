@@ -68,7 +68,7 @@ print(weatherDfQuantile) #)2
 ##*** 1.00    35.800
 ##*** Name: MaxTemp, dtype: float64
 
-#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40 --example 
+#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40 --exampleTitle Categorize Rows Based on Maximum Thresholds --example Use RowCategorize to assign category labels to rows based on the values in a specified column. In this case, we assign the labels cold, cool, warm, or hot based on the value of MaxTemp. Since no default category was given for values above 40, the MaxTempCategorized column for those values would be empty. 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) 
 
 #> ColumnRearrange MaxTempCategorized MaxTemp 
@@ -103,8 +103,8 @@ weatherDf = pd.read_csv('weather.csv')
 #> Visualize 
 print(weatherDf.head()) #)4 
 
-#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30 --example 
-weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) 
+#> RowCategorize MaxTemp --categories newCold, 10 < newCool, 20 < newWarm, 30 < newHot  --exampleTitle Categorize Rows Based on Minimum Thresholds --example Rather than using upper-bound conditions, you can define categories based on lower thresholds. In this example, we assign each row a category of newCold, newCool, newWarm, or newHot depending on whether MaxTemp exceeds each successive value. Any values below the first threshold fall into the first listed category. 
+weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,sys.float_info.max], labels=['newCold','newCool','newWarm','newHot'], include_lowest=True) 
 
 #> ColumnRearrange MaxTempCategorized MaxTemp 
 columnsToMove = ['MaxTempCategorized', 'MaxTemp']

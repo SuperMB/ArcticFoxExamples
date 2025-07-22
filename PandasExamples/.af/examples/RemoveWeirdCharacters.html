@@ -4,20 +4,22 @@
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to remove weird characters from, if not used, weird characters will be removed from the entire dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Remove Non-ASCII Characters from Entire DataFrame</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Cleans the full dataset by stripping out any characters outside the ASCII range. This is especially helpful when working with data where encoding issues may introduce stray symbols or formatting artifacts across all columns.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters<span>
+AFLEFT 
 for column in texasCensusDf.columns:
     texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\x00-\x7F]+', '', regex=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Remove Non-ASCII Characters from Specific Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Targets and removes strange or corrupted characters only from selected columns that are known to contain bad encodings. This provides a more precise fix when only a subset of the dataset is affected.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error<span>
+AFLEFT 
 texasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\x00-\x7F]+', '', regex=True)
 texasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\x00-\x7F]+', '', regex=True) AFRIGHT</span></code></pre>
 </div>  

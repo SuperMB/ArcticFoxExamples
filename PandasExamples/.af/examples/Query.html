@@ -2,52 +2,58 @@
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Query</h1></div>
 <div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Modifies a dataframe by retaining only the rows within the dataframe that met the desired crtieria. The conditions provide may implement one or more of the following:<br>- >, <, >=, <=, ==, !=<br>- starts with<br>- ends with<br>- contains</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Query with the Greater Than Operator</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Selects all rows where the value in the Open column is greater than 150. This is a common pattern for identifying records above a specified cutoff.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Open > 150<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Open > 150<span>
+AFLEFT 
 appleStockDf = appleStockDf[appleStockDf['Open'] > 150] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Filter Rows Between Two Numeric Bounds</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Retrieves rows where Low is greater than 100 and High is less than 110. Combines two numeric conditions using AND logic to isolate a range of interest.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Low > 100 and High < 110<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Low > 100 and High < 110<span>
+AFLEFT 
 appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Filter Rows with Mixed Conditions Using OR</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Applies a compound filter where either a date is after 2022 or a numeric value in Low exceeds 300. Demonstrates how to combine conditions across different column types.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Date > 2022 or Low > 300<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Date > 2022 or Low > 300<span>
+AFLEFT 
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Filter Rows by Substring Match in Text Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Returns rows where the Location column contains the substring "San". Useful for partial string matching in text-based data.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Location contains San<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Location contains San<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Filter Rows Where Text Column Ends With a Specific Value</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Returns rows where the DeviceID column ends with a specific string. Demonstrates how to apply suffix-based matching for filtering text data.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query DeviceID ends with endsWithValue<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query DeviceID ends with endsWithValue<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 6 - Filter Rows with Greater Than and Less Than Operators with Mathematical Operations</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">In this example, we get the values that are within 10 percent above or below the median of the Apple stock.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian<span>
+AFLEFT 
 appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] AFRIGHT</span></code></pre>
 </div>  
 

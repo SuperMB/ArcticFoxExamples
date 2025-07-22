@@ -1,22 +1,22 @@
 {
     "ColumnCorrelation": [
         {
-            "KitText": "#> ColumnCorrelation --example",
+            "KitText": "#> ColumnCorrelation --exampleTitle Correlation of All Numeric Columns --example Dataframes often contain many numeric columns and we want to see the correlation between all of the numerical columns. Using ColumnCorrelation without any options will get the correlation between all numeric columns in a dataframe.",
             "CodeAfterKit": "\nappleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])\nappleStockDfCorrelation = appleStockDfNumericOnly.corr()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Dataframes often contain many numeric columns and we want to see the correlation between all of the numerical columns. Using ColumnCorrelation without any options will get the correlation between all numeric columns in a dataframe.",
+            "ExampleTitle": "Correlation of All Numeric Columns"
         },
         {
-            "KitText": "#> ColumnCorrelation --columns High Low Volume --example",
+            "KitText": "#> ColumnCorrelation --columns High Low Volume --exampleTitle Correlation Between Specific Columns --example Rather than getting the correlation between all columns in the dataframe, sometimes we only want to see how correlated specific columns are. This can be done be passing in the names of each column that you want to see the correlation for.",
             "CodeAfterKit": "\nappleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than getting the correlation between all columns in the dataframe, sometimes we only want to see how correlated specific columns are. This can be done be passing in the names of each column that you want to see the correlation for.",
+            "ExampleTitle": "Correlation Between Specific Columns"
         },
         {
-            "KitText": "#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open --example",
+            "KitText": "#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open --exampleTitle Correlation Only Between Desired Rows --example Data between columns is not always correlated throughout the entire column, but sometimes only specific sections of the data contains a correlation. Specifying a where clause will limit the data to rows that meet the condition to see the correlation between those rows.",
             "CodeAfterKit": "\nappleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Data between columns is not always correlated throughout the entire column, but sometimes only specific sections of the data contains a correlation. Specifying a where clause will limit the data to rows that meet the condition to see the correlation between those rows.",
+            "ExampleTitle": "Correlation Only Between Desired Rows"
         }
     ]
 }

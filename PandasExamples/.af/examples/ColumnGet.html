@@ -4,19 +4,21 @@
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to retrieve</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Sometimes you only want to look at a single column within a dataframe. This example shows how to extract the values of the Rating column on its own, allowing you to work with it independently of the rest of the dataset.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnGet Rating<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnGet Rating<span>
+AFLEFT 
 rating = pizzeriasDf['Rating'] AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You may want to pull out specific columns from the dataframe to examine or work with side-by-side. This example extracts the Location and Specialty Pizza columns so that we can focus only on those fields and ignore the others.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnGet Location Specialty Pizza<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnGet Location Specialty Pizza<span>
+AFLEFT 
 location = pizzeriasDf['Location']
 specialtyPizza = pizzeriasDf['Specialty Pizza'] AFRIGHT</span></code></pre>
 </div>  

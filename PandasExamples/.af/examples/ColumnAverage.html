@@ -8,29 +8,32 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Groups the data before performing the operation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Average of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">It is common to want to see the average value of a column to get a feel of the values in the column. Here, we have a weather dataset and we get the average value of the MaxTemp column.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage MaxTemp --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage MaxTemp --print<span>
+AFLEFT 
 weatherDfMean = weatherDf['MaxTemp'].mean()
 print(weatherDfMean) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Average of Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than getting the average of a single columns, we can get the average of multiple columns simplify by stating multiple columns.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage WindGustSpeed MinTemp Evaporation --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage WindGustSpeed MinTemp Evaporation --print<span>
+AFLEFT 
 weatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()
 print(weatherDfMean) #)4 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Get Rolling Average and Add to Dataframe</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">With sorted data according to an index or time, it is common to want to know an average over only the X most recent records. We get the column average over a rolling window of the last 5 rows. Additionally, we add the result back to the dataframe to align the windowed averages with the rows in which they occur.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe<span>
+AFLEFT 
 weatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()
 weatherDf['SunshineMeanRolling5'] = pd.Series()
 weatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5 AFRIGHT</span></code></pre>

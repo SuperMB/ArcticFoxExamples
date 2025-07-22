@@ -1,16 +1,22 @@
 {
     "DataframeSave": [
         {
-            "KitText": "#> DataframeSave --fileName NewAppleStock.csv --example",
-            "CodeAfterKit": "\nappleStockDf.to_csv('NewAppleStock.csv', index=False)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> DataframeSave --exampleTitle Save Dataframe to CSV Using Default Name --example Use the DataframeSave kit to export the current dataframe to a CSV file. If no file name is given, the dataframe is saved using its variable name. In this case, the dataframe appleStockDf will be saved as appleStockDf.csv.",
+            "CodeAfterKit": "\nappleStockDf.to_csv('appleStockDf.csv', index=False)",
+            "ExampleDescription": "Use the DataframeSave kit to export the current dataframe to a CSV file. If no file name is given, the dataframe is saved using its variable name. In this case, the dataframe appleStockDf will be saved as appleStockDf.csv.",
+            "ExampleTitle": "Save Dataframe to CSV Using Default Name"
         },
         {
-            "KitText": "#> DataframeSave --fileName SecondNewAppleStock --example",
+            "KitText": "#> DataframeSave --fileName NewAppleStock.csv --exampleTitle Save Dataframe with Custom File Name --example You can choose a custom file name when saving a dataframe to a CSV file. In this example, the dataframe is saved as NewAppleStock.csv instead of using the variable name.",
+            "CodeAfterKit": "\nappleStockDf.to_csv('NewAppleStock.csv', index=False)",
+            "ExampleDescription": "You can choose a custom file name when saving a dataframe to a CSV file. In this example, the dataframe is saved as NewAppleStock.csv instead of using the variable name.",
+            "ExampleTitle": "Save Dataframe with Custom File Name"
+        },
+        {
+            "KitText": "#> DataframeSave --fileName SecondNewAppleStock --exampleTitle Save Dataframe Without Specifying File Extension --example If you leave off the .csv extension in the file name, it will still be added automatically. This makes it easier to quickly save a file by name without worrying about file format details.",
             "CodeAfterKit": "\nappleStockDf.to_csv('SecondNewAppleStock.csv', index=False)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "If you leave off the .csv extension in the file name, it will still be added automatically. This makes it easier to quickly save a file by name without worrying about file format details.",
+            "ExampleTitle": "Save Dataframe Without Specifying File Extension"
         }
     ]
 }

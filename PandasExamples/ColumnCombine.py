@@ -68,7 +68,7 @@ print(modifiedPizzeriasDf.head(n=20)) #)1
 ##*** 18              Rosa's Gourmet      Manhattan, NYC        Pepperoni         $$$                  4.2                   4.2              Non            Yes            1997.0              49.0            www.rosa'sgourmet31.com
 ##*** 19             Mario's Gourmet          Bronx, NYC         Hawaiian          $$                  NaN                   NaN              Yes             No            1969.0              75.0                                NaN
 
-#> ColumnCombine First  Person  Rating Second  Person  Rating --keepNonNull --example 
+#> ColumnCombine First  Person  Rating Second  Person  Rating --keepNonNull --exampleTitle Combine Two Columns When First Column is Empty --example ColumnCombine is a bit of a niche seed. The resulting code will combine two columns by keeping the value of the first column if it is not null / NaN, and if it is, the column will take the value of the second column. In this example, we have two people's ratings in the columns First Person Rating and Second Person Rating. However, each person did not rate every pizzeria. We will combine the two columns to use the First Person Rating when available, and otherwise use the Second Person Rating.  
 modifiedPizzeriasDf['First Person Rating'] = modifiedPizzeriasDf['First Person Rating'].combine_first(modifiedPizzeriasDf['Second Person Rating'])
 modifiedPizzeriasDf = modifiedPizzeriasDf.drop(columns='Second Person Rating') 
 
@@ -99,4 +99,4 @@ print(modifiedPizzeriasDf.head(n=20)) #)2
 ##*** 18              Rosa's Gourmet      Manhattan, NYC        Pepperoni         $$$           4.2              Non            Yes            1997.0              49.0            www.rosa'sgourmet31.com
 ##*** 19             Mario's Gourmet          Bronx, NYC         Hawaiian          $$           NaN              Yes             No            1969.0              75.0                                NaN
 
-
+ 

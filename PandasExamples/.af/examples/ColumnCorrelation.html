@@ -5,28 +5,31 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to calculate the correlation for, if not specified, the correlation will be computed for the entire dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Specifies a condition for removing rows</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Correlation of All Numeric Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Dataframes often contain many numeric columns and we want to see the correlation between all of the numerical columns. Using ColumnCorrelation without any options will get the correlation between all numeric columns in a dataframe.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation<span>
+AFLEFT 
 appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])
 appleStockDfCorrelation = appleStockDfNumericOnly.corr() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Correlation Between Specific Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than getting the correlation between all columns in the dataframe, sometimes we only want to see how correlated specific columns are. This can be done be passing in the names of each column that you want to see the correlation for.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume<span>
+AFLEFT 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Correlation Only Between Desired Rows</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Data between columns is not always correlated throughout the entire column, but sometimes only specific sections of the data contains a correlation. Specifying a where clause will limit the data to rows that meet the condition to see the correlation between those rows.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open<span>
+AFLEFT 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() AFRIGHT</span></code></pre>
 </div>  
 

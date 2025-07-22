@@ -42,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --print --example 
+#> RowCount --print --exampleTitle Count Total Number of Rows --example One of the simplest checks you can make is to count how many rows are in a dataframe. This is useful to verify that the data loaded correctly or to understand the dataset size before applying transformations.
 pizzeriasDfRowCount = pizzeriasDf.shape[0]
 print(pizzeriasDfRowCount) #)2 
 ##*** 1000
@@ -64,7 +64,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --missing --example 
+#> RowCount --missing --exampleTitle Count Rows with Missing Values --example This example counts how many rows contain missing values in any column. It’s a useful first step when deciding whether to clean, impute, or drop incomplete records.
 pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() 
 
 #> print 
@@ -88,7 +88,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --notMissing 
+#> RowCount --notMissing --exampleTitle Count Rows with No Missing Values --example In contrast to counting rows with missing data, this counts only those rows that are fully populated. It helps you isolate the clean records in your dataset.
 pizzeriasDfNotMissingRowCount = pizzeriasDf.shape[0] - pizzeriasDf.isnull().any(axis=1).sum() 
 
 #> print 
@@ -112,7 +112,7 @@ print(pizzeriasDf.head()) #)7
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --values 3.0 --example 
+#> RowCount --values 3.0 --exampleTitle Count Rows Containing a Specific Value --example This example checks how many rows contain the exact value 3.0 in any column. This can be useful when searching for numeric markers or flags across a dataframe.
 pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) 
 
 #> print 
@@ -136,7 +136,7 @@ print(pizzeriasDf.head()) #)9
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowCount --where _Specialty  Pizza_ == Hawaiian and _Rating_ < 3.5 --example 
+#> RowCount --where _Specialty  Pizza_ == Hawaiian and _Rating_ < 3.5 --exampleTitle Count Rows That Match a Condition --example Sometimes you want to count how many rows meet a specific set of criteria. This example counts rows where the Specialty Pizza is Hawaiian and the Rating is less than 3.5.
 pizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0] 
 
 #> print 

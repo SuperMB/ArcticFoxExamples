@@ -50,7 +50,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa  D000235  215.97.143.157       M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
-#> DataframeDescribe --print --example 
+#> DataframeDescribe --print --exampleTitle Describe All Columns in the Dataframe --example When exploring a new dataset, it’s useful to get summary statistics across all numeric and datetime columns. The describe function returns metrics such as count, mean, min, and max for each column. This provides a high-level overview of the dataset and helps identify anomalies or outliers early in the analysis process.
 bankTransactionsDfDescribe = bankTransactionsDf.describe()
 print(bankTransactionsDfDescribe) #)2 
 ##***        TransactionAmount                TransactionDate  CustomerAge  TransactionDuration  LoginAttempts  AccountBalance        PreviousTransactionDate
@@ -80,7 +80,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> DataframeDescribe TransactionAmount TransactionDate AccountBalance --print --example 
+#> DataframeDescribe TransactionAmount TransactionDate AccountBalance --print --exampleTitle Describe Selected Columns Only --example Sometimes you want to narrow the scope of your summary to only a few relevant columns. By specifying column names with the DataframeDescribe kit, you can limit the output to just those columns and retrieve their descriptive statistics. This allows for faster inspection of key metrics without noise from unrelated columns.
 bankTransactionsDfDescribe = bankTransactionsDf [ ['TransactionAmount', 'TransactionDate', 'AccountBalance'] ].describe()
 print(bankTransactionsDfDescribe) #)4 
 ##***        TransactionAmount                TransactionDate  AccountBalance

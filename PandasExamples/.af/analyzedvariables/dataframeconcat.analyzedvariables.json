@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -3947,26 +3963,32 @@
                 "columns": [
                     {
                         "Name": "YEAR",
+                        "ColumnName": "YEAR",
                         "ColumnType": 1
                     },
                     {
                         "Name": "MONTH",
+                        "ColumnName": "MONTH",
                         "ColumnType": 1
                     },
                     {
                         "Name": "STATE",
+                        "ColumnName": "STATE",
                         "ColumnType": 4
                     },
                     {
                         "Name": "TYPE OF PRODUCER",
+                        "ColumnName": "TYPE OF PRODUCER",
                         "ColumnType": 4
                     },
                     {
                         "Name": "ENERGY SOURCE",
+                        "ColumnName": "ENERGY SOURCE",
                         "ColumnType": 4
                     },
                     {
                         "Name": "GENERATION\r\n(Megawatthours)",
+                        "ColumnName": "GENERATION\r\n(Megawatthours)",
                         "ColumnType": 1
                     }
                 ],
@@ -4010,26 +4032,32 @@
                 "columns": [
                     {
                         "Name": "YEAR",
+                        "ColumnName": "YEAR",
                         "ColumnType": 1
                     },
                     {
                         "Name": "MONTH",
+                        "ColumnName": "MONTH",
                         "ColumnType": 1
                     },
                     {
                         "Name": "STATE",
+                        "ColumnName": "STATE",
                         "ColumnType": 4
                     },
                     {
                         "Name": "TYPE OF PRODUCER",
+                        "ColumnName": "TYPE OF PRODUCER",
                         "ColumnType": 4
                     },
                     {
                         "Name": "ENERGY SOURCE",
+                        "ColumnName": "ENERGY SOURCE",
                         "ColumnType": 4
                     },
                     {
                         "Name": "GENERATION\r\n(Megawatthours)",
+                        "ColumnName": "GENERATION\r\n(Megawatthours)",
                         "ColumnType": 1
                     }
                 ],

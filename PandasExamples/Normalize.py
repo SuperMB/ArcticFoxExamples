@@ -42,7 +42,7 @@ print(appleStockDf.head()) #)1
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Normalize --all --minMax --example 
+#> Normalize --all --minMax --exampleTitle Normalize Entire Dataframe with Min-Max Scaling --example In many modeling tasks, it’s important to normalize all numeric values so they are on the same scale. This example normalizes every numeric column in the dataframe using min-max scaling, which scales values to fall between 0 and 1.
 minMaxScaler = MinMaxScaler()
 for column in appleStockDf.columns:
     if is_numeric_dtype(appleStockDf[column]):
@@ -79,7 +79,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> Normalize --columns High Low --minMax --example 
+#> Normalize --columns High Low --minMax --exampleTitle Normalize Selected Columns with Min-Max Scaling --example Rather than normalizing every column, you can choose specific columns to scale. In this case, we normalize only the High and Low columns using min-max scaling, which helps maintain focus on features of interest.
 scaleColumn = appleStockDf[ ['High', 'Low'] ]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf[ ['High', 'Low'] ] = scaleColumn 
@@ -107,7 +107,7 @@ print(appleStockDf.head()) #)5
 ##*** 2           2 1980-12-16  0.087429  0.087429  0.086999  0.086999  105728000
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 
-#> Normalize --columns Open  --minMax --where _High_ > 100 --example 
+#> Normalize --columns Open  --minMax --where _High_ > 100 --exampleTitle Normalize Columns Conditionally --example Sometimes normalization should only apply to a subset of the data. This example applies min-max scaling to the Open column, but only for rows where the value in the High column is greater than 100. All other rows remain unchanged.
 scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn 

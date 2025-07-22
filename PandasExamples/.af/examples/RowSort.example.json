@@ -1,22 +1,22 @@
 {
     "RowSort": [
         {
-            "KitText": "#> RowSort --columns High --example",
+            "KitText": "#> RowSort --columns High --exampleTitle Sort Dataframe by Single Column --example We often want to sort a dataframe according to the values in a column. To sort by a single column, simply pass in the column name. If the direction, ascending or descending, is not specified, as in this example, the default direction will be ascending, going from smalles to largest.",
             "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by='High')",
-            "ExampleDescription": "",
+            "ExampleDescription": "We often want to sort a dataframe according to the values in a column. To sort by a single column, simply pass in the column name. If the direction, ascending or descending, is not specified, as in this example, the default direction will be ascending, going from smalles to largest.",
+            "ExampleTitle": "Sort Dataframe by Single Column"
+        },
+        {
+            "KitText": "#> RowSort --columns Volume --order descending -exampleTitle Sort by Single Column and Specify Direction --example Similar to the previous, this example sorts the dataframe on a single column. However, this time we specify the order in which to sort, which is descending in this case. This causes the column to be sorted from largest to smallest.",
+            "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by='Volume', ascending=[False, False, False, False, False, False, False, False])",
+            "ExampleDescription": "Similar to the previous, this example sorts the dataframe on a single column. However, this time we specify the order in which to sort, which is descending in this case. This causes the column to be sorted from largest to smallest.",
             "ExampleTitle": ""
         },
         {
-            "KitText": "#> RowSort --columns Volume --order descending --example",
-            "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by='Volume', ascending=False)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> RowSort --columns High 4 --order descending ascending --example",
+            "KitText": "#> RowSort --columns High 4 --order descending ascending --exampleTitle Sort on Multiple Columns --example Rather than sorting on a single column, it is not uncommon to want to sort first on one column, and then sort on a second column when the values of the first column are the same. In this example, we first sort on the column High, and second, we sort on the column with index 4 when the column High has the same value. Additionally, we specify to sort High in descending order, and then column with index 4 in ascending order.",
             "CodeAfterKit": "\nappleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True])",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than sorting on a single column, it is not uncommon to want to sort first on one column, and then sort on a second column when the values of the first column are the same. In this example, we first sort on the column High, and second, we sort on the column with index 4 when the column High has the same value. Additionally, we specify to sort High in descending order, and then column with index 4 in ascending order.",
+            "ExampleTitle": "Sort on Multiple Columns"
         }
     ]
 }

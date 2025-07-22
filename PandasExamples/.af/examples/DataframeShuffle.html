@@ -2,11 +2,12 @@
 <div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">DataframeShuffle</h1></div>
 <div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Shuffle the rows within a dataframe to randomize the order of the rows. This is useful for pulling dataframe from a dataset in a randomized, especially when the data is initially organized by some factor.</div></div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Randomize the Order of Rows in a Dataframe</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When exploring or analyzing data, it’s sometimes helpful to work with the rows in a different order. The DataframeShuffle kit randomizes the order of all rows in the dataframe. This is useful when you want to remove ordering effects or prepare the data for sampling or testing. The original data is unchanged except for the new row order.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeShuffle<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframeShuffle<span>
+AFLEFT 
 weatherDf = weatherDf.sample(frac=1).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 

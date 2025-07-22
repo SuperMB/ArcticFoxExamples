@@ -53,7 +53,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMode Cloud3pm --print --example 
+#> ColumnMode Cloud3pm --print  --exampleTitle Get Mode of a Single Column --example The mode is the most frequently occurring value in a column. In this example, we calculate the mode of the Cloud3pm column to find the most common cloud cover value in the afternoon across the dataset.
 weatherDfMode = weatherDf['Cloud3pm'].mode()
 print(weatherDfMode) #)2 
 ##*** 0    1
@@ -76,7 +76,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --example 
+#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --exampleTitle Get Mode of Multiple Columns --example When we want to understand the most common values across several columns at once, we can calculate the mode of each column in a single call. In this case, we compute the mode of Humidity3pm, Humidity9am, and Temp3pm.
 weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()
 print(weatherDfMode) #)4 
 ##***    Humidity3pm  Humidity9am  Temp3pm
@@ -101,7 +101,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe --example 
+#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe --exampleTitle Add Grouped Mode to Dataframe --example Sometimes we want to compute a summary statistic within subgroups and add that result back to the dataframe. Here, we calculate the mode of MaxTemp grouped by RainToday, then merge that grouped result back into the dataframe so each row is tagged with the mode of its group.
 weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()
 weatherDfMode = pd.DataFrame(weatherDfMode).reset_index()
 weatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'

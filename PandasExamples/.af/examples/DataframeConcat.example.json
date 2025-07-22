@@ -1,10 +1,10 @@
 {
     "DataframeConcat": [
         {
-            "KitText": "#> DataframeConcat df2021_FinalDf df2020_FinalDf --example",
+            "KitText": "#> DataframeConcat df2021_FinalDf df2020_FinalDf --exampleTitle Concatenate Two Dataframes Vertically --example When working with data from different time periods or sources, it is common to combine them into a single dataframe. This example concatenates two dataframes by stacking their rows on top of each other. The result is a new dataframe that contains all rows from both inputs, preserving the order and resetting the index to maintain consistency.",
             "CodeAfterKit": "\ndfsList = [df2021_FinalDf, df2020_FinalDf]\ndfsConcat = pd.concat(dfsList, ignore_index=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When working with data from different time periods or sources, it is common to combine them into a single dataframe. This example concatenates two dataframes by stacking their rows on top of each other. The result is a new dataframe that contains all rows from both inputs, preserving the order and resetting the index to maintain consistency.",
+            "ExampleTitle": "Concatenate Two Dataframes Vertically"
         }
     ]
 }

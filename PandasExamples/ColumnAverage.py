@@ -53,7 +53,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnAverage MaxTemp --print --example 
+#> ColumnAverage MaxTemp --print --exampleTitle Get Average of a Single Column --example It is common to want to see the average value of a column to get a feel of the values in the column. Here, we have a weather dataset and we get the average value of the MaxTemp column.
 weatherDfMean = weatherDf['MaxTemp'].mean()
 print(weatherDfMean) #)2 
 ##*** 20.550273224043714
@@ -75,7 +75,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnAverage WindGustSpeed MinTemp Evaporation --print --example 
+#> ColumnAverage WindGustSpeed MinTemp Evaporation --print --exampleTitle Get Average of Multiple Columns --example Rather than getting the average of a single columns, we can get the average of multiple columns simplify by stating multiple columns.
 weatherDfMean = weatherDf [ ['WindGustSpeed', 'MinTemp', 'Evaporation'] ].mean()
 print(weatherDfMean) #)4 
 ##*** WindGustSpeed    39.840659
@@ -100,7 +100,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe --example 
+#> ColumnAverage --columns Sunshine --rolling 5 --addToDataframe --exampleTitle Get Rolling Average and Add to Dataframe --example With sorted data according to an index or time, it is common to want to know an average over only the X most recent records. We get the column average over a rolling window of the last 5 rows. Additionally, we add the result back to the dataframe to align the windowed averages with the rows in which they occur. 
 weatherDfMeanRolling5 = weatherDf['Sunshine'].rolling(window=5, min_periods=1).mean()
 weatherDf['SunshineMeanRolling5'] = pd.Series()
 weatherDf['SunshineMeanRolling5'] = weatherDfMeanRolling5 

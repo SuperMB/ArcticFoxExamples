@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -4457,30 +4473,37 @@
                 "columns": [
                     {
                         "Name": "SaleId",
+                        "ColumnName": "SaleId",
                         "ColumnType": 1
                     },
                     {
                         "Name": "CustomerId",
+                        "ColumnName": "CustomerId",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Flower",
+                        "ColumnName": "Flower",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Quantity",
+                        "ColumnName": "Quantity",
                         "ColumnType": 1
                     },
                     {
                         "Name": "TotalSale",
+                        "ColumnName": "TotalSale",
                         "ColumnType": 1
                     },
                     {
                         "Name": "SaleDate",
+                        "ColumnName": "SaleDate",
                         "ColumnType": 6
                     },
                     {
                         "Name": "StoreId",
+                        "ColumnName": "StoreId",
                         "ColumnType": 1
                     }
                 ],
@@ -4491,18 +4514,22 @@
                 "columns": [
                     {
                         "Name": "StoreId",
+                        "ColumnName": "StoreId",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Name",
+                        "ColumnName": "Name",
                         "ColumnType": 4
                     },
                     {
                         "Name": "Address",
+                        "ColumnName": "Address",
                         "ColumnType": 4
                     },
                     {
                         "Name": "DateOpened",
+                        "ColumnName": "DateOpened",
                         "ColumnType": 6
                     }
                 ],

@@ -5,32 +5,36 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies columns to remove</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">nonNumeric</span>: Specifies whether to remove non-numeric columns</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Remove a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Remove a single column from the dataframe by specifying its column name. This is helpful when a column is no longer needed in the analysis or is being removed to reduce dimensionality.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove CustomerAge<span>AFLEFT bankTransactionsDf.drop(columns='CustomerAge', inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove CustomerAge<span>
+AFLEFT bankTransactionsDf.drop(columns='CustomerAge', inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Remove Multiple Columns by Name</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Remove more than one column at once by specifying the column names you want to drop. In this case, both TransactionID and TransactionDuration are removed from the dataframe.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionID TransactionDuration<span>AFLEFT bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionID TransactionDuration<span>
+AFLEFT bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Remove Columns by Name and Index</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can remove columns by mixing column names and their index positions. In this example, we remove TransactionType by name and the columns at index 2 and 3 to eliminate specific features from the dataframe.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionType 2 3<span>AFLEFT bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionType 2 3<span>
+AFLEFT bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Remove All Non-Numeric Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">If your analysis or model requires only numeric data, you can remove all columns that are not numeric. This operation filters the dataframe to retain only columns with numeric data types, such as integers or floats.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove --nonNumeric<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove --nonNumeric<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number']) AFRIGHT</span></code></pre>
 </div>  
 

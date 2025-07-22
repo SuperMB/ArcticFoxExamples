@@ -4,29 +4,32 @@
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">columns</span>: Specifies the columns to check data types for</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Data Types of All Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Quickly inspect the data types of each column in a dataframe. This is useful to understand the structure of your data and ensuring that numeric, string, and date fields are correctly typed before performing any operations.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes --print<span>
+AFLEFT 
 bankTransactionsDfDataTypes = bankTransactionsDf.dtypes
 print(bankTransactionsDfDataTypes) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Data Type of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Sometimes we only want to inspect the type of a specific column. This example shows how to print the data type of the TransactionAmount column without examining the entire dataframe.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes TransactionAmount --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes TransactionAmount --print<span>
+AFLEFT 
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'TransactionAmount' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)4 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Get Data Types of Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of checking all columns, you can target just a few. Here, we retrieve the data types of the AccountID, LoginAttempts, and PreviousTransactionDate columns to verify how these specific fields are stored.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnDataTypes AccountID LoginAttempts PreviousTransactionDate --print<span>
+AFLEFT 
 bankTransactionsDfDataTypes = bankTransactionsDf[ [ 'AccountID', 'LoginAttempts', 'PreviousTransactionDate' ] ].dtypes
 print(bankTransactionsDfDataTypes) #)6 AFRIGHT</span></code></pre>
 </div>  

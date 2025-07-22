@@ -1,10 +1,10 @@
 {
     "ResetIndexes": [
         {
-            "KitText": "#> ResetIndexes --example",
+            "KitText": "#> ResetIndexes --exampleTitle Reset Row Indexes After Row Removal --example When rows are removed from a DataFrame, or shuffled, the index values can become non-sequential or inconsistent. Use ResetIndexes to reassign the row indexes so they start from 0 and increase sequentially again.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.reset_index(drop=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When rows are removed from a DataFrame, or shuffled, the index values can become non-sequential or inconsistent. Use ResetIndexes to reassign the row indexes so they start from 0 and increase sequentially again.",
+            "ExampleTitle": "Reset Row Indexes After Row Removal"
         }
     ]
 }

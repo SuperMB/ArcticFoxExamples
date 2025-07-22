@@ -51,7 +51,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRound --example 
+#> ColumnRound --exampleTitle Round All Numeric Columns --example Sometimes it's useful to round all numeric data in a dataframe to the nearest whole number, especially when working with approximations or visual presentation. This example rounds every numeric column in the dataset using the default rounding behavior, which is rounding to the nearest whole number.
 for column in bankTransactionsDf.select_dtypes(include=['number']).columns:
     bankTransactionsDf[column] = round(bankTransactionsDf[column]) 
 
@@ -88,7 +88,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRound AccountBalance --example 
+#> ColumnRound AccountBalance --exampleTitle Round Single Column --example When you only want to round one column instead of the entire dataset, specify the column name. In this case, we round the AccountBalance column to the nearest whole number to simplify the balance values.
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance']) 
 
 #> Visualize --count 10 
@@ -128,7 +128,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRound AccountBalance TransactionAmount --example 
+#> ColumnRound AccountBalance TransactionAmount --exampleTitle Round Multiple Columns --example To round multiple specific columns without affecting the rest of the dataframe, list each column you want to round. In this example, we round both AccountBalance and TransactionAmount to the nearest whole number.
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount']) 
 
@@ -169,7 +169,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRound --columns TransactionAmount AccountBalance --to 5.5 --example 
+#> ColumnRound --columns TransactionAmount AccountBalance --to 5.5 --exampleTitle Round to Nearest Multiple --example Instead of rounding to whole numbers, you can round to the nearest multiple of a specific value. In this case, we round both TransactionAmount and AccountBalance to the nearest multiple of 5.5.
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'] / 5.5) * 5.5
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'] / 5.5) * 5.5 
 
@@ -211,7 +211,7 @@ print(bankTransactionsDf.head()) #)9
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where _TransactionAmount_ > 100 --example 
+#> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where _TransactionAmount_ > 100 --exampleTitle Conditional Rounding to Nearest Multiple --example In some cases, we want to round only certain rows based on a condition. This example rounds TransactionAmount and TransactionDuration to the nearest 10, but only for rows where the TransactionAmount is greater than 100.
 bankTransactionsDf['TransactionAmount'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionAmount'] / 10) * 10
 bankTransactionsDf['TransactionDuration'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionDuration'] / 10) * 10 
 

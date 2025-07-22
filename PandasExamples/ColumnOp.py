@@ -50,7 +50,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnOp _AccountBalance_ * 10 --where _CustomerAge_ > 35 --example 
+#> ColumnOp _AccountBalance_ * 10 --where _CustomerAge_ > 35 --exampleTitle Multiply Column Based on a Condition --example Perform a column-level operation where values are updated only if a specified condition is met. In this case, we multiply AccountBalance by 10 in all rows where the CustomerAge is greater than 35. This allows for conditional transformations based on row-level attributes.
 whereCondition = bankTransactionsDf['CustomerAge'] > 35
 bankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10 
 
@@ -90,7 +90,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnOp _LoginAttempts_ = 6 --where _CustomerAge_ < 20 --example 
+#> ColumnOp _LoginAttempts_ = 6 --where _CustomerAge_ < 20 --exampleTitle Set Column Value Based on a Condition --example Sometimes we want to overwrite a column value if a condition is met. Here, we set LoginAttempts to 6 for all customers under the age of 20. This kind of logic is often used to reset, flag, or standardize values for specific customer segments.
 whereCondition = bankTransactionsDf['CustomerAge'] < 20
 bankTransactionsDf['LoginAttempts'][whereCondition] = 6 
 

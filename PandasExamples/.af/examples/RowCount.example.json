@@ -1,28 +1,28 @@
 {
     "RowCount": [
         {
-            "KitText": "#> RowCount --print --example",
+            "KitText": "#> RowCount --print --exampleTitle Count Total Number of Rows --example One of the simplest checks you can make is to count how many rows are in a dataframe. This is useful to verify that the data loaded correctly or to understand the dataset size before applying transformations.",
             "CodeAfterKit": "\npizzeriasDfRowCount = pizzeriasDf.shape[0]\r\nprint(pizzeriasDfRowCount) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "One of the simplest checks you can make is to count how many rows are in a dataframe. This is useful to verify that the data loaded correctly or to understand the dataset size before applying transformations.",
+            "ExampleTitle": "Count Total Number of Rows"
         },
         {
-            "KitText": "#> RowCount --missing --example",
+            "KitText": "#> RowCount --missing --exampleTitle Count Rows with Missing Values --example This example counts how many rows contain missing values in any column. It’s a useful first step when deciding whether to clean, impute, or drop incomplete records.",
             "CodeAfterKit": "\npizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "This example counts how many rows contain missing values in any column. It’s a useful first step when deciding whether to clean, impute, or drop incomplete records.",
+            "ExampleTitle": "Count Rows with Missing Values"
         },
         {
-            "KitText": "#> RowCount --values 3.0 --example",
+            "KitText": "#> RowCount --notMissing --exampleTitle Count Rows with No Missing Values --example In contrast to counting rows with missing data, this counts only those rows that are fully populated. It helps you isolate the clean records in your dataset.",
+            "CodeAfterKit": "\npizzeriasDfNotMissingRowCount = pizzeriasDf.shape[0] - pizzeriasDf.isnull().any(axis=1).sum()",
+            "ExampleDescription": "In contrast to counting rows with missing data, this counts only those rows that are fully populated. It helps you isolate the clean records in your dataset.",
+            "ExampleTitle": "Count Rows with No Missing Values"
+        },
+        {
+            "KitText": "#> RowCount --values 3.0 --exampleTitle Count Rows Containing a Specific Value --example This example checks how many rows contain the exact value 3.0 in any column. This can be useful when searching for numeric markers or flags across a dataframe.",
             "CodeAfterKit": "\npizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum())",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> RowCount --where Specialty Pizza == Hawaiian and Rating < 3.5 --example",
-            "CodeAfterKit": "\npizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "This example checks how many rows contain the exact value 3.0 in any column. This can be useful when searching for numeric markers or flags across a dataframe.",
+            "ExampleTitle": "Count Rows Containing a Specific Value"
         }
     ]
 }

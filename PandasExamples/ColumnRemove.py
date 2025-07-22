@@ -49,7 +49,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 2      TX000003   AC00019             126.29 2023-07-10 18:16:08           Debit       Mesa  D000235  215.97.143.157       M009  Online           19            Student                   56              1         1122.35     2024-11-04 08:07:04
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
-#> ColumnRemove CustomerAge --example 
+#> ColumnRemove CustomerAge --exampleTitle Remove a Single Column --example Remove a single column from the dataframe by specifying its column name. This is helpful when a column is no longer needed in the analysis or is being removed to reduce dimensionality.
 bankTransactionsDf.drop(columns='CustomerAge', inplace=True) 
 
 #> Visualize 
@@ -77,7 +77,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRemove TransactionID TransactionDuration --example 
+#> ColumnRemove TransactionID TransactionDuration --exampleTitle Remove Multiple Columns by Name --example Remove more than one column at once by specifying the column names you want to drop. In this case, both TransactionID and TransactionDuration are removed from the dataframe.
 bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) 
 
 #> Visualize 
@@ -106,7 +106,7 @@ print(bankTransactionsDf.head()) #)5
 ##*** 3   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online            Student              1         8569.06     2024-11-04 08:09:06
 ##*** 4   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online            Student              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRemove TransactionType 2 3 --example 
+#> ColumnRemove TransactionType 2 3 --exampleTitle Remove Columns by Name and Index --example You can remove columns by mixing column names and their index positions. In this example, we remove TransactionType by name and the columns at index 2 and 3 to eliminate specific features from the dataframe.
 bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) 
 
 #> Visualize 
@@ -141,7 +141,7 @@ print(bankTransactionsDf.head()) #)7
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnRemove --nonNumeric --example 
+#> ColumnRemove --nonNumeric --exampleTitle Remove All Non-Numeric Columns --example If your analysis or model requires only numeric data, you can remove all columns that are not numeric. This operation filters the dataframe to retain only columns with numeric data types, such as integers or floats.
 bankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number']) 
 
 #> Visualize 

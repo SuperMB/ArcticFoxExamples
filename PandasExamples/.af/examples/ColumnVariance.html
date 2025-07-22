@@ -8,31 +8,23 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates if the result should be added to the original dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Variance of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can calculate the variance of a single numeric column to understand the spread of values. In this example, we compute the variance of the RISK_MM column, which provides insight into how much the expected rainfall measurement varies day to day.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance RISK_MM --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance RISK_MM --print<span>
+AFLEFT 
 weatherDfVar = weatherDf['RISK_MM'].var()
 print(weatherDfVar) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Variance for Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can also retrieve the variance for several columns at once. This example calculates the variance of both WindSpeed3pm and Evaporation, which helps evaluate the variability in those measurements.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance WindSpeed3pm Evaporation --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance WindSpeed3pm Evaporation --print<span>
+AFLEFT 
 weatherDfVar = weatherDf [ ['WindSpeed3pm', 'Evaporation'] ].var()
 print(weatherDfVar) #)4 AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print<span>AFLEFT 
-weatherDfVar = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].var()
-weatherDfVar = pd.DataFrame(weatherDfVar).reset_index()
-print(weatherDfVar) #)6 AFRIGHT</span></code></pre>
 </div>  
 

@@ -56,7 +56,7 @@ print(weatherDf.head()) #)1
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
 # Example 2: Calculates Column Median with single column
-#> ColumnMedian Pressure3pm --print --example 
+#> ColumnMedian Pressure3pm --print --exampleTitle Get Median of a Single Column --example The median is a useful measure of central tendency that is less affected by outliers than the mean. In this example, we compute the median of the Pressure3pm column and print the result directly to the console.
 weatherDfMedian = weatherDf['Pressure3pm'].median()
 print(weatherDfMedian) #)2 
 ##*** 1017.4
@@ -78,7 +78,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMedian Evaporation Rainfall Cloud9am --print --example 
+#> ColumnMedian Evaporation Rainfall Cloud9am --print --exampleTitle Get Median of Multiple Columns --example When summarizing a dataset across several columns, calculating the median of each helps highlight central values while minimizing the influence of outliers. Here, we compute the median of Evaporation, Rainfall, and Cloud9am all at once.
 weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()
 print(weatherDfMedian) #)4 
 ##*** Evaporation    4.2
@@ -104,7 +104,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe --example 
+#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe --exampleTitle Add Grouped Median to Dataframe --example We can compute a median within each category of a column and attach that information back to the full dataset. In this case, we calculate the median Sunshine value within each WindGustDir group and add the result to the dataframe, giving every row a reference to its group’s typical value.
 weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()
 weatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()
 weatherDfMedian.name = 'SunshineMedian'

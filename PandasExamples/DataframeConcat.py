@@ -28,7 +28,7 @@ df2021_FinalDf = pd.read_csv('2021_Final.csv')
 df2020_FinalDf = pd.read_csv('2020_Final.csv') 
 
 
-#> DataframeConcat df2021_FinalDf df2020_FinalDf --example 
+#> DataframeConcat df2021_FinalDf df2020_FinalDf  --exampleTitle Concatenate Two Dataframes Vertically --example When working with data from different time periods or sources, it is common to combine them into a single dataframe. This example concatenates two dataframes by stacking their rows on top of each other. The result is a new dataframe that contains all rows from both inputs, preserving the order and resetting the index to maintain consistency.
 dfsList = [df2021_FinalDf, df2020_FinalDf]
 dfsConcat = pd.concat(dfsList, ignore_index=True) 
 

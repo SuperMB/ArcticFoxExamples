@@ -8,27 +8,30 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Max of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">The maximum value in a column helps identify unusual or extreme entries. In this example, we compute the highest recorded TransactionAmount across all transactions.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax TransactionAmount<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax TransactionAmount<span>
+AFLEFT 
 banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Max of Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This example shows how to retrieve the maximum values across several columns at once. It helps identify the oldest customer, the largest account balance, and the most recent transaction date in the dataset.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax CustomerAge AccountBalance TransactionDate<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax CustomerAge AccountBalance TransactionDate<span>
+AFLEFT 
 banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max() AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Add Rolling Max to Dataframe</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A rolling maximum provides a dynamic upper bound across a defined window of rows. Here, we compute the maximum TransactionAmount across the latest 5 entries for each row and add that result as a new column for trend analysis.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe<span>
+AFLEFT 
 banktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()
 banktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()
 banktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5 AFRIGHT</span></code></pre>

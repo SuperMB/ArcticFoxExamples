@@ -1,28 +1,28 @@
 {
     "DataframePivot": [
         {
-            "KitText": "#> DataframePivot --rows Location --cells TransactionAmount --sum --example",
-            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> DataframePivot --rows Location --cells TransactionAmount --sum --exampleTitle Sum Values by Row Categories --example A pivot table can be used to aggregate values based on categorical groupings. In this example, we group all rows by the Location column and calculate the total sum of TransactionAmount for each location. This is useful for understanding total volume by location without adding column-level grouping.",
+            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum')\nbankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False)",
+            "ExampleDescription": "A pivot table can be used to aggregate values based on categorical groupings. In this example, we group all rows by the Location column and calculate the total sum of TransactionAmount for each location. This is useful for understanding total volume by location without adding column-level grouping.",
+            "ExampleTitle": "Sum Values by Row Categories"
         },
         {
-            "KitText": "#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max --example",
-            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max  --exampleTitle Get Max Value by Row and Column Grouping --example Pivot tables can also be used with both row and column categories. In this case, we group by Location as the rows and TransactionType as the columns, and compute the maximum AccountBalance within each group. This helps to identify the largest account balances for each type of transaction in every location.",
+            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max')\nbankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False)",
+            "ExampleDescription": "Pivot tables can also be used with both row and column categories. In this case, we group by Location as the rows and TransactionType as the columns, and compute the maximum AccountBalance within each group. This helps to identify the largest account balances for each type of transaction in every location.",
+            "ExampleTitle": "Get Max Value by Row and Column Grouping"
         },
         {
-            "KitText": "#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count --example",
-            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count --exampleTitle Count Occurrences by Multi-Column Groups --example We can create pivot tables using multiple columns for both rows and columns. Here, we group by Location (row), and both Channel and TransactionType (columns), counting how many AccountID entries exist in each group. This gives insight into the number of transactions by channel and type at each location.",
+            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count')\nbankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False)",
+            "ExampleDescription": "We can create pivot tables using multiple columns for both rows and columns. Here, we group by Location (row), and both Channel and TransactionType (columns), counting how many AccountID entries exist in each group. This gives insight into the number of transactions by channel and type at each location.",
+            "ExampleTitle": "Count Occurrences by Multi-Column Groups"
         },
         {
-            "KitText": "#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum --example",
-            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum --exampleTitle Multi-Level Pivot with Multiple Rows and Columns --example Pivot tables can be constructed using several row and column dimensions at once. In this example, we group by CustomerAge and TransactionType (rows), and Channel, LoginAttempts, and CustomerOccupation (columns), then compute the total TransactionAmount in each group. This structure enables fine-grained analysis across behavioral and demographic dimensions.",
+            "CodeAfterKit": "\nbankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum')\nbankTransactionsDfPivot = bankTransactionsDfPivot.reset_index(drop=False)",
+            "ExampleDescription": "Pivot tables can be constructed using several row and column dimensions at once. In this example, we group by CustomerAge and TransactionType (rows), and Channel, LoginAttempts, and CustomerOccupation (columns), then compute the total TransactionAmount in each group. This structure enables fine-grained analysis across behavioral and demographic dimensions.",
+            "ExampleTitle": "Multi-Level Pivot with Multiple Rows and Columns"
         }
     ]
 }

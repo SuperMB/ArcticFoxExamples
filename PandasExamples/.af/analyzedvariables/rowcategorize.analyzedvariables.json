@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -5583,90 +5599,112 @@
                 "columns": [
                     {
                         "Name": "MinTemp",
+                        "ColumnName": "MinTemp",
                         "ColumnType": 2
                     },
                     {
                         "Name": "MaxTemp",
+                        "ColumnName": "MaxTemp",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Rainfall",
+                        "ColumnName": "Rainfall",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Evaporation",
+                        "ColumnName": "Evaporation",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Sunshine",
+                        "ColumnName": "Sunshine",
                         "ColumnType": 2
                     },
                     {
                         "Name": "WindGustDir",
+                        "ColumnName": "WindGustDir",
                         "ColumnType": 4
                     },
                     {
                         "Name": "WindGustSpeed",
+                        "ColumnName": "WindGustSpeed",
                         "ColumnType": 1
                     },
                     {
                         "Name": "WindDir9am",
+                        "ColumnName": "WindDir9am",
                         "ColumnType": 4
                     },
                     {
                         "Name": "WindDir3pm",
+                        "ColumnName": "WindDir3pm",
                         "ColumnType": 4
                     },
                     {
                         "Name": "WindSpeed9am",
+                        "ColumnName": "WindSpeed9am",
                         "ColumnType": 1
                     },
                     {
                         "Name": "WindSpeed3pm",
+                        "ColumnName": "WindSpeed3pm",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Humidity9am",
+                        "ColumnName": "Humidity9am",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Humidity3pm",
+                        "ColumnName": "Humidity3pm",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Pressure9am",
+                        "ColumnName": "Pressure9am",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Pressure3pm",
+                        "ColumnName": "Pressure3pm",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Cloud9am",
+                        "ColumnName": "Cloud9am",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Cloud3pm",
+                        "ColumnName": "Cloud3pm",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Temp9am",
+                        "ColumnName": "Temp9am",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Temp3pm",
+                        "ColumnName": "Temp3pm",
                         "ColumnType": 2
                     },
                     {
                         "Name": "RainToday",
+                        "ColumnName": "RainToday",
                         "ColumnType": 4
                     },
                     {
                         "Name": "RISK_MM",
+                        "ColumnName": "RISK_MM",
                         "ColumnType": 2
                     },
                     {
                         "Name": "RainTomorrow",
+                        "ColumnName": "RainTomorrow",
                         "ColumnType": 4
                     }
                 ],
@@ -5675,7 +5713,9 @@
             "weatherDfQuantile": {
                 "type": {}
             },
-            "column": {}
+            "column": {},
+            "those": {},
+            "values": {}
         }
     },
     "RowCount.py": {

@@ -14,7 +14,7 @@ import numpy as np
 #> Data pizzerias.csv 
 pizzeriasDf = pd.read_csv('pizzerias.csv') 
 
-#> ColumnHeaders --example 
+#> ColumnHeaders --exampleTitle List Column Headers --example This example loads the pizzeria dataset and displays its column headers, giving a quick overview of the structure and available fields.
 # Pizzeria Name
 # Location
 # Specialty Pizza
@@ -40,7 +40,7 @@ bankTransactionsDf = pd.read_csv('BankTransactions.csv')
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsDf['PreviousTransactionDate']) 
 
-#> ColumnHeaders --example 
+#> ColumnHeaders 
 # TransactionID
 # AccountID
 # TransactionAmount

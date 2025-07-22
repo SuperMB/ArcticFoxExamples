@@ -1,22 +1,16 @@
 {
     "ColumnMode": [
         {
-            "KitText": "#> ColumnMode Cloud3pm --print --example",
+            "KitText": "#> ColumnMode Cloud3pm --print  --exampleTitle Get Mode of a Single Column --example The mode is the most frequently occurring value in a column. In this example, we calculate the mode of the Cloud3pm column to find the most common cloud cover value in the afternoon across the dataset.",
             "CodeAfterKit": "\nweatherDfMode = weatherDf['Cloud3pm'].mode()\r\nprint(weatherDfMode) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "The mode is the most frequently occurring value in a column. In this example, we calculate the mode of the Cloud3pm column to find the most common cloud cover value in the afternoon across the dataset.",
+            "ExampleTitle": "Get Mode of a Single Column"
         },
         {
-            "KitText": "#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --example",
-            "CodeAfterKit": "\nweatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()\r\nprint(weatherDfMode) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe --example",
-            "CodeAfterKit": "\nweatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()\nweatherDfMode = pd.DataFrame(weatherDfMode).reset_index()\nweatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'\n\nweatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnMode Humidity3pm Humidity9am Temp3pm --print --exampleTitle Get Mode of Multiple Columns --example When we want to understand the most common values across several columns at once, we can calculate the mode for each column in a single call. In this case, we compute the mode for Humidity3pm, Humidity9am, and Temp3pm.",
+            "CodeAfterKit": "\nweatherDfMode = weatherDf [ [Humidity3pm, Humidity9am, 'Temp3pm'] ].mode()\r\nprint(weatherDfMode) #)4",
+            "ExampleDescription": "When we want to understand the most common values across several columns at once, we can calculate the mode for each column in a single call. In this case, we compute the mode for Humidity3pm, Humidity9am, and Temp3pm.",
+            "ExampleTitle": "Get Mode of Multiple Columns"
         }
     ]
 }

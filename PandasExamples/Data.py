@@ -18,7 +18,7 @@ pd.set_option('display.max_columns', None)
 # ******************************************************
 # ******************************************************
 
-#> Data Pizzerias.csv --example 
+#> Data Pizzerias.csv --exampleTitle Load Data from CSV File --example Most workflows begin by loading data from an external source such as a CSV file. This example demonstrates loading a CSV file into a pandas dataframe so it can be used in analysis or transformations. The resulting dataframe becomes the foundation for subsequent operations, such as column calculations or visualizations.
 pizzeriasDf = pd.read_csv('Pizzerias.csv') 
 
 #> Visualize 

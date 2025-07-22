@@ -54,7 +54,7 @@ print(weatherDf.head()) #)1
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnVariance RISK_MM --print --example 
+#> ColumnVariance RISK_MM --print --exampleTitle Get Variance of a Single Column --example You can calculate the variance of a single numeric column to understand the spread of values. In this example, we compute the variance of the RISK_MM column, which provides insight into how much the expected rainfall measurement varies day to day.
 weatherDfVar = weatherDf['RISK_MM'].var()
 print(weatherDfVar) #)2 
 ##*** 17.85738213938169
@@ -76,7 +76,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnVariance WindSpeed3pm Evaporation --print --example 
+#> ColumnVariance WindSpeed3pm Evaporation --print --exampleTitle Get Variance for Multiple Columns --example You can also retrieve the variance for several columns at once. This example calculates the variance of both WindSpeed3pm and Evaporation, which helps evaluate the variability in those measurements.
 weatherDfVar = weatherDf [ ['WindSpeed3pm', 'Evaporation'] ].var()
 print(weatherDfVar) #)4 
 ##*** WindSpeed3pm    78.446388
@@ -101,7 +101,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print --example 
+#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print  --exampleTitle Get Variance by Grouped Category --example Variance can be calculated separately for different groups within the dataset. In this case, we compute the variance of Sunshine and Rainfall, grouped by the RainTomorrow column. This allows for comparison of variability between days with and without expected rain.
 weatherDfVar = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].var()
 weatherDfVar = pd.DataFrame(weatherDfVar).reset_index()
 print(weatherDfVar) #)6 

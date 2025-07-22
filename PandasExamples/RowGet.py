@@ -42,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --index 10 --example 
+#> RowGet --index 10 --exampleTitle Get a Row at an Index --example When you want to get rows at soecified indexes, you can use RowGet with the index option to get the rows at the specified indexes. Here, we get the row at index 10. 
 pizzeriasDfRow10 = pizzeriasDf.iloc[10] 
 
 #> print 
@@ -76,7 +76,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> RowGet --indexStart 20 --indexStop 30 --example 
+#> RowGet --indexStart 20 --indexStop 30 --exampleTitle Get Rows From One Index Up To a Second Index --example Rather then only getting rows at only specified indexes, 
 pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] 
 
 #> print 

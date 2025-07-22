@@ -59,6 +59,22 @@
             }
         }
     },
+    "PandasExamples_arcticFoxColumnSum.py": {
+        "variables": {
+            "dataColumns": {
+                "type": "list"
+            },
+            "columnTypeForEnum": {
+                "type": "int"
+            },
+            "lambda": {
+                "type": "defaultdict"
+            },
+            "k": {
+                "type": "dictToDefaultdict"
+            }
+        }
+    },
     "PandasExamples_arcticFoxColumnUnique.py": {
         "variables": {
             "columnTypeForEnum": {
@@ -4800,30 +4816,37 @@
                 "columns": [
                     {
                         "Name": "",
+                        "ColumnName": "",
                         "ColumnType": 1
                     },
                     {
                         "Name": "Date",
+                        "ColumnName": "Date",
                         "ColumnType": 6
                     },
                     {
                         "Name": "Open",
+                        "ColumnName": "Open",
                         "ColumnType": 2
                     },
                     {
                         "Name": "High",
+                        "ColumnName": "High",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Low",
+                        "ColumnName": "Low",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Close",
+                        "ColumnName": "Close",
                         "ColumnType": 2
                     },
                     {
                         "Name": "Volume",
+                        "ColumnName": "Volume",
                         "ColumnType": 1
                     }
                 ],

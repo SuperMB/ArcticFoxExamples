@@ -1,22 +1,10 @@
 {
     "ColumnSum": [
         {
-            "KitText": "#> ColumnSum AccountBalance --print --example",
-            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()\r\nprint(bankTransactionsDfSum) #)2",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnSum TransactionAmount AccountBalance --print --example",
-            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf [ ['TransactionAmount', 'AccountBalance'] ].sum()\r\nprint(bankTransactionsDfSum) #)4",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnSum TransactionAmount AccountBalance CustomerAge --where TransactionAmount > 75 and CustomerAge > 20 --group TransactionType Channel --print --example",
-            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()\nbankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()\r\nprint(bankTransactionsDfSum) #)6",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnSum AccountBalance --print --exampleTitle Compute Sum of a Single Column --example Summing the values in a single numeric column gives a quick understanding of total magnitude. In this example, we compute the sum of the AccountBalance column and print the result. This can be used for reporting, summaries, or validation checks.",
+            "CodeAfterKit": "\nbankTransactionsDfSum = bankTransactionsDf[AccountBalance].sum()\r\nprint(bankTransactionsDfSum) #)2",
+            "ExampleDescription": "Summing the values in a single numeric column gives a quick understanding of total magnitude. In this example, we compute the sum of the AccountBalance column and print the result. This can be used for reporting, summaries, or validation checks.",
+            "ExampleTitle": "Compute Sum of a Single Column"
         }
     ]
 }

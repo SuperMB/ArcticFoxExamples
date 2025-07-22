@@ -10,21 +10,23 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rightTable</span>: Specifies the name of the right dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">switchLeftAndRightTable</span>: Switches the positions of the left and right dataframes</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Join Two Most Recent Dataframes on a Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When no table names are specified, Arctic Fox will assume you want to join the two most recently loaded dataframes. In this example, we join the most recent datasets, storesDf and salesDf, on the StoreId column using a left join. All rows from the left dataframe are preserved, and any matching rows from the right dataframe are brought in.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --column StoreId --join left<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --column StoreId --join left<span>
+AFLEFT 
 # selected left  table: storesDf
 # selected right table: salesDf
 storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Join Specified Dataframes on a Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of relying on Arctic Fox to choose the most recent dataframes, you can explicitly specify the left and right tables. Here, we join salesDf to storesDf using a left join on the StoreId column. This makes it clear which dataset is being expanded and which one is being used for lookup.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left<span>
+AFLEFT 
 salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
 </div>  
 

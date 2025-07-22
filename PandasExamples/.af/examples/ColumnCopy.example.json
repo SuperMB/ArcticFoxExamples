@@ -1,22 +1,10 @@
 {
     "ColumnCopy": [
         {
-            "KitText": "#> ColumnCopy Location --example",
-            "CodeAfterKit": "\npizzeriasDf['LocationCopy'] = pizzeriasDf['Location']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnCopy Specialty Pizza --to Old Specialty Pizza --example",
-            "CodeAfterKit": "\npizzeriasDf['Old Specialty Pizza'] = pizzeriasDf['Specialty Pizza']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnCopy Rating Website --to PreviousRating PreviousWebsite --example",
-            "CodeAfterKit": "\npizzeriasDf['PreviousRating'] = pizzeriasDf['Rating']\npizzeriasDf['PreviousWebsite'] = pizzeriasDf['Website']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> @@@@@ ColumnCopy Rating Website --to PreviousRating PreviousWebsite --exampleTitle Copying Multiple Columns --example To copy multiple columns, instead of just one, add multiple column names to the kit. In this case, we also supplied multiple new column names with the --to option.",
+            "CodeAfterKit": "",
+            "ExampleDescription": "To copy multiple columns, instead of just one, add multiple column names to the kit. In this case, we also supplied multiple new column names with the",
+            "ExampleTitle": "Copying Multiple Columns"
         }
     ]
 }

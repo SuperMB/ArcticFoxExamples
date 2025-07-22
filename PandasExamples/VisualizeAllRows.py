@@ -25,7 +25,7 @@ bankTransactionsDf['PreviousTransactionDate'] = pd.to_datetime(bankTransactionsD
 # ******************************************************
 # ******************************************************
 
-#> VisualizeAllRows --example 
+#> VisualizeAllRows --exampleTitle View All Rows In a Dataframe --example Use this kit with caution!! This will cause any Visualize kits to display all of the rows of a dataframe, which may be thousands! And, this will print the result into the file when using the visualize kits. This kit has its uses, just use carefully!
 # !!!*** USE WITH CAUTION ***!!!
 # Code added to start of file to display all rows for dataframes 
 

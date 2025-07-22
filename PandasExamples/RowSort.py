@@ -41,7 +41,7 @@ print(appleStockDf.head()) #)1
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
 
-#> RowSort --columns High --example 
+#> RowSort --columns High --exampleTitle Sort Dataframe by Single Column --example We often want to sort a dataframe according to the values in a column. To sort by a single column, simply pass in the column name. If the direction, ascending or descending, is not specified, as in this example, the default direction will be ascending, going from smalles to largest. 
 appleStockDf = appleStockDf.sort_values(by='High') 
 
 #> Visualize 
@@ -75,7 +75,7 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> RowSort --columns Volume --order descending --example 
+#> RowSort --columns Volume --order descending -exampleTitle Sort by Single Column and Specify Direction --example Similar to the previous, this example sorts the dataframe on a single column. However, this time we specify the order in which to sort, which is descending in this case. This causes the column to be sorted from largest to smallest.
 appleStockDf = appleStockDf.sort_values(by='Volume', ascending=False) 
 
 #> Visualize 
@@ -110,7 +110,7 @@ print(appleStockDf.head()) #)5
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> RowSort --columns High 4 --order descending ascending --example 
+#> RowSort --columns High 4 --order descending ascending --exampleTitle Sort on Multiple Columns --example Rather than sorting on a single column, it is not uncommon to want to sort first on one column, and then sort on a second column when the values of the first column are the same. In this example, we first sort on the column High, and second, we sort on the column with index 4 when the column High has the same value. Additionally, we specify to sort High in descending order, and then column with index 4 in ascending order.
 appleStockDf = appleStockDf.sort_values(by= ['High', appleStockDf.columns[4]] , ascending=[False, True]) 
 
 #> Visualize 

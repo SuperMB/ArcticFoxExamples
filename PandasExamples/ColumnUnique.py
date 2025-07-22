@@ -51,7 +51,7 @@ print(bankTransactionsDf.head()) #)1
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnUnique CustomerAge --print --example 
+#> ColumnUnique CustomerAge --print --exampleTitle Get Unique Values from a Single Column --example When exploring data, it's helpful to identify all the unique values in a specific column. This example prints the distinct values in the CustomerAge column, which can be useful for understanding age distribution or detecting unexpected values.
 bankTransactionsDfUnique = bankTransactionsDf['CustomerAge'].unique()
 print(bankTransactionsDfUnique) #)2 
 ##*** [70 68 19 26 18 37 67 51 55 52 21 24 36 39 59 71 38 22 65 23 44 27 29 49
@@ -75,7 +75,7 @@ print(bankTransactionsDf.head()) #)3
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnUnique TransactionType Location --example 
+#> ColumnUnique TransactionType Location --exampleTitle Get Unique Values from Multiple Columns --example You can retrieve the unique values for more than one column at a time. This example shows how to get and print the distinct values in both the TransactionType and Location columns, which can help profile common transaction types and branch locations.
 bankTransactionsDfUnique_1_TransactionType = bankTransactionsDf['TransactionType'].unique()
 bankTransactionsDfUnique_1_Location = bankTransactionsDf['Location'].unique() 
 
@@ -112,7 +112,7 @@ print(bankTransactionsDf.head()) #)6
 ##*** 3      TX000004   AC00070             184.50 2023-05-05 16:32:11           Debit    Raleigh  D000187  200.13.225.150       M002  Online           26            Student                   25              1         8569.06     2024-11-04 08:09:06
 ##*** 4      TX000005   AC00411              13.45 2023-10-16 17:51:24          Credit    Atlanta  D000308    65.164.3.100       M091  Online           26            Student                  198              1         7429.40     2024-11-04 08:06:39
 
-#> ColumnUnique --print --example 
+#> ColumnUnique --print --exampleTitle Count Unique Values Across All Columns --example For a high-level overview, it’s often useful to count how many unique values exist in each column of the dataframe. This example prints the number of distinct entries per column, helping identify categorical features or potential ID-like columns.
 bankTransactionsDfUnique_1 = bankTransactionsDf.nunique()
 print(bankTransactionsDfUnique_1) #)7 
 ##*** TransactionID              2512

@@ -1,10 +1,10 @@
 {
     "RowFor": [
         {
-            "KitText": "#> RowFor --example",
+            "KitText": "#> RowFor --exampleTitle Iterate Over Rows in a Dataframe --example Use the RowFor kit to create a for-loop that iterates over each row of the dataframe. This structure is helpful when you need to write custom row-level logic.",
             "CodeAfterKit": "\nfor row in appleStockDf.iterrows():",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Use the RowFor kit to create a for-loop that iterates over each row of the dataframe. This structure is helpful when you need to write custom row-level logic.",
+            "ExampleTitle": "Iterate Over Rows in a Dataframe"
         }
     ]
 }

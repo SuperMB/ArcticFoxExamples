@@ -9,43 +9,39 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">replace</span>: Use with --with, specifies the portion of column names to replace</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">with</span>: Use with --replace, specifies the replacement value for column names</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Rename a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rename a specific column to a new name by directly specifying its current column name. In this example, we change the column CustomerAge to Age. This can be helpful for making column names shorter or more intuitive to work with.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename CustomerAge --to Age<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename CustomerAge --to Age<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'}) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Rename Multiple Columns by Name</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rename multiple columns by providing their original names followed by the new names. This is useful when you want to clean up or shorten several column names in one operation. In this case, we rename TransactionID and AccountID to tid and aid.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionID AccountID --to tid aid<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionID AccountID --to tid aid<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'}) AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Replace Text in All Column Names</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than renaming columns one by one, sometimes it is easier to update column names in bulk by replacing part of the name. This example replaces every instance of the substring ID with Identifier across all column names.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionDate 4 5 --to Date Payment City<span>AFLEFT 
-bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date', bankTransactionsDf.columns[4]: 'Payment', bankTransactionsDf.columns[5]: 'City'}) AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --replace ID --with Identifier<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --replace ID --with Identifier<span>
+AFLEFT 
 bankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Identifier') AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Replace Text in Specific Column Names</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This variation of the previous example limits the replacement to only certain columns. In this case, we replace the word Transaction with Payment, but only for the columns TransactionAmount and TransactionType. All other column names are left unchanged.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment<span>
+AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionAmount': 'TransactionAmount'.replace('Transaction', 'Payment'), 'TransactionType': 'TransactionType'.replace('Transaction', 'Payment')}) AFRIGHT</span></code></pre>
 </div>  
 

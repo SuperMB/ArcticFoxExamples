@@ -54,7 +54,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMin WindGustSpeed --print --example 
+#> ColumnMin WindGustSpeed --print --exampleTitle Get Minimum of a Single Column --example When exploring a dataset, it is often useful to determine the smallest value in a specific column. In this case, we calculate the minimum value of WindGustSpeed to see the lowest recorded wind gust in the dataset.
 weatherDfMin = weatherDf['WindGustSpeed'].min()
 print(weatherDfMin) #)2 
 ##*** 13.0
@@ -76,7 +76,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --example 
+#> ColumnMin Humidity3pm Humidity9am Temp3pm --print --exampleTitle Get Minimum of Multiple Columns --example Instead of inspecting a single column, we can compute the minimum values of several columns at once. This example retrieves the smallest values of Humidity3pm, Humidity9am, and Temp3pm, giving a quick snapshot of their respective ranges.
 weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
 print(weatherDfMin) #)4 
 ##*** Humidity3pm    13.0
@@ -102,7 +102,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe --example 
+#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe --exampleTitle Add Grouped Rolling Minimum to Dataframe --example In time-sorted or sequential data grouped by category, it's useful to calculate rolling statistics within each group. In this example, we compute a rolling minimum of the Sunshine column using a 3-row window within each WindGustDir group, then add the results back to the dataframe.
 weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()
 weatherDfMinRolling3.name = 'SunshineMinRolling3'
 weatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)

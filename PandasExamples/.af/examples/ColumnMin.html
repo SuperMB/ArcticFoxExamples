@@ -8,36 +8,23 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Minimum of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When exploring a dataset, it is often useful to determine the smallest value in a specific column. In this case, we calculate the minimum value of WindGustSpeed to see the lowest recorded wind gust in the dataset.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin WindGustSpeed --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin WindGustSpeed --print<span>
+AFLEFT 
 weatherDfMin = weatherDf['WindGustSpeed'].min()
 print(weatherDfMin) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Minimum of Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of inspecting a single column, we can compute the minimum values for several columns at once. This example retrieves the smallest values for Humidity3pm, Humidity9am, and Temp3pm, giving a quick snapshot of their respective ranges.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin Humidity3pm Humidity9am Temp3pm --print<span>AFLEFT 
-weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin Humidity3pm Humidity9am Temp3pm --print<span>
+AFLEFT 
+weatherDfMin = weatherDf [ [Humidity3pm, Humidity9am, 'Temp3pm'] ].min()
 print(weatherDfMin) #)4 AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe<span>AFLEFT 
-weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()
-weatherDfMinRolling3.name = 'SunshineMinRolling3'
-weatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)
-weatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()
-weatherDfMinRolling3Df = weatherDfMinRolling3Df.rename(columns={weatherDfMinRolling3Df.columns[1]: 'rowIndex'})
-weatherDfMinRolling3Df = weatherDfMinRolling3Df.sort_values(by='rowIndex')
-weatherDfMinRolling3Df = weatherDfMinRolling3Df.reset_index()
-weatherDf['SunshineMinRolling3Grouped'] = weatherDfMinRolling3Df['SunshineMinRolling3'] AFRIGHT</span></code></pre>
 </div>  
 

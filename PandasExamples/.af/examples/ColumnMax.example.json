@@ -1,22 +1,22 @@
 {
     "ColumnMax": [
         {
-            "KitText": "#> ColumnMax TransactionAmount --example",
+            "KitText": "#> ColumnMax TransactionAmount --exampleTitle Get Max of a Single Column --example The maximum value in a column helps identify unusual or extreme entries. In this example, we compute the highest recorded TransactionAmount across all transactions.",
             "CodeAfterKit": "\nbanktransactionsDfMax = banktransactionsDf['TransactionAmount'].max()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "The maximum value in a column helps identify unusual or extreme entries. In this example, we compute the highest recorded TransactionAmount across all transactions.",
+            "ExampleTitle": "Get Max of a Single Column"
         },
         {
-            "KitText": "#> ColumnMax CustomerAge AccountBalance TransactionDate --example",
+            "KitText": "#> ColumnMax CustomerAge AccountBalance TransactionDate --exampleTitle Get Max of Multiple Columns --example This example shows how to retrieve the maximum values across several columns at once. It helps identify the oldest customer, the largest account balance, and the most recent transaction date in the dataset.",
             "CodeAfterKit": "\nbanktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "This example shows how to retrieve the maximum values across several columns at once. It helps identify the oldest customer, the largest account balance, and the most recent transaction date in the dataset.",
+            "ExampleTitle": "Get Max of Multiple Columns"
         },
         {
-            "KitText": "#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe --example",
+            "KitText": "#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe --exampleTitle Add Rolling Max to Dataframe --example A rolling maximum provides a dynamic upper bound across a defined window of rows. Here, we compute the maximum TransactionAmount across the latest 5 entries for each row and add that result as a new column for trend analysis.",
             "CodeAfterKit": "\nbanktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()\nbanktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "A rolling maximum provides a dynamic upper bound across a defined window of rows. Here, we compute the maximum TransactionAmount across the latest 5 entries for each row and add that result as a new column for trend analysis.",
+            "ExampleTitle": "Add Rolling Max to Dataframe"
         }
     ]
 }

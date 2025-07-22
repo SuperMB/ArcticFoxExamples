@@ -8,33 +8,23 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">rolling</span>: Specifies the rolling window overwhich to perform the calculation</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">addToDataframe</span>: Indicates whether to add the result to the dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Get Mode of a Single Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">The mode is the most frequently occurring value in a column. In this example, we calculate the mode of the Cloud3pm column to find the most common cloud cover value in the afternoon across the dataset.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Cloud3pm --print<span>AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Cloud3pm --print<span>
+AFLEFT 
 weatherDfMode = weatherDf['Cloud3pm'].mode()
 print(weatherDfMode) #)2 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Get Mode of Multiple Columns</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When we want to understand the most common values across several columns at once, we can calculate the mode for each column in a single call. In this case, we compute the mode for Humidity3pm, Humidity9am, and Temp3pm.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Humidity3pm Humidity9am Temp3pm --print<span>AFLEFT 
-weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Humidity3pm Humidity9am Temp3pm --print<span>
+AFLEFT 
+weatherDfMode = weatherDf [ [Humidity3pm, Humidity9am, 'Temp3pm'] ].mode()
 print(weatherDfMode) #)4 AFRIGHT</span></code></pre>
-</div>  
-
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
-
-
-<div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe<span>AFLEFT 
-weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()
-weatherDfMode = pd.DataFrame(weatherDfMode).reset_index()
-weatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'
-
-weatherDf = pd.merge(weatherDf, weatherDfMode, on='RainToday', how='left') AFRIGHT</span></code></pre>
 </div>  
 

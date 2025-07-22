@@ -1,10 +1,10 @@
 {
     "CleanData": [
         {
-            "KitText": "#> CleanData --removeMissing --exampleTitle Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells.",
+            "KitText": "#> CleanData --removeMissing  Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells.",
             "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True)",
             "ExampleDescription": "One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option",
-            "ExampleTitle": "Remove Rows with Missing Cells"
+            "ExampleTitle": ""
         },
         {
             "KitText": "#> CleanData --fill --columns Rating --mean --exampleTitle Fill Missing Cells with Mean --example Rather than removing missing cells from a dataframe, it may be beneficial to keep those rows and fill the missing cells with a statistical value. In this case, we fill the missing cells with the mean of the colum.",

@@ -1,40 +1,22 @@
 {
     "ColumnQuantile": [
         {
-            "KitText": "#> ColumnQuantile CustomerAge --example",
+            "KitText": "#> ColumnQuantile CustomerAge --exampleTitle Get Default Quantile of a Single Column --example By default, quantile returns the median (0.5 quantile) when no specific value is provided. In this example, we compute the median CustomerAge to understand the central tendency of the column.",
             "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "By default, quantile returns the median (0.5 quantile) when no specific value is provided. In this example, we compute the median CustomerAge to understand the central tendency of the column.",
+            "ExampleTitle": "Get Default Quantile of a Single Column"
         },
         {
-            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --example",
+            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --exampleTitle Get Specific Quantiles of a Single Column --example Rather than just retrieving the default median, we can specify the exact quantiles we want. Here we calculate the 25%, 50%, 75%, and 100% of CustomerAge to better understand its distribution.",
             "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than just retrieving the default median, we can specify the exact quantiles we want. Here we calculate the 25%, 50%, 75%, and 100% of CustomerAge to better understand its distribution.",
+            "ExampleTitle": "Get Specific Quantiles of a Single Column"
         },
         {
-            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --example",
+            "KitText": "#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles --exampleTitle Create Variables for Each Quantile --example In addition to computing quantiles, we can assign each quantile value to its own variable. This allows for easier use later in code when comparing or referencing specific thresholds.",
             "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )\nbankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]\nbankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]\nbankTransactionsDfQuantile2 = bankTransactionsDfQuantile.iloc[2]\nbankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnQuantile AccountBalance TransactionDuration --example",
-            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1 --example",
-            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] )",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles --example",
-            "CodeAfterKit": "\nbankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )\nbankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']\nbankTransactionsDfQuantile_AccountBalance_2 = bankTransactionsDfQuantile.iloc[2]['AccountBalance']\nbankTransactionsDfQuantile_TransactionDuration_0 = bankTransactionsDfQuantile.iloc[0]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_1 = bankTransactionsDfQuantile.iloc[1]['TransactionDuration']\nbankTransactionsDfQuantile_TransactionDuration_2 = bankTransactionsDfQuantile.iloc[2]['TransactionDuration']",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "In addition to computing quantiles, we can assign each quantile value to its own variable. This allows for easier use later in code when comparing or referencing specific thresholds.",
+            "ExampleTitle": "Create Variables for Each Quantile"
         }
     ]
 }

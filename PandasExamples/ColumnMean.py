@@ -53,7 +53,7 @@ print(weatherDf.head()) #)1
 ##*** 2     13.7     23.4       3.6          5.8       3.3          NW           85.0          N        NNE           6.0             6           82           69       1009.5       1007.2         8         7     15.4     20.2       Yes     39.8          Yes
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
-#> ColumnMean Temp3pm --example 
+#> ColumnMean Temp3pm --exampleTitle Get Mean of a Single Column --example The mean gives a quick sense of the central value of a numeric column. In this case, we compute the mean of the Temp3pm column to understand the typical afternoon temperature recorded in the dataset.
 weatherDfMean = weatherDf['Temp3pm'].mean() 
 
 #> print 
@@ -77,7 +77,7 @@ print(weatherDf.head()) #)3
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --example 
+#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --exampleTitle Get Mean of Multiple Columns --example To summarize several numeric columns at once, we can calculate their means in a single step. Here, we retrieve the average values of Temp3pm, Temp9am, MaxTemp, and MinTemp to provide a quick overview of typical temperature behavior.
 weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean() 
 
 #> print 
@@ -106,7 +106,7 @@ print(weatherDf.head()) #)5
 ##*** 3     13.3     15.5      39.8          7.2       9.1          NW           54.0        WNW          W          30.0            24           62           56       1005.5       1007.0         2         7     13.5     14.1       Yes      2.8          Yes
 ##*** 4      7.6     16.1       2.8          5.6      10.6         SSE           50.0        SSE        ESE          20.0            28           68           49       1018.3       1018.5         7         7     11.1     15.4       Yes      0.0           No
 
-#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe --example 
+#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe --exampleTitle Add Rolling Mean to Dataframe --example When analyzing trends over time, a rolling mean smooths short-term fluctuations. This example calculates a 7-row rolling average of the Sunshine column and adds it back to the dataframe as a new column to reference in further analysis.
 weatherDfMeanRolling7 = weatherDf['Sunshine'].rolling(window=7, min_periods=1).mean()
 weatherDf['SunshineMeanRolling7'] = pd.Series()
 weatherDf['SunshineMeanRolling7'] = weatherDfMeanRolling7 

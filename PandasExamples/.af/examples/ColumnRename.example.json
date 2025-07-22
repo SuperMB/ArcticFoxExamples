@@ -1,34 +1,28 @@
 {
     "ColumnRename": [
         {
-            "KitText": "#> ColumnRename CustomerAge --to Age --example",
+            "KitText": "#> ColumnRename CustomerAge --to Age --exampleTitle Rename a Single Column --example Rename a specific column to a new name by directly specifying its current column name. In this example, we change the column CustomerAge to Age. This can be helpful for making column names shorter or more intuitive to work with.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'})",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rename a specific column to a new name by directly specifying its current column name. In this example, we change the column CustomerAge to Age. This can be helpful for making column names shorter or more intuitive to work with.",
+            "ExampleTitle": "Rename a Single Column"
         },
         {
-            "KitText": "#> ColumnRename TransactionID AccountID --to tid aid --example",
+            "KitText": "#> ColumnRename TransactionID AccountID --to tid aid --exampleTitle Rename Multiple Columns by Name --example Rename multiple columns by providing their original names followed by the new names. This is useful when you want to clean up or shorten several column names in one operation. In this case, we rename TransactionID and AccountID to tid and aid.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'})",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rename multiple columns by providing their original names followed by the new names. This is useful when you want to clean up or shorten several column names in one operation. In this case, we rename TransactionID and AccountID to tid and aid.",
+            "ExampleTitle": "Rename Multiple Columns by Name"
         },
         {
-            "KitText": "#> ColumnRename TransactionDate 4 5 --to Date Payment City --example",
-            "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date', bankTransactionsDf.columns[4]: 'Payment', bankTransactionsDf.columns[5]: 'City'})",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnRename --replace ID --with Identifier --example",
+            "KitText": "#> ColumnRename --replace ID --with Identifier --exampleTitle Replace Text in All Column Names --example Rather than renaming columns one by one, sometimes it is easier to update column names in bulk by replacing part of the name. This example replaces every instance of the substring ID with Identifier across all column names.",
             "CodeAfterKit": "\nbankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Identifier')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than renaming columns one by one, sometimes it is easier to update column names in bulk by replacing part of the name. This example replaces every instance of the substring ID with Identifier across all column names.",
+            "ExampleTitle": "Replace Text in All Column Names"
         },
         {
-            "KitText": "#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment --example",
+            "KitText": "#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment --exampleTitle Replace Text in Specific Column Names --example This variation of the previous example limits the replacement to only certain columns. In this case, we replace the word Transaction with Payment, but only for the columns TransactionAmount and TransactionType. All other column names are left unchanged.",
             "CodeAfterKit": "\nbankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionAmount': 'TransactionAmount'.replace('Transaction', 'Payment'), 'TransactionType': 'TransactionType'.replace('Transaction', 'Payment')})",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "This variation of the previous example limits the replacement to only certain columns. In this case, we replace the word Transaction with Payment, but only for the columns TransactionAmount and TransactionType. All other column names are left unchanged.",
+            "ExampleTitle": "Replace Text in Specific Column Names"
         }
     ]
 }

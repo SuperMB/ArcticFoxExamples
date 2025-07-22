@@ -1,22 +1,16 @@
 {
     "ColumnCast": [
         {
-            "KitText": "#> ColumnCast Rating --type int --example",
+            "KitText": "#> ColumnCast Rating --type int --exampleTitle Cast Single Column --example Our rating was initially a decimal number, but we would rather it be an integer. We cast the Rating column to an integer to remove the decimal values.",
             "CodeAfterKit": "\npizzeriasDf['Rating'] = pizzeriasDf['Rating'].astype('int')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Our rating was initially a decimal number, but we would rather it be an integer. We cast the Rating column to an integer to remove the decimal values.",
+            "ExampleTitle": "Cast Single Column"
         },
         {
-            "KitText": "#> ColumnCast Specialty Pizza Established Year --type string --example",
+            "KitText": "#> ColumnCast Specialty Pizza Established Year --type string --exampleTitle Cast Multiple Columns --example Rather than casting a single columns, cast multiple columns to a data type simply by specifying multiiple column names.",
             "CodeAfterKit": "\npizzeriasDf['Specialty Pizza'] = pizzeriasDf['Specialty Pizza'].astype('str')\npizzeriasDf['Established Year'] = pizzeriasDf['Established Year'].astype('str')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnCast Seating Capacity --type float --example",
-            "CodeAfterKit": "\npizzeriasDf['Seating Capacity'] = pizzeriasDf['Seating Capacity'].astype('float')",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than casting a single columns, cast multiple columns to a data type simply by specifying multiiple column names.",
+            "ExampleTitle": "Cast Multiple Columns"
         }
     ]
 }

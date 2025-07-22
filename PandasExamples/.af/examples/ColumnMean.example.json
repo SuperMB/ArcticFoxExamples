@@ -1,22 +1,16 @@
 {
     "ColumnMean": [
         {
-            "KitText": "#> ColumnMean Temp3pm --example",
-            "CodeAfterKit": "\nweatherDfMean = weatherDf['Temp3pm'].mean()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnMean Temp3pm --exampleTitle Get Mean of a Single Column --example The mean gives a quick sense of the central value of a numeric column. In this case, we compute the mean of the Temp3pm column to understand the typical afternoon temperature recorded in the dataset.",
+            "CodeAfterKit": "\nweatherDfMean = weatherDf[Temp3pm].mean()",
+            "ExampleDescription": "The mean gives a quick sense of the central value of a numeric column. In this case, we compute the mean of the Temp3pm column to understand the typical afternoon temperature recorded in the dataset.",
+            "ExampleTitle": "Get Mean of a Single Column"
         },
         {
-            "KitText": "#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --example",
-            "CodeAfterKit": "\nweatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean()",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
-        },
-        {
-            "KitText": "#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe --example",
-            "CodeAfterKit": "\nweatherDfMeanRolling7 = weatherDf['Sunshine'].rolling(window=7, min_periods=1).mean()\nweatherDf['SunshineMeanRolling7'] = pd.Series()\nweatherDf['SunshineMeanRolling7'] = weatherDfMeanRolling7",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "KitText": "#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp --exampleTitle Get Mean of Multiple Columns --example To summarize several numeric columns at once, we can calculate their means in a single step. Here, we retrieve the average values for Temp3pm, Temp9am, MaxTemp, and MinTemp to provide a quick overview of typical temperature behavior.",
+            "CodeAfterKit": "\nweatherDfMean = weatherDf [ [Temp3pm, Temp9am, MaxTemp, 'MinTemp'] ].mean()",
+            "ExampleDescription": "To summarize several numeric columns at once, we can calculate their means in a single step. Here, we retrieve the average values for Temp3pm, Temp9am, MaxTemp, and MinTemp to provide a quick overview of typical temperature behavior.",
+            "ExampleTitle": "Get Mean of Multiple Columns"
         }
     ]
 }

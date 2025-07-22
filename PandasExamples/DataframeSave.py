@@ -1,4 +1,4 @@
- 
+  
 import pandas as pd
 import numpy as np  
 pd.set_option('display.width', 10000)
@@ -40,7 +40,7 @@ print(appleStockDf.head()) #)1
 ##*** 2           2 1980-12-16  0.087429  0.087429  0.086999  0.086999  105728000
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
-#> DataframeSave 
+#> DataframeSave --exampleTitle Save Dataframe to CSV Using Default Name --example Use the DataframeSave kit to export the current dataframe to a CSV file. If no file name is given, the dataframe is saved using its variable name. In this case, the dataframe appleStockDf will be saved as appleStockDf.csv.
 appleStockDf.to_csv('appleStockDf.csv', index=False) 
 
 
@@ -61,7 +61,7 @@ print(appleStockDf.head()) #)2
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> DataframeSave --fileName NewAppleStock.csv --example 
+#> DataframeSave --fileName NewAppleStock.csv --exampleTitle Save Dataframe with Custom File Name --example You can choose a custom file name when saving a dataframe to a CSV file. In this example, the dataframe is saved as NewAppleStock.csv instead of using the variable name.
 appleStockDf.to_csv('NewAppleStock.csv', index=False) 
 
 
@@ -82,6 +82,6 @@ print(appleStockDf.head()) #)3
 ##*** 3           3 1980-12-17  0.089152  0.089582  0.089152  0.089152   86441600
 ##*** 4           4 1980-12-18  0.091737  0.092167  0.091737  0.091737   73449600
 
-#> DataframeSave --fileName SecondNewAppleStock --example 
+#> DataframeSave --fileName SecondNewAppleStock --exampleTitle Save Dataframe Without Specifying File Extension --example If you leave off the .csv extension in the file name, it will still be added automatically. This makes it easier to quickly save a file by name without worrying about file format details.
 appleStockDf.to_csv('SecondNewAppleStock.csv', index=False) 
 

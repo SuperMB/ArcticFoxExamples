@@ -1,22 +1,22 @@
 {
     "Normalize": [
         {
-            "KitText": "#> Normalize --all --minMax --example",
+            "KitText": "#> Normalize --all --minMax --exampleTitle Normalize Entire Dataframe with Min-Max Scaling --example In many modeling tasks, it’s important to normalize all numeric values so they are on the same scale. This example normalizes every numeric column in the dataframe using min-max scaling, which scales values to fall between 0 and 1.",
             "CodeAfterKit": "\nminMaxScaler = MinMaxScaler()\nfor column in appleStockDf.columns:\n    if is_numeric_dtype(appleStockDf[column]):\n        appleStockDf[column] = minMaxScaler.fit_transform(appleStockDf[ [column] ])",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "In many modeling tasks, it’s important to normalize all numeric values so they are on the same scale. This example normalizes every numeric column in the dataframe using min-max scaling, which scales values to fall between 0 and 1.",
+            "ExampleTitle": "Normalize Entire Dataframe with Min-Max Scaling"
         },
         {
-            "KitText": "#> Normalize --columns High Low --minMax --example",
+            "KitText": "#> Normalize --columns High Low --minMax --exampleTitle Normalize Selected Columns with Min-Max Scaling --example Rather than normalizing every column, you can choose specific columns to scale. In this case, we normalize only the High and Low columns using min-max scaling, which helps maintain focus on features of interest.",
             "CodeAfterKit": "\nscaleColumn = appleStockDf[ ['High', 'Low'] ]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf[ ['High', 'Low'] ] = scaleColumn",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Rather than normalizing every column, you can choose specific columns to scale. In this case, we normalize only the High and Low columns using min-max scaling, which helps maintain focus on features of interest.",
+            "ExampleTitle": "Normalize Selected Columns with Min-Max Scaling"
         },
         {
-            "KitText": "#> Normalize --columns Open --minMax --where High > 100 --example",
+            "KitText": "#> Normalize --columns Open --minMax --where High > 100 --exampleTitle Normalize Columns Conditionally --example Sometimes normalization should only apply to a subset of the data. This example applies min-max scaling to the Open column, but only for rows where the value in the High column is greater than 100. All other rows remain unchanged.",
             "CodeAfterKit": "\nscaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]\nscaleColumn = minMaxScaler.fit_transform(scaleColumn)\nappleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Sometimes normalization should only apply to a subset of the data. This example applies min-max scaling to the Open column, but only for rows where the value in the High column is greater than 100. All other rows remain unchanged.",
+            "ExampleTitle": "Normalize Columns Conditionally"
         }
     ]
 }

@@ -1,6 +1,10 @@
 {
     "0000": [
         {
+            "PreviouslyGenerated": "import arcticFoxRowSum ",
+            "Existing": "import arcticFoxRowSum "
+        },
+        {
             "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowSum ",
             "Existing": "import pandas as pd\nimport numpy as np\nimport arcticFoxRowSum "
         }
@@ -139,6 +143,112 @@
         {
             "PreviouslyGenerated": "summedRows = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows.2 = [-1]\ninsertPosition = texasCensusCleanedDf.index.get_loc(5)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition], summedRows, texasCensusCleanedDf.iloc[insertPosition:]]) ",
             "Existing": "summedRows = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows.2 = [-1]\ninsertPosition = texasCensusCleanedDf.index.get_loc(5)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition], summedRows, texasCensusCleanedDf.iloc[insertPosition:]]) "
+        }
+    ],
+    "243905816564073497": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905690315143497": [
+        {
+            "PreviouslyGenerated": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') ",
+            "Existing": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') "
+        }
+    ],
+    "013905289623553497": [
+        {
+            "PreviouslyGenerated": "# Label (Grouping)\n# Texas Total Estimate\n# Texas Total Margin of Error\n# Texas Percent Estimate\n# Texas Percent Margin of Error\n# Texas Male Estimate\n# Texas Male Margin of Error\n# Texas Percent Male Estimate\n# Texas Percent Male Margin of Error\n# Texas Female Estimate\n# Texas Female Margin of Error\n# Texas Percent Female Estimate\n# Texas Percent Female Margin of Error\n# Harris County, Texas Total Estimate\n# Harris County, Texas Total Margin of Error\n# Harris County, Texas Percent Estimate\n# Harris County, Texas Percent Margin of Error\n# Harris County, Texas Male Estimate\n# Harris County, Texas Male Margin of Error\n# Harris County, Texas Percent Male Estimate\n# Harris County, Texas Percent Male Margin of Error\n# Harris County, Texas Female Estimate\n# Harris County, Texas Female Margin of Error\n# Harris County, Texas Percent Female Estimate\n# Harris County, Texas Percent Female Margin of Error ",
+            "Existing": "# Label (Grouping)\n# Texas Total Estimate\n# Texas Total Margin of Error\n# Texas Percent Estimate\n# Texas Percent Margin of Error\n# Texas Male Estimate\n# Texas Male Margin of Error\n# Texas Percent Male Estimate\n# Texas Percent Male Margin of Error\n# Texas Female Estimate\n# Texas Female Margin of Error\n# Texas Percent Female Estimate\n# Texas Percent Female Margin of Error\n# Harris County, Texas Total Estimate\n# Harris County, Texas Total Margin of Error\n# Harris County, Texas Percent Estimate\n# Harris County, Texas Percent Margin of Error\n# Harris County, Texas Male Estimate\n# Harris County, Texas Male Margin of Error\n# Harris County, Texas Percent Male Estimate\n# Harris County, Texas Percent Male Margin of Error\n# Harris County, Texas Female Estimate\n# Harris County, Texas Female Margin of Error\n# Harris County, Texas Percent Female Estimate\n# Harris County, Texas Percent Female Margin of Error "
+        }
+    ],
+    "013905816564073497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)1 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)1 "
+        }
+    ],
+    "013905210032273497": [
+        {
+            "PreviouslyGenerated": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows_1.2 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(5)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]]) ",
+            "Existing": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows_1.2 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(5)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]]) "
+        }
+    ],
+    "013905514216183497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)2 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)2 "
+        }
+    ],
+    "013905209579713497": [
+        {
+            "PreviouslyGenerated": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') ",
+            "Existing": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') "
+        }
+    ],
+    "013905395827193497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)3 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)3 "
+        }
+    ],
+    "013905483017243497": [
+        {
+            "PreviouslyGenerated": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3]].sum()])\nsummedRows_1.1 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(2)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]])\ntexasCensusCleanedDf = texasCensusCleanedDf.drop([2, 3]) ",
+            "Existing": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3]].sum()])\nsummedRows_1.1 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(2)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]])\ntexasCensusCleanedDf = texasCensusCleanedDf.drop([2, 3]) "
+        }
+    ],
+    "013905908853173497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)4 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)4 "
+        }
+    ],
+    "013905190646743497": [
+        {
+            "PreviouslyGenerated": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') ",
+            "Existing": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') "
+        }
+    ],
+    "013905768098063497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)5 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)5 "
+        }
+    ],
+    "013905162255043497": [
+        {
+            "PreviouslyGenerated": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows_1.2 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(2)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]])\ntexasCensusCleanedDf.iloc[insertPosition_1, 0] = 'Young People'\ntexasCensusCleanedDf = texasCensusCleanedDf.drop([2, 3, 4]) ",
+            "Existing": "summedRows_1 = pd.DataFrame([texasCensusCleanedDf.loc[[2, 3, 4]].sum()])\nsummedRows_1.2 = [-1]\ninsertPosition_1 = texasCensusCleanedDf.index.get_loc(2)\ntexasCensusCleanedDf = pd.concat([texasCensusCleanedDf.iloc[:insertPosition_1], summedRows_1, texasCensusCleanedDf.iloc[insertPosition_1:]])\ntexasCensusCleanedDf.iloc[insertPosition_1, 0] = 'Young People'\ntexasCensusCleanedDf = texasCensusCleanedDf.drop([2, 3, 4]) "
+        }
+    ],
+    "013905516923243497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)6 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)6 "
+        }
+    ],
+    "013905692860403497": [
+        {
+            "PreviouslyGenerated": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') ",
+            "Existing": "texasCensusCleanedDf = pd.read_csv('TexasCensusCleaned.csv') "
+        }
+    ],
+    "013905494369623497": [
+        {
+            "PreviouslyGenerated": "print(texasCensusCleanedDf.head(n=10)) #)7 ",
+            "Existing": "print(texasCensusCleanedDf.head(n=10)) #)7 "
+        }
+    ],
+    "033905604026493497": [
+        {
+            "PreviouslyGenerated": "arcticFoxRowSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowSum.variables(dir() + ['texasCensusCleanedDf', 'summedRows', 'summedRows.', 'insertPosition', 'texasCensusCleanedDf.iloc', 'row1', 'row2', 'category', 'i'] )] ) ",
+            "Existing": "arcticFoxRowSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowSum.variables(dir() + ['texasCensusCleanedDf', 'summedRows', 'summedRows.', 'insertPosition', 'texasCensusCleanedDf.iloc', 'row1', 'row2', 'category', 'i'] )] ) "
+        },
+        {
+            "PreviouslyGenerated": "arcticFoxRowSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowSum.variables(dir() + ['summedRows', 'summedRows.', 'insertPosition', 'texasCensusCleanedDf', 'texasCensusCleanedDf.iloc', 'row1', 'row2', 'category', 'i'] )] ) ",
+            "Existing": "arcticFoxRowSum.analyzeVariables([ (value, eval(value)) for value in arcticFoxRowSum.variables(dir() + ['summedRows', 'summedRows.', 'insertPosition', 'texasCensusCleanedDf', 'texasCensusCleanedDf.iloc', 'row1', 'row2', 'category', 'i'] )] ) "
         }
     ]
 }

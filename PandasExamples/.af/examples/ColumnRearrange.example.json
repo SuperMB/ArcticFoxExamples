@@ -1,46 +1,46 @@
 {
     "ColumnRearrange": [
         {
-            "KitText": "#> ColumnRearrange DeviceID --example",
+            "KitText": "#> ColumnRearrange DeviceID --exampleTitle Move a Single Column to the Front --example When a single column is specified, and no other options are used, that column will be moved to the very front of the dataframe. All other columns will retain their order behind it. This is helpful when highlighting a specific column of interest for analysis or visualization.",
             "CodeAfterKit": "\ncolumnsToMove = ['DeviceID']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When a single column is specified, and no other options are used, that column will be moved to the very front of the dataframe. All other columns will retain their order behind it. This is helpful when highlighting a specific column of interest for analysis or visualization.",
+            "ExampleTitle": "Move a Single Column to the Front"
         },
         {
-            "KitText": "#> ColumnRearrange TransactionDate MerchantID Channel --example",
+            "KitText": "#> ColumnRearrange TransactionDate MerchantID Channel --exampleTitle Move Multiple Columns to the Front --example When multiple columns are listed without specifying target indexes, they will be moved to the front of the dataframe in the order provided. This is useful when you want key columns to appear first without altering the remaining column order.",
             "CodeAfterKit": "\ncolumnsToMove = ['TransactionDate', 'MerchantID', 'Channel']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When multiple columns are listed without specifying target indexes, they will be moved to the front of the dataframe in the order provided. This is useful when you want key columns to appear first without altering the remaining column order.",
+            "ExampleTitle": "Move Multiple Columns to the Front"
         },
         {
-            "KitText": "#> ColumnRearrange 3 --example",
+            "KitText": "#> ColumnRearrange 3 --exampleTitle Move Column by Index Position --example Instead of specifying a column name, you can specify a column by its index position. This will move the column at the given index, in this case column at index 3, to the front of the dataframe.",
             "CodeAfterKit": "\ncolumnsToMove = [bankTransactionsDf.columns[3]]\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "Instead of specifying a column name, you can specify a column by its index position. This will move the column at the given index, in this case column at index 3, to the front of the dataframe.",
+            "ExampleTitle": "Move Column by Index Position"
         },
         {
-            "KitText": "#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --example",
+            "KitText": "#> ColumnRearrange CustomerAge 4 5 CustomerOccupation --exampleTitle Move a Mix of Column Names and Indexes --example A mix of column names and index references can be passed in a single call. Each listed column will be moved to the front in the order provided, regardless of whether it was specified by name or by index.",
             "CodeAfterKit": "\ncolumnsToMove = ['CustomerAge', bankTransactionsDf.columns[4], bankTransactionsDf.columns[5], 'CustomerOccupation']\ncolumnsToMove = columnsToMove + [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "A mix of column names and index references can be passed in a single call. Each listed column will be moved to the front in the order provided, regardless of whether it was specified by name or by index.",
+            "ExampleTitle": "Move a Mix of Column Names and Indexes"
         },
         {
-            "KitText": "#> ColumnRearrange --columns IP Address --indexes 3 --example",
+            "KitText": "#> ColumnRearrange --columns IP Address --indexes 3 --exampleTitle Move Column to a Specified Index --example By pairing each column name with a specific index, you can move that column to an exact location within the dataframe. In this case, the IP Address column is moved to the 3rd position (zero-based index), while preserving the order of all other columns.",
             "CodeAfterKit": "\ncolumnsToMove = ['IP Address']\n[3] = [3]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [3]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "By pairing each column name with a specific index, you can move that column to an exact location within the dataframe. In this case, the IP Address column is moved to the 3rd position (zero-based index), while preserving the order of all other columns.",
+            "ExampleTitle": "Move Column to a Specified Index"
         },
         {
-            "KitText": "#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --example",
+            "KitText": "#> ColumnRearrange --columns AccountBalance LoginAttempts TransactionType --indexes 2 4 6 --exampleTitle Move Multiple Columns to Specific Indexes --example When you specify multiple columns and corresponding target indexes, each column is moved to the index specified. This allows fine-grained reordering where each column lands exactly where you want it.",
             "CodeAfterKit": "\ncolumnsToMove = ['AccountBalance', 'LoginAttempts', 'TransactionType']\n[2, 4, 6] = [2, 4, 6]\nremaining_columns = [column for column in bankTransactionsDf.columns if column not in columnsToMove]\nfor column,targetIndex in zip(columnsToMove, [2, 4, 6]):\n    remaining_columns.insert(targetIndex, column)\nbankTransactionsDf = bankTransactionsDf[remaining_columns]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When you specify multiple columns and corresponding target indexes, each column is moved to the index specified. This allows fine-grained reordering where each column lands exactly where you want it.",
+            "ExampleTitle": "Move Multiple Columns to Specific Indexes"
         },
         {
-            "KitText": "#> ColumnRearrange TransactionID AccountID 4 --back --example",
+            "KitText": "#> ColumnRearrange TransactionID AccountID 4 --back --exampleTitle Move Columns to the End of the Dataframe --example When the back option is used, the specified columns (by name or index) will be moved to the end of the dataframe, while preserving the order of all other columns. This is useful for deprioritizing less important fields without dropping them.",
             "CodeAfterKit": "\ncolumnsToMove = ['TransactionID', 'AccountID', bankTransactionsDf.columns[4]]\ncolumnsToMove = [column for column in bankTransactionsDf.columns if column not in columnsToMove] + columnsToMove\nbankTransactionsDf = bankTransactionsDf[columnsToMove]",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "When the back option is used, the specified columns (by name or index) will be moved to the end of the dataframe, while preserving the order of all other columns. This is useful for deprioritizing less important fields without dropping them.",
+            "ExampleTitle": "Move Columns to the End of the Dataframe"
         }
     ]
 }
