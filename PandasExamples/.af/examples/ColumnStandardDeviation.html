@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Temp3pm Temp9am Rainfall<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Temp3pm Temp9am Rainfall<span>AFLEFT 
 weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() AFRIGHT</span></code></pre>
 </div>  
 
@@ -21,8 +20,7 @@ weatherDfStd = weatherDf [ ['Temp3pm', 'Temp9am', 'Rainfall'] ].std() AFRIGHT</s
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnStandardDeviation Sunshine Rainfall --group RainTomorrow<span>AFLEFT 
 weatherDfStd = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].std()
 weatherDfStd = pd.DataFrame(weatherDfStd).reset_index() AFRIGHT</span></code></pre>
 </div>  

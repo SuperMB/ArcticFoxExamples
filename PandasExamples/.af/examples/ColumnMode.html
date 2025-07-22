@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Cloud3pm --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Cloud3pm --print<span>AFLEFT 
 weatherDfMode = weatherDf['Cloud3pm'].mode()
 print(weatherDfMode) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(weatherDfMode) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Humidity3pm Humidity9am Temp3pm --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode Humidity3pm Humidity9am Temp3pm --print<span>AFLEFT 
 weatherDfMode = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].mode()
 print(weatherDfMode) #)4 AFRIGHT</span></code></pre>
 </div>  
@@ -32,8 +30,7 @@ print(weatherDfMode) #)4 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMode --columns MaxTemp --group RainToday --addToDataframe<span>AFLEFT 
 weatherDfMode = weatherDf.groupby('RainToday')['MaxTemp'].apply(lambda x: x.mode().iloc[0])()
 weatherDfMode = pd.DataFrame(weatherDfMode).reset_index()
 weatherDfMode.name = 'MaxTempApply(lambda x: x.mode().iloc[0])'

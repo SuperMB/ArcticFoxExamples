@@ -14,8 +14,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --column StoreId --join left<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --column StoreId --join left<span>AFLEFT 
 # selected left  table: storesDf
 # selected right table: salesDf
 storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
@@ -25,8 +24,7 @@ storesDfSalesDfJoin = pd.merge(storesDf, salesDf, on=['StoreId'], how='left') AF
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Join --leftTable salesDf --rightTable storesDf --column StoreId --join left<span>AFLEFT 
 salesDfStoresDfJoin = pd.merge(salesDf, storesDf, on=['StoreId'], how='left') AFRIGHT</span></code></pre>
 </div>  
 

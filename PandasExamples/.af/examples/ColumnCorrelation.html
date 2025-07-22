@@ -9,8 +9,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation<span>AFLEFT 
 appleStockDfNumericOnly = appleStockDf.select_dtypes(include=['number'])
 appleStockDfCorrelation = appleStockDfNumericOnly.corr() AFRIGHT</span></code></pre>
 </div>  
@@ -19,8 +18,7 @@ appleStockDfCorrelation = appleStockDfNumericOnly.corr() AFRIGHT</span></code></
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume<span>AFLEFT 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() AFRIGHT</span></code></pre>
 </div>  
 
@@ -28,8 +26,7 @@ appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ].corr() AFRIG
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCorrelation --columns High Low Volume --where High > 1.10 * Open<span>AFLEFT 
 appleStockDfCorrelation = appleStockDf[ ['High', 'Low', 'Volume'] ][appleStockDf['High'] > 1.10 * appleStockDf['Open']].corr() AFRIGHT</span></code></pre>
 </div>  
 

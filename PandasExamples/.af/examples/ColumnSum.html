@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum AccountBalance --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum AccountBalance --print<span>AFLEFT 
 bankTransactionsDfSum = bankTransactionsDf['AccountBalance'].sum()
 print(bankTransactionsDfSum) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(bankTransactionsDfSum) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum TransactionAmount AccountBalance --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum TransactionAmount AccountBalance --print<span>AFLEFT 
 bankTransactionsDfSum = bankTransactionsDf [ ['TransactionAmount', 'AccountBalance'] ].sum()
 print(bankTransactionsDfSum) #)4 AFRIGHT</span></code></pre>
 </div>  
@@ -32,8 +30,7 @@ print(bankTransactionsDfSum) #)4 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum TransactionAmount AccountBalance CustomerAge --where TransactionAmount > 75 and CustomerAge > 20 --group TransactionType Channel --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnSum TransactionAmount AccountBalance CustomerAge --where TransactionAmount > 75 and CustomerAge > 20 --group TransactionType Channel --print<span>AFLEFT 
 bankTransactionsDfSum = bankTransactionsDf[(bankTransactionsDf['TransactionAmount'] > 75) & (bankTransactionsDf['CustomerAge'] > 20)].groupby( [ 'TransactionType', 'Channel' ] ) [ ['TransactionAmount', 'AccountBalance', 'CustomerAge'] ].sum()
 bankTransactionsDfSum = pd.DataFrame(bankTransactionsDfSum).reset_index()
 print(bankTransactionsDfSum) #)6 AFRIGHT</span></code></pre>

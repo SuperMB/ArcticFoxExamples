@@ -6,8 +6,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Open > 150<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Open > 150<span>AFLEFT 
 appleStockDf = appleStockDf[appleStockDf['Open'] > 150] AFRIGHT</span></code></pre>
 </div>  
 
@@ -15,8 +14,7 @@ appleStockDf = appleStockDf[appleStockDf['Open'] > 150] AFRIGHT</span></code></p
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Low > 100 and High < 110<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Low > 100 and High < 110<span>AFLEFT 
 appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] < 110)] AFRIGHT</span></code></pre>
 </div>  
 
@@ -24,8 +22,7 @@ appleStockDf = appleStockDf[(appleStockDf['Low'] > 100) & (appleStockDf['High'] 
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Date > 2022 or Low > 300<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Date > 2022 or Low > 300<span>AFLEFT 
 appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
 appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockDf['Low'] > 300)] AFRIGHT</span></code></pre>
 </div>  
@@ -34,8 +31,7 @@ appleStockDf = appleStockDf[(appleStockDf['Date'].dt.year > 2022) | (appleStockD
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Location contains San<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query Location contains San<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('str').str.contains('San').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
@@ -43,8 +39,7 @@ bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['Location'].astype('s
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query DeviceID ends with endsWithValue<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query DeviceID ends with endsWithValue<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('str').str.endswith('endsWithValue').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 
@@ -52,8 +47,7 @@ bankTransactionsDf = bankTransactionsDf[bankTransactionsDf['DeviceID'].astype('s
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Query High > .9 * appleStockDfMedian and High < 1.1 * appleStockDfMedian<span>AFLEFT 
 appleStockDf = appleStockDf[(appleStockDf['High'] > .9 * appleStockDfMedian) & (appleStockDf['High'] < 1.1 * appleStockDfMedian)] AFRIGHT</span></code></pre>
 </div>  
 

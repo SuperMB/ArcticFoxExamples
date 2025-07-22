@@ -9,8 +9,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnOp AccountBalance * 10 --where CustomerAge > 35<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnOp AccountBalance * 10 --where CustomerAge > 35<span>AFLEFT 
 whereCondition = bankTransactionsDf['CustomerAge'] > 35
 bankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['AccountBalance'] * 10 AFRIGHT</span></code></pre>
 </div>  
@@ -19,8 +18,7 @@ bankTransactionsDf['AccountBalance'][whereCondition] = bankTransactionsDf['Accou
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnOp LoginAttempts = 6 --where CustomerAge < 20<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnOp LoginAttempts = 6 --where CustomerAge < 20<span>AFLEFT 
 whereCondition = bankTransactionsDf['CustomerAge'] < 20
 bankTransactionsDf['LoginAttempts'][whereCondition] = 6 AFRIGHT</span></code></pre>
 </div>  

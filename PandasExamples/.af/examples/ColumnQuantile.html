@@ -13,8 +13,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile CustomerAge<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile CustomerAge<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() AFRIGHT</span></code></pre>
 </div>  
 
@@ -22,8 +21,7 @@ bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile() AFRIGH
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] ) AFRIGHT</span></code></pre>
 </div>  
 
@@ -31,8 +29,7 @@ bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, 
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns CustomerAge --quantile .25 .5 .75 1 --variablesForQuantiles<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf['CustomerAge'].quantile( [ .25, .5, .75, 1 ] )
 bankTransactionsDfQuantile0 = bankTransactionsDfQuantile.iloc[0]
 bankTransactionsDfQuantile1 = bankTransactionsDfQuantile.iloc[1]
@@ -44,8 +41,7 @@ bankTransactionsDfQuantile3 = bankTransactionsDfQuantile.iloc[3] AFRIGHT</span><
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile AccountBalance TransactionDuration<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile AccountBalance TransactionDuration<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile() AFRIGHT</span></code></pre>
 </div>  
 
@@ -53,8 +49,7 @@ bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'Transactio
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDate --quantile .2 .4 .6 .8 1<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDate'] ].quantile( [ .2, .4, .6, .8, 1 ] ) AFRIGHT</span></code></pre>
 </div>  
 
@@ -62,8 +57,7 @@ bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'Transactio
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnQuantile --columns AccountBalance TransactionDuration --quantile .3 .6 .9 --variablesForQuantiles<span>AFLEFT 
 bankTransactionsDfQuantile = bankTransactionsDf [ ['AccountBalance', 'TransactionDuration'] ].quantile( [ .3, .6, .9 ] )
 bankTransactionsDfQuantile_AccountBalance_0 = bankTransactionsDfQuantile.iloc[0]['AccountBalance']
 bankTransactionsDfQuantile_AccountBalance_1 = bankTransactionsDfQuantile.iloc[1]['AccountBalance']

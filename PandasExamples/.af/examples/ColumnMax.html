@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax TransactionAmount<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax TransactionAmount<span>AFLEFT 
 banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() AFRIGHT</span></code></pre>
 </div>  
 
@@ -21,8 +20,7 @@ banktransactionsDfMax = banktransactionsDf['TransactionAmount'].max() AFRIGHT</s
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax CustomerAge AccountBalance TransactionDate<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax CustomerAge AccountBalance TransactionDate<span>AFLEFT 
 banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', 'TransactionDate'] ].max() AFRIGHT</span></code></pre>
 </div>  
 
@@ -30,8 +28,7 @@ banktransactionsDfMax = banktransactionsDf [ ['CustomerAge', 'AccountBalance', '
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMax --columns TransactionAmount --rolling 5 --addToDataframe<span>AFLEFT 
 banktransactionsDfMaxRolling5 = banktransactionsDf['TransactionAmount'].rolling(window=5, min_periods=1).max()
 banktransactionsDf['TransactionAmountMaxRolling5'] = pd.Series()
 banktransactionsDf['TransactionAmountMaxRolling5'] = banktransactionsDfMaxRolling5 AFRIGHT</span></code></pre>

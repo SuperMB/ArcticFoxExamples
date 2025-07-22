@@ -13,8 +13,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename CustomerAge --to Age<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename CustomerAge --to Age<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'}) AFRIGHT</span></code></pre>
 </div>  
 
@@ -22,8 +21,7 @@ bankTransactionsDf = bankTransactionsDf.rename(columns={'CustomerAge': 'Age'}) A
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionID AccountID --to tid aid<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionID AccountID --to tid aid<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 'AccountID': 'aid'}) AFRIGHT</span></code></pre>
 </div>  
 
@@ -31,8 +29,7 @@ bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionID': 'tid', 
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionDate 4 5 --to Date Payment City<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename TransactionDate 4 5 --to Date Payment City<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date', bankTransactionsDf.columns[4]: 'Payment', bankTransactionsDf.columns[5]: 'City'}) AFRIGHT</span></code></pre>
 </div>  
 
@@ -40,8 +37,7 @@ bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionDate': 'Date
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --replace ID --with Identifier<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --replace ID --with Identifier<span>AFLEFT 
 bankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Identifier') AFRIGHT</span></code></pre>
 </div>  
 
@@ -49,8 +45,7 @@ bankTransactionsDf.columns = bankTransactionsDf.columns.str.replace('ID', 'Ident
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRename --columns TransactionAmount TransactionType --replace Transaction --with Payment<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf.rename(columns={'TransactionAmount': 'TransactionAmount'.replace('Transaction', 'Payment'), 'TransactionType': 'TransactionType'.replace('Transaction', 'Payment')}) AFRIGHT</span></code></pre>
 </div>  
 

@@ -15,8 +15,7 @@
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">Change specific rows within one or more columns to a new value. In this case, in the column AcountID we are changing rows with index 2, 4, and 5 to Inactive to mark that those accounts are no longer used.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --rows 2 4 5 --columns AccountID --value Inactive<span>AFLEFT 
 bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' AFRIGHT</span></code></pre>
 </div>  
 
@@ -24,8 +23,7 @@ bankTransactionsDf.loc[[2, 4, 5], 'AccountID' ] = 'Inactive' AFRIGHT</span></cod
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">Modify all cells in a column that match a given string with a new value. In this case, we want to replace San Diego with Los Angeles in the column Location. If the entire cell was San Diego, than the entire cell would be change to Los Angeles. However, if the cell contained other text in addition to San Diego, the other text would remain the same, and only San Diego in the cell would change to Los Angeles.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --initialValues San Diego --newValues Los Angeles --columns Location<span>AFLEFT 
 bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San Diego', 'Los Angeles') AFRIGHT</span></code></pre>
 </div>  
 
@@ -33,8 +31,7 @@ bankTransactionsDf['Location'] = bankTransactionsDf['Location'].str.replace('San
 
 <div style="text-alignment:left;"><div style="color:white;max-width:600px;">Set all cells in a column to a new value if the cell meets the desired condition. Here, the condition is that the TransactionDate in a row is after (greater than) 06-01-2023. Therefore, if the TransactionDate is after 06-01-2023, then we set the TransactionType cell to Cash in the row. This would replace then entire contents of the cell TransactionType in the row.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ChangeCells --columns TransactionType --value Cash --where TransactionDate > 06-01-2023 --allMatchingRows<span>AFLEFT 
 bankTransactionsDf['TransactionDate'] = pd.to_datetime(bankTransactionsDf['TransactionDate'])
 bankTransactionsDf.loc[ bankTransactionsDf['TransactionDate'] > "06 - 01 - 2023", 'TransactionType' ] = 'Cash' AFRIGHT</span></code></pre>
 </div>  

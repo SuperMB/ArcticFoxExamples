@@ -8,8 +8,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters<span>AFLEFT 
 for column in texasCensusDf.columns:
     texasCensusDf[column] = texasCensusDf[column].str.replace(r'[^\x00-\x7F]+', '', regex=True) AFRIGHT</span></code></pre>
 </div>  
@@ -18,8 +17,7 @@ for column in texasCensusDf.columns:
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RemoveWeirdCharacters Label (Grouping) Texas Total Margin of Error<span>AFLEFT 
 texasCensusDf['Label (Grouping)'] = texasCensusDf['Label (Grouping)'].str.replace(r'[^\x00-\x7F]+', '', regex=True)
 texasCensusDf['Texas Total Margin of Error'] = texasCensusDf['Texas Total Margin of Error'].str.replace(r'[^\x00-\x7F]+', '', regex=True) AFRIGHT</span></code></pre>
 </div>  

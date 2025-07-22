@@ -14,8 +14,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --index 10<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --index 10<span>AFLEFT 
 pizzeriasDfRow10 = pizzeriasDf.iloc[10] AFRIGHT</span></code></pre>
 </div>  
 
@@ -23,8 +22,7 @@ pizzeriasDfRow10 = pizzeriasDf.iloc[10] AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 20 --indexStop 30<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 20 --indexStop 30<span>AFLEFT 
 pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] AFRIGHT</span></code></pre>
 </div>  
 
@@ -32,8 +30,7 @@ pizzeriasDfRowsFrom20To30 = pizzeriasDf.iloc[20:30] AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 200<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStart 200<span>AFLEFT 
 pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] AFRIGHT</span></code></pre>
 </div>  
 
@@ -41,8 +38,7 @@ pizzeriasDfRowsStartingAt200 = pizzeriasDf.iloc[200:] AFRIGHT</span></code></pre
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStop 30<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --indexStop 30<span>AFLEFT 
 pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] AFRIGHT</span></code></pre>
 </div>  
 
@@ -50,8 +46,7 @@ pizzeriasDfRowsStoppingAt30 = pizzeriasDf.iloc[:30] AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --where Location contains Queens<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowGet --where Location contains Queens<span>AFLEFT 
 pizzeriasDf = pizzeriasDf[pizzeriasDf['Location'].astype('str').str.contains('Queens').fillna(False)] AFRIGHT</span></code></pre>
 </div>  
 

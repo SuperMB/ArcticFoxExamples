@@ -5,30 +5,27 @@
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">newColumnNames</span>: Specifies the name of the new column being added to the dataframe</div>
 <div style="color:white;margin-bottom:0;"><span style="color:#028fed">variable</span>: Specifies a variable to use as the value of the new dataframe</div>
 <div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
-<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1</h4></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Add a New Empty Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Add an empty column to a dataframe that has a desired column name. Specify the desired column name with the</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd --newColumnNames NewEmptyColumn<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd --newColumnNames NewEmptyColumn<span>AFLEFT 
 bankTransactionsDf['NewEmptyColumn'] = pd.Series() AFRIGHT</span></code></pre>
 </div>  
 
 <div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Add a column to the dataframe where every row in the column has the same value. In this case, the column name is Columnof1s and the value of each row for the column will be 1</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd 1 --newColumnNames Columnof1s<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd 1 --newColumnNames Columnof1s<span>AFLEFT 
 bankTransactionsDf['Columnof1s'] = 1 AFRIGHT</span></code></pre>
 </div>  
 
-<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Adding a Variable as a Column</h4></div>
 
-
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Add a variable as a column to the dataframe. If a column name is not provided, the column name will be the same as the variable name. Here, the variable location is added to the dataframe as a new column names location.</div></div>
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd location<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnAdd location<span>AFLEFT 
 bankTransactionsDf['location'] = location AFRIGHT</span></code></pre>
 </div>  
 

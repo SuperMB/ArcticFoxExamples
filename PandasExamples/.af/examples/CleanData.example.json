@@ -1,10 +1,22 @@
 {
     "CleanData": [
         {
-            "KitText": "#> CleanData --removeMissing --example",
+            "KitText": "#> CleanData --removeMissing --exampleTitle Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells.",
             "CodeAfterKit": "\npizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True)",
-            "ExampleDescription": "",
-            "ExampleTitle": ""
+            "ExampleDescription": "One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option",
+            "ExampleTitle": "Remove Rows with Missing Cells"
+        },
+        {
+            "KitText": "#> CleanData --fill --columns Rating --mean --exampleTitle Fill Missing Cells with Mean --example Rather than removing missing cells from a dataframe, it may be beneficial to keep those rows and fill the missing cells with a statistical value. In this case, we fill the missing cells with the mean of the colum.",
+            "CodeAfterKit": "\npizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fillna(col.mean()))",
+            "ExampleDescription": "Rather than removing missing cells from a dataframe, it may be beneficial to keep those rows and fill the missing cells with a statistical value. In this case, we fill the missing cells with the mean of the colum.",
+            "ExampleTitle": "Fill Missing Cells with Mean"
+        },
+        {
+            "KitText": "#> CleanData --interpolate --columns Rating --exampleTitle Interpolate Missing Cells --example Another approach to cleaning a data set with missing cells is to fill the cells with a midpoint value based on the surrounding cells. This process is known as interpoloation. Rather than being replace with a statistical value, each cell will receive an interpolated value based on the cells arround it.",
+            "CodeAfterKit": "\npizzeriasDf[['Rating']] = pizzeriasDf[['Rating']].interpolate()",
+            "ExampleDescription": "Another approach to cleaning a data set with missing cells is to fill the cells with a midpoint value based on the surrounding cells. This process is known as interpoloation. Rather than being replace with a statistical value, each cell will receive an interpolated value based on the cells arround it.",
+            "ExampleTitle": "Interpolate Missing Cells"
         }
     ]
 }

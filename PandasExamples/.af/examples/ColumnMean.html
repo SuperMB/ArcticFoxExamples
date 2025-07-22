@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean Temp3pm<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean Temp3pm<span>AFLEFT 
 weatherDfMean = weatherDf['Temp3pm'].mean() AFRIGHT</span></code></pre>
 </div>  
 
@@ -21,8 +20,7 @@ weatherDfMean = weatherDf['Temp3pm'].mean() AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean Temp3pm Temp9am MaxTemp MinTemp<span>AFLEFT 
 weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean() AFRIGHT</span></code></pre>
 </div>  
 
@@ -30,8 +28,7 @@ weatherDfMean = weatherDf [ ['Temp3pm', 'Temp9am', 'MaxTemp', 'MinTemp'] ].mean(
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMean --columns Sunshine --rolling 7 --addToDataframe<span>AFLEFT 
 weatherDfMeanRolling7 = weatherDf['Sunshine'].rolling(window=7, min_periods=1).mean()
 weatherDf['SunshineMeanRolling7'] = pd.Series()
 weatherDf['SunshineMeanRolling7'] = weatherDfMeanRolling7 AFRIGHT</span></code></pre>

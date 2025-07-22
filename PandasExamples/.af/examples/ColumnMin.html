@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin WindGustSpeed --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin WindGustSpeed --print<span>AFLEFT 
 weatherDfMin = weatherDf['WindGustSpeed'].min()
 print(weatherDfMin) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(weatherDfMin) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin Humidity3pm Humidity9am Temp3pm --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin Humidity3pm Humidity9am Temp3pm --print<span>AFLEFT 
 weatherDfMin = weatherDf [ ['Humidity3pm', 'Humidity9am', 'Temp3pm'] ].min()
 print(weatherDfMin) #)4 AFRIGHT</span></code></pre>
 </div>  
@@ -32,8 +30,7 @@ print(weatherDfMin) #)4 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMin --columns Sunshine --rolling 3 --group WindGustDir --addToDataframe<span>AFLEFT 
 weatherDfMinRolling3 = weatherDf.groupby('WindGustDir')['Sunshine'].rolling(window=3, min_periods=1).min()
 weatherDfMinRolling3.name = 'SunshineMinRolling3'
 weatherDfMinRolling3Df = pd.DataFrame(weatherDfMinRolling3)

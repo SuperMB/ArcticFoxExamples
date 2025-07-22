@@ -6,8 +6,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --all --minMax<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --all --minMax<span>AFLEFT 
 minMaxScaler = MinMaxScaler()
 for column in appleStockDf.columns:
     if is_numeric_dtype(appleStockDf[column]):
@@ -18,8 +17,7 @@ for column in appleStockDf.columns:
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --columns High Low --minMax<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --columns High Low --minMax<span>AFLEFT 
 scaleColumn = appleStockDf[ ['High', 'Low'] ]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf[ ['High', 'Low'] ] = scaleColumn AFRIGHT</span></code></pre>
@@ -29,8 +27,7 @@ appleStockDf[ ['High', 'Low'] ] = scaleColumn AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --columns Open --minMax --where High > 100<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Normalize --columns Open --minMax --where High > 100<span>AFLEFT 
 scaleColumn = appleStockDf[ ['Open'] ][appleStockDf['High'] > 100]
 scaleColumn = minMaxScaler.fit_transform(scaleColumn)
 appleStockDf.loc[appleStockDf['High'] > 100,'Open'] = scaleColumn AFRIGHT</span></code></pre>

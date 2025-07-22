@@ -42,7 +42,7 @@ print(pizzeriasDf.head()) #)1
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> CleanData --removeMissing --example 
+#> CleanData --removeMissing --exampleTitle Remove Rows with Missing Cells --example One of the easiest ways to clean a dataframe with missing cells is to remove the rows with missing cells entirely. Using CleanData and passing in the option --removeMissing will write code to remove rows with missing cells. 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) 
 
 #> Visualize 
@@ -59,7 +59,7 @@ print(pizzeriasDf.head()) #)2
 # Example 2
 # Fill missing Rating values with mean of the column
 # Seed being used: #> CleanData --fill --columns Rating --mean 
-# ******************************************************
+# ****************************************************** 
 # ******************************************************
 
 # Reload the data since the last example removed the missing value
@@ -75,7 +75,7 @@ print(pizzeriasDf.head()) #)3
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> CleanData --fill --columns Rating --mean 
+#> CleanData --fill --columns Rating --mean --exampleTitle Fill Missing Cells with Mean --example Rather than removing missing cells from a dataframe, it may be beneficial to keep those rows and fill the missing cells with a statistical value. In this case, we fill the missing cells with the mean of the colum. 
 pizzeriasDf[ ['Rating'] ] = pizzeriasDf[ ['Rating'] ].apply(lambda col: col.fillna(col.mean())) 
 
 #> Visualize 
@@ -108,7 +108,7 @@ print(pizzeriasDf.head()) #)5
 ##*** 3  Giovanni's Slice of Heaven                 NaN         Hawaiian         NaN     3.1              Non             No            1991.0              11.0  www.giovanni'ssliceofheaven16.com
 ##*** 4   Antonio's Slice of Heaven  Staten Island, NYC  Buffalo Chicken          $$     NaN               No             No            1989.0              23.0   www.antonio'ssliceofheaven22.com
 
-#> CleanData --interpolate --columns Rating 
+#> CleanData --interpolate --columns Rating --exampleTitle Interpolate Missing Cells --example Another approach to cleaning a data set with missing cells is to fill the cells with a midpoint value based on the surrounding cells. This process is known as interpoloation. Rather than being replace with a statistical value, each cell will receive an interpolated value based on the cells arround it. 
 pizzeriasDf[['Rating']] = pizzeriasDf[['Rating']].interpolate() 
 
 #> Visualize 

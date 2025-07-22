@@ -38,7 +38,7 @@ bankTransactionsDf.drop(columns= ['Location', 'DeviceID', 'IP Address', 'Transac
 #> Visualize 
 print(bankTransactionsDf.head()) #)1 
 
-#> ColumnAdd --newColumnNames NewEmptyColumn --example 
+#> ColumnAdd --newColumnNames NewEmptyColumn --exampleTitle Add a New Empty Column --example Add an empty column to a dataframe that has a desired column name. Specify the desired column name with the --exampleTitle option. Each row will have a missing value for the new column. 
 bankTransactionsDf['NewEmptyColumn'] = pd.Series() 
 
 #> Visualize 
@@ -55,7 +55,7 @@ print(bankTransactionsDf.head()) #)2
 #> Visualize 
 print(bankTransactionsDf.head()) #)3 
 
-#> ColumnAdd 1 --newColumnNames Columnof1s --example 
+#> ColumnAdd 1 --newColumnNames Columnof1s --exampleTitle Added a Column With Set Value --example Add a column to the dataframe where every row in the column has the same value. In this case, the column name is Columnof1s and the value of each row for the column will be 1 
 bankTransactionsDf['Columnof1s'] = 1 
 
 #> Visualize 
@@ -72,7 +72,7 @@ print(bankTransactionsDf.head()) #)4
 #> Visualize 
 print(bankTransactionsDf.head()) #)5 
 
-#> ColumnAdd location --example 
+#> ColumnAdd location --exampleTitle Adding a Variable as a Column --example Add a variable as a column to the dataframe. If a column name is not provided, the column name will be the same as the variable name. Here, the variable location is added to the dataframe as a new column names location.
 bankTransactionsDf['location'] = location 
 
 #> Visualize 

@@ -10,8 +10,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound<span>AFLEFT 
 for column in bankTransactionsDf.select_dtypes(include=['number']).columns:
     bankTransactionsDf[column] = round(bankTransactionsDf[column]) AFRIGHT</span></code></pre>
 </div>  
@@ -20,8 +19,7 @@ for column in bankTransactionsDf.select_dtypes(include=['number']).columns:
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound AccountBalance<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound AccountBalance<span>AFLEFT 
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance']) AFRIGHT</span></code></pre>
 </div>  
 
@@ -29,8 +27,7 @@ bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound AccountBalance TransactionAmount<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound AccountBalance TransactionAmount<span>AFLEFT 
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'])
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount']) AFRIGHT</span></code></pre>
 </div>  
@@ -39,8 +36,7 @@ bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionA
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound --columns TransactionAmount AccountBalance --to 5.5<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound --columns TransactionAmount AccountBalance --to 5.5<span>AFLEFT 
 bankTransactionsDf['TransactionAmount'] = round(bankTransactionsDf['TransactionAmount'] / 5.5) * 5.5
 bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'] / 5.5) * 5.5 AFRIGHT</span></code></pre>
 </div>  
@@ -49,8 +45,7 @@ bankTransactionsDf['AccountBalance'] = round(bankTransactionsDf['AccountBalance'
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where TransactionAmount > 100<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRound --columns TransactionAmount TransactionDuration --to 10 --where TransactionAmount > 100<span>AFLEFT 
 bankTransactionsDf['TransactionAmount'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionAmount'] / 10) * 10
 bankTransactionsDf['TransactionDuration'][bankTransactionsDf['TransactionAmount'] > 100] = round(bankTransactionsDf['TransactionDuration'] / 10) * 10 AFRIGHT</span></code></pre>
 </div>  

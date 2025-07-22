@@ -21,8 +21,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --cells TransactionAmount --sum<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --cells TransactionAmount --sum<span>AFLEFT 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', values='TransactionAmount', aggfunc='sum') AFRIGHT</span></code></pre>
 </div>  
 
@@ -30,8 +29,7 @@ bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', value
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns TransactionType --cells AccountBalance --max<span>AFLEFT 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns='TransactionType', values='AccountBalance', aggfunc='max') AFRIGHT</span></code></pre>
 </div>  
 
@@ -39,8 +37,7 @@ bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', colum
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows Location --columns Channel TransactionType --cells AccountID --count<span>AFLEFT 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', columns= [ 'Channel', 'TransactionType' ] , values='AccountID', aggfunc='count') AFRIGHT</span></code></pre>
 </div>  
 
@@ -48,8 +45,7 @@ bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index='Location', colum
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> DataframePivot --rows CustomerAge TransactionType --columns Channel LoginAttempts CustomerOccupation --cells TransactionAmount --sum<span>AFLEFT 
 bankTransactionsDfPivot = bankTransactionsDf.pivot_table(index= [ 'CustomerAge', 'TransactionType' ] , columns= [ 'Channel', 'LoginAttempts', 'CustomerOccupation' ] , values='TransactionAmount', aggfunc='sum') AFRIGHT</span></code></pre>
 </div>  
 

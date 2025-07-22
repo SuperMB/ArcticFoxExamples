@@ -14,8 +14,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -23,8 +22,7 @@ pizzeriasDf = pizzeriasDf.dropna().reset_index(drop=True) AFRIGHT</span></code><
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing --columns Rating Established Year<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --missing --columns Rating Established Year<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -32,8 +30,7 @@ pizzeriasDf = pizzeriasDf.dropna(subset = ['Rating', 'Established Year']).reset_
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --index 3<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --index 3<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -41,8 +38,7 @@ pizzeriasDf = pizzeriasDf.drop(3).reset_index(drop=True) AFRIGHT</span></code></
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 3<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 3<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) AFRIGHT</span></code></pre>
 </div>  
 
@@ -50,8 +46,7 @@ pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[3:]) AFRIGHT</span></code></pre
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStop 50<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStop 50<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -59,8 +54,7 @@ pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[:50+1]).reset_index(drop=True) 
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 5 --indexStop 10<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --indexStart 5 --indexStop 10<span>AFLEFT 
 pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -68,8 +62,7 @@ pizzeriasDf = pizzeriasDf.drop(pizzeriasDf.index[5:10+1]).reset_index(drop=True)
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --where Pizzeria Name contains Antonio<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowRemove --where Pizzeria Name contains Antonio<span>AFLEFT 
 pizzeriasDf = pizzeriasDf[~(pizzeriasDf['Pizzeria Name'].astype('str').str.contains('Antonio').fillna(False))].reset_index(drop=True) AFRIGHT</span></code></pre>
 </div>  
 

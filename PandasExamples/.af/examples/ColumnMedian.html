@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Pressure3pm --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Pressure3pm --print<span>AFLEFT 
 weatherDfMedian = weatherDf['Pressure3pm'].median()
 print(weatherDfMedian) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(weatherDfMedian) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Evaporation Rainfall Cloud9am --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian Evaporation Rainfall Cloud9am --print<span>AFLEFT 
 weatherDfMedian = weatherDf [ ['Evaporation', 'Rainfall', 'Cloud9am'] ].median()
 print(weatherDfMedian) #)4 AFRIGHT</span></code></pre>
 </div>  
@@ -32,8 +30,7 @@ print(weatherDfMedian) #)4 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnMedian --columns Sunshine --group WindGustDir --addToDataframe<span>AFLEFT 
 weatherDfMedian = weatherDf.groupby('WindGustDir')['Sunshine'].median()
 weatherDfMedian = pd.DataFrame(weatherDfMedian).reset_index()
 weatherDfMedian.name = 'SunshineMedian'

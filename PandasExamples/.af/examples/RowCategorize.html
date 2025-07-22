@@ -9,8 +9,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories cold < 10, cool < 20, warm < 30, hot < 40<span>AFLEFT 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,10,20,30,40], labels=['cold','cool','warm','hot'], include_lowest=True) AFRIGHT</span></code></pre>
 </div>  
 
@@ -18,8 +17,7 @@ weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.floa
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCategorize MaxTemp --categories newCold, newCool > 10, newWarm > 20, newHot > 30<span>AFLEFT 
 weatherDf['MaxTempCategorized'] = pd.cut(x=weatherDf['MaxTemp'], bins=[-sys.float_info.max,sys.float_info.max], labels=['newCold' 'newCool' '>' 10 'newWarm' '>' 20 'newHot' '>' 30], include_lowest=True) AFRIGHT</span></code></pre>
 </div>  
 

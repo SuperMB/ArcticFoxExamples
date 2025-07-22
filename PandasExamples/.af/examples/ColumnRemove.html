@@ -9,32 +9,28 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove CustomerAge<span>
-AFLEFT bankTransactionsDf.drop(columns='CustomerAge', inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove CustomerAge<span>AFLEFT bankTransactionsDf.drop(columns='CustomerAge', inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
 <div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2</h4></div>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionID TransactionDuration<span>
-AFLEFT bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionID TransactionDuration<span>AFLEFT bankTransactionsDf.drop(columns= ['TransactionID', 'TransactionDuration'] , inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
 <div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3</h4></div>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionType 2 3<span>
-AFLEFT bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) AFRIGHT</span></code></pre>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove TransactionType 2 3<span>AFLEFT bankTransactionsDf.drop(columns= ['TransactionType', bankTransactionsDf.columns[2], bankTransactionsDf.columns[3]] , inplace=True) AFRIGHT</span></code></pre>
 </div>  
 
 <div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4</h4></div>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove --nonNumeric<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnRemove --nonNumeric<span>AFLEFT 
 bankTransactionsDf = bankTransactionsDf.select_dtypes(include=['number']) AFRIGHT</span></code></pre>
 </div>  
 

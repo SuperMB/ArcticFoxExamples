@@ -9,8 +9,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCombine First Person Rating Second Person Rating --keepNonNull<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnCombine First Person Rating Second Person Rating --keepNonNull<span>AFLEFT 
 modifiedPizzeriasDf['First Person Rating'] = modifiedPizzeriasDf['First Person Rating'].combine_first(modifiedPizzeriasDf['Second Person Rating'])
 modifiedPizzeriasDf = modifiedPizzeriasDf.drop(columns='Second Person Rating') AFRIGHT</span></code></pre>
 </div>  

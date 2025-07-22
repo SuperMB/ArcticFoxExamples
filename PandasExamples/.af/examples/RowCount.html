@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --print<span>AFLEFT 
 pizzeriasDfRowCount = pizzeriasDf.shape[0]
 print(pizzeriasDfRowCount) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(pizzeriasDfRowCount) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --missing<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --missing<span>AFLEFT 
 pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() AFRIGHT</span></code></pre>
 </div>  
 
@@ -31,8 +29,7 @@ pizzeriasDfMissingRowCount = pizzeriasDf.isnull().any(axis=1).sum() AFRIGHT</spa
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --values 3.0<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --values 3.0<span>AFLEFT 
 pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) AFRIGHT</span></code></pre>
 </div>  
 
@@ -40,8 +37,7 @@ pizzeriasDfRowCount_1 = (pizzeriasDf.isin([3.0]).any(axis=1).sum()) AFRIGHT</spa
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --where Specialty Pizza == Hawaiian and Rating < 3.5<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> RowCount --where Specialty Pizza == Hawaiian and Rating < 3.5<span>AFLEFT 
 pizzeriasDfRowCount_2 = pizzeriasDf[(pizzeriasDf['Specialty Pizza'] == 'Hawaiian') & (pizzeriasDf['Rating'] < 3.5)].shape[0] AFRIGHT</span></code></pre>
 </div>  
 

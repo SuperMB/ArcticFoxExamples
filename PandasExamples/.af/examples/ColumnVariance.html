@@ -12,8 +12,7 @@
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance RISK_MM --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance RISK_MM --print<span>AFLEFT 
 weatherDfVar = weatherDf['RISK_MM'].var()
 print(weatherDfVar) #)2 AFRIGHT</span></code></pre>
 </div>  
@@ -22,8 +21,7 @@ print(weatherDfVar) #)2 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance WindSpeed3pm Evaporation --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance WindSpeed3pm Evaporation --print<span>AFLEFT 
 weatherDfVar = weatherDf [ ['WindSpeed3pm', 'Evaporation'] ].var()
 print(weatherDfVar) #)4 AFRIGHT</span></code></pre>
 </div>  
@@ -32,8 +30,7 @@ print(weatherDfVar) #)4 AFRIGHT</span></code></pre>
 
 
 <div>
-    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print<span>
-AFLEFT 
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> ColumnVariance Sunshine Rainfall --group RainTomorrow --print<span>AFLEFT 
 weatherDfVar = weatherDf.groupby('RainTomorrow') [ ['Sunshine', 'Rainfall'] ].var()
 weatherDfVar = pd.DataFrame(weatherDfVar).reset_index()
 print(weatherDfVar) #)6 AFRIGHT</span></code></pre>
