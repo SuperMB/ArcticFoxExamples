@@ -1,0 +1,168 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "11 ",
+            "Existing": "11 "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "013905968810298791": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905968810293159": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "243905658092763159": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905658092763159": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "243905575014773159": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905575014773159": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905329837243159": [
+        {
+            "PreviouslyGenerated": "nBADf.drop(columns=nBADf.columns[0], inplace=True) ",
+            "Existing": "nBADf.drop(columns=nBADf.columns[0], inplace=True) "
+        }
+    ],
+    "013905894730813159": [
+        {
+            "PreviouslyGenerated": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?",
+            "Existing": "#***DataframeSave: Saves the current columns and data within a dataframe to either a csv or xlsx file. This is useful for when you have finished processing and analyzing data and are ready to save it, save checkpoints along the process of cleaning data, and debugging to see the entire values within a dataframe.\n#***\n#***DataframeSave saves a dataframe to a csv file. Which of the following would you like to do?\n#***- Use the dataframe's name for the csv file? #> `select\n#***- Specify the file name? #> `select --fileName ?"
+        },
+        {
+            "PreviouslyGenerated": "#***How do you set --fileName? Change --fileName ? to the desired name of the csv.\n#***- Example: --fileName MyData ",
+            "Existing": "#***How do you set --fileName? Change --fileName ? to the desired name of the csv.\n#***- Example: --fileName MyData "
+        },
+        {
+            "PreviouslyGenerated": "nBADf.to_csv('NBA.csv', index=False) ",
+            "Existing": "nBADf.to_csv('NBA.csv', index=False) "
+        }
+    ],
+    "013905764333433159": [
+        {
+            "PreviouslyGenerated": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4",
+            "Existing": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4"
+        },
+        {
+            "PreviouslyGenerated": "#***What would you like to show on the y-axis:\n#***- Counts of each category #> `select ? --count --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType ",
+            "Existing": "#***What would you like to show on the y-axis:\n#***- Counts of each category #> `select ? --count --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType "
+        },
+        {
+            "PreviouslyGenerated": "#***How would you like to aggregate the data:\n#***- sum #> `select ? --sum --af b1\n#***- mean #> `select ? --mean --af b1\n#***- count #> `select ? --count --af b1\n#***- max #> `select ? --max --af b1\n#***- min #> `select ? --min --af b1\n#***- median #> `select ? --median --af b1\n#***- standard deviation #> `select ? --std --af b1\n#***- variance #> `select ? --var --af b1\n#***- default #> `select ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***How would you like to aggregate the data:\n#***- sum #> `select ? --sum --af b1\n#***- mean #> `select ? --mean --af b1\n#***- count #> `select ? --count --af b1\n#***- max #> `select ? --max --af b1\n#***- min #> `select ? --min --af b1\n#***- median #> `select ? --median --af b1\n#***- standard deviation #> `select ? --std --af b1\n#***- variance #> `select ? --var --af b1\n#***- default #> `select ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        }
+    ],
+    "243905764333433159": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "033905764333433159": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905582184103159": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "033905582184103159": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905522740803159": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "033905522740803159": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905603023603159": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905603023603159": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905603023603159": [
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Age']))\n\nplt.plot(indexForPlot, nBADf.sort_values( [ 'Age' ] )['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "indexForPlot = range(len(nBADf['Age']))\n\nplt.plot(indexForPlot, nBADf.sort_values( [ 'Age' ] )['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "043905522740803159": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905522740803159": [
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}
