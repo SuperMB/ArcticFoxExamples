@@ -1,0 +1,326 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar1 ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar1 "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar1 ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar1 "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "243905389506287044": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905924484247044": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905924484247044": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905518667837044": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905389506287044": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905924484247044": [
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "033905930439387044": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905389506289180": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905924484249180": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905924484249180": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905518667839180": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905389506289180": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905924484249180": [
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# User changes detected\nnBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n# plt.show() "
+        }
+    ],
+    "033905930439389180": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905930439389180": [
+        {
+            "PreviouslyGenerated": "nBADfGroup_1 = nBADf.groupby(['Team'])['Points']\nnBADfGroup_1Sum = nBADfGroup_1.sum()\nnBADfGroup_1Sum = pd.DataFrame(nBADfGroup_1Sum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroup_1Sum['Team'].astype('category').cat.codes, nBADfGroup_1Sum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroup_1Sum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroup_1Sum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup_1 = nBADf.groupby(['Team'])['Points']\nnBADfGroup_1Sum = nBADfGroup_1.sum()\nnBADfGroup_1Sum = pd.DataFrame(nBADfGroup_1Sum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroup_1Sum['Team'].astype('category').cat.codes, nBADfGroup_1Sum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroup_1Sum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroup_1Sum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "nBADfGroup_1 = nBADf.groupby(['Team'])['Points']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Team'])\n\nplt.bar(nBADfGroup_1Mean['Team'].astype('category').cat.codes, nBADfGroup_1Mean['Points'], label='Points' + ' - mean')\n\nplt.gca().set_xticklabels(nBADfGroup_1Mean['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroup_1Mean['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup_1 = nBADf.groupby(['Team'])['Points']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Team'])\n\nplt.bar(nBADfGroup_1Mean['Team'].astype('category').cat.codes, nBADfGroup_1Mean['Points'], label='Points' + ' - mean')\n\nplt.gca().set_xticklabels(nBADfGroup_1Mean['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroup_1Mean['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905914519209180": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905914519209180": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905914519209180": [
+        {
+            "PreviouslyGenerated": "#ISSUE: argument of type 'Code' is not iterable\nindexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n ",
+            "Existing": "#ISSUE: argument of type 'Code' is not iterable\nindexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n "
+        },
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# User changes detected\nindexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n# plt.show() "
+        }
+    ],
+    "033905924484249180": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905253991229180": [
+        {
+            "PreviouslyGenerated": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4",
+            "Existing": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4"
+        },
+        {
+            "PreviouslyGenerated": "#***What would you like to show on the y-axis:\n#***- Counts of each category #> `select ? --count --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType ",
+            "Existing": "#***What would you like to show on the y-axis:\n#***- Counts of each category #> `select ? --count --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType "
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType ",
+            "Existing": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType ",
+            "Existing": "#****** --x ? ***\n#***--x sets the category to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x SandwhichType "
+        },
+        {
+            "PreviouslyGenerated": "values = nBADf['Team'].astype('str').value_counts().sort_index().values\nindices = nBADf['Team'].astype('str').value_counts().sort_index().index\n\nplt.bar(indices, values, color=colorCycle[colorCycleIndex], label='Team' + ' - count')\n\nplt.title(\"'Team' count\", fontsize=14, fontweight='bold')\nplt.ylabel('count', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# User changes detected\nvalues = nBADf['Team'].astype('str').value_counts().sort_index().values\nindices = nBADf['Team'].astype('str').value_counts().sort_index().index\n\nplt.bar(indices, values, color=colorCycle[colorCycleIndex], label='Team' + ' - count')\n\nplt.title(\"'Team' count\", fontsize=14, fontweight='bold')\nplt.ylabel('count', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n# plt.show() "
+        }
+    ],
+    "013905389353229180": [
+        {
+            "PreviouslyGenerated": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4",
+            "Existing": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4"
+        },
+        {
+            "PreviouslyGenerated": "#***On the y-axis:\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***- Non-aggregated numerical values #> `select ? --y ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***On the y-axis:\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***- Non-aggregated numerical values #> `select ? --y ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#***How would you like to aggregate the data:\n#***- sum #> `select ? --sum --af b1\n#***- mean #> `select ? --mean --af b1\n#***- count #> `select ? --count --af b1\n#***- max #> `select ? --max --af b1\n#***- min #> `select ? --min --af b1\n#***- median #> `select ? --median --af b1\n#***- standard deviation #> `select ? --std --af b1\n#***- variance #> `select ? --var --af b1\n#***- default #> `select ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***How would you like to aggregate the data:\n#***- sum #> `select ? --sum --af b1\n#***- mean #> `select ? --mean --af b1\n#***- count #> `select ? --count --af b1\n#***- max #> `select ? --max --af b1\n#***- min #> `select ? --min --af b1\n#***- median #> `select ? --median --af b1\n#***- standard deviation #> `select ? --std --af b1\n#***- variance #> `select ? --var --af b1\n#***- default #> `select ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Max = nBADfGroup_1.max()\nnBADfGroup_1Max = pd.DataFrame(nBADfGroup_1Max).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Max['Losses'], nBADfGroup_1Max['Wins'], barWidth, label='Wins' + ' - max')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Max = nBADfGroup_1.max()\nnBADfGroup_1Max = pd.DataFrame(nBADfGroup_1Max).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Max['Losses'], nBADfGroup_1Max['Wins'], barWidth, label='Wins' + ' - max')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Mean['Losses'], nBADfGroup_1Mean['Wins'], barWidth, label='Wins' + ' - mean')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# User changes detected\nnBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Mean['Losses'], nBADfGroup_1Mean['Wins'], barWidth, label='Wins' + ' - mean')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n# plt.show() "
+        }
+    ],
+    "033905389353229180": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905747028569180": [
+        {
+            "PreviouslyGenerated": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4",
+            "Existing": "#***Bar: Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a3\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4"
+        },
+        {
+            "PreviouslyGenerated": "#***On the y-axis:\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***- Non-aggregated numerical values #> `select ? --y ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***On the y-axis:\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***- Non-aggregated numerical values #> `select ? --y ? --af b1\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***Would you like to split the bars based on another categorical column:\n#***- Yes please! Wowzah! #> `select --group ? --af <x>\n#***- No, this graph is going to be great as is! #> `select --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "barWidth = 0.8\nplt.bar(nBADf['FG_Percent'], nBADf['Points'], barWidth, label='Points')\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "barWidth = 0.8\nplt.bar(nBADf['FG_Percent'], nBADf['Points'], barWidth, label='Points')\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "# No aggregation function given, defaulting to sum for numerical data\n\nnBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nnBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes\nnBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']\ngroupedRowsSum = nBADfGroup_2.sum()\ngroupedRowsSum = pd.DataFrame(groupedRowsSum).reset_index(names=['Team', 'GamesPlayedCategorized'])\n\nfor gamesPlayedCategorizedIndex, gamesPlayedCategorizedValue in enumerate(groupedRowsSum['GamesPlayedCategorized'].unique()):\n    groupedRows = groupedRowsSum[groupedRowsSum['GamesPlayedCategorized'] == gamesPlayedCategorizedValue]\n\n    num_bars = len(nBADf['GamesPlayedCategorized'].unique())\n    barWidth =  .9 / num_bars\n    plt.bar(groupedRows['Team'] + gamesPlayedCategorizedIndex * barWidth - (num_bars - 1) * barWidth / 2, groupedRows['Wins'], barWidth, label='Wins' + ' - sum' + f\" when GamesPlayedCategorized is {nBADf['GamesPlayedCategorized'].astype('category').cat.categories[gamesPlayedCategorizedIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\nnBADf = nBADf.drop(['TeamCategories', 'GamesPlayedCategorizedCategories'], axis=1)\n\nplt.title('Wins vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# No aggregation function given, defaulting to sum for numerical data\n\nnBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nnBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes\nnBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']\ngroupedRowsSum = nBADfGroup_2.sum()\ngroupedRowsSum = pd.DataFrame(groupedRowsSum).reset_index(names=['Team', 'GamesPlayedCategorized'])\n\nfor gamesPlayedCategorizedIndex, gamesPlayedCategorizedValue in enumerate(groupedRowsSum['GamesPlayedCategorized'].unique()):\n    groupedRows = groupedRowsSum[groupedRowsSum['GamesPlayedCategorized'] == gamesPlayedCategorizedValue]\n\n    num_bars = len(nBADf['GamesPlayedCategorized'].unique())\n    barWidth =  .9 / num_bars\n    plt.bar(groupedRows['Team'] + gamesPlayedCategorizedIndex * barWidth - (num_bars - 1) * barWidth / 2, groupedRows['Wins'], barWidth, label='Wins' + ' - sum' + f\" when GamesPlayedCategorized is {nBADf['GamesPlayedCategorized'].astype('category').cat.categories[gamesPlayedCategorizedIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\nnBADf = nBADf.drop(['TeamCategories', 'GamesPlayedCategorizedCategories'], axis=1)\n\nplt.title('Wins vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nnBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes\nnBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']\ngroupedRowsMean = nBADfGroup_2.mean()\ngroupedRowsMean = pd.DataFrame(groupedRowsMean).reset_index(names=['Team', 'GamesPlayedCategorized'])\n\nfor gamesPlayedCategorizedIndex, gamesPlayedCategorizedValue in enumerate(groupedRowsMean['GamesPlayedCategorized'].unique()):\n    groupedRows = groupedRowsMean[groupedRowsMean['GamesPlayedCategorized'] == gamesPlayedCategorizedValue]\n\n    num_bars = len(nBADf['GamesPlayedCategorized'].unique())\n    barWidth =  .9 / num_bars\n    plt.bar(groupedRows['Team'] + gamesPlayedCategorizedIndex * barWidth - (num_bars - 1) * barWidth / 2, groupedRows['Wins'], barWidth, label='Wins' + ' - mean' + f\" when GamesPlayedCategorized is {nBADf['GamesPlayedCategorized'].astype('category').cat.categories[gamesPlayedCategorizedIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\nnBADf = nBADf.drop(['TeamCategories', 'GamesPlayedCategorizedCategories'], axis=1)\n\nplt.title('Wins vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nnBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes\nnBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']\ngroupedRowsMean = nBADfGroup_2.mean()\ngroupedRowsMean = pd.DataFrame(groupedRowsMean).reset_index(names=['Team', 'GamesPlayedCategorized'])\n\nfor gamesPlayedCategorizedIndex, gamesPlayedCategorizedValue in enumerate(groupedRowsMean['GamesPlayedCategorized'].unique()):\n    groupedRows = groupedRowsMean[groupedRowsMean['GamesPlayedCategorized'] == gamesPlayedCategorizedValue]\n\n    num_bars = len(nBADf['GamesPlayedCategorized'].unique())\n    barWidth =  .9 / num_bars\n    plt.bar(groupedRows['Team'] + gamesPlayedCategorizedIndex * barWidth - (num_bars - 1) * barWidth / 2, groupedRows['Wins'], barWidth, label='Wins' + ' - mean' + f\" when GamesPlayedCategorized is {nBADf['GamesPlayedCategorized'].astype('category').cat.categories[gamesPlayedCategorizedIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\nnBADf = nBADf.drop(['TeamCategories', 'GamesPlayedCategorizedCategories'], axis=1)\n\nplt.title('Wins vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "033905747028569180": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "243905381802169180": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905381802169180": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905381802169180": [
+        {
+            "PreviouslyGenerated": "plt.hist(nBADf['GamesPlayed'], bins=10)\n\nplt.title('GamesPlayed Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('GamesPlayed', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(nBADf['GamesPlayed'], bins=10)\n\nplt.title('GamesPlayed Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('GamesPlayed', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905696923199180": [
+        {
+            "PreviouslyGenerated": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot ",
+            "Existing": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot "
+        },
+        {
+            "PreviouslyGenerated": "nBADf['GamesPlayedCategorized'] = pd.cut(x=nBADf['GamesPlayed'], bins=[-sys.maxsize,30,60,sys.maxsize], labels=['Few','Average','Many'], include_lowest=True) ",
+            "Existing": "nBADf['GamesPlayedCategorized'] = pd.cut(x=nBADf['GamesPlayed'], bins=[-sys.maxsize,30,60,sys.maxsize], labels=['Few','Average','Many'], include_lowest=True) "
+        }
+    ],
+    "243905386980359180": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905386980359180": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "033905696923199180": [
+        {
+            "PreviouslyGenerated": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBar1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBar1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905288586039180": [
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby(['Team'])['Points']\nnBADfGroupSum = nBADfGroup.sum()\nnBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])\n\nplt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')\n\nplt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))\n\nplt.title('Points vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905499235769180": [
+        {
+            "PreviouslyGenerated": "values = nBADf['Team'].astype('str').value_counts().sort_index().values\nindices = nBADf['Team'].astype('str').value_counts().sort_index().index\n\nplt.bar(indices, values, color=colorCycle[colorCycleIndex], label='Team' + ' - count')\n\nplt.title(\"'Team' count\", fontsize=14, fontweight='bold')\nplt.ylabel('count', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "values = nBADf['Team'].astype('str').value_counts().sort_index().values\nindices = nBADf['Team'].astype('str').value_counts().sort_index().index\n\nplt.bar(indices, values, color=colorCycle[colorCycleIndex], label='Team' + ' - count')\n\nplt.title(\"'Team' count\", fontsize=14, fontweight='bold')\nplt.ylabel('count', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905562390199180": [
+        {
+            "PreviouslyGenerated": "nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Mean['Losses'], nBADfGroup_1Mean['Wins'], barWidth, label='Wins' + ' - mean')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']\nnBADfGroup_1Mean = nBADfGroup_1.mean()\nnBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])\n\nbarWidth = 0.8\nplt.bar(nBADfGroup_1Mean['Losses'], nBADfGroup_1Mean['Wins'], barWidth, label='Wins' + ' - mean')\n\nplt.title('Wins vs Losses', fontsize=14, fontweight='bold')\nplt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905120531799180": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905120531799180": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905120531799180": [
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "indexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}

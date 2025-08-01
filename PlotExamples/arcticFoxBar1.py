@@ -16,7 +16,7 @@ def dictToDefaultdict(dictionary):
     })
 
 _af_arcticFoxDataDictionary = defaultdict(_af_recursive_defaultdict)
-with open('C:/Users/littl/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar.analyzedvariables.json', 'r') as _af_dataSave:
+with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar1.analyzedvariables.json', 'r') as _af_dataSave:
     _af_existingData = json.load(_af_dataSave)
     _af_existingData = dictToDefaultdict(_af_existingData)
     for key in _af_existingData:
@@ -28,19 +28,22 @@ def variables(values):
 def analyzeVariables(variables):
     for (variableName, variableValue) in variables:
 
-        _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['type'] = 'None'
+
+        _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['type'] = 'None'
         variableType = str(type(variableValue))
         if variableType.startswith("<class '") and variableType.endswith("'>"):
             variableType = variableType.replace("<class '", "")
             variableType = variableType.replace("'>", "")
-        _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['type'] = variableType
-
+        _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['type'] = variableType
+        
         import pandas as pd
         import json
         from pandas.api.types import is_datetime64_any_dtype as is_datetime
-
+        
         if isinstance(variableValue, pd.DataFrame):
-
+            
+            print("ANALYZING DF: " + variableName)
+        
             dataColumns = []
             for column in variableValue.columns:
                 try:
@@ -48,7 +51,7 @@ def analyzeVariables(variables):
                         variableValue[column] = pd.to_datetime(variableValue[column])
                 except Exception as e:
                     pass
-
+        
             for index, dataType in enumerate(variableValue.dtypes):
                 columnTypeForEnum = 0
                 if 'int' in str(dataType):
@@ -66,17 +69,21 @@ def analyzeVariables(variables):
                 elif 'str' in str(dataType): #TODO
                     columnTypeForEnum = 4 #TODO
 
+
+                print('Column Name - ' + str(variableValue.columns[index]))
+                print('Column Type - ' + str(columnTypeForEnum))
+        
                 dataColumns.append({
                     'Name': variableValue.columns[index],
                     'ColumnType': columnTypeForEnum,
                     'Categories': None
                 })
-
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['columns'] = dataColumns
-
+        
+            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+        
         elif isinstance(variableValue, pd.Series):
             dataColumns = []
-
+        
             columnTypeForEnum = 0
             if 'int' in str(variableValue.dtype):
                 columnTypeForEnum = 1
@@ -92,23 +99,23 @@ def analyzeVariables(variables):
                 columnTypeForEnum = 4
             elif 'str' in str(variableValue.dtype): #TODO
                 columnTypeForEnum = 4 #TODO
-
+        
             dataColumns.append({
                 'Name': variableValue.name,
                 'ColumnType': columnTypeForEnum,
                 'Categories': None
             })
-
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['columns'] = dataColumns
-
-
-
+        
+            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+        
+        
+        
         import pandas as pd
         import json
         from pandas.api.types import is_datetime64_any_dtype as is_datetime
-
+        
         if isinstance(variableValue, pd.DataFrame):
-
+        
             dataColumns = []
             for column in variableValue.columns:
                 try:
@@ -116,7 +123,7 @@ def analyzeVariables(variables):
                         variableValue[column] = pd.to_datetime(variableValue[column])
                 except Exception as e:
                     pass
-
+        
             for index, dataType in enumerate(variableValue.dtypes):
                 columnTypeForEnum = 0
                 if 'int' in str(dataType):
@@ -133,18 +140,18 @@ def analyzeVariables(variables):
                     columnTypeForEnum = 4
                 elif 'str' in str(dataType): #TODO
                     columnTypeForEnum = 4 #TODO
-
+        
                 dataColumns.append({
                     'Name': variableValue.columns[index],
                     'ColumnType': columnTypeForEnum,
                     'Categories': None
                 })
-
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['columns'] = dataColumns
-
+        
+            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+        
         elif isinstance(variableValue, pd.Series):
             dataColumns = []
-
+        
             columnTypeForEnum = 0
             if 'int' in str(variableValue.dtype):
                 columnTypeForEnum = 1
@@ -160,20 +167,20 @@ def analyzeVariables(variables):
                 columnTypeForEnum = 4
             elif 'str' in str(variableValue.dtype): #TODO
                 columnTypeForEnum = 4 #TODO
-
+        
             dataColumns.append({
                 'Name': variableValue.name,
                 'ColumnType': columnTypeForEnum,
                 'Categories': None
             })
-
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar.py']['variables'][variableName]['columns'] = dataColumns
-
-
+        
+            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+        
+        
 
     saveAnalyzedVariables()
     print("Arctic Fox finished analyzing variables")
 
 def saveAnalyzedVariables():
-    with open('C:/Users/littl/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar.analyzedvariables.json', 'w') as _af_dataSave:
+    with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar1.analyzedvariables.json', 'w') as _af_dataSave:
         _af_dataSave.write(json.dumps(_af_arcticFoxDataDictionary, indent=4))

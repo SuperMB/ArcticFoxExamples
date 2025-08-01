@@ -1,150 +1,5 @@
 {
-    "PlotExamples_arcticFoxBar.py": {
-        "variables": {
-            "dataColumns": {
-                "type": "list"
-            },
-            "columnTypeForEnum": {
-                "type": "int"
-            },
-            "lambda": {
-                "type": "defaultdict"
-            },
-            "k": {
-                "type": "dictToDefaultdict"
-            }
-        }
-    },
-    "plotexamples_bar.py": {
-        "variables": {
-            "nBADf": {
-                "columns": [
-                    {
-                        "Name": "",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "Player",
-                        "ColumnType": 5
-                    },
-                    {
-                        "Name": "Team",
-                        "ColumnType": 4
-                    },
-                    {
-                        "Name": "Age",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "GP",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "W",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "L",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "Min",
-                        "ColumnType": 2
-                    },
-                    {
-                        "Name": "PTS",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FGM",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FGA",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FG%",
-                        "ColumnType": 2
-                    },
-                    {
-                        "Name": "3PM",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "3PA",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "3P%",
-                        "ColumnType": 2
-                    },
-                    {
-                        "Name": "FTM",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FTA",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FT%",
-                        "ColumnType": 2
-                    },
-                    {
-                        "Name": "OREB",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "DREB",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "REB",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "AST",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "TOV",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "STL",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "BLK",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "PF",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "FP",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "DD2",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "TD3",
-                        "ColumnType": 1
-                    },
-                    {
-                        "Name": "+/-",
-                        "ColumnType": 1
-                    }
-                ],
-                "hasHeaders": false
-            }
-        }
-    },
-    "PlotExamples_Bar.py": {
+    "plotexamples_bar1.py": {
         "variables": {
             "nBADf": {
                 "columns": [
@@ -265,14 +120,337 @@
                         "ColumnType": 1
                     }
                 ],
+                "hasHeaders": false
+            }
+        }
+    },
+    "PlotExamples_Bar1.py": {
+        "variables": {
+            "nBADf": {
+                "columns": [
+                    {
+                        "Name": "Player",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Team",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Age",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "GamesPlayed",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Wins",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Losses",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Min",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Points",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FGM",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FGA",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FG_Percent",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "3PM",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "3PA",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "3P_Percent",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FTM",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FTA",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FT%",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "OREB",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "DREB",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "REB",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "AST",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "TOV",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "STL",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "BLK",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "PF",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "FP",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "DD2",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "TD3",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "PlusMinus",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "GamesPlayedCategorized",
+                        "ColumnType": 4,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Player",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Team",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Age",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "GamesPlayed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Wins",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Losses",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Min",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Points",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FG_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "3PM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3PA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3P_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "FTM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FTA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FT%",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "OREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "REB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "AST",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TOV",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "STL",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "BLK",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PF",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FP",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DD2",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TD3",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PlusMinus",
+                        "ColumnType": 1
+                    }
+                ],
                 "hasHeaders": false,
                 "type": "pandas.core.frame.DataFrame"
             },
-            "arcticFoxBar": {
+            "arcticFoxBar1": {
                 "type": "module"
+            },
+            "barWidth": {
+                "type": "float"
             },
             "colorCycle": {
                 "type": "list"
+            },
+            "colorCycleIndex": {
+                "type": "int"
+            },
+            "indexForPlot": {
+                "type": "range"
+            },
+            "indices": {
+                "type": "pandas.core.indexes.base.Index"
+            },
+            "nBADfGroup": {
+                "type": "pandas.core.groupby.generic.SeriesGroupBy"
+            },
+            "nBADfGroupSum": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
+                    {
+                        "Name": "Team",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Points",
+                        "ColumnType": 1,
+                        "Categories": null
+                    }
+                ]
+            },
+            "nBADfGroup_1": {
+                "type": "pandas.core.groupby.generic.SeriesGroupBy"
+            },
+            "nBADfGroup_1Mean": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
+                    {
+                        "Name": "Losses",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Wins",
+                        "ColumnType": 2,
+                        "Categories": null
+                    }
+                ]
             },
             "np": {
                 "type": "module"
@@ -282,6 +460,12 @@
             },
             "plt": {
                 "type": "module"
+            },
+            "sys": {
+                "type": "module"
+            },
+            "values": {
+                "type": "numpy.ndarray"
             }
         }
     }
