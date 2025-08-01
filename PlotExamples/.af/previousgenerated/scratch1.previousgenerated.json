@@ -1,0 +1,54 @@
+{
+    "013905627411907365": [
+        {
+            "PreviouslyGenerated": "print('Hello World!') ",
+            "Existing": "print('Hello World!') "
+        }
+    ],
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        }
+    ],
+    "013905102893077365": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "243905175933477365": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905175933477365": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "243905876927467365": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905876927467365": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905876927467365": [
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "indexForPlot = range(len(nBADf['Age']))\n\nplt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.title('Age vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Bar</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a bar graph 2 or 3 dimensions. Can also use --group or --where conditions.</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data column to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">y</span>: Specifies the data column to use on the y-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">z</span>: Specifies the data column to use on the z-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Column specifying how to color the data in the plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">3d</span>: Flag that projects 2 dimensional groups onto a 3 dimensional plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">year</span>: Specifies the year component of the dataset or time-related analysis. This flag allows you to filter or focus on data within a specific year for more granular insights</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">month </span>: Denotes the month component of the dataset or time-related analysis. This flag helps you zoom into data for a particular month within a given year, offering a focused view of seasonal or monthly trends</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">day</span>: Refers to the day component of the dataset or time-related analysis. This flag filters the data to represent specific days, providing a fine-grained level of detail for daily trends or activities. </div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Bar Graph of Counts of Categorical Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When working with a categorical column, such as Team, it is often useful to understand the distribution of values. This example shows a bar chart of the count of records of each team, helping identify which teams are represented more frequently in the data.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Bar --x Team --xCategorical --count<span>
+AFLEFT  values = nBADf['Team'].astype('str').value_counts().sort_index().values
+indices = nBADf['Team'].astype('str').value_counts().sort_index().index
+
+plt.bar(indices, values, color=colorCycle[colorCycleIndex], label='Team' + ' - count')
+
+plt.title("'Team' count", fontsize=14, fontweight='bold')
+plt.ylabel('count', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Bar Graph of Sum by Category in Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than showing counts, we can sum a numerical column, like Points, across each category in a column. Here, we sum all points scored by players on each team and show that total as a bar chart.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Bar --x Team --xCategorical --y Points --sum<span>
+AFLEFT  nBADfGroup = nBADf.groupby(['Team'])['Points']
+nBADfGroupSum = nBADfGroup.sum()
+nBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])
+
+plt.bar(nBADfGroupSum['Team'].astype('category').cat.codes, nBADfGroupSum['Points'], label='Points' + ' - sum')
+
+plt.gca().set_xticklabels(nBADfGroupSum['Team'].astype('category').cat.categories, rotation=45)
+plt.gca().set_xticks(range(len(nBADfGroupSum['Team'].astype('category').cat.categories)))
+
+plt.title('Points vs Team', fontsize=14, fontweight='bold')
+plt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Bar Graph from a Numeric Column by Index</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Sometimes you may want to create a simple bar chart directly from a single numeric column. In this case, we chart Age by row index to get a sense of how age varies across players and is graphed in order by index.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Bar Age<span>
+AFLEFT  indexForPlot = range(len(nBADf['Age']))
+
+plt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')
+
+plt.title('Age vs Index', fontsize=14, fontweight='bold')
+plt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Bar Graph of Numerical Column vs Numerical Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can use a bar chart to display bars that are located on the x-axis according to one column with a height according to another column. Additionally, you can use an aggregation method for bars with the same x-axis value. This example shows the average number of Wins for each value of Losses to help visualize performance patterns.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Bar --x Losses --y Wins --mean<span>
+AFLEFT  nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']
+nBADfGroup_1Mean = nBADfGroup_1.mean()
+nBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])
+
+barWidth = 0.8
+plt.bar(nBADfGroup_1Mean['Losses'], nBADfGroup_1Mean['Wins'], barWidth, label='Wins' + ' - mean')
+
+plt.title('Wins vs Losses', fontsize=14, fontweight='bold')
+plt.xlabel('Losses', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>  
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Grouped Bar Chart by Subcategory</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">For deeper comparisons, you can group a bar chart by subcategories. This example shows the mean Wins for each team, broken down further by a categorized version of GamesPlayed (Few, Average, Many). This type of chart is useful for comparing performance across both team and games played per player.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Bar --x Team --y Wins --group GamesPlayedCategorized --mean<span>
+AFLEFT  nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes
+nBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes
+nBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']
+groupedRowsMean = nBADfGroup_2.mean()
+groupedRowsMean = pd.DataFrame(groupedRowsMean).reset_index(names=['Team', 'GamesPlayedCategorized'])
+
+for gamesPlayedCategorizedIndex, gamesPlayedCategorizedValue in enumerate(groupedRowsMean['GamesPlayedCategorized'].unique()):
+    groupedRows = groupedRowsMean[groupedRowsMean['GamesPlayedCategorized'] == gamesPlayedCategorizedValue]    
+
+    num_bars = len(nBADf['GamesPlayedCategorized'].unique())
+    barWidth =  .9 / num_bars    
+    plt.bar(groupedRows['Team'] + gamesPlayedCategorizedIndex * barWidth - (num_bars - 1) * barWidth / 2, groupedRows['Wins'], barWidth, label='Wins' + ' - mean' + f" when GamesPlayedCategorized is {nBADf['GamesPlayedCategorized'].astype('category').cat.categories[gamesPlayedCategorizedIndex]}")    
+
+    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+plt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories)
+plt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))
+nBADf = nBADf.drop(['TeamCategories', 'GamesPlayedCategorizedCategories'], axis=1)
+
+plt.title('Wins vs Team', fontsize=14, fontweight='bold')
+plt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>  
+

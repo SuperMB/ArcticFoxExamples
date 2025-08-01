@@ -17,3 +17,13 @@ clr.ImportExtensions(Functions)
 
 
 
+
+class SetLeashToPlot(PythonAutomation):
+
+    def ApplyAutomation(self):
+
+        self.SetExamplePackage('plot')
+
+        self.CodeAfterSeed += f"""
+print('Leash set to plot')"""
+
