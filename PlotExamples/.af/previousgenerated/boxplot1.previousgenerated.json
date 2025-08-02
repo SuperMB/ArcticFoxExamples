@@ -1,0 +1,66 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBoxPlot1\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBoxPlot1\nfrom pandas.api.types import is_numeric_dtype "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "013905437280450301": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "243905253232920301": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905253232920301": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905327272010301": [
+        {
+            "PreviouslyGenerated": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate",
+            "Existing": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate"
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "plt.boxplot(nBADf['FGA'], patch_artist=True, positions=[0], labels=['FGA'])\n\nplt.boxplot(nBADf['FG_Percent'], patch_artist=True, positions=[1], labels=['FG_Percent'])\n\nplt.title('FGA and FG_Percent', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.boxplot(nBADf['FGA'], patch_artist=True, positions=[0], labels=['FGA'])\n\nplt.boxplot(nBADf['FG_Percent'], patch_artist=True, positions=[1], labels=['FG_Percent'])\n\nplt.title('FGA and FG_Percent', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905327272010301": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "033905327272010301": [
+        {
+            "PreviouslyGenerated": "arcticFoxBoxPlot1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBoxPlot1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBoxPlot1.analyzeVariables([ (value, eval(value)) for value in arcticFoxBoxPlot1.variables(dir() + [] )] ) "
+        }
+    ],
+    "043905327272010301": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ]
+}
