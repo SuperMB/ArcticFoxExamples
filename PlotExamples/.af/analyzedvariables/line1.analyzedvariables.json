@@ -534,10 +534,172 @@
             "appleStockDf": {
                 "columns": [
                     {
-                        "Name": "Unnamed: 0",
+                        "Name": "Date",
+                        "ColumnType": 6,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Open",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Close",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Volume",
                         "ColumnType": 1,
                         "Categories": null
                     },
+                    {
+                        "Name": "HighMinusLow",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "CloseVsOpen",
+                        "ColumnType": 6,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Year",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Decade",
+                        "ColumnType": 4,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Date",
+                        "ColumnType": 6
+                    },
+                    {
+                        "Name": "Open",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Close",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Volume",
+                        "ColumnType": 1
+                    }
+                ],
+                "hasHeaders": false,
+                "type": "DataFrame"
+            },
+            "MaxNLocator": {
+                "type": "type"
+            },
+            "appleStockDfPivot": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
+                    {
+                        "Name": "Date_Year",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2,
+                        "Categories": null
+                    }
+                ]
+            },
+            "arcticFoxLine1": {
+                "type": "module"
+            },
+            "colorCycle": {
+                "type": "list"
+            },
+            "colorCycleIndex": {
+                "type": "int"
+            },
+            "np": {
+                "type": "module"
+            },
+            "pd": {
+                "type": "module"
+            },
+            "plt": {
+                "type": "module"
+            },
+            "low": {
+                "type": "pandas.core.series.Series",
+                "columns": [
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2,
+                        "Categories": null
+                    }
+                ]
+            },
+            "maxPivot": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
+                    {
+                        "Name": "Date_Year",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2,
+                        "Categories": null
+                    }
+                ]
+            },
+            "minPivot": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2,
+                        "Categories": null
+                    }
+                ]
+            },
+            "whereCondition": {
+                "type": "pandas.core.series.Series",
+                "columns": [
+                    {
+                        "Name": "HighMinusLow",
+                        "ColumnType": 3,
+                        "Categories": null
+                    }
+                ]
+            },
+            "appleStockDfQueried": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
                     {
                         "Name": "Date",
                         "ColumnType": 6,
@@ -569,48 +731,97 @@
                         "Categories": null
                     },
                     {
-                        "Name": "Date_Year",
+                        "Name": "HighMinusLow",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "CloseVsOpen",
+                        "ColumnType": 6,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Year",
                         "ColumnType": 1,
                         "Categories": null
                     },
                     {
-                        "Name": "",
-                        "ColumnType": 1
-                    },
+                        "Name": "Decade",
+                        "ColumnType": 4,
+                        "Categories": null
+                    }
+                ]
+            },
+            "closeVsOpenIndex": {
+                "type": "int"
+            },
+            "closeVsOpenValue": {
+                "type": "str"
+            },
+            "groupedRows": {
+                "type": "pandas.core.frame.DataFrame",
+                "columns": [
                     {
                         "Name": "Date",
-                        "ColumnType": 6
+                        "ColumnType": 6,
+                        "Categories": null
                     },
                     {
                         "Name": "Open",
-                        "ColumnType": 2
+                        "ColumnType": 2,
+                        "Categories": null
                     },
                     {
                         "Name": "High",
-                        "ColumnType": 2
+                        "ColumnType": 2,
+                        "Categories": null
                     },
                     {
                         "Name": "Low",
-                        "ColumnType": 2
+                        "ColumnType": 2,
+                        "Categories": null
                     },
                     {
                         "Name": "Close",
-                        "ColumnType": 2
+                        "ColumnType": 2,
+                        "Categories": null
                     },
                     {
                         "Name": "Volume",
-                        "ColumnType": 1
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "HighMinusLow",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "CloseVsOpen",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "CloseVsOpenCategories",
+                        "ColumnType": 1,
+                        "Categories": null
                     }
-                ],
-                "hasHeaders": false,
-                "type": {}
+                ]
             },
-            "MaxNLocator": {
-                "type": "type"
+            "appleStockDfUnique": {
+                "type": "numpy.ndarray"
             },
-            "appleStockDfPivot": {
-                "type": {},
+            "appleStockDfQueriedGroup": {
+                "type": "pandas.core.groupby.generic.SeriesGroupBy"
+            },
+            "appleStockDfQueriedGroupMax": {
+                "type": "pandas.core.frame.DataFrame",
                 "columns": [
+                    {
+                        "Name": "Year",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
                     {
                         "Name": "High",
                         "ColumnType": 2,
@@ -618,39 +829,8 @@
                     }
                 ]
             },
-            "arcticFoxLine1": {
+            "sys": {
                 "type": "module"
-            },
-            "colorCycle": {
-                "type": "list"
-            },
-            "colorCycleIndex": {
-                "type": "int"
-            },
-            "np": {
-                "type": "module"
-            },
-            "pd": {
-                "type": "module"
-            },
-            "plt": {
-                "type": "module"
-            },
-            "High": {},
-            "segmentIndex": {
-                "type": "int"
-            },
-            "segment": {
-                "type": "None"
-            },
-            "segments": {
-                "type": "None"
-            },
-            "split_points": {
-                "type": "None"
-            },
-            "groupedRows": {
-                "type": "None"
             }
         }
     },
@@ -775,7 +955,8 @@
                         "ColumnType": 1
                     }
                 ],
-                "hasHeaders": false
+                "hasHeaders": false,
+                "type": {}
             }
         }
     }

@@ -1,0 +1,100 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Line</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a line plot that can be 2 or 3 dimensions. Can also use --group or --where conditions.</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data column to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">y</span>: Specifies the data column to use on the y-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">z</span>: Specifies the data column to use on the z-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Column specifying how to color the data in the plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">3d</span>: Flag that projects 2 dimensional groups onto a 3 dimensional plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">year</span>: Specifies the year component of the dataset or time-related analysis. This flag allows you to filter or focus on data within a specific year for more granular insights</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">month </span>: Denotes the month component of the dataset or time-related analysis. This flag helps you zoom into data for a particular month within a given year, offering a focused view of seasonal or monthly trends</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">day</span>: Refers to the day component of the dataset or time-related analysis. This flag filters the data to represent specific days, providing a fine-grained level of detail for daily trends or activities. </div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Line Chart of a Numerical Column vs Date Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A simple and commonly used way to visualize stock data is by plotting a line chart of a value over time. In this example, we display the High column plotted against the Date to understand how the highest recorded stock prices changed over time.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Line --x Date --y High<span>
+AFLEFT  appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])
+
+plt.plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['High'], color=colorCycle[colorCycleIndex], label='High')
+
+plt.title('High vs Date', fontsize=14, fontweight='bold')
+plt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('High', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>
+<div style="text-alignment:left;"><img src="/examples/plot/Line1.png"></div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Line Chart With a Filtering Condition</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">To narrow down the data to a more recent time period, this example filters the dataframe to only include rows where the Date is in or after the year 2023. Then we plot the Volume column against Date to visualize recent trading activity.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Line --x Date --y Volume<span>
+AFLEFT  appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
+appleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]
+
+appleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])
+
+plt.plot(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'], appleStockDfQueried.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')
+
+plt.title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')
+plt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>
+<div style="text-alignment:left;"><img src="/examples/plot/Line2.png"></div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Line Chart Grouped by a Categorical Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Grouped visualizations help compare trends across categories. In this example, we group the data by Decade and plot Volume vs High for each group separately, using a different color for each decade to highlight changes in the relationship over time.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Line --x High --y Volume --group Decade<span>
+AFLEFT  appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes
+for decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):
+    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]    
+
+    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}", alpha=0.7)    
+
+    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+appleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)
+
+plt.title('Volume vs High', fontsize=14, fontweight='bold')
+plt.xlabel('High', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>
+<div style="text-alignment:left;"><img src="/examples/plot/Line3.png"></div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Line Chart With Aggregation</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of plotting every data point, this example aggregates the data by Year and calculates the maximum High value within each year. This is useful for summarizing and comparing peak values over time, especially when filtering for only recent years (2020 and later).</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Line --x Year --y High --max --where Year >= 2020<span>
+AFLEFT  appleStockDfQueried = appleStockDf[appleStockDf['Year'] >= 2020]
+
+appleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']
+appleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()
+appleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])
+
+plt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')
+
+plt.title('High vs Year, where Year >= 2020', fontsize=14, fontweight='bold')
+plt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('High', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div>
+<div style="text-alignment:left;"><img src="/examples/plot/Line4.png"></div> 
+

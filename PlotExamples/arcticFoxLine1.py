@@ -16,7 +16,7 @@ def dictToDefaultdict(dictionary):
     })
 
 _af_arcticFoxDataDictionary = defaultdict(_af_recursive_defaultdict)
-with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar1.analyzedvariables.json', 'r') as _af_dataSave:
+with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/line1.analyzedvariables.json', 'r') as _af_dataSave:
     _af_existingData = json.load(_af_dataSave)
     _af_existingData = dictToDefaultdict(_af_existingData)
     for key in _af_existingData:
@@ -28,12 +28,12 @@ def variables(values):
 def analyzeVariables(variables):
     for (variableName, variableValue) in variables:
 
-        _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['type'] = 'None'
+        _af_arcticFoxDataDictionary[r'PlotExamples_Line1.py']['variables'][variableName]['type'] = 'None'
         variableType = str(type(variableValue))
         if variableType.startswith("<class '") and variableType.endswith("'>"):
             variableType = variableType.replace("<class '", "")
             variableType = variableType.replace("'>", "")
-        _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['type'] = variableType
+        _af_arcticFoxDataDictionary[r'PlotExamples_Line1.py']['variables'][variableName]['type'] = variableType
         
         import pandas as pd
         import json
@@ -72,7 +72,7 @@ def analyzeVariables(variables):
                     'Categories': None
                 })
         
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+            _af_arcticFoxDataDictionary[r'PlotExamples_Line1.py']['variables'][variableName]['columns'] = dataColumns
         
         elif isinstance(variableValue, pd.Series):
             dataColumns = []
@@ -99,75 +99,7 @@ def analyzeVariables(variables):
                 'Categories': None
             })
         
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
-        
-        
-        
-        import pandas as pd
-        import json
-        from pandas.api.types import is_datetime64_any_dtype as is_datetime
-        
-        if isinstance(variableValue, pd.DataFrame):
-        
-            dataColumns = []
-            for column in variableValue.columns:
-                try:
-                    if variableValue[column].dtype == 'object':
-                        variableValue[column] = pd.to_datetime(variableValue[column])
-                except Exception as e:
-                    pass
-        
-            for index, dataType in enumerate(variableValue.dtypes):
-                columnTypeForEnum = 0
-                if 'int' in str(dataType):
-                    columnTypeForEnum = 1
-                elif 'float' in str(dataType):
-                    columnTypeForEnum = 2
-                elif 'bool' in str(dataType):
-                    columnTypeForEnum = 3
-                elif 'date' in str(dataType):
-                    columnTypeForEnum = 6
-                elif 'timedelta' in str(dataType):
-                    columnTypeForEnum = 0
-                elif 'category' in str(dataType):
-                    columnTypeForEnum = 4
-                elif 'str' in str(dataType): #TODO
-                    columnTypeForEnum = 4 #TODO
-        
-                dataColumns.append({
-                    'Name': variableValue.columns[index],
-                    'ColumnType': columnTypeForEnum,
-                    'Categories': None
-                })
-        
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
-        
-        elif isinstance(variableValue, pd.Series):
-            dataColumns = []
-        
-            columnTypeForEnum = 0
-            if 'int' in str(variableValue.dtype):
-                columnTypeForEnum = 1
-            elif 'float' in str(variableValue.dtype):
-                columnTypeForEnum = 2
-            elif 'bool' in str(variableValue.dtype):
-                columnTypeForEnum = 3
-            elif 'date' in str(variableValue.dtype):
-                columnTypeForEnum = 6
-            elif 'timedelta' in str(variableValue.dtype):
-                columnTypeForEnum = 0
-            elif 'category' in str(variableValue.dtype):
-                columnTypeForEnum = 4
-            elif 'str' in str(variableValue.dtype): #TODO
-                columnTypeForEnum = 4 #TODO
-        
-            dataColumns.append({
-                'Name': variableValue.name,
-                'ColumnType': columnTypeForEnum,
-                'Categories': None
-            })
-        
-            _af_arcticFoxDataDictionary[r'PlotExamples_Bar1.py']['variables'][variableName]['columns'] = dataColumns
+            _af_arcticFoxDataDictionary[r'PlotExamples_Line1.py']['variables'][variableName]['columns'] = dataColumns
         
         
 
@@ -175,5 +107,5 @@ def analyzeVariables(variables):
     print("Arctic Fox finished analyzing variables")
 
 def saveAnalyzedVariables():
-    with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/bar1.analyzedvariables.json', 'w') as _af_dataSave:
+    with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/line1.analyzedvariables.json', 'w') as _af_dataSave:
         _af_dataSave.write(json.dumps(_af_arcticFoxDataDictionary, indent=4))

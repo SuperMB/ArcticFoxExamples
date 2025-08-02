@@ -1,0 +1,578 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1 ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1 "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1\nfrom matplotlib.ticker import MaxNLocator ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1\nfrom matplotlib.ticker import MaxNLocator "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MaxNLocator ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MaxNLocator "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1\nfrom matplotlib.ticker import MaxNLocator ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxLine1\nfrom matplotlib.ticker import MaxNLocator "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MaxNLocator ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.ticker import MaxNLocator "
+        }
+    ],
+    "013905483941296159": [
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "243905937632256159": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905937632256159": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905716943286159": [
+        {
+            "PreviouslyGenerated": "appleStockDfRowCount = appleStockDf.shape[0]\nprint(appleStockDfRowCount) #)2 ",
+            "Existing": "appleStockDfRowCount = appleStockDf.shape[0]\nprint(appleStockDfRowCount) #)2 "
+        }
+    ],
+    "013905643312626159": [
+        {
+            "PreviouslyGenerated": "#***Line: Creates a line plot that can be 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a2\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4 --index",
+            "Existing": "#***Line: Creates a line plot that can be 2 or 3 dimensions. Can also use --group or --where conditions.\n#***\n#***What type of data would you like to plot on the x-axis?\n#***- Categorical #> `select ? --x ? --xCategorical --af a1\n#***- Date #> `select ? --x ? --af a2\n#***- Numeric #> `select ? --x ? --af a3\n#***- Row Index #> `select ? --af a4 --index"
+        },
+        {
+            "PreviouslyGenerated": "#***For the dates, would you like to combine them by:\n#***- year #> `select ? --year --af a3\n#***- month #> `select ? --month --af a3\n#***- day #> `select ? --day --af a3\n#***- no, plot according to date as is #> `select ? --af a3\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***For the dates, would you like to combine them by:\n#***- year #> `select ? --year --af a3\n#***- month #> `select ? --month --af a3\n#***- day #> `select ? --day --af a3\n#***- no, plot according to date as is #> `select ? --af a3\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#***What would you like to show on the y-axis:\n#***- Categorical #> `select ? --y ? --yCategorical --af b1\n#***- Date #> `select ? --y ? --af b1\n#***- Numeric #> `select ? --y ? --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***What would you like to show on the y-axis:\n#***- Categorical #> `select ? --y ? --yCategorical --af b1\n#***- Date #> `select ? --y ? --af b1\n#***- Numeric #> `select ? --y ? --af b1\n#***- Aggregation of numerical data #> `select ? --y ? --af b2\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#***Would you like also plot data on the z-axis?!?!:\n#***- Yes please! That's great! #> `select ? --z ? --af <x>\n#***- No, this graph is already on point! #> `select ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***Would you like also plot data on the z-axis?!?!:\n#***- Yes please! That's great! #> `select ? --z ? --af <x>\n#***- No, this graph is already on point! #> `select ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#***What else would you like to do?\n#***- Split data into colors/groups based on a classification/column? #> `select ? --group ?\n#***- Add a where condition to filter the data? #> `select ? --where ?\n#***- Make the plot 3d by splitting the data in the 3rd dimension? #> `select ? --3d\n#***- Done #> `select\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#***What else would you like to do?\n#***- Split data into colors/groups based on a classification/column? #> `select ? --group ?\n#***- Add a where condition to filter the data? #> `select ? --where ?\n#***- Make the plot 3d by splitting the data in the 3rd dimension? #> `select ? --3d\n#***- Done #> `select\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --y ? ***\n#***--y sets the data or array to place on the Y-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --y Rainfall "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nsubplots[0].plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nsubplots[0].set_title('High vs Date', fontsize=14, fontweight='bold')\nsubplots[0].set_xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].legend()\nsubplots[0].grid(True, linestyle='--', linewidth=0.5)\nsubplots[0].tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nsubplots[0].plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nsubplots[0].set_title('High vs Date', fontsize=14, fontweight='bold')\nsubplots[0].set_xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].legend()\nsubplots[0].grid(True, linestyle='--', linewidth=0.5)\nsubplots[0].tick_params(axis='both', which='major', labelsize=10)\n  "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905643312626159": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905643312626159": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905452858826159": [
+        {
+            "PreviouslyGenerated": "plt.plot(appleStockDf.sort_values( [ 'Low' ] )['Low'], appleStockDf.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(appleStockDf.sort_values( [ 'Low' ] )['Low'], appleStockDf.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.plot(appleStockDf.sort_values( [ 'Date_Year' ] )['Date_Year'], appleStockDf.sort_values( [ 'Date_Year' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date_Year', fontsize=14, fontweight='bold')\nplt.xlabel('Date_Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(appleStockDf.sort_values( [ 'Date_Year' ] )['Date_Year'], appleStockDf.sort_values( [ 'Date_Year' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date_Year', fontsize=14, fontweight='bold')\nplt.xlabel('Date_Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.plot(appleStockDfPivot.sort_values( [ 'Date_Year' ] )['Date_Year'], appleStockDfPivot.sort_values( [ 'Date_Year' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date_Year', fontsize=14, fontweight='bold')\nplt.xlabel('Date_Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(appleStockDfPivot.sort_values( [ 'Date_Year' ] )['Date_Year'], appleStockDfPivot.sort_values( [ 'Date_Year' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Date_Year', fontsize=14, fontweight='bold')\nplt.xlabel('Date_Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905467031126159": [
+        {
+            "PreviouslyGenerated": "#***ExtractDate: Dates can be some of the most challenging data to work with. Often, you only want to know the day, month, year, etc, rather than a string corresponding to a specfic date. This kit pulls out the desired date information from a column and stores the result as a new column.\n#***\n#***Would you like to:\n#***- Extract the year? #> `select --columns ? --year\n#***- Extract the month? #> `select --columns ? --month\n#***- Extract the month and year? #> `select --columns ? --month --year\n#***- Extract the day? #> `select --columns ? --day\n#***- Extract the day and month? #> `select --columns ? --day --month\n#***- Extract the day, month, and year? #> `select --columns ? --day --month --year",
+            "Existing": "#***ExtractDate: Dates can be some of the most challenging data to work with. Often, you only want to know the day, month, year, etc, rather than a string corresponding to a specfic date. This kit pulls out the desired date information from a column and stores the result as a new column.\n#***\n#***Would you like to:\n#***- Extract the year? #> `select --columns ? --year\n#***- Extract the month? #> `select --columns ? --month\n#***- Extract the month and year? #> `select --columns ? --month --year\n#***- Extract the day? #> `select --columns ? --day\n#***- Extract the day and month? #> `select --columns ? --day --month\n#***- Extract the day, month, and year? #> `select --columns ? --day --month --year"
+        },
+        {
+            "PreviouslyGenerated": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns that you want to extract date information from.\n#***- Single Column Example: --columns StartDate\n#***- Multiple Column Example: --columns QuarterStart QuarterEnd ReportDue ",
+            "Existing": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns that you want to extract date information from.\n#***- Single Column Example: --columns StartDate\n#***- Multiple Column Example: --columns QuarterStart QuarterEnd ReportDue "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year ",
+            "Existing": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year "
+        }
+    ],
+    "033905452858826159": [
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) "
+        },
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + ['minPivot'] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + ['minPivot'] )] ) "
+        },
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + ['maxPivot', 'minPivot'] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + ['maxPivot', 'minPivot'] )] ) "
+        }
+    ],
+    "013905728869846159": [
+        {
+            "PreviouslyGenerated": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ? --cells ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ? --cells ?",
+            "Existing": "#***DataframePivot: Pivoting a dataframe / table results in a new dataframe displaying various numerical summarizations for a specified column grouped by categories / values in one or more other columns. A pivoted table along a single column would result in a table without columns, just rows. And, a pivoted table along two or more columns would have rows and columns. The summarized metrics can be either sum, mean, median, min, max, count, standard deviation, variance, first, and last.\n#***\n#***What would you like to do?\n#***- Pivot the dataframe such that the result has NO columns.\n#***---- This will combine a column of data into cells\n#***---- according to the categories of another column. #> `select ? --rows ? --cells ?\n#***\n#***- Pivot the dataframe such that the result has columns.\n#***---- This will combine data across more dimensions. #> `select ? --rows ? --columns ? --cells ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --sum\n#***- Mean #> `select --mean\n#***- Median #> `select --median\n#***- Min #> `select --min\n#***- Max #> `select --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --std\n#***- Variance #> `select --var\n#***- First #> `select --first\n#***- Last #> `select --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance ",
+            "Existing": "#***What aggregation function would you like to use? If none supplied, sum will be used.\n#***- Sum #> `select --sum\n#***- Mean #> `select --mean\n#***- Median #> `select --median\n#***- Min #> `select --min\n#***- Max #> `select --max\n#***- Count #> `select --count\n#***- Standard Deviation #> `select --std\n#***- Variance #> `select --var\n#***- First #> `select --first\n#***- Last #> `select --last\n#***- Done #> `select\n#***\n#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance "
+        },
+        {
+            "PreviouslyGenerated": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance ",
+            "Existing": "#****** --rows ? ***\n#***Rows is required.\n#***The rows will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --rows Speed Acceleration\n#***\n#****** --columns ? ***\n#***Columns is optional.\n#***The colums will be taken from one or more existing columns in the dataframe. You may provide one or more column names.\n#***- Example: --columns Time\n#***\n#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance "
+        },
+        {
+            "PreviouslyGenerated": "#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance ",
+            "Existing": "#****** --cells ? ***\n#***Cells is required.\n#***The cells will be the data that is summarized / calculated within the new dataframe. You can only provide 1 column name.\n#***- Example: --cells Distance "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: Arctic Fox processing error, look at terminal and contact Icii ",
+            "Existing": "#ISSUE: Arctic Fox processing error, look at terminal and contact Icii "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: --value can only have a single column given\n#ISSUE: Cannot have more than one column for --cells ",
+            "Existing": "#ISSUE: --value can only have a single column given\n#ISSUE: Cannot have more than one column for --cells "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfPivot = appleStockDf.pivot_table(index='Date_Year', values='High', aggfunc='max') ",
+            "Existing": "appleStockDfPivot = appleStockDf.pivot_table(index='Date_Year', values='High', aggfunc='max') "
+        }
+    ],
+    "013905413000116159": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.reset_index(drop=True) ",
+            "Existing": "# User changes detected\nappleStockDfPivot = appleStockDfPivot.reset_index(drop=False)  #~ appleStockDf = appleStockDf.reset_index(drop=True) "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfPivot = appleStockDfPivot.reset_index(drop=True) ",
+            "Existing": "# User changes detected\nappleStockDfPivot = appleStockDfPivot.reset_index(drop=False)  #~ appleStockDf = appleStockDf.reset_index(drop=True)  #~ appleStockDfPivot = appleStockDfPivot.reset_index(drop=True) "
+        },
+        {
+            "PreviouslyGenerated": "minPivot = minPivot.reset_index(drop=True) ",
+            "Existing": "# User changes detected\nappleStockDfPivot = appleStockDfPivot.reset_index(drop=False)  #~ appleStockDf = appleStockDf.reset_index(drop=True)  #~ appleStockDfPivot = appleStockDfPivot.reset_index(drop=True)  #~ minPivot = minPivot.reset_index(drop=True) "
+        },
+        {
+            "PreviouslyGenerated": "maxPivot = maxPivot.reset_index(drop=True) ",
+            "Existing": "# User changes detected\nappleStockDfPivot = appleStockDfPivot.reset_index(drop=False)  #~ appleStockDf = appleStockDf.reset_index(drop=True)  #~ appleStockDfPivot = appleStockDfPivot.reset_index(drop=True)  #~ minPivot = minPivot.reset_index(drop=True)  #~ maxPivot = maxPivot.reset_index(drop=True) "
+        }
+    ],
+    "013905274723756159": [
+        {
+            "PreviouslyGenerated": "# Setting focus to appleStockDf ",
+            "Existing": "# Setting focus to appleStockDf "
+        }
+    ],
+    "013905725806746159": [
+        {
+            "PreviouslyGenerated": "appleStockDfPivot = appleStockDf.pivot_table(index='Date_Year', values='High', aggfunc='min') ",
+            "Existing": "appleStockDfPivot = appleStockDf.pivot_table(index='Date_Year', values='High', aggfunc='min') "
+        }
+    ],
+    "013905817757826159": [
+        {
+            "PreviouslyGenerated": "#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.\n#***\n#***Please select which variable to make the Focus:\n#***- maxPivot #> `select maxPivot\n#***- colorCycle #> `select colorCycle\n#***- colorCycleIndex #> `select colorCycleIndex\n#***- appleStockDf #> `select appleStockDf",
+            "Existing": "#***Focus: Often, we perform consecutive operations on the same piece of data / dataframe. Because of this, Arctic Fox assumes that the most likely target is the most recently assigned dataframe. Sometimes though, we do wish to shift the target from the previously used dataframe to a different dataframe. Hence, the Focus kit, which specifies which dataframe to use for subsequent kits. Furthermore, if you are uncertain of the available variables, use the ? input and Focus will list the possible targets for you to select.\n#***\n#***Please select which variable to make the Focus:\n#***- maxPivot #> `select maxPivot\n#***- colorCycle #> `select colorCycle\n#***- colorCycleIndex #> `select colorCycleIndex\n#***- appleStockDf #> `select appleStockDf"
+        },
+        {
+            "PreviouslyGenerated": "# Setting focus to maxPivot ",
+            "Existing": "# Setting focus to maxPivot "
+        }
+    ],
+    "013905871368596159": [
+        {
+            "PreviouslyGenerated": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1",
+            "Existing": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance ",
+            "Existing": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance "
+        },
+        {
+            "PreviouslyGenerated": "minPivot = minPivot.rename(columns={'High': 'Low'}) ",
+            "Existing": "minPivot = minPivot.rename(columns={'High': 'Low'}) "
+        }
+    ],
+    "013905554701676159": [
+        {
+            "PreviouslyGenerated": "high = minPivot['High'] ",
+            "Existing": "high = minPivot['High'] "
+        },
+        {
+            "PreviouslyGenerated": "low = minPivot['Low'] ",
+            "Existing": "low = minPivot['Low'] "
+        }
+    ],
+    "013905643586026159": [
+        {
+            "PreviouslyGenerated": "maxPivot['low'] = low ",
+            "Existing": "maxPivot['low'] = low "
+        },
+        {
+            "PreviouslyGenerated": "maxPivot['Low'] = low ",
+            "Existing": "maxPivot['Low'] = low "
+        }
+    ],
+    "013905849408836159": [
+        {
+            "PreviouslyGenerated": "maxPivot = maxPivot.reset_index(drop=True) ",
+            "Existing": "# User changes detected\nmaxPivot = maxPivot.reset_index(drop=False) "
+        }
+    ],
+    "013905919448736159": [
+        {
+            "PreviouslyGenerated": "print(maxPivot.head(n=20)) #)2 ",
+            "Existing": "print(maxPivot.head(n=20)) #)2 "
+        }
+    ],
+    "013905312410836159": [
+        {
+            "PreviouslyGenerated": "maxPivot = maxPivot[maxPivot['High'] > 50] ",
+            "Existing": "maxPivot = maxPivot[maxPivot['High'] > 50] "
+        }
+    ],
+    "013905347893886159": [
+        {
+            "PreviouslyGenerated": "print(maxPivot.head(n=20)) #)2 ",
+            "Existing": "print(maxPivot.head(n=20)) #)2 "
+        }
+    ],
+    "013905931566046159": [
+        {
+            "PreviouslyGenerated": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905702985946159": [
+        {
+            "PreviouslyGenerated": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(maxPivot.sort_values( [ 'Low' ] )['Low'], maxPivot.sort_values( [ 'Low' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Low', fontsize=14, fontweight='bold')\nplt.xlabel('Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905577032736159": [
+        {
+            "PreviouslyGenerated": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs Date', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDf.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDf.sort_values( [ 'Date' ] )['Date'], appleStockDf.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs Date', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\nappleStockDfQueried['CloseVsOpenCategories'] = appleStockDfQueried['CloseVsOpen'].astype('category').cat.codes\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(appleStockDfQueried['CloseVsOpen'].unique()):\n    groupedRows = appleStockDfQueried[appleStockDfQueried['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows.sort_values( [ 'Date' ] )['Date'], groupedRows.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\nappleStockDfQueried['CloseVsOpenCategories'] = appleStockDfQueried['CloseVsOpen'].astype('category').cat.codes\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(appleStockDfQueried['CloseVsOpen'].unique()):\n    groupedRows = appleStockDfQueried[appleStockDfQueried['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows.sort_values( [ 'Date' ] )['Date'], groupedRows.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\n\nsubplots[1].plot(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'], appleStockDfQueried.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nsubplots[1].set_title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nsubplots[1].set_xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].set_ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].legend()\nsubplots[1].grid(True, linestyle='--', linewidth=0.5)\nsubplots[1].tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\n\nsubplots[1].plot(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'], appleStockDfQueried.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nsubplots[1].set_title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nsubplots[1].set_xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].set_ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].legend()\nsubplots[1].grid(True, linestyle='--', linewidth=0.5)\nsubplots[1].tick_params(axis='both', which='major', labelsize=10)\n  "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'], appleStockDfQueried.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\nappleStockDfQueried = appleStockDf[appleStockDf['Date'].dt.year >= 2023]\n\nappleStockDfQueried.sort_values( [ 'Date' ] )['Date'] = pd.to_datetime(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'])\n\nplt.plot(appleStockDfQueried.sort_values( [ 'Date' ] )['Date'], appleStockDfQueried.sort_values( [ 'Date' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs Date, where Date >= 2023', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905678961816159": [
+        {
+            "PreviouslyGenerated": "plt.plot(appleStockDf.sort_values( [ 'Volume' ] )['Volume'], appleStockDf.sort_values( [ 'Volume' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Volume', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(appleStockDf.sort_values( [ 'Volume' ] )['Volume'], appleStockDf.sort_values( [ 'Volume' ] )['High'], color=colorCycle[colorCycleIndex], label='High')\n\nplt.title('High vs Volume', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.plot(appleStockDf.sort_values( [ 'High' ] )['High'], appleStockDf.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.plot(appleStockDf.sort_values( [ 'High' ] )['High'], appleStockDf.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume')\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['CloseVsOpenCategories'] = appleStockDf['CloseVsOpen'].astype('category').cat.codes\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(appleStockDf['CloseVsOpen'].unique()):\n    groupedRows = appleStockDf[appleStockDf['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['CloseVsOpenCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['CloseVsOpenCategories'] = appleStockDf['CloseVsOpen'].astype('category').cat.codes\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(appleStockDf['CloseVsOpen'].unique()):\n    groupedRows = appleStockDf[appleStockDf['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['CloseVsOpenCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "# User changes detected\nappleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905285037386159": [
+        {
+            "PreviouslyGenerated": "appleStockDf.drop(columns=appleStockDf.columns[0], inplace=True) ",
+            "Existing": "appleStockDf.drop(columns=appleStockDf.columns[0], inplace=True) "
+        }
+    ],
+    "013905114994266159": [
+        {
+            "PreviouslyGenerated": "appleStockDf.to_csv('AppleStock.csv', index=False) ",
+            "Existing": "appleStockDf.to_csv('AppleStock.csv', index=False) "
+        }
+    ],
+    "013905495226216159": [
+        {
+            "PreviouslyGenerated": "appleStockDf['HighMinusLow'] = appleStockDf['High'] - appleStockDf['Low'] ",
+            "Existing": "appleStockDf['HighMinusLow'] = appleStockDf['High'] - appleStockDf['Low'] "
+        }
+    ],
+    "243905806379616159": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905806379616159": [
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905737987916159": [
+        {
+            "PreviouslyGenerated": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot ",
+            "Existing": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['HighMinusLowCategorized'] = pd.cut(x=appleStockDf['HighMinusLow'], bins=[appleStockDf['HighMinusLow'].min(),0,appleStockDf['HighMinusLow'].max()], labels=['ClosedLower','ClosedHigher'], include_lowest=True) ",
+            "Existing": "appleStockDf['HighMinusLowCategorized'] = pd.cut(x=appleStockDf['HighMinusLow'], bins=[appleStockDf['HighMinusLow'].min(),0,appleStockDf['HighMinusLow'].max()], labels=['ClosedLower','ClosedHigher'], include_lowest=True) "
+        },
+        {
+            "PreviouslyGenerated": "whereCondition = appleStockDf['HighMinusLow'] < 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Higher' ",
+            "Existing": "whereCondition = appleStockDf['HighMinusLow'] < 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Higher' "
+        },
+        {
+            "PreviouslyGenerated": "whereCondition = appleStockDf['HighMinusLow'] > 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Higher' ",
+            "Existing": "whereCondition = appleStockDf['HighMinusLow'] > 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Higher' "
+        }
+    ],
+    "013905506601826159": [
+        {
+            "PreviouslyGenerated": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1",
+            "Existing": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance ",
+            "Existing": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.rename(columns={'HighMinusLowCategorized': 'ClosedHigherThanOpen'}) ",
+            "Existing": "appleStockDf = appleStockDf.rename(columns={'HighMinusLowCategorized': 'ClosedHigherThanOpen'}) "
+        }
+    ],
+    "013905125734716159": [
+        {
+            "PreviouslyGenerated": "whereCondition = appleStockDf['HighMinusLow'] >= 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Lower' ",
+            "Existing": "whereCondition = appleStockDf['HighMinusLow'] >= 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Lower' "
+        },
+        {
+            "PreviouslyGenerated": "whereCondition = appleStockDf['HighMinusLow'] <= 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Lower' ",
+            "Existing": "whereCondition = appleStockDf['HighMinusLow'] <= 0\nappleStockDf['CloseVsOpen'][whereCondition] = 'Lower' "
+        }
+    ],
+    "013905859653706159": [
+        {
+            "PreviouslyGenerated": "#***ColumnAdd: Adds a new column to the dataframe. A new column is added containing the values from one of the following:\n#***- An empty column, but you provide the column name\n#***- A column with the same value for each row\n#***- A column whose value is set by a list variable\n#***\n#***ColumnAdd adds a list or Series as a new column to a dataframe. Would you like to:\n#***- Add new empty columns to the dataframe? #> `select --newColumnNames ?\n#***- Add new columns with a default value to the dataframe? #> `select --newColumnNames ? --values ?\n#***- Add variables to the dataframe as columns? #> `select --variable ?\n#***- Add variables to the dataframe as columns and give the columns new names? #> `select --variable ? --newColumnNames ?",
+            "Existing": "#***ColumnAdd: Adds a new column to the dataframe. A new column is added containing the values from one of the following:\n#***- An empty column, but you provide the column name\n#***- A column with the same value for each row\n#***- A column whose value is set by a list variable\n#***\n#***ColumnAdd adds a list or Series as a new column to a dataframe. Would you like to:\n#***- Add new empty columns to the dataframe? #> `select --newColumnNames ?\n#***- Add new columns with a default value to the dataframe? #> `select --newColumnNames ? --values ?\n#***- Add variables to the dataframe as columns? #> `select --variable ?\n#***- Add variables to the dataframe as columns and give the columns new names? #> `select --variable ? --newColumnNames ?"
+        },
+        {
+            "PreviouslyGenerated": "#****** --newColumnNames ? ***\n#***How do you set newColumnNames? Change --newColumnNames ? to the names for the columns. If variables are given, the number of new column names must match the number of variables provided.\n#***- Example: --newColumnNames Names ",
+            "Existing": "#****** --newColumnNames ? ***\n#***How do you set newColumnNames? Change --newColumnNames ? to the names for the columns. If variables are given, the number of new column names must match the number of variables provided.\n#***- Example: --newColumnNames Names "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['CloseVsOpen'] = pd.Series() ",
+            "Existing": "appleStockDf['CloseVsOpen'] = pd.Series() "
+        }
+    ],
+    "033905577032736159": [
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) "
+        }
+    ],
+    "033905678961816159": [
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905740292156159": [
+        {
+            "PreviouslyGenerated": "appleStockDfUnique = appleStockDf['CloseVsOpen'].unique()\nprint(appleStockDfUnique) #)2 ",
+            "Existing": "appleStockDfUnique = appleStockDf['CloseVsOpen'].unique()\nprint(appleStockDfUnique) #)2 "
+        }
+    ],
+    "033905643312626159": [
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905127190186159": [
+        {
+            "PreviouslyGenerated": "#***ExtractDate: Dates can be some of the most challenging data to work with. Often, you only want to know the day, month, year, etc, rather than a string corresponding to a specfic date. This kit pulls out the desired date information from a column and stores the result as a new column.\n#***\n#***Would you like to:\n#***- Extract the year? #> `select --columns ? --year\n#***- Extract the month? #> `select --columns ? --month\n#***- Extract the month and year? #> `select --columns ? --month --year\n#***- Extract the day? #> `select --columns ? --day\n#***- Extract the day and month? #> `select --columns ? --day --month\n#***- Extract the day, month, and year? #> `select --columns ? --day --month --year",
+            "Existing": "#***ExtractDate: Dates can be some of the most challenging data to work with. Often, you only want to know the day, month, year, etc, rather than a string corresponding to a specfic date. This kit pulls out the desired date information from a column and stores the result as a new column.\n#***\n#***Would you like to:\n#***- Extract the year? #> `select --columns ? --year\n#***- Extract the month? #> `select --columns ? --month\n#***- Extract the month and year? #> `select --columns ? --month --year\n#***- Extract the day? #> `select --columns ? --day\n#***- Extract the day and month? #> `select --columns ? --day --month\n#***- Extract the day, month, and year? #> `select --columns ? --day --month --year"
+        },
+        {
+            "PreviouslyGenerated": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns that you want to extract date information from.\n#***- Single Column Example: --columns StartDate\n#***- Multiple Column Example: --columns QuarterStart QuarterEnd ReportDue ",
+            "Existing": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns that you want to extract date information from.\n#***- Single Column Example: --columns StartDate\n#***- Multiple Column Example: --columns QuarterStart QuarterEnd ReportDue "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year ",
+            "Existing": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year "
+        }
+    ],
+    "013905265513436159": [
+        {
+            "PreviouslyGenerated": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1",
+            "Existing": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance ",
+            "Existing": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'year'}) ",
+            "Existing": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'year'}) "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'Year'}) ",
+            "Existing": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'Year'}) "
+        }
+    ],
+    "033905834042286159": [
+        {
+            "PreviouslyGenerated": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxLine1.analyzeVariables([ (value, eval(value)) for value in arcticFoxLine1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905834042286159": [
+        {
+            "PreviouslyGenerated": "appleStockDf['CloseVsOpenCategories'] = appleStockDf['CloseVsOpen'].astype('category').cat.codes\nappleStockDfGroup = appleStockDf.groupby(['Year', 'CloseVsOpenCategories'])['High']\ngroupedRowsMax = appleStockDfGroup.max()\ngroupedRowsMax = pd.DataFrame(groupedRowsMax).reset_index(names=['Year', 'CloseVsOpen'])\n\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(groupedRowsMax['CloseVsOpen'].unique()):\n    groupedRows = groupedRowsMax[groupedRowsMax['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows['Year'], groupedRows['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['CloseVsOpenCategories'], axis=1)\n\nplt.title('High vs Year', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['CloseVsOpenCategories'] = appleStockDf['CloseVsOpen'].astype('category').cat.codes\nappleStockDfGroup = appleStockDf.groupby(['Year', 'CloseVsOpenCategories'])['High']\ngroupedRowsMax = appleStockDfGroup.max()\ngroupedRowsMax = pd.DataFrame(groupedRowsMax).reset_index(names=['Year', 'CloseVsOpen'])\n\nfor closeVsOpenIndex, closeVsOpenValue in enumerate(groupedRowsMax['CloseVsOpen'].unique()):\n    groupedRows = groupedRowsMax[groupedRowsMax['CloseVsOpen'] == closeVsOpenValue]\n\n    plt.plot(groupedRows['Year'], groupedRows['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max' + f\" when CloseVsOpen is {closeVsOpenValue}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['CloseVsOpenCategories'], axis=1)\n\nplt.title('High vs Year', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where CloseVsOpen == Lower', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where CloseVsOpen == Lower', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Higher']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nsubplots[0].plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nsubplots[0].set_title('High vs Year, where CloseVsOpen == Higher', fontsize=14, fontweight='bold')\nsubplots[0].set_xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].legend()\nsubplots[0].grid(True, linestyle='--', linewidth=0.5)\nsubplots[0].tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Higher']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nsubplots[0].plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nsubplots[0].set_title('High vs Year, where CloseVsOpen == Higher', fontsize=14, fontweight='bold')\nsubplots[0].set_xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[0].legend()\nsubplots[0].grid(True, linestyle='--', linewidth=0.5)\nsubplots[0].tick_params(axis='both', which='major', labelsize=10)\n  "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Higher']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where CloseVsOpen == Higher', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Higher']\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where CloseVsOpen == Higher', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfQueried = appleStockDf[appleStockDf['Year'] >= 2020]\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where Year >= 2020', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDfQueried = appleStockDf[appleStockDf['Year'] >= 2020]\n\nappleStockDfQueriedGroup = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroupMax = appleStockDfQueriedGroup.max()\nappleStockDfQueriedGroupMax = pd.DataFrame(appleStockDfQueriedGroupMax).reset_index(names=['Year'])\n\nplt.plot(appleStockDfQueriedGroupMax['Year'], appleStockDfQueriedGroupMax['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nplt.title('High vs Year, where Year >= 2020', fontsize=14, fontweight='bold')\nplt.xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "253905643312626159": [
+        {
+            "PreviouslyGenerated": "fig, subplots = plt.subplots(2)\nfig.tight_layout() ",
+            "Existing": "fig, subplots = plt.subplots(2)\nfig.tight_layout() "
+        }
+    ],
+    "013905386045096159": [
+        {
+            "PreviouslyGenerated": "#ISSUE: 'Line' object has no attribute 'myIndex'\nappleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\ncolorCycleIndex += 1 ",
+            "Existing": "#ISSUE: 'Line' object has no attribute 'myIndex'\nappleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\ncolorCycleIndex += 1 "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\ncolorCycleIndex += 1\nappleStockDfQueriedGroup_1 = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroup_1Max = appleStockDfQueriedGroup_1.max()\nappleStockDfQueriedGroup_1Max = pd.DataFrame(appleStockDfQueriedGroup_1Max).reset_index(names=['Year'])\n\nsubplots[1].plot(appleStockDfQueriedGroup_1Max['Year'], appleStockDfQueriedGroup_1Max['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nsubplots[1].set_title('High vs Year, where CloseVsOpen == Lower', fontsize=14, fontweight='bold')\nsubplots[1].set_xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].legend()\nsubplots[1].grid(True, linestyle='--', linewidth=0.5)\nsubplots[1].tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDfQueried = appleStockDf[appleStockDf['CloseVsOpen'] == 'Lower']\n\ncolorCycleIndex += 1\nappleStockDfQueriedGroup_1 = appleStockDfQueried.groupby(['Year'])['High']\nappleStockDfQueriedGroup_1Max = appleStockDfQueriedGroup_1.max()\nappleStockDfQueriedGroup_1Max = pd.DataFrame(appleStockDfQueriedGroup_1Max).reset_index(names=['Year'])\n\nsubplots[1].plot(appleStockDfQueriedGroup_1Max['Year'], appleStockDfQueriedGroup_1Max['High'], color=colorCycle[colorCycleIndex], label='High' + ' - max')\n\nsubplots[1].set_title('High vs Year, where CloseVsOpen == Lower', fontsize=14, fontweight='bold')\nsubplots[1].set_xlabel('Year', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].set_ylabel('High', fontsize=12, fontweight='bold', color='gray')\nsubplots[1].legend()\nsubplots[1].grid(True, linestyle='--', linewidth=0.5)\nsubplots[1].tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905834042286159": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905834042286159": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "253905834042286159": [
+        {
+            "PreviouslyGenerated": "fig, subplots = plt.subplots(2)\nfig.tight_layout() ",
+            "Existing": "fig, subplots = plt.subplots(2)\nfig.tight_layout() "
+        }
+    ],
+    "013905744062496159": [
+        {
+            "PreviouslyGenerated": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year ",
+            "Existing": "appleStockDf['Date_Year'] = appleStockDf['Date'].dt.year "
+        }
+    ],
+    "013905858298836159": [
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'Year'}) ",
+            "Existing": "appleStockDf = appleStockDf.rename(columns={'Date_Year': 'Year'}) "
+        }
+    ],
+    "013905990351286159": [
+        {
+            "PreviouslyGenerated": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot ",
+            "Existing": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['YearCategorized'] = pd.cut(x=appleStockDf['Year'], bins=[-sys.maxsize,1990,2000,2010,2020,sys.maxsize], labels=['80s','90s','00s','10s','20s'], include_lowest=True) ",
+            "Existing": "appleStockDf['YearCategorized'] = pd.cut(x=appleStockDf['Year'], bins=[-sys.maxsize,1990,2000,2010,2020,sys.maxsize], labels=['80s','90s','00s','10s','20s'], include_lowest=True) "
+        }
+    ],
+    "013905156796086159": [
+        {
+            "PreviouslyGenerated": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1",
+            "Existing": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance ",
+            "Existing": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = appleStockDf.rename(columns={'YearCategorized': 'Decade'}) ",
+            "Existing": "appleStockDf = appleStockDf.rename(columns={'YearCategorized': 'Decade'}) "
+        }
+    ],
+    "013905689737566159": [
+        {
+            "PreviouslyGenerated": "appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\")\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['DecadeCategories'] = appleStockDf['Decade'].astype('category').cat.codes\nfor decadeIndex, decadeValue in enumerate(appleStockDf['Decade'].unique()):\n    groupedRows = appleStockDf[appleStockDf['Decade'] == decadeValue]\n\n    plt.plot(groupedRows.sort_values( [ 'High' ] )['High'], groupedRows.sort_values( [ 'High' ] )['Volume'], color=colorCycle[colorCycleIndex], label='Volume' + f\" when Decade is {appleStockDf.sort_values( [ 'High' ] )['Decade'].astype('category').cat.categories[decadeIndex]}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nappleStockDf = appleStockDf.drop(['DecadeCategories'], axis=1)\n\nplt.title('Volume vs High', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}

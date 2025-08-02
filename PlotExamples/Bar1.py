@@ -33,7 +33,7 @@ print(nBADf.head()) #)1
 # ******************************************************
 # ******************************************************
 
-#> Bar --x Team --xCategorical --count --exampleTitle Bar Graph of Counts of Categorical Column --example When working with a categorical column, such as Team, it is often useful to understand the distribution of values. This example shows a bar chart of the count of records of each team, helping identify which teams are represented more frequently in the data.
+#> Bar --x Team --xCategorical --count --exampleImage Bar1.png --exampleTitle Bar Graph of Counts of Categorical Column --example When working with a categorical column, such as Team, it is often useful to understand the distribution of values. This example shows a bar chart of the count of records of each team, helping identify which teams are represented more frequently in the data. 
 values = nBADf['Team'].astype('str').value_counts().sort_index().values
 indices = nBADf['Team'].astype('str').value_counts().sort_index().index
 
@@ -46,7 +46,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Bar --x Team --xCategorical --y Points --sum --exampleTitle Bar Graph of Sum by Category in Column --example Rather than showing counts, we can sum a numerical column, like Points, across each category in a column. Here, we sum all points scored by players on each team and show that total as a bar chart.
+#> Bar --x Team --xCategorical --y Points --sum --exampleImage Bar2.png --exampleTitle Bar Graph of Sum by Category in Column --example Rather than showing counts, we can sum a numerical column, like Points, across each category in a column. Here, we sum all points scored by players on each team and show that total as a bar chart. 
 nBADfGroup = nBADf.groupby(['Team'])['Points']
 nBADfGroupSum = nBADfGroup.sum()
 nBADfGroupSum = pd.DataFrame(nBADfGroupSum).reset_index(names=['Team'])
@@ -64,7 +64,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Bar Age --exampleTitle Bar Graph from a Numeric Column by Index --example Sometimes you may want to create a simple bar chart directly from a single numeric column. In this case, we chart Age by row index to get a sense of how age varies across players and is graphed in order by index.
+#> Bar Age --exampleImage Bar3.png --exampleTitle Bar Graph from a Numeric Column by Index --example Sometimes you may want to create a simple bar chart directly from a single numeric column. In this case, we chart Age by row index to get a sense of how age varies across players and is graphed in order by index. 
 indexForPlot = range(len(nBADf['Age']))
 
 plt.bar(indexForPlot, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')
@@ -77,7 +77,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Bar --x Losses --y Wins --mean --exampleTitle Bar Graph of Numerical Column vs Numerical Column  --example You can use a bar chart to display bars that are located on the x-axis according to one column with a height according to another column. Additionally, you can use an aggregation method for bars with the same x-axis value. This example shows the average number of Wins for each value of Losses to help visualize performance patterns.
+#> Bar --x Losses --y Wins --mean --exampleImage Bar4.png --exampleTitle Bar Graph of Numerical Column vs Numerical Column  --example You can use a bar chart to display bars that are located on the x-axis according to one column with a height according to another column. Additionally, you can use an aggregation method for bars with the same x-axis value. This example shows the average number of Wins for each value of Losses to help visualize performance patterns. 
 nBADfGroup_1 = nBADf.groupby(['Losses'])['Wins']
 nBADfGroup_1Mean = nBADfGroup_1.mean()
 nBADfGroup_1Mean = pd.DataFrame(nBADfGroup_1Mean).reset_index(names=['Losses'])
@@ -93,7 +93,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Bar --x Team --y Wins --group GamesPlayedCategorized --mean --exampleTitle Grouped Bar Chart by Subcategory --example For deeper comparisons, you can group a bar chart by subcategories. This example shows the mean Wins for each team, broken down further by a categorized version of GamesPlayed (Few, Average, Many). This type of chart is useful for comparing performance across both team and games played per player.
+#> Bar --x Team --y Wins --group GamesPlayedCategorized --mean --exampleImage Bar5.png --exampleTitle Grouped Bar Chart by Subcategory --example For deeper comparisons, you can group a bar chart by subcategories. This example shows the mean Wins for each team, broken down further by a categorized version of GamesPlayed (Few, Average, Many). This type of chart is useful for comparing performance across both team and games played per player. 
 nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes
 nBADf['GamesPlayedCategorizedCategories'] = nBADf['GamesPlayedCategorized'].astype('category').cat.codes
 nBADfGroup_2 = nBADf.groupby(['TeamCategories', 'GamesPlayedCategorizedCategories'])['Wins']
