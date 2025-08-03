@@ -16,7 +16,7 @@ def dictToDefaultdict(dictionary):
     })
 
 _af_arcticFoxDataDictionary = defaultdict(_af_recursive_defaultdict)
-with open('C:/Users/littl/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/boxplot1.analyzedvariables.json', 'r') as _af_dataSave:
+with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/boxplot1.analyzedvariables.json', 'r') as _af_dataSave:
     _af_existingData = json.load(_af_dataSave)
     _af_existingData = dictToDefaultdict(_af_existingData)
     for key in _af_existingData:
@@ -175,5 +175,5 @@ def analyzeVariables(variables):
     print("Arctic Fox finished analyzing variables")
 
 def saveAnalyzedVariables():
-    with open('C:/Users/littl/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/boxplot1.analyzedvariables.json', 'w') as _af_dataSave:
+    with open('X:/Code/GitHub/ArcticFoxExamples/PlotExamples/.af/analyzedvariables/boxplot1.analyzedvariables.json', 'w') as _af_dataSave:
         _af_dataSave.write(json.dumps(_af_arcticFoxDataDictionary, indent=4))

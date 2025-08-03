@@ -13,6 +13,10 @@
             "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBar1 "
         },
         {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np "
+        },
+        {
             "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
             "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
         }

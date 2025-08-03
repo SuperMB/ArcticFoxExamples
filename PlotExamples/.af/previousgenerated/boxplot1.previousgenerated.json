@@ -1,6 +1,10 @@
 {
     "0000": [
         {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
             "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBoxPlot1\nfrom pandas.api.types import is_numeric_dtype ",
             "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBoxPlot1\nfrom pandas.api.types import is_numeric_dtype "
         },
@@ -9,14 +13,18 @@
             "Existing": "import pandas as pd\nimport numpy as np "
         },
         {
-            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
-            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype "
         }
     ],
     "013905437280450301": [
         {
             "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
             "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
         }
     ],
     "243905253232920301": [
@@ -29,13 +37,13 @@
         {
             "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
             "Existing": "print(nBADf.head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
         }
     ],
     "013905327272010301": [
-        {
-            "PreviouslyGenerated": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate",
-            "Existing": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate"
-        },
         {
             "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
             "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
@@ -43,9 +51,25 @@
         {
             "PreviouslyGenerated": "plt.boxplot(nBADf['FGA'], patch_artist=True, positions=[0], labels=['FGA'])\n\nplt.boxplot(nBADf['FG_Percent'], patch_artist=True, positions=[1], labels=['FG_Percent'])\n\nplt.title('FGA and FG_Percent', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
             "Existing": "plt.boxplot(nBADf['FGA'], patch_artist=True, positions=[0], labels=['FGA'])\n\nplt.boxplot(nBADf['FG_Percent'], patch_artist=True, positions=[1], labels=['FG_Percent'])\n\nplt.title('FGA and FG_Percent', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate",
+            "Existing": "#***BoxPlot: Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns\n#***\n#***What type of box plots would you like to create:\n#***- Box plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as box plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate"
+        },
+        {
+            "PreviouslyGenerated": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(nBADf.columns):\n    if is_numeric_dtype(nBADf[boxplotColumn]):\n        plt.boxplot(nBADf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('nBADf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(nBADf.columns):\n    if is_numeric_dtype(nBADf[boxplotColumn]):\n        plt.boxplot(nBADf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('nBADf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(appleStockDf.columns):\n    if is_numeric_dtype(appleStockDf[boxplotColumn]):\n        plt.boxplot(appleStockDf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('appleStockDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(appleStockDf.columns):\n    if is_numeric_dtype(appleStockDf[boxplotColumn]):\n        plt.boxplot(appleStockDf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('appleStockDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
         }
     ],
     "243905327272010301": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
         {
             "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
             "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
