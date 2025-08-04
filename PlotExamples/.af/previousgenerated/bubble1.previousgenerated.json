@@ -1,0 +1,104 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport matplotlib.dates as mdates ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport matplotlib.dates as mdates "
+        }
+    ],
+    "243905641312439545": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905781716079545": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905781716079545": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905963743329545": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905641312439545": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905781716079545": [
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['GamesPlayed'])\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['GamesPlayed'])\n\nplt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905874512729545": [
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\n\nplt.title('Age vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')\n\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\n\nplt.title('Age vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age', s=nBADf['BLK'])\n\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\n\nplt.title('Age vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age', s=nBADf['BLK'])\n\nplt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)\nplt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))\n\nplt.title('Age vs Team', fontsize=14, fontweight='bold')\nplt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905689997249545": [
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Points']))\n\nplt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "indexForPlot = range(len(nBADf['Points']))\n\nplt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "indexForPlot = range(len(nBADf['Points']))\n\nplt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points', s=nBADf['Wins'])\n\nplt.title('Points vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "indexForPlot = range(len(nBADf['Points']))\n\nplt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points', s=nBADf['Wins'])\n\nplt.title('Points vs Index', fontsize=14, fontweight='bold')\nplt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905432327489545": [
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK')\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['AST'], color=colorCycle[colorCycleIndex], label='AST')\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['FG_Percent'], color=colorCycle[colorCycleIndex], label='FG_Percent')\n\nplt.title('BLK, AST, and FG_Percent vs Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('BLK, AST, and FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK')\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['AST'], color=colorCycle[colorCycleIndex], label='AST')\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['FG_Percent'], color=colorCycle[colorCycleIndex], label='FG_Percent')\n\nplt.title('BLK, AST, and FG_Percent vs Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('BLK, AST, and FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: 'Bubble' object has no attribute 'resultVariable'\n# Must supply a --size option for to create a bubble plot. If you want more information on the --size option, add --size ? to the automaiton. ",
+            "Existing": "#ISSUE: 'Bubble' object has no attribute 'resultVariable'\n# Must supply a --size option for to create a bubble plot. If you want more information on the --size option, add --size ? to the automaiton. "
+        },
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK', s=nBADf['Losses'])\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['AST'], color=colorCycle[colorCycleIndex], label='AST', s=nBADf['Losses'])\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['FG_Percent'], color=colorCycle[colorCycleIndex], label='FG_Percent', s=nBADf['Losses'])\n\nplt.title('BLK, AST, and FG_Percent vs Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('BLK, AST, and FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK', s=nBADf['Losses'])\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['AST'], color=colorCycle[colorCycleIndex], label='AST', s=nBADf['Losses'])\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.scatter(nBADf['Wins'], nBADf['FG_Percent'], color=colorCycle[colorCycleIndex], label='FG_Percent', s=nBADf['Losses'])\n\nplt.title('BLK, AST, and FG_Percent vs Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('BLK, AST, and FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905253700699545": [
+        {
+            "PreviouslyGenerated": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: 'Bubble' object has no attribute 'resultVariable'\n# Must supply a --size option for to create a bubble plot. If you want more information on the --size option, add --size ? to the automaiton. ",
+            "Existing": "#ISSUE: 'Bubble' object has no attribute 'resultVariable'\n# Must supply a --size option for to create a bubble plot. If you want more information on the --size option, add --size ? to the automaiton. "
+        },
+        {
+            "PreviouslyGenerated": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['PlusMinus'])\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['PlusMinus'])\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['REB'])\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.axes(projection='3d')\n\nplt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points', s=nBADf['REB'])\n\nplt.title('Points vs Losses and Wins', fontsize=14, fontweight='bold')\nplt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Losses', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}

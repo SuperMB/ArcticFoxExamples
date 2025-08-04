@@ -1,0 +1,73 @@
+ 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt  
+pd.set_option('display.width', 10000)
+pd.set_option('display.max_columns', None)  
+plt.style.use("darktheme.mplstyle")
+colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color']  
+colorCycleIndex = 0 
+
+
+#> Data NBA.csv 
+nBADf = pd.read_csv('NBA.csv') 
+
+#> View 
+print(nBADf.head()) #)1 
+##***                     Player Team  Age  GamesPlayed  Wins  Losses     Min  Points  FGM   FGA  FG_Percent  3PM  3PA  3P_Percent  FTM  FTA   FT%  OREB  DREB  REB  AST  TOV  STL  BLK   PF    FP  DD2  TD3  PlusMinus
+##*** 0  Shai Gilgeous-Alexander  OKC   26           70    59      11  2401.8    2301  795  1522        52.2  148  400        37.0  563  625  90.1    60   293  353  440  175  123   71  153  3792    5    0        861
+##*** 1          Anthony Edwards  MIN   23           71    41      30  2566.6    1932  636  1444        44.0  283  716        39.5  377  449  84.0    56   349  405  325  227   81   42  127  3048    6    0        218
+##*** 2             Nikola Jokic  DEN   30           64    43      21  2332.5    1872  714  1244        57.4  121  294        41.2  323  402  80.3   186   634  820  653  209  113   43  145  4095   54   30        541
+##*** 3    Giannis Antetokounmpo  MIL   30           60    34      26  2039.2    1814  714  1189        60.1    9   50        18.0  377  624  60.4   138   579  717  357  191   50   72  149  3385   49    7        235
+##*** 4             Jayson Tatum  BOS   27           66    48      18  2403.5    1791  612  1345        45.5  236  670        35.2  331  409  80.9    44   529  573  393  198   73   34  145  3191   29    2        490
+
+#> Pie --values Wins 
+# --bins not specified for pie chart with numeric values, default of 5 will be used
+
+values = pd.cut(nBADf['Wins'], bins=5).value_counts()
+indices = [str(index) for index in values.index]
+combinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]
+
+plt.pie(values, labels=combinedIndices)
+
+plt.title('Wins', fontsize=14, fontweight='bold')
+plt.show() 
+
+#> Pie --values Wins --bins 10 
+values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()
+indices_1 = [str(index) for index in values_1.index]
+combinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]
+
+plt.pie(values_1, labels=combinedIndices_1)
+
+plt.title('Wins', fontsize=14, fontweight='bold')
+plt.show() 
+
+#> Pie --values Team 
+values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values
+indices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index
+pieChartLabels = nBADf['Team'].unique()
+combinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]
+
+plt.pie(values_2, labels=combinedIndices_2)
+
+plt.title('Team', fontsize=14, fontweight='bold')
+plt.show() 
+
+#> Pie --values Points --group Team 
+nBADfGroup = nBADf.groupby('Team')['Points'].sum()
+nBADfGroup = nBADfGroup.sort_values()
+pieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]
+
+if (nBADfGroup <= 0).all():
+    nBADfGroup *= -1
+
+plt.pie(nBADfGroup, labels=pieLabels)
+
+colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+
+plt.title('Points', fontsize=14, fontweight='bold')
+plt.show() 
+
+
+

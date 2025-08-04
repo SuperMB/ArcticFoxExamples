@@ -1,0 +1,116 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "013905318895994160": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "243905179503684160": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905179503684160": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905728353384160": [
+        {
+            "PreviouslyGenerated": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?",
+            "Existing": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies ",
+            "Existing": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies "
+        },
+        {
+            "PreviouslyGenerated": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies ",
+            "Existing": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies "
+        },
+        {
+            "PreviouslyGenerated": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues = pd.cut(nBADf['Wins'], bins=5).value_counts()\nindices = [str(index) for index in values.index]\ncombinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]\n\nplt.pie(values, labels=combinedIndices)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues = pd.cut(nBADf['Wins'], bins=5).value_counts()\nindices = [str(index) for index in values.index]\ncombinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]\n\nplt.pie(values, labels=combinedIndices)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "243905728353384160": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905728353384160": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905530304574160": [
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905500762994160": [
+        {
+            "PreviouslyGenerated": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?",
+            "Existing": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies ",
+            "Existing": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies "
+        },
+        {
+            "PreviouslyGenerated": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies ",
+            "Existing": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies "
+        },
+        {
+            "PreviouslyGenerated": "values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_3 = [str(pieChartLabels[i]) + ' - ' + str(round(values_3[i] * 100 / sum(values_3), 1)) + '%' for i in range(len(values_3))]\n\nplt.pie(values_3, labels=combinedIndices_3)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_3 = [str(pieChartLabels[i]) + ' - ' + str(round(values_3[i] * 100 / sum(values_3), 1)) + '%' for i in range(len(values_3))]\n\nplt.pie(values_3, labels=combinedIndices_3)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905334303744160": [
+        {
+            "PreviouslyGenerated": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues_1 = pd.cut(nBADfQueried['Wins'], bins=5).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins, where Wins > 60', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues_1 = pd.cut(nBADfQueried['Wins'], bins=5).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins, where Wins > 60', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905532803204160": [
+        {
+            "PreviouslyGenerated": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?",
+            "Existing": "#***Pie: Creates a pie chart to show either categorical or range distributions / counts\n#***\n#***What type of pie charts would you like to create:\n#***- A single column, series, or list that is non-numeric? #> `select ? --values ?\n#***- The same, except for numerical data?  #> `select ? --values ? --bins ?\n#***- The sum of a column, binned by another column?  #> `select ? --values ? --group ?"
+        },
+        {
+            "PreviouslyGenerated": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies\n#***\n#****** --group ? ***\n#***--group splits scatter plot points into different colors based on a categorization.\n#***Can be a dataframe column, series, or list.\n#***- Example: --group RainToday ",
+            "Existing": "#***What else would you like to do?\n#***- Add a where condition to filter the data? #> `select --where ?\n#***- I'm done #> `select\n#***\n#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies\n#***\n#****** --group ? ***\n#***--group splits scatter plot points into different colors based on a categorization.\n#***Can be a dataframe column, series, or list.\n#***- Example: --group RainToday "
+        },
+        {
+            "PreviouslyGenerated": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies\n#***\n#****** --group ? ***\n#***--group splits scatter plot points into different colors based on a categorization.\n#***Can be a dataframe column, series, or list.\n#***- Example: --group RainToday ",
+            "Existing": "#****** --values ? ***\n#***- Change --values ? to what you want to plot within the pie chart such as a column or variable.\n#***- Example: --values FlowerSpecies\n#***\n#****** --group ? ***\n#***--group splits scatter plot points into different colors based on a categorization.\n#***Can be a dataframe column, series, or list.\n#***- Example: --group RainToday "
+        },
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ]
+}

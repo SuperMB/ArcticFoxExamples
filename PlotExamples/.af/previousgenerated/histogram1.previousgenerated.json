@@ -1,0 +1,220 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxHistogram1 ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxHistogram1 "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "013905491245445755": [
+        {
+            "PreviouslyGenerated": "pokemonDf = pd.read_csv('Pokemon.csv') ",
+            "Existing": "pokemonDf = pd.read_csv('Pokemon.csv') "
+        },
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) ",
+            "Existing": "appleStockDf = pd.read_csv('AppleStock.csv')\nappleStockDf['Date'] = pd.to_datetime(appleStockDf['Date']) "
+        }
+    ],
+    "243905835816005755": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905835816005755": [
+        {
+            "PreviouslyGenerated": "print(pokemonDf.head()) #)1 ",
+            "Existing": "print(pokemonDf.head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(appleStockDf.head()) #)1 ",
+            "Existing": "print(appleStockDf.head()) #)1 "
+        }
+    ],
+    "013905822057015755": [
+        {
+            "PreviouslyGenerated": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1",
+            "Existing": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1"
+        }
+    ],
+    "013905364819365755": [
+        {
+            "PreviouslyGenerated": "appleStockDfMax = appleStockDf['Volume'].max() ",
+            "Existing": "appleStockDfMax = appleStockDf['Volume'].max() "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfMax = appleStockDf['Volume'].max()\nprint(appleStockDfMax) #)2 ",
+            "Existing": "appleStockDfMax = appleStockDf['Volume'].max()\nprint(appleStockDfMax) #)2 "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfMax = appleStockDf [ ['?', 'Volume'] ].max()\nprint(appleStockDfMax) #)2 ",
+            "Existing": "appleStockDfMax = appleStockDf [ ['?', 'Volume'] ].max()\nprint(appleStockDfMax) #)2 "
+        },
+        {
+            "PreviouslyGenerated": "#***ColumnMax: Gets the maximum value of one or more columns. Furthermore, can get the maximum while being grouped by another column or category, perform a rolling maximum or sliding window maximum, can get the maximum for only rows that meet a condition, and can add the result to the dataframe as a new column\n#***\n#***Which of the following would you like to do?\n#***-Max of each column? #> `select\n#***\n#***-Max of each specified column(s) #> `select ? --columns ? --af a1\n#***-Max of each specified column(s), grouped by other column(s) #> `select ? --columns ? --group ?\n#***\n#***-Max of each specified column(s) for rows that meet a criteria #> `select ? --columns ? --where ?\n#***-Max of each specified column(s) for rows that meet a criteria, grouped by other column(s) #> `select ? --columns ? --group ? --where ?\n#***\n#***- Moving windowMax of each specified column(s) #> `select ? --columns ? --rolling ?\n#***- Moving windowMax of each specified column(s), grouped by other column(s) #> `select ? --columns ? --rolling ? --group ?",
+            "Existing": "#***ColumnMax: Gets the maximum value of one or more columns. Furthermore, can get the maximum while being grouped by another column or category, perform a rolling maximum or sliding window maximum, can get the maximum for only rows that meet a condition, and can add the result to the dataframe as a new column\n#***\n#***Which of the following would you like to do?\n#***-Max of each column? #> `select\n#***\n#***-Max of each specified column(s) #> `select ? --columns ? --af a1\n#***-Max of each specified column(s), grouped by other column(s) #> `select ? --columns ? --group ?\n#***\n#***-Max of each specified column(s) for rows that meet a criteria #> `select ? --columns ? --where ?\n#***-Max of each specified column(s) for rows that meet a criteria, grouped by other column(s) #> `select ? --columns ? --group ? --where ?\n#***\n#***- Moving windowMax of each specified column(s) #> `select ? --columns ? --rolling ?\n#***- Moving windowMax of each specified column(s), grouped by other column(s) #> `select ? --columns ? --rolling ? --group ?"
+        },
+        {
+            "PreviouslyGenerated": "#***Would you also like to get the rows that are theMax ?\n#***- Yes, get the corresponding rows? #> `select --getRows --af <x>\n#***- No, only the value? #> `select --af <x>\n#***\n#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance ",
+            "Existing": "#***Would you also like to get the rows that are theMax ?\n#***- Yes, get the corresponding rows? #> `select --getRows --af <x>\n#***- No, only the value? #> `select --af <x>\n#***\n#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance "
+        },
+        {
+            "PreviouslyGenerated": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance ",
+            "Existing": "#****** --columns ? ***\n#***Change --columns ? to a list of one or more columns.\n#***- Single Column Example: --columns Speed\n#***- Multiple Column Example: --columns Speed Acceleration Distance "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfMax = appleStockDf['Volume'].max()\nappleStockDfMaxRows = appleStockDf[appleStockDf['Volume'] == appleStockDfMax] ",
+            "Existing": "appleStockDfMax = appleStockDf['Volume'].max()\nappleStockDfMaxRows = appleStockDf[appleStockDf['Volume'] == appleStockDfMax] "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDfMax = appleStockDf['Volume'].max()\nappleStockDfMaxRows = appleStockDf[appleStockDf['Volume'] == appleStockDfMax]\nprint(appleStockDfMax) #)2 ",
+            "Existing": "appleStockDfMax = appleStockDf['Volume'].max()\nappleStockDfMaxRows = appleStockDf[appleStockDf['Volume'] == appleStockDfMax]\nprint(appleStockDfMax) #)2 "
+        }
+    ],
+    "013905468241615755": [
+        {
+            "PreviouslyGenerated": "print(appleStockDfMaxRows) #)3 ",
+            "Existing": "print(appleStockDfMaxRows) #)3 "
+        }
+    ],
+    "013905995613215755": [
+        {
+            "PreviouslyGenerated": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1",
+            "Existing": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['High'], bins=10)\n\nplt.title('High Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['High'], bins=10)\n\nplt.title('High Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "243905995613215755": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905995613215755": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905315845525755": [
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['Volume'], bins=10)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['Volume'], bins=10)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['HighDivLow'], bins=10)\n\nplt.title('HighDivLow Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('HighDivLow', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['HighDivLow'], bins=10)\n\nplt.title('HighDivLow Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('HighDivLow', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905731067055755": [
+        {
+            "PreviouslyGenerated": "appleStockDf['HighDivLow'] = appleStockDf['High'] / appleStockDf['Low'] ",
+            "Existing": "appleStockDf['HighDivLow'] = appleStockDf['High'] / appleStockDf['Low'] "
+        }
+    ],
+    "033905315845525755": [
+        {
+            "PreviouslyGenerated": "arcticFoxHistogram1.analyzeVariables([ (value, eval(value)) for value in arcticFoxHistogram1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxHistogram1.analyzeVariables([ (value, eval(value)) for value in arcticFoxHistogram1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905477055945755": [
+        {
+            "PreviouslyGenerated": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1",
+            "Existing": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\n\nplt.hist(appleStockDf['Date'], bins=10)\n\nplt.title('Date Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])\n\nplt.hist(appleStockDf['Date'], bins=10)\n\nplt.title('Date Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905520994265755": [
+        {
+            "PreviouslyGenerated": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1",
+            "Existing": "#***Histogram: Plots a histogram using the matplotlib library for the data provided\n#***\n#***What type of data will the x-axis be:\n#***- Categorical #> `select --x ? --xCategorical\n#***- Date #> `select ? --x ? --af a1\n#***- Numeric #> `select ? --x ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#***Woud you like to specify the number of bins or use the default:\n#***- Use default (10) #> `select --af <x>\n#***- Specify number of bins #> `select --bins ? --af <x>\n#***\n#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --bins ? ***\n#***--bins specifies the number of bins to use for the histogram for numerical or date data. Should be an integer number\n#***- Example: --bins 25 ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature\n#***\n#****** --bins ? ***\n#***--bins specifies the number of bins to use for the histogram for numerical or date data. Should be an integer number\n#***- Example: --bins 25 "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['Volume'], bins=50)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['Volume'], bins=50)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905163223715755": [
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['High'], bins=100, label='High', alpha=0.4)\n\nplt.hist(appleStockDf['Low'], bins=100, label='Low', alpha=0.4)\n\nplt.title('High and Low Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High and Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['High'], bins=100, label='High', alpha=0.4)\n\nplt.hist(appleStockDf['Low'], bins=100, label='Low', alpha=0.4)\n\nplt.title('High and Low Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High and Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['High'], bins=10, label='High', alpha=0.4)\n\nplt.hist(appleStockDf['Low'], bins=10, label='Low', alpha=0.4)\n\nplt.title('High and Low Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High and Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['High'], bins=10, label='High', alpha=0.4)\n\nplt.hist(appleStockDf['Low'], bins=10, label='Low', alpha=0.4)\n\nplt.title('High and Low Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('High and Low', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(pokemonDf['Attack'], bins=10, label='Attack', alpha=0.4)\n\nplt.hist(pokemonDf['Defense'], bins=10, label='Defense', alpha=0.4)\n\nplt.title('Attack and Defense Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Attack and Defense', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(pokemonDf['Attack'], bins=10, label='Attack', alpha=0.4)\n\nplt.hist(pokemonDf['Defense'], bins=10, label='Defense', alpha=0.4)\n\nplt.title('Attack and Defense Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Attack and Defense', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.hist(pokemonDf['Attack'], bins=20, label='Attack', alpha=0.4)\n\nplt.hist(pokemonDf['Sp.Atk'], bins=20, label='Sp.Atk', alpha=0.4)\n\nplt.hist(pokemonDf['Defense'], bins=20, label='Defense', alpha=0.4)\n\nplt.hist(pokemonDf['Sp.Def'], bins=20, label='Sp.Def', alpha=0.4)\n\nplt.title('Attack, Sp.Atk, Defense, and Sp.Def Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Attack, Sp.Atk, Defense, and Sp.Def', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(pokemonDf['Attack'], bins=20, label='Attack', alpha=0.4)\n\nplt.hist(pokemonDf['Sp.Atk'], bins=20, label='Sp.Atk', alpha=0.4)\n\nplt.hist(pokemonDf['Defense'], bins=20, label='Defense', alpha=0.4)\n\nplt.hist(pokemonDf['Sp.Def'], bins=20, label='Sp.Def', alpha=0.4)\n\nplt.title('Attack, Sp.Atk, Defense, and Sp.Def Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Attack, Sp.Atk, Defense, and Sp.Def', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905331259295755": [
+        {
+            "PreviouslyGenerated": "pokemonDf = pd.read_csv('Pokemon.csv') ",
+            "Existing": "pokemonDf = pd.read_csv('Pokemon.csv') "
+        }
+    ],
+    "033905163223715755": [
+        {
+            "PreviouslyGenerated": "arcticFoxHistogram1.analyzeVariables([ (value, eval(value)) for value in arcticFoxHistogram1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxHistogram1.analyzeVariables([ (value, eval(value)) for value in arcticFoxHistogram1.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905207011325755": [
+        {
+            "PreviouslyGenerated": "print(pokemonDf.head()) #)2 ",
+            "Existing": "print(pokemonDf.head()) #)2 "
+        }
+    ]
+}

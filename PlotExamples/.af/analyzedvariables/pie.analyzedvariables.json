@@ -1,0 +1,127 @@
+{
+    "PlotExamples_Pie.py": {
+        "variables": {
+            "nBADf": {
+                "columns": [
+                    {
+                        "Name": "Player",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Team",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Age",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "GamesPlayed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Wins",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Losses",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Min",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Points",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FG_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "3PM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3PA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3P_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "FTM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FTA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FT%",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "OREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "REB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "AST",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TOV",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "STL",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "BLK",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PF",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FP",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DD2",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TD3",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PlusMinus",
+                        "ColumnType": 1
+                    }
+                ],
+                "hasHeaders": false
+            }
+        }
+    }
+}

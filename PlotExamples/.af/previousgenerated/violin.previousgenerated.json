@@ -1,0 +1,82 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxViolin\nfrom pandas.api.types import is_numeric_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxViolin\nfrom pandas.api.types import is_numeric_dtype "
+        }
+    ],
+    "243905411197110339": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905228995170339": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905228995170339": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905223863540339": [
+        {
+            "PreviouslyGenerated": "pokemonDf = pd.read_csv('Pokemon.csv') ",
+            "Existing": "pokemonDf = pd.read_csv('Pokemon.csv') "
+        }
+    ],
+    "013905411197110339": [
+        {
+            "PreviouslyGenerated": "print(pokemonDf.head()) #)1 ",
+            "Existing": "print(pokemonDf.head()) #)1 "
+        }
+    ],
+    "013905228995170339": [
+        {
+            "PreviouslyGenerated": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        plt.boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        plt.boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.title('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        plt.violinplot(pokemonDf[boxplotColumn],  positions=[xTickIndex])\n        xTickIndex += 1\n\nxTicks = []\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]):\n        xTicks.append(boxplotColumn)\n\nplt.gca().set_xticklabels(xTicks)\nplt.gca().set_xticks(range(len(xTicks)))\n\nplt.title('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major')\nplt.show() ",
+            "Existing": "xTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        plt.violinplot(pokemonDf[boxplotColumn],  positions=[xTickIndex])\n        xTickIndex += 1\n\nxTicks = []\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]):\n        xTicks.append(boxplotColumn)\n\nplt.gca().set_xticklabels(xTicks)\nplt.gca().set_xticks(range(len(xTicks)))\n\nplt.title('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major')\nplt.show() "
+        }
+    ],
+    "033905605784010339": [
+        {
+            "PreviouslyGenerated": "arcticFoxViolin.analyzeVariables([ (value, eval(value)) for value in arcticFoxViolin.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxViolin.analyzeVariables([ (value, eval(value)) for value in arcticFoxViolin.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905605784010339": [
+        {
+            "PreviouslyGenerated": "nonNumericColumnCount = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        nonNumericColumnCount += 1\n\n_, boxplotAxes = plt.subplots(nrows=1, ncols=nonNumericColumnCount, figsize=(10, 5))\nxTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        boxplotAxes[xTickIndex].boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[0], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.suptitle('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nonNumericColumnCount = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        nonNumericColumnCount += 1\n\n_, boxplotAxes = plt.subplots(nrows=1, ncols=nonNumericColumnCount, figsize=(10, 5))\nxTickIndex = 0\nfor i, boxplotColumn in enumerate(pokemonDf.columns):\n    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):\n        boxplotAxes[xTickIndex].boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[0], labels=[boxplotColumn])\n        xTickIndex += 1\n\nplt.suptitle('pokemonDf', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "033905362800810339": [
+        {
+            "PreviouslyGenerated": "arcticFoxViolin.analyzeVariables([ (value, eval(value)) for value in arcticFoxViolin.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxViolin.analyzeVariables([ (value, eval(value)) for value in arcticFoxViolin.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905362800810339": [
+        {
+            "PreviouslyGenerated": "plt.boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0], labels=['Attack'])\n\nplt.boxplot(pokemonDf['Defense'], patch_artist=True, positions=[1], labels=['Defense'])\n\nplt.boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[2], labels=['Sp.Atk'])\n\nplt.boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[3], labels=['Sp.Def'])\n\nplt.title('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0], labels=['Attack'])\n\nplt.boxplot(pokemonDf['Defense'], patch_artist=True, positions=[1], labels=['Defense'])\n\nplt.boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[2], labels=['Sp.Atk'])\n\nplt.boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[3], labels=['Sp.Def'])\n\nplt.title('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ],
+    "013905627648270339": [
+        {
+            "PreviouslyGenerated": "_, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))\nboxplotAxes[0].boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0])\nboxplotAxes[0].set_xticks([0], ['Attack'])\n\nboxplotAxes[1].boxplot(pokemonDf['Defense'], patch_artist=True, positions=[0])\nboxplotAxes[1].set_xticks([0], ['Defense'])\n\nboxplotAxes[2].boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[0])\nboxplotAxes[2].set_xticks([0], ['Sp.Atk'])\n\nboxplotAxes[3].boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[0])\nboxplotAxes[3].set_xticks([0], ['Sp.Def'])\n\nplt.suptitle('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "_, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))\nboxplotAxes[0].boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0])\nboxplotAxes[0].set_xticks([0], ['Attack'])\n\nboxplotAxes[1].boxplot(pokemonDf['Defense'], patch_artist=True, positions=[0])\nboxplotAxes[1].set_xticks([0], ['Defense'])\n\nboxplotAxes[2].boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[0])\nboxplotAxes[2].set_xticks([0], ['Sp.Atk'])\n\nboxplotAxes[3].boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[0])\nboxplotAxes[3].set_xticks([0], ['Sp.Def'])\n\nplt.suptitle('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
+    ]
+}

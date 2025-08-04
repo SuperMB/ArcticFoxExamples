@@ -1,0 +1,62 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "243905297917975197": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905682251385197": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905682251385197": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905741341585197": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905297917975197": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905682251385197": [
+        {
+            "PreviouslyGenerated": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues = pd.cut(nBADf['Wins'], bins=5).value_counts()\nindices = [str(index) for index in values.index]\ncombinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]\n\nplt.pie(values, labels=combinedIndices)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "# --bins not specified for pie chart with numeric values, default of 5 will be used\n\nvalues = pd.cut(nBADf['Wins'], bins=5).value_counts()\nindices = [str(index) for index in values.index]\ncombinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]\n\nplt.pie(values, labels=combinedIndices)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905897702725197": [
+        {
+            "PreviouslyGenerated": "values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()\nindices_1 = [str(index) for index in values_1.index]\ncombinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]\n\nplt.pie(values_1, labels=combinedIndices_1)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905665356925197": [
+        {
+            "PreviouslyGenerated": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905246490785197": [
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ]
+}

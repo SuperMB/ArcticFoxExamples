@@ -1,0 +1,343 @@
+{
+    "PlotExamples_Histogram1.py": {
+        "variables": {
+            "pokemonDf": {
+                "columns": [
+                    {
+                        "Name": "Number",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Name",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Type1",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Type2",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Total",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "HP",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Attack",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Defense",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Sp.Atk",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Sp.Def",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Speed",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Generation",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Legendary",
+                        "ColumnType": 3,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Number",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Name",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Type1",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Type2",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Total",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "HP",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Attack",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Defense",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Sp.Atk",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Sp.Def",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Speed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Generation",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Legendary",
+                        "ColumnType": 4
+                    }
+                ],
+                "hasHeaders": false,
+                "type": "pandas.core.frame.DataFrame"
+            },
+            "nBADf": {
+                "columns": [
+                    {
+                        "Name": "Player",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Team",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Age",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "GamesPlayed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Wins",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Losses",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Min",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Points",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FGA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FG_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "3PM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3PA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "3P_Percent",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "FTM",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FTA",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FT%",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "OREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DREB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "REB",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "AST",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TOV",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "STL",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "BLK",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PF",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "FP",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "DD2",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "TD3",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "PlusMinus",
+                        "ColumnType": 1
+                    }
+                ],
+                "hasHeaders": false
+            },
+            "appleStockDf": {
+                "columns": [
+                    {
+                        "Name": "Date",
+                        "ColumnType": 6,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Open",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Close",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Volume",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "HighDivLow",
+                        "ColumnType": 2,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Date",
+                        "ColumnType": 6
+                    },
+                    {
+                        "Name": "Open",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "High",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Low",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Close",
+                        "ColumnType": 2
+                    },
+                    {
+                        "Name": "Volume",
+                        "ColumnType": 1
+                    }
+                ],
+                "hasHeaders": false,
+                "type": {}
+            },
+            "arcticFoxHistogram1": {
+                "type": "module"
+            },
+            "colorCycle": {
+                "type": "list"
+            },
+            "colorCycleIndex": {
+                "type": "int"
+            },
+            "np": {
+                "type": "module"
+            },
+            "pd": {
+                "type": "module"
+            },
+            "plt": {
+                "type": "module"
+            },
+            "High": {},
+            "groupedRows": {
+                "type": "None"
+            },
+            "indexForPlot": {
+                "type": "None"
+            },
+            "HighDivLow": {},
+            "Date": {},
+            "Volume": {}
+        }
+    }
+}
