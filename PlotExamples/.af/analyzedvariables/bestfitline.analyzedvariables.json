@@ -1,5 +1,5 @@
 {
-    "PlotExamples_Pie1.py": {
+    "PlotExamples_BestFitLine.py": {
         "variables": {
             "nBADf": {
                 "columns": [
@@ -149,6 +149,11 @@
                         "Categories": null
                     },
                     {
+                        "Name": "AgeRanges",
+                        "ColumnType": 4,
+                        "Categories": null
+                    },
+                    {
                         "Name": "Player",
                         "ColumnType": 5
                     },
@@ -268,8 +273,11 @@
                 "hasHeaders": false,
                 "type": "pandas.core.frame.DataFrame"
             },
-            "arcticFoxPie1": {
+            "arcticFoxBestFitLine": {
                 "type": "module"
+            },
+            "coefficients": {
+                "type": "numpy.ndarray"
             },
             "colorCycle": {
                 "type": "list"
@@ -280,14 +288,23 @@
             "np": {
                 "type": "module"
             },
+            "p": {
+                "type": "numpy.poly1d"
+            },
             "pd": {
                 "type": "module"
             },
             "plt": {
                 "type": "module"
             },
-            "xTickLabels": {
-                "type": "list"
+            "x_fit": {
+                "type": "numpy.ndarray"
+            },
+            "y_fit": {
+                "type": "numpy.ndarray"
+            },
+            "sys": {
+                "type": "module"
             }
         }
     }

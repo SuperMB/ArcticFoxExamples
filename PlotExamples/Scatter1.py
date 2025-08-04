@@ -23,7 +23,7 @@ print(nBADf.head()) #)1
 ##*** 3    Giannis Antetokounmpo  MIL   30           60    34      26  2039.2    1814  714  1189        60.1    9   50        18.0  377  624  60.4   138   579  717  357  191   50   72  149  3385   49    7        235
 ##*** 4             Jayson Tatum  BOS   27           66    48      18  2403.5    1791  612  1345        45.5  236  670        35.2  331  409  80.9    44   529  573  393  198   73   34  145  3191   29    2        490
 
-#> Scatter --x FG_Percent --y Points 
+#> Scatter --x FG_Percent --y Points --exampleTitle --example
 plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')
 
 plt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')
@@ -34,7 +34,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Team --y Age 
+#> Scatter --x Team --y Age --exampleTitle --example
 plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')
 
 plt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)
@@ -48,7 +48,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter Points 
+#> Scatter Points --exampleTitle --example
 indexForPlot = range(len(nBADf['Points']))
 
 plt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points')
@@ -61,7 +61,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Wins --y BLK AST FG_Percent 
+#> Scatter --x Wins --y BLK AST FG_Percent --exampleTitle --example
 plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK')
 
 colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
@@ -80,7 +80,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Wins --y Losses --z Points 
+#> Scatter --x Wins --y Losses --z Points --exampleTitle --example
 plt.axes(projection='3d')
 
 plt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')

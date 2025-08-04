@@ -1,0 +1,140 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np ",
+            "Existing": "import pandas as pd\nimport numpy as np "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBestFitLine ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBestFitLine "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBestFitLine ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxBestFitLine "
+        },
+        {
+            "PreviouslyGenerated": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import sys\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "013905587235940421": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "243905560350920421": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905560350920421": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "243905945347270421": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905945347270421": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905945347270421": [
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  "
+        }
+    ],
+    "013905357943740421": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\n  ",
+            "Existing": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\n  "
+        },
+        {
+            "PreviouslyGenerated": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\nplt.show() ",
+            "Existing": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\nplt.show() "
+        }
+    ],
+    "033905486473350421": [
+        {
+            "PreviouslyGenerated": "arcticFoxBestFitLine.analyzeVariables([ (value, eval(value)) for value in arcticFoxBestFitLine.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxBestFitLine.analyzeVariables([ (value, eval(value)) for value in arcticFoxBestFitLine.variables(dir() + [] )] ) "
+        }
+    ],
+    "013905486473350421": [
+        {
+            "PreviouslyGenerated": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    plt.scatter(groupedRows['Points'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when Team is {teamValue}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.title('Wins vs Points', fontsize=14, fontweight='bold')\nplt.xlabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    plt.scatter(groupedRows['Points'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when Team is {teamValue}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.title('Wins vs Points', fontsize=14, fontweight='bold')\nplt.xlabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    plt.scatter(groupedRows['Points'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when Team is {teamValue}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.title('Wins vs Points', fontsize=14, fontweight='bold')\nplt.xlabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "nBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    plt.scatter(groupedRows['Points'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when Team is {teamValue}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.title('Wins vs Points', fontsize=14, fontweight='bold')\nplt.xlabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  "
+        },
+        {
+            "PreviouslyGenerated": "nBADf['AgeRangesCategories'] = nBADf['AgeRanges'].astype('category').cat.codes\nfor ageRangesIndex, ageRangesValue in enumerate(nBADf['AgeRanges'].unique()):\n    groupedRows = nBADf[nBADf['AgeRanges'] == ageRangesValue]\n\n    plt.scatter(groupedRows['FG_Percent'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when AgeRanges is {nBADf['AgeRanges'].astype('category').cat.categories[ageRangesIndex]}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['AgeRangesCategories'], axis=1)\n\nplt.title('Wins vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "nBADf['AgeRangesCategories'] = nBADf['AgeRanges'].astype('category').cat.codes\nfor ageRangesIndex, ageRangesValue in enumerate(nBADf['AgeRanges'].unique()):\n    groupedRows = nBADf[nBADf['AgeRanges'] == ageRangesValue]\n\n    plt.scatter(groupedRows['FG_Percent'], groupedRows['Wins'], marker='o', color=colorCycle[colorCycleIndex], label='Wins' + f\" when AgeRanges is {nBADf['AgeRanges'].astype('category').cat.categories[ageRangesIndex]}\", alpha=0.7)\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['AgeRangesCategories'], axis=1)\n\nplt.title('Wins vs FG_Percent', fontsize=14, fontweight='bold')\nplt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Wins', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  "
+        }
+    ],
+    "013905195599620421": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = colorCycleIndex + 1\nnBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    if not (len(groupedRows['Points'].unique()) == 1 or len(groupedRows['Wins'].unique()) == 1):\n        coefficients = np.polyfit(groupedRows['Points'], groupedRows['Wins'], 1)\n        p = np.poly1d(coefficients)\n        x_fit = np.linspace(groupedRows['Points'].min(), groupedRows['Points'].max(), 100)\n        y_fit = p(x_fit)\n        plt.plot(x_fit, y_fit, label='Polynomial Fit (degree=1)', color=colorCycle[colorCycleIndex])\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.legend()\nplt.show() ",
+            "Existing": "colorCycleIndex = colorCycleIndex + 1\nnBADf['TeamCategories'] = nBADf['Team'].astype('category').cat.codes\nfor teamIndex, teamValue in enumerate(nBADf['Team'].unique()):\n    groupedRows = nBADf[nBADf['Team'] == teamValue]\n\n    if not (len(groupedRows['Points'].unique()) == 1 or len(groupedRows['Wins'].unique()) == 1):\n        coefficients = np.polyfit(groupedRows['Points'], groupedRows['Wins'], 1)\n        p = np.poly1d(coefficients)\n        x_fit = np.linspace(groupedRows['Points'].min(), groupedRows['Points'].max(), 100)\n        y_fit = p(x_fit)\n        plt.plot(x_fit, y_fit, label='Polynomial Fit (degree=1)', color=colorCycle[colorCycleIndex])\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['TeamCategories'], axis=1)\n\nplt.legend()\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "colorCycleIndex = colorCycleIndex + 1\nnBADf['AgeRangesCategories'] = nBADf['AgeRanges'].astype('category').cat.codes\nfor ageRangesIndex, ageRangesValue in enumerate(nBADf['AgeRanges'].unique()):\n    groupedRows = nBADf[nBADf['AgeRanges'] == ageRangesValue]\n\n    if not (len(groupedRows['FG_Percent'].unique()) == 1 or len(groupedRows['Wins'].unique()) == 1):\n        coefficients = np.polyfit(groupedRows['FG_Percent'], groupedRows['Wins'], 1)\n        p = np.poly1d(coefficients)\n        x_fit = np.linspace(groupedRows['FG_Percent'].min(), groupedRows['FG_Percent'].max(), 100)\n        y_fit = p(x_fit)\n        plt.plot(x_fit, y_fit, label='Polynomial Fit (degree=1)', color=colorCycle[colorCycleIndex])\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['AgeRangesCategories'], axis=1)\n\nplt.legend()\nplt.show() ",
+            "Existing": "colorCycleIndex = colorCycleIndex + 1\nnBADf['AgeRangesCategories'] = nBADf['AgeRanges'].astype('category').cat.codes\nfor ageRangesIndex, ageRangesValue in enumerate(nBADf['AgeRanges'].unique()):\n    groupedRows = nBADf[nBADf['AgeRanges'] == ageRangesValue]\n\n    if not (len(groupedRows['FG_Percent'].unique()) == 1 or len(groupedRows['Wins'].unique()) == 1):\n        coefficients = np.polyfit(groupedRows['FG_Percent'], groupedRows['Wins'], 1)\n        p = np.poly1d(coefficients)\n        x_fit = np.linspace(groupedRows['FG_Percent'].min(), groupedRows['FG_Percent'].max(), 100)\n        y_fit = p(x_fit)\n        plt.plot(x_fit, y_fit, label='Polynomial Fit (degree=1)', color=colorCycle[colorCycleIndex])\n\n    colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\nnBADf = nBADf.drop(['AgeRangesCategories'], axis=1)\n\nplt.legend()\nplt.show() "
+        }
+    ],
+    "243905486473350421": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905486473350421": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905251673540421": [
+        {
+            "PreviouslyGenerated": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot ",
+            "Existing": "#***RowCategorize: Creates a new column within a dataframe that gives a category to each row of the dataframe. This is useful when you have numerical data, or categorical data that is overclassified, and you want to assign each row a label. For example, if you have a column that goes from 1 to 100, you may want to classify the data as 1-10, 10-20, 20-30, etc.\n#***\n#***RowCategorize assigns a category to each row of the dataframe based a specified condition / breakpoints.\n#***Currently, RowCategorize only works with a single column and specified breakpoints.\n#***The following use cases are currently supported for a single column.\n#***\n#***\n#***Example 1: Categorize including all below and all above breakpoints.\n#***\n#***Let's assume there's a temperature column. We want to classify the temperatures as frigid, cold, warm, hot.\n#***For our case, we'll say frigid is temperatures less than 20, cold are those less than 60, warm is less than 80,\n#***and otherwise hot. We can create this categorization as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80, hot\n#***\n#***\n#***Example 2: Don't include a category above the other categories.\n#***\n#***We will continue with the temperature example. This time, we will onle use frigid, cold, and warm. We will not\n#***categorize all temps above 80 as hot, they will just be left empty. This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories frigid < 20, cold < 60, warm < 80\n#***\n#***\n#***Example 3: Don't include a category below the other categories.\n#***\n#***We will continue with the temperature example. This time, instead of not using hot, we will omit the use of frigid.\n#***We will onle use cold, warm, and hot. We will not categorize all temps below 20 as frigid, they will just be left\n#***empty. This time, we want to specify cold is greater than 20, warms is greater than 60, and hot is greater than 80.\n#***This can be done as follows:\n#***\n#***#> RowCategorize --columns Temperature --categories 20 < cold, 60 < warm, 80 < hot "
+        },
+        {
+            "PreviouslyGenerated": "nBADf['AgeCategorized'] = pd.cut(x=nBADf['Age'], bins=[-sys.maxsize,20,30,40,50,sys.maxsize], labels=['LessThan20','20-30','30-40','40-50','Over50'], include_lowest=True) ",
+            "Existing": "nBADf['AgeCategorized'] = pd.cut(x=nBADf['Age'], bins=[-sys.maxsize,20,30,40,50,sys.maxsize], labels=['LessThan20','20-30','30-40','40-50','Over50'], include_lowest=True) "
+        }
+    ],
+    "013905357765020421": [
+        {
+            "PreviouslyGenerated": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1",
+            "Existing": "#***ColumnRename: Renames one or more columns in a dataframe through one of the following methods:\n#***- Entirely change the name of a column\n#***- Add a suffix to one or more columns\n#***- Add a prefix to one or more columns\n#***- Change matching portions of one or more column names to a new value\n#***\n#***Renames one or more columns within the dataframe, or change a portion of a column's name.  Additionally, the column names are renamed in respective order.\n#***- Fully rename one or more columns? #> `select --columns ? --to ?\n#***- Change/replace part of one or more column names? #> `select ? --replace ? --with ? --af a1\n#***- Add a prefix to one or more column names? #> `select ? --prefix ? --af a1\n#***- Add a suffix to one or more column names? #> `select ? --suffix ? --af a1"
+        },
+        {
+            "PreviouslyGenerated": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance ",
+            "Existing": "#****** --to ? ***\n#***How do you set --to? These will be the new column names, must match the number of columns given in --columns. Change --to ? to a list of one or more columns.\n#***- Single Column Example: --to LowestSpeed\n#***- Multiple Column Example: --to MaxSpeed MaxAcceleration MaxDistance "
+        },
+        {
+            "PreviouslyGenerated": "nBADf = nBADf.rename(columns={'AgeCategorized': 'AgeRanges'}) ",
+            "Existing": "nBADf = nBADf.rename(columns={'AgeCategorized': 'AgeRanges'}) "
+        }
+    ]
+}

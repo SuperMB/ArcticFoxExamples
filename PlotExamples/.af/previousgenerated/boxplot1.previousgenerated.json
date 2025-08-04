@@ -15,6 +15,10 @@
         {
             "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype ",
             "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype\nfrom pandas.api.types import is_bool_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom pandas.api.types import is_numeric_dtype\nfrom pandas.api.types import is_bool_dtype "
         }
     ],
     "013905437280450301": [

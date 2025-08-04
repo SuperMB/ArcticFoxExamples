@@ -3,7 +3,6 @@ from pandas.api.types import is_bool_dtype
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import arcticFoxViolin1
 from pandas.api.types import is_numeric_dtype  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None)  
@@ -32,7 +31,7 @@ for i, boxplotColumn in enumerate(pokemonDf.columns):
 
 xTicks = []
 for i, boxplotColumn in enumerate(pokemonDf.columns):
-    if is_numeric_dtype(pokemonDf[boxplotColumn]):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
         xTicks.append(boxplotColumn)
 
 plt.gca().set_xticklabels(xTicks)
@@ -44,35 +43,68 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major')
 plt.show() 
 
-#> Violin --separate 
-#ISSUE: Could not find column or variable named: _af_XDataNotPresent_af_
-#***run script to analyze variables
-#ISSUE: Could not find column or variable named: _af_XDataNotPresent_af_ 
+#> Violin --separate --exampleTitle --example
+nonNumericColumnCount = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        nonNumericColumnCount += 1
 
-#> Violin --x Attack Defense Sp.Atk Sp.Def 
-#ISSUE: Could not find column or variable named: Sp.Def
-#ISSUE: Could not find column or variable named: Sp.Def
-#ISSUE: Could not find column or variable named: Sp.Atk
-#ISSUE: Could not find column or variable named: Sp.Atk
-#ISSUE: Could not find column or variable named: Defense
-#ISSUE: Could not find column or variable named: Defense
-#ISSUE: Could not find column or variable named: Attack
-#***run script to analyze variables
-#ISSUE: Could not find column or variable named: Attack
-#***run script to analyze variables - need to analyze xTicks for columns 
+_, boxplotAxes = plt.subplots(nrows=1, ncols=nonNumericColumnCount, figsize=(10, 5))
+xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        boxplotAxes[xTickIndex].violinplot(pokemonDf[boxplotColumn],  positions=[0])
+        xTickIndex += 1
 
-#> Violin --x Attack Defense Sp.Atk Sp.Def --separate 
-#ISSUE: Could not find column or variable named: Sp.Def
-#ISSUE: Could not find column or variable named: Sp.Def
-#ISSUE: Could not find column or variable named: Sp.Atk
-#ISSUE: Could not find column or variable named: Sp.Atk
-#ISSUE: Could not find column or variable named: Defense
-#ISSUE: Could not find column or variable named: Defense
-#ISSUE: Could not find column or variable named: Attack
-#***run script to analyze variables
-#ISSUE: Could not find column or variable named: Attack
-#***run script to analyze variables - need to analyze xTicks for columns 
+xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        boxplotAxes[xTickIndex].set_xticklabels([boxplotColumn])
+        boxplotAxes[xTickIndex].set_xticks([0])
+        xTickIndex += 1
 
+plt.suptitle('pokemonDf', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')
+plt.show() 
 
- 
-arcticFoxViolin1.analyzeVariables([ (value, eval(value)) for value in arcticFoxViolin1.variables(dir() + [] )] ) 
+#> Violin --x Attack Defense Sp.Atk Sp.Def --exampleTitle --example
+plt.violinplot(pokemonDf['Attack'],  positions=[0])
+
+plt.violinplot(pokemonDf['Defense'],  positions=[1])
+
+plt.violinplot(pokemonDf['Sp.Atk'],  positions=[2])
+
+plt.violinplot(pokemonDf['Sp.Def'],  positions=[3])
+
+xTickLabels = ['Attack', 'Defense', 'Sp.Atk', 'Sp.Def']
+plt.gca().set_xticklabels(xTickLabels)
+plt.gca().set_xticks(range(len(xTickLabels)))
+
+plt.title('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')
+plt.show() 
+
+#> Violin --x Attack Defense Sp.Atk Sp.Def --separate --exampleTitle --example
+_, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))
+boxplotAxes[0].violinplot(pokemonDf['Attack'],  positions=[0])
+boxplotAxes[0].set_xticks([0], ['Attack'])
+
+boxplotAxes[1].violinplot(pokemonDf['Defense'],  positions=[0])
+boxplotAxes[1].set_xticks([0], ['Defense'])
+
+boxplotAxes[2].violinplot(pokemonDf['Sp.Atk'],  positions=[0])
+boxplotAxes[2].set_xticks([0], ['Sp.Atk'])
+
+boxplotAxes[3].violinplot(pokemonDf['Sp.Def'],  positions=[0])
+boxplotAxes[3].set_xticks([0], ['Sp.Def'])
+
+plt.suptitle('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')
+plt.show() 
+

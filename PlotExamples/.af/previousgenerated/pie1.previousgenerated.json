@@ -1,6 +1,10 @@
 {
     "0000": [
         {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxPie1 ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticFoxPie1 "
+        },
+        {
             "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
             "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
         }
@@ -12,6 +16,10 @@
         }
     ],
     "243905682251385197": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        },
         {
             "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
             "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
@@ -51,12 +59,66 @@
         {
             "PreviouslyGenerated": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() ",
             "Existing": "values_2 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_2 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_2 = [str(pieChartLabels[i]) + ' - ' + str(round(values_2[i] * 100 / sum(values_2), 1)) + '%' for i in range(len(values_2))]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_3 = [str(pieChartLabels[i]) + ' - ' + str(round(values_3[i] * 100 / sum(values_3), 1)) + '%' for i in range(len(values_3))]\n\nplt.pie(values_3, labels=combinedIndices_3)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values\nindices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index\npieChartLabels = nBADf['Team'].unique()\ncombinedIndices_3 = [str(pieChartLabels[i]) + ' - ' + str(round(values_3[i] * 100 / sum(values_3), 1)) + '%' for i in range(len(values_3))]\n\nplt.pie(values_3, labels=combinedIndices_3)\n\nplt.title('Team', fontsize=14, fontweight='bold')\nplt.show() "
         }
     ],
     "013905246490785197": [
         {
             "PreviouslyGenerated": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() ",
             "Existing": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: ${value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: {value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "nBADfGroup = nBADf.groupby('Team')['Points'].sum()\nnBADfGroup = nBADfGroup.sort_values()\npieLabels = [f'{name}: {value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]\n\nif (nBADfGroup <= 0).all():\n    nBADfGroup *= -1\n\nplt.pie(nBADfGroup, labels=pieLabels)\n\ncolorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)\n\nplt.title('Points', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "013905195664695197": [
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=[5, 25, 50, 60, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=[5, 25, 50, 60, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=[25, 50, 60, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=[25, 50, 60, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=[25, 50, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=[25, 50, 70]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=[20, 30, 40, 50]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=[20, 30, 40, 50]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        },
+        {
+            "PreviouslyGenerated": "values_2 = pd.cut(nBADf['Wins'], bins=[0, 20, 30, 40, 50, 100]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() ",
+            "Existing": "values_2 = pd.cut(nBADf['Wins'], bins=[0, 20, 30, 40, 50, 100]).value_counts()\nindices_2 = [str(index) for index in values_2.index]\ncombinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]\n\nplt.pie(values_2, labels=combinedIndices_2)\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.show() "
+        }
+    ],
+    "243905655459005197": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905655459005197": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905655459005197": [
+        {
+            "PreviouslyGenerated": "plt.violinplot(nBADf['Wins'],  positions=[0])\n\nxTickLabels = ['Wins']\nplt.gca().set_xticklabels(xTickLabels)\nplt.gca().set_xticks(range(len(xTickLabels)))\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major')\nplt.show() ",
+            "Existing": "plt.violinplot(nBADf['Wins'],  positions=[0])\n\nxTickLabels = ['Wins']\nplt.gca().set_xticklabels(xTickLabels)\nplt.gca().set_xticks(range(len(xTickLabels)))\n\nplt.title('Wins', fontsize=14, fontweight='bold')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major')\nplt.show() "
+        }
+    ],
+    "033905682251385197": [
+        {
+            "PreviouslyGenerated": "arcticFoxPie1.analyzeVariables([ (value, eval(value)) for value in arcticFoxPie1.variables(dir() + [] )] ) ",
+            "Existing": "arcticFoxPie1.analyzeVariables([ (value, eval(value)) for value in arcticFoxPie1.variables(dir() + [] )] ) "
         }
     ]
 }

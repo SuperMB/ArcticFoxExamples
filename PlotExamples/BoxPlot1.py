@@ -1,9 +1,9 @@
-from pandas.api.types import is_bool_dtype
  
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from pandas.api.types import is_numeric_dtype  
+from pandas.api.types import is_numeric_dtype
+from pandas.api.types import is_bool_dtype  
 pd.set_option('display.width', 10000)
 pd.set_option('display.max_columns', None)  
 plt.style.use("darktheme.mplstyle")
@@ -24,7 +24,7 @@ print(pokemonDf.head()) #)1
 ##*** 3       3  VenusaurMega Venusaur  Grass  Poison    625  80     100      123     122     120     80           1      False
 ##*** 4       4             Charmander   Fire     NaN    309  39      52       43      60      50     65           1      False
 
-#> BoxPlot --exampleTitle --example 
+#> BoxPlot --exampleTitle Create Boxplots of All Numeric Columns --example Use a boxplot to quickly understand the distribution of each numeric column in the dataframe. This example automatically creates a single boxplot for each numeric column, all plotted together on one figure for easy comparison.
 xTickIndex = 0
 for i, boxplotColumn in enumerate(pokemonDf.columns):
     if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
@@ -37,7 +37,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> BoxPlot --separate 
+#> BoxPlot --separate --exampleTitle Create Separate Boxplot Axis for Each Numeric Column --example Instead of plotting all numeric columns in a single axis, this example generates a dedicated subplot for each numeric column. This layout allows you to see each distribution more clearly and avoids plots having vastly different ranges when there are many numeric fields.
 nonNumericColumnCount = 0
 for i, boxplotColumn in enumerate(pokemonDf.columns):
     if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
@@ -56,7 +56,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> BoxPlot --x Attack Defense Sp.Atk Sp.Def 
+#> BoxPlot --x Attack Defense Sp.Atk Sp.Def --exampleTitle Create Boxplots for Selected Columns --example Rather than plotting all numeric columns, this example focuses only on a specified subset: Attack, Defense, Sp.Atk, and Sp.Def. These boxplots help us compare the variability and central tendencies of key Pokemon battle attributes.
 plt.boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0], labels=['Attack'])
 
 plt.boxplot(pokemonDf['Defense'], patch_artist=True, positions=[1], labels=['Defense'])
@@ -71,7 +71,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> BoxPlot --x Attack Defense Sp.Atk Sp.Def --separate 
+#> BoxPlot --x Attack Defense Sp.Atk Sp.Def --separate --exampleTitle Create Separate Boxplot Axis for Selected Columns --example This example combines selective plotting with individual subplots, allowing us to view the distribution of specific columns (Attack, Defense, Sp.Atk, and Sp.Def) each in its own axis. This makes detailed comparison easier, especially when columns vary in scale or spread.
 _, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))
 boxplotAxes[0].boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0])
 boxplotAxes[0].set_xticks([0], ['Attack'])

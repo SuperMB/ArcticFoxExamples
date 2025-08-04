@@ -1,0 +1,50 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt "
+        }
+    ],
+    "243905328413022414": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "243905264956462414": [
+        {
+            "PreviouslyGenerated": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "plt.style.use(\"darktheme.mplstyle\")\ncolorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905264956462414": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905307353912414": [
+        {
+            "PreviouslyGenerated": "nBADf = pd.read_csv('NBA.csv') ",
+            "Existing": "nBADf = pd.read_csv('NBA.csv') "
+        }
+    ],
+    "013905328413022414": [
+        {
+            "PreviouslyGenerated": "print(nBADf.head()) #)1 ",
+            "Existing": "print(nBADf.head()) #)1 "
+        }
+    ],
+    "013905264956462414": [
+        {
+            "PreviouslyGenerated": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  ",
+            "Existing": "plt.scatter(nBADf['Age'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')\n\nplt.title('Points vs Age', fontsize=14, fontweight='bold')\nplt.xlabel('Age', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\n  "
+        }
+    ],
+    "013905316437652414": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\nplt.show() ",
+            "Existing": "colorCycleIndex = colorCycleIndex + 1\n\ncoefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)\np = np.poly1d(coefficients)\nx_fit = np.linspace( ( nBADf['Age'] ).min(), ( nBADf['Age'] ).max(), 100)\ny_fit = p(x_fit)\nplt.plot(x_fit, y_fit, label=f'{coefficients[0]:.3f}x + {coefficients[1]:.3f}', color=colorCycle[colorCycleIndex])\n\nplt.legend()\nplt.show() "
+        }
+    ]
+}
