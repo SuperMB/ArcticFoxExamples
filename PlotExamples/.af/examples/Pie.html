@@ -1,0 +1,88 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Pie</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a pie chart to show either categorical or range distributions / counts</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">values</span>: Specifies the data to use in the pie chart</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">bins</span>: Specifies the number of bins to use for numerical values</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Pie Chart with Default Binning</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When plotting a pie chart of a numeric column without specifying bins, a default of 5 equal-width bins is applied. This gives a quick distribution overview of the Wins column by grouping win counts into 5 ranges automatically.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Pie --values Wins<span>
+AFLEFT  # --bins not specified for pie chart with numeric values, default of 5 will be used
+
+values = pd.cut(nBADf['Wins'], bins=5).value_counts()
+indices = [str(index) for index in values.index]
+combinedIndices = [str(indices[i]) + ' - ' + str(round(value[1] * 100 / sum(values), 1)) + '%' for i, value in enumerate(values.items())]
+
+plt.pie(values, labels=combinedIndices)
+
+plt.title('Wins', fontsize=14, fontweight='bold')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Pie Chart with Specified Number of Bins</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can increase granularity by specifying the number of bins. This example divides the Wins column into 10 evenly spaced bins to provide a more detailed breakdown of the data distribution.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Pie --values Wins --bins 10<span>
+AFLEFT  values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()
+indices_1 = [str(index) for index in values_1.index]
+combinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]
+
+plt.pie(values_1, labels=combinedIndices_1)
+
+plt.title('Wins', fontsize=14, fontweight='bold')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Pie Chart with Custom Bin Ranges</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of relying on equal-sized bins, you can define custom bin ranges that reflect domain-specific thresholds. In this example, the Wins column is bucketed into defined intervals that reflect milestone win totals.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Pie --values Wins --bins 0 20 30 40 50 100<span>
+AFLEFT  values_2 = pd.cut(nBADf['Wins'], bins=[0, 20, 30, 40, 50, 100]).value_counts()
+indices_2 = [str(index) for index in values_2.index]
+combinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]
+
+plt.pie(values_2, labels=combinedIndices_2)
+
+plt.title('Wins', fontsize=14, fontweight='bold')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Pie Chart of Categorical Values</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When using a categorical column such as Team, the pie chart shows the count of each unique value. This example groups by team name and shows how frequently each team appears in the dataset. Unsurprisingly, each team has roughly the same number of players.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Pie --values Team<span>
+AFLEFT  values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values
+indices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index
+pieChartLabels = nBADf['Team'].unique()
+combinedIndices_3 = [str(pieChartLabels[i]) + ' - ' + str(round(values_3[i] * 100 / sum(values_3), 1)) + '%' for i in range(len(values_3))]
+
+plt.pie(values_3, labels=combinedIndices_3)
+
+plt.title('Team', fontsize=14, fontweight='bold')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Pie Chart of Aggregated Values by Group</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This example uses the group option to sum the Points for each team. The pie chart then displays total points scored by each team, allowing you to compare their overall offensive output visually.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Pie --values Points --group Team<span>
+AFLEFT  nBADfGroup = nBADf.groupby('Team')['Points'].sum()
+nBADfGroup = nBADfGroup.sort_values()
+pieLabels = [f'{name}: {value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]
+
+if (nBADfGroup <= 0).all():
+    nBADfGroup *= -1
+
+plt.pie(nBADfGroup, labels=pieLabels)
+
+colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+
+plt.title('Points', fontsize=14, fontweight='bold')  AFRIGHT</span></code></pre>
+</div> 
+

@@ -1,0 +1,97 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Histogram</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Plots a histogram using the matplotlib library for the data provided</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data column to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">y</span>: Specifies the data column to use on the y-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">bins</span>: the number of bins, channels, buckets, etc. to be used by the histogram</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">3d</span>: Flag that projects 2 dimensional groups onto a 3 dimensional plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">year</span>: Specifies the year component of the dataset or time-related analysis. This flag allows you to filter or focus on data within a specific year for more granular insights</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">month </span>: Denotes the month component of the dataset or time-related analysis. This flag helps you zoom into data for a particular month within a given year, offering a focused view of seasonal or monthly trends</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">day</span>: Refers to the day component of the dataset or time-related analysis. This flag filters the data to represent specific days, providing a fine-grained level of detail for daily trends or activities. </div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Plot Histogram of Single Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A histogram is useful to see how values are distributed across a column. In this example, we plot the histogram of the High column to observe the distribution of daily high prices in the Apple stock dataset.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Histogram --x High<span>
+AFLEFT  plt.hist(appleStockDf['High'], bins=10)
+
+plt.title('High Histogram', fontsize=14, fontweight='bold')
+plt.xlabel('High', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Plot Histogram of Computed Ratio Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can plot histograms of computed columns the same way as standard columns. Here we first compute the HighDivLow ratio by dividing the High column by the Low column, then plot a histogram to analyze how this ratio varies across the dataset.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Histogram --x HighDivLow<span>
+AFLEFT  plt.hist(appleStockDf['HighDivLow'], bins=10)
+
+plt.title('HighDivLow Histogram', fontsize=14, fontweight='bold')
+plt.xlabel('HighDivLow', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Plot Histogram of Dates</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Although histograms are typically used for numeric data, you can also visualize how dates are distributed in a dataset. This example shows how the Apple stock data is spread across time by plotting a histogram of the Date column. Unsurprisingly, the data is roughly evenly distributed according to the dates as the stock was traded daily during the week.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Histogram --x Date<span>
+AFLEFT  appleStockDf['Date'] = pd.to_datetime(appleStockDf['Date'])
+
+plt.hist(appleStockDf['Date'], bins=10)
+
+plt.title('Date Histogram', fontsize=14, fontweight='bold')
+plt.xlabel('Date', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Plot Histogram with Custom Bin Count</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">You can specify the number of bins in a histogram to increase granularity. Here, we use 50 bins to better understand the distribution of trading Volume in the Apple stock data, revealing more detail than the default setting.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Histogram --x Volume --bins 50<span>
+AFLEFT  plt.hist(appleStockDf['Volume'], bins=50)
+
+plt.title('Volume Histogram', fontsize=14, fontweight='bold')
+plt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 5 - Compare Distributions of Multiple Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">When comparing the distributions of several related columns, you can overlay multiple histograms on the same plot. In this case, we compare Attack, Sp.Atk, Defense, and Sp.Def from the Pokemon dataset, using the same bin count to observe their relative distributions.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Histogram --x Attack Sp.Atk Defense Sp.Def --bins 20<span>
+AFLEFT  plt.hist(pokemonDf['Attack'], bins=20, label='Attack', alpha=0.4)
+
+plt.hist(pokemonDf['Sp.Atk'], bins=20, label='Sp.Atk', alpha=0.4)
+
+plt.hist(pokemonDf['Defense'], bins=20, label='Defense', alpha=0.4)
+
+plt.hist(pokemonDf['Sp.Def'], bins=20, label='Sp.Def', alpha=0.4)
+
+plt.title('Attack, Sp.Atk, Defense, and Sp.Def Histogram', fontsize=14, fontweight='bold')
+plt.xlabel('Attack, Sp.Atk, Defense, and Sp.Def', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+

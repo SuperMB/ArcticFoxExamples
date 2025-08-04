@@ -1,0 +1,96 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">BoxPlot</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a box and whisker plot to show the distribution of data for 1 or more columns, shows the quantiles and outliers for different columns</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data columns, series, or lists to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">separate</span>: Graphs each box plot on its own xy axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">year</span>: Specifies the year component of the dataset or time-related analysis. This flag allows you to filter or focus on data within a specific year for more granular insights</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">month </span>: Denotes the month component of the dataset or time-related analysis. This flag helps you zoom into data for a particular month within a given year, offering a focused view of seasonal or monthly trends</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">day</span>: Refers to the day component of the dataset or time-related analysis. This flag filters the data to represent specific days, providing a fine-grained level of detail for daily trends or activities. </div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Create Boxplots of All Numeric Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Use a boxplot to quickly understand the distribution of each numeric column in the dataframe. This example automatically creates a single boxplot for each numeric column, all plotted together on one figure for easy comparison.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> BoxPlot<span>
+AFLEFT  xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        plt.boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[xTickIndex], labels=[boxplotColumn])
+        xTickIndex += 1
+
+plt.title('pokemonDf', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Create Separate Boxplot Axis for Each Numeric Column</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of plotting all numeric columns in a single axis, this example generates a dedicated subplot for each numeric column. This layout allows you to see each distribution more clearly and avoids plots having vastly different ranges when there are many numeric fields.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> BoxPlot --separate<span>
+AFLEFT  nonNumericColumnCount = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        nonNumericColumnCount += 1
+
+_, boxplotAxes = plt.subplots(nrows=1, ncols=nonNumericColumnCount, figsize=(10, 5))
+xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        boxplotAxes[xTickIndex].boxplot(pokemonDf[boxplotColumn], patch_artist=True, positions=[0], labels=[boxplotColumn])
+        xTickIndex += 1
+
+plt.suptitle('pokemonDf', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Create Boxplots for Selected Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Rather than plotting all numeric columns, this example focuses only on a specified subset: Attack, Defense, Sp.Atk, and Sp.Def. These boxplots help us compare the variability and central tendencies of key Pokemon battle attributes.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> BoxPlot --x Attack Defense Sp.Atk Sp.Def<span>
+AFLEFT  plt.boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0], labels=['Attack'])
+
+plt.boxplot(pokemonDf['Defense'], patch_artist=True, positions=[1], labels=['Defense'])
+
+plt.boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[2], labels=['Sp.Atk'])
+
+plt.boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[3], labels=['Sp.Def'])
+
+plt.title('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Create Separate Boxplot Axis for Selected Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This example combines selective plotting with individual subplots, allowing us to view the distribution of specific columns (Attack, Defense, Sp.Atk, and Sp.Def) each in its own axis. This makes detailed comparison easier, especially when columns vary in scale or spread.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> BoxPlot --x Attack Defense Sp.Atk Sp.Def --separate<span>
+AFLEFT  _, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))
+boxplotAxes[0].boxplot(pokemonDf['Attack'], patch_artist=True, positions=[0])
+boxplotAxes[0].set_xticks([0], ['Attack'])
+
+boxplotAxes[1].boxplot(pokemonDf['Defense'], patch_artist=True, positions=[0])
+boxplotAxes[1].set_xticks([0], ['Defense'])
+
+boxplotAxes[2].boxplot(pokemonDf['Sp.Atk'], patch_artist=True, positions=[0])
+boxplotAxes[2].set_xticks([0], ['Sp.Atk'])
+
+boxplotAxes[3].boxplot(pokemonDf['Sp.Def'], patch_artist=True, positions=[0])
+boxplotAxes[3].set_xticks([0], ['Sp.Def'])
+
+plt.suptitle('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+

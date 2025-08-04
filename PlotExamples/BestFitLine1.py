@@ -31,7 +31,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
   
 
-#> BestFitLine  --x Age --y Points --samePlot --exampleTitle Add a Best Fit Line to Scatter Plot --example After plotting two variables on a scatter plot, it is often useful to include a best fit line to help visualize the overall trend. In this example, we fit a line to the relationship between player Age and Points, and display it on the same plot to highlight the directional correlation in the data.
+#> BestFitLine  --x Age --y Points --samePlot --exampleTitle Add a Best Fit Line to Scatter Plot --example After plotting two variables on a scatter plot, it is often useful to include a best fit line to help visualize the overall trend. In this example, we fit a line to the relationship between player Age and Points, and display it on the same plot to highlight the directional correlation in the data. 
 colorCycleIndex = colorCycleIndex + 1
 
 coefficients = np.polyfit(nBADf['Age'], nBADf['Points'], 1)

@@ -1,0 +1,89 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Scatter</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a scatter plot that can be 2 or 3 dimensions. Can also use --group or --where conditions.</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data column to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">y</span>: Specifies the data column to use on the y-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">z</span>: Specifies the data column to use on the z-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">group</span>: Column specifying how to color the data in the plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">3d</span>: Flag that projects 2 dimensional groups onto a 3 dimensional plot</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">year</span>: Specifies the year component of the dataset or time-related analysis. This flag allows you to filter or focus on data within a specific year for more granular insights</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">month </span>: Denotes the month component of the dataset or time-related analysis. This flag helps you zoom into data for a particular month within a given year, offering a focused view of seasonal or monthly trends</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">day</span>: Refers to the day component of the dataset or time-related analysis. This flag filters the data to represent specific days, providing a fine-grained level of detail for daily trends or activities. </div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Scatter Plot of Numerical Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">A basic scatter plot showing how many points each player scored relative to their field goal percentage. This type of chart visualizes whether more efficient shooters tend to score more points overall.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Scatter --x FG_Percent --y Points<span>
+AFLEFT  plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')
+
+plt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')
+plt.xlabel('FG_Percent', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Scatter Plot of Numerical vs Categorical Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This scatter plot compares the age of each player by their team. The x-axis shows each team labels, while the y-axis shows player age. This examples identifies age distribution across teams.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Scatter --x Team --y Age<span>
+AFLEFT  plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')
+
+plt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)
+plt.gca().set_xticks(range(len(nBADf['Team'].astype('category').cat.categories)))
+
+plt.title('Age vs Team', fontsize=14, fontweight='bold')
+plt.xlabel('Team', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Age', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Scatter Plot by Index</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">In this example, we visualize the Points column directly against its index. This creates a simple trend view of scoring across the dataset making it easy to see data across a single column.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Scatter Points<span>
+AFLEFT  indexForPlot = range(len(nBADf['Points']))
+
+plt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points')
+
+plt.title('Points vs Index', fontsize=14, fontweight='bold')
+plt.xlabel('Index', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('Points', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 4 - Scatter Plot of Multiple Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">We compare three different performance metrics — BLK, AST, and FG_Percent — against Wins. Each metric is plotted with a different color on the same scatter plot, making it easier to spot how these variables trend with team success.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Scatter --x Wins --y BLK AST FG_Percent<span>
+AFLEFT  plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK')
+
+colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+
+plt.scatter(nBADf['Wins'], nBADf['AST'], color=colorCycle[colorCycleIndex], label='AST')
+
+colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
+
+plt.scatter(nBADf['Wins'], nBADf['FG_Percent'], color=colorCycle[colorCycleIndex], label='FG_Percent')
+
+plt.title('BLK, AST, and FG_Percent vs Wins', fontsize=14, fontweight='bold')
+plt.xlabel('Wins', fontsize=12, fontweight='bold', color='gray')
+plt.ylabel('BLK, AST, and FG_Percent', fontsize=12, fontweight='bold', color='gray')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major', labelsize=10)  AFRIGHT</span></code></pre>
+</div> 
+

@@ -1,0 +1,88 @@
+<div style="margin-bottom:0;"><span style="margin-bottom:0;"><a href="https://arcticfox.codes/kits/?leash=plot&kit=plot">&lt-plot</a></span></div>
+<div style="margin-bottom:20px;"><h1 style="color:white;margin-bottom:0;">Violin</h1></div>
+<div style="color:white;text-alignment:left;"><div style="max-width:600px;display:inline-block;">Creates a violin plot to show the distribution of data for 1 or more columns, shows a shape between the min and max of a column the show the distribution of data from the min to the max</div></div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Options</h2></div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">x</span>: Specifies the data column, or columns (can be more than one), to use on the x-axis</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">where</span>: Condition on which to filter the data</div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">samePlot</span>: A flag that forces multiple plots to be rendered on the same plot </div>
+<div style="color:white;margin-bottom:0;"><span style="color:#028fed">sameWindow </span>: A flag that forces multiple plots to be rendered on the same window</div>
+<div style="color:white;margin-top:60px;margin-bottom:20px;"><h2 style="color:white;margin-bottom:0;">Examples</h2></div>
+<div style="color:white;margin-bottom:15px;"><h4 style="color:white;margin-bottom:0;">Example 1 - Violin Plots for All Numeric Columns</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Violin charts help visualize the distribution and density of data. This example creates a single combined plot that includes violin charts for each numeric column in the dataframe. Columns that are non-numeric are excluded.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Violin<span>
+AFLEFT  xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        plt.violinplot(pokemonDf[boxplotColumn],  positions=[xTickIndex])
+        xTickIndex += 1
+
+xTicks = []
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        xTicks.append(boxplotColumn)
+
+plt.gca().set_xticklabels(xTicks)
+plt.gca().set_xticks(range(len(xTicks)))
+
+plt.title('pokemonDf', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 2 - Violin Plots on Separate Axis</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">Instead of showing all numeric columns in a single plot, this example separates the violin charts into individual subplots. Each subplot represents a single numeric column, making it easier to compare distributions side-by-side and prevents columns with vastly different distributions from being visualized poorly.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Violin --separate<span>
+AFLEFT  nonNumericColumnCount = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        nonNumericColumnCount += 1
+
+_, boxplotAxes = plt.subplots(nrows=1, ncols=nonNumericColumnCount, figsize=(10, 5))
+xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        boxplotAxes[xTickIndex].violinplot(pokemonDf[boxplotColumn],  positions=[0])
+        xTickIndex += 1
+
+xTickIndex = 0
+for i, boxplotColumn in enumerate(pokemonDf.columns):
+    if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
+        boxplotAxes[xTickIndex].set_xticklabels([boxplotColumn])
+        boxplotAxes[xTickIndex].set_xticks([0])
+        xTickIndex += 1
+
+plt.suptitle('pokemonDf', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')  AFRIGHT</span></code></pre>
+</div> 
+
+<div style="color:white;margin-bottom:15px;margin-top:60px;"><h4 style="color:white;margin-bottom:0;">Example 3 - Violin Plots for Selected Columns on Separate Axis</h4></div>
+
+<div style="text-alignment:left;"><div style="color:white;max-width:600px;">This example plots only the Attack, Defense, Sp.Atk, and Sp.Def columns, but each as its own subplot. This view is useful when the goal is to compare the shape and spread of each distribution individually without disparate distributions.</div></div>
+<div>
+    <pre style="background-color: #1e1e1e;"><code class="language-python">#> Violin --x Attack Defense Sp.Atk Sp.Def --separate<span>
+AFLEFT  _, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))
+boxplotAxes[0].violinplot(pokemonDf['Attack'],  positions=[0])
+boxplotAxes[0].set_xticks([0], ['Attack'])
+
+boxplotAxes[1].violinplot(pokemonDf['Defense'],  positions=[0])
+boxplotAxes[1].set_xticks([0], ['Defense'])
+
+boxplotAxes[2].violinplot(pokemonDf['Sp.Atk'],  positions=[0])
+boxplotAxes[2].set_xticks([0], ['Sp.Atk'])
+
+boxplotAxes[3].violinplot(pokemonDf['Sp.Def'],  positions=[0])
+boxplotAxes[3].set_xticks([0], ['Sp.Def'])
+
+plt.suptitle('Attack, Defense, Sp.Atk, and Sp.Def', fontsize=14, fontweight='bold')
+plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5)
+plt.tick_params(axis='both', which='major')  AFRIGHT</span></code></pre>
+</div> 
+

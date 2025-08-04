@@ -23,7 +23,7 @@ print(nBADf.head()) #)1
 ##*** 3    Giannis Antetokounmpo  MIL   30           60    34      26  2039.2    1814  714  1189        60.1    9   50        18.0  377  624  60.4   138   579  717  357  191   50   72  149  3385   49    7        235
 ##*** 4             Jayson Tatum  BOS   27           66    48      18  2403.5    1791  612  1345        45.5  236  670        35.2  331  409  80.9    44   529  573  393  198   73   34  145  3191   29    2        490
 
-#> Scatter --x FG_Percent --y Points --exampleTitle --example
+#> Scatter --x FG_Percent --y Points --exampleTitle Scatter Plot of Numerical Columns --example A basic scatter plot showing how many points each player scored relative to their field goal percentage. This type of chart visualizes whether more efficient shooters tend to score more points overall.
 plt.scatter(nBADf['FG_Percent'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')
 
 plt.title('Points vs FG_Percent', fontsize=14, fontweight='bold')
@@ -34,7 +34,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Team --y Age --exampleTitle --example
+#> Scatter --x Team --y Age --exampleTitle Scatter Plot of Numerical vs Categorical Columns --example This scatter plot compares the age of each player by their team. The x-axis shows each team labels, while the y-axis shows player age. This examples identifies age distribution across teams.
 plt.scatter(nBADf['Team'].astype('category').cat.codes, nBADf['Age'], color=colorCycle[colorCycleIndex], label='Age')
 
 plt.gca().set_xticklabels(nBADf['Team'].astype('category').cat.categories, rotation=45)
@@ -48,7 +48,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter Points --exampleTitle --example
+#> Scatter Points --exampleTitle Scatter Plot by Index --example In this example, we visualize the Points column directly against its index. This creates a simple trend view of scoring across the dataset making it easy to see data across a single column.
 indexForPlot = range(len(nBADf['Points']))
 
 plt.scatter(indexForPlot, nBADf['Points'], marker='o', color=colorCycle[colorCycleIndex], label='Points')
@@ -61,7 +61,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Wins --y BLK AST FG_Percent --exampleTitle --example
+#> Scatter --x Wins --y BLK AST FG_Percent --exampleTitle Scatter Plot of Multiple Columns --example We compare three different performance metrics — BLK, AST, and FG_Percent — against Wins. Each metric is plotted with a different color on the same scatter plot, making it easier to spot how these variables trend with team success.
 plt.scatter(nBADf['Wins'], nBADf['BLK'], color=colorCycle[colorCycleIndex], label='BLK')
 
 colorCycleIndex = (colorCycleIndex + 1) % len(colorCycle)
@@ -80,7 +80,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major', labelsize=10)
 plt.show() 
 
-#> Scatter --x Wins --y Losses --z Points --exampleTitle --example
+#> Scatter --x Wins --y Losses --z Points --exampleTitle 3D Scatter Plot of Points vs Wins and Losses --example This 3D scatter plot visualizes how scoring (Points) varies with both Wins and Losses. It can reveal whether high-scoring players are concentrated on winning or losing teams, and whether there's a balanced relationship between all three metrics.
 plt.axes(projection='3d')
 
 plt.gca().scatter(nBADf['Wins'], nBADf['Losses'], nBADf['Points'], color=colorCycle[colorCycleIndex], label='Points')

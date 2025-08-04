@@ -216,5 +216,11 @@
             "PreviouslyGenerated": "print(pokemonDf.head()) #)2 ",
             "Existing": "print(pokemonDf.head()) #)2 "
         }
+    ],
+    "013905382880205755": [
+        {
+            "PreviouslyGenerated": "plt.hist(appleStockDf['Volume'], bins=50 60 70 80)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() ",
+            "Existing": "plt.hist(appleStockDf['Volume'], bins=50 60 70 80)\n\nplt.title('Volume Histogram', fontsize=14, fontweight='bold')\nplt.xlabel('Volume', fontsize=12, fontweight='bold', color='gray')\nplt.ylabel('Counts', fontsize=12, fontweight='bold', color='gray')\nplt.legend()\nplt.grid(True, linestyle='--', linewidth=0.5)\nplt.tick_params(axis='both', which='major', labelsize=10)\nplt.show() "
+        }
     ]
 }
