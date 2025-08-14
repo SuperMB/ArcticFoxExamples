@@ -2350,5 +2350,187 @@
                 "hasHeaders": false
             }
         }
+    },
+    "PlotExamples_Violin1.py": {
+        "variables": {
+            "pokemonDf": {
+                "columns": [
+                    {
+                        "Name": "Number",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Name",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Type1",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Type2",
+                        "ColumnType": 0,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Total",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "HP",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Attack",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Defense",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Sp.Atk",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Sp.Def",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Speed",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Generation",
+                        "ColumnType": 1,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Legendary",
+                        "ColumnType": 3,
+                        "Categories": null
+                    },
+                    {
+                        "Name": "Number",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Name",
+                        "ColumnType": 5
+                    },
+                    {
+                        "Name": "Type1",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Type2",
+                        "ColumnType": 4
+                    },
+                    {
+                        "Name": "Total",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "HP",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Attack",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Defense",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Sp.Atk",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Sp.Def",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Speed",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Generation",
+                        "ColumnType": 1
+                    },
+                    {
+                        "Name": "Legendary",
+                        "ColumnType": 4
+                    }
+                ],
+                "hasHeaders": false,
+                "type": {}
+            },
+            "arcticFoxViolin1": {
+                "type": "module"
+            },
+            "boxplotColumn": {
+                "type": "None"
+            },
+            "colorCycle": {
+                "type": "list"
+            },
+            "colorCycleIndex": {
+                "type": "int"
+            },
+            "i": {
+                "type": "None"
+            },
+            "is_bool_dtype": {
+                "type": "function"
+            },
+            "is_numeric_dtype": {
+                "type": "function"
+            },
+            "np": {
+                "type": "module"
+            },
+            "pd": {
+                "type": "module"
+            },
+            "plt": {
+                "type": "module"
+            },
+            "xTickIndex": {
+                "type": "None"
+            },
+            "xTicks": {
+                "type": "None"
+            },
+            "groupedRows": {
+                "type": "None"
+            },
+            "indexForPlot": {
+                "type": "None"
+            },
+            "_af_XDataNotPresent_af_": {
+                "type": "None"
+            },
+            "nonNumericColumnCount": {
+                "type": "None"
+            },
+            "xTickLabels": {
+                "type": "None"
+            },
+            "Attack": {},
+            "Defense": {},
+            "Sp.Atk": {},
+            "Sp.Def": {}
+        }
     }
 }

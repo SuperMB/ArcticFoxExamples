@@ -23,7 +23,7 @@ print(nBADf.head()) #)1
 
 
 
-#> Pie --values Wins --exampleTitle Pie Chart with Default Binning --example When plotting a pie chart of a numeric column without specifying bins, a default of 5 equal-width bins is applied. This gives a quick distribution overview of the Wins column by grouping win counts into 5 ranges automatically. 
+#> Pie --values Wins --exampleImage Pie1.png --exampleTitle Pie Chart with Default Binning --example When plotting a pie chart of a numeric column without specifying bins, a default of 5 equal-width bins is applied. This gives a quick distribution overview of the Wins column by grouping win counts into 5 ranges automatically. 
 # --bins not specified for pie chart with numeric values, default of 5 will be used
 
 values = pd.cut(nBADf['Wins'], bins=5).value_counts()
@@ -35,7 +35,7 @@ plt.pie(values, labels=combinedIndices)
 plt.title('Wins', fontsize=14, fontweight='bold')
 plt.show() 
 
-#> Pie --values Wins --bins 10 --exampleTitle Pie Chart with Specified Number of Bins --example You can increase granularity by specifying the number of bins. This example divides the Wins column into 10 evenly spaced bins to provide a more detailed breakdown of the data distribution. 
+#> Pie --values Wins --bins 10 --exampleImage Pie2.png --exampleTitle Pie Chart with Specified Number of Bins --example You can increase granularity by specifying the number of bins. This example divides the Wins column into 10 evenly spaced bins to provide a more detailed breakdown of the data distribution. 
 values_1 = pd.cut(nBADf['Wins'], bins=10).value_counts()
 indices_1 = [str(index) for index in values_1.index]
 combinedIndices_1 = [str(indices_1[i]) + ' - ' + str(round(value[1] * 100 / sum(values_1), 1)) + '%' for i, value in enumerate(values_1.items())]
@@ -45,7 +45,7 @@ plt.pie(values_1, labels=combinedIndices_1)
 plt.title('Wins', fontsize=14, fontweight='bold')
 plt.show() 
 
-#> Pie --values Wins --bins 0 20 30 40 50 100 --exampleTitle Pie Chart with Custom Bin Ranges --example Instead of relying on equal-sized bins, you can define custom bin ranges that reflect domain-specific thresholds. In this example, the Wins column is bucketed into defined intervals that reflect milestone win totals. 
+#> Pie --values Wins --bins 0 20 30 40 50 100 --exampleImage Pie3.png --exampleTitle Pie Chart with Custom Bin Ranges --example Instead of relying on equal-sized bins, you can define custom bin ranges that reflect domain-specific thresholds. In this example, the Wins column is bucketed into defined intervals that reflect milestone win totals. 
 values_2 = pd.cut(nBADf['Wins'], bins=[0, 20, 30, 40, 50, 100]).value_counts()
 indices_2 = [str(index) for index in values_2.index]
 combinedIndices_2 = [str(indices_2[i]) + ' - ' + str(round(value[1] * 100 / sum(values_2), 1)) + '%' for i, value in enumerate(values_2.items())]
@@ -56,7 +56,7 @@ plt.title('Wins', fontsize=14, fontweight='bold')
 plt.show() 
 
 
-#> Pie --values Team --exampleTitle Pie Chart of Categorical Values --example When using a categorical column such as Team, the pie chart shows the count of each unique value. This example groups by team name and shows how frequently each team appears in the dataset. Unsurprisingly, each team has roughly the same number of players. 
+#> Pie --values Team --exampleImage Pie4.png --exampleTitle Pie Chart of Categorical Values --example When using a categorical column such as Team, the pie chart shows the count of each unique value. This example groups by team name and shows how frequently each team appears in the dataset. Unsurprisingly, each team has roughly the same number of players. 
 values_3 = nBADf['Team'].astype('category').cat.codes.value_counts().values
 indices_3 = nBADf['Team'].astype('category').cat.codes.value_counts().index
 pieChartLabels = nBADf['Team'].unique()
@@ -67,7 +67,7 @@ plt.pie(values_3, labels=combinedIndices_3)
 plt.title('Team', fontsize=14, fontweight='bold')
 plt.show() 
 
-#> Pie --values Points --group Team --exampleTitle Pie Chart of Aggregated Values by Group --example This example uses the group option to sum the Points for each team. The pie chart then displays total points scored by each team, allowing you to compare their overall offensive output visually. 
+#> Pie --values Points --group Team --exampleImage Pie5.png --exampleTitle Pie Chart of Aggregated Values by Group --example This example uses the group option to sum the Points for each team. The pie chart then displays total points scored by each team, allowing you to compare their overall offensive output visually. 
 nBADfGroup = nBADf.groupby('Team')['Points'].sum()
 nBADfGroup = nBADfGroup.sort_values()
 pieLabels = [f'{name}: {value}' for name, value in zip(nBADfGroup.index, nBADfGroup)]

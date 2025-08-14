@@ -22,7 +22,7 @@ print(pokemonDf.head()) #)1
 ##*** 3       3  VenusaurMega Venusaur  Grass  Poison    625  80     100      123     122     120     80           1      False
 ##*** 4       4             Charmander   Fire     NaN    309  39      52       43      60      50     65           1      False
 
-#> Violin --exampleTitle Violin Plots for All Numeric Columns --example Violin charts help visualize the distribution and density of data. This example creates a single combined plot that includes violin charts for each numeric column in the dataframe. Columns that are non-numeric are excluded.
+#> Violin --exampleImage Violin1.png --exampleTitle Violin Plots for All Numeric Columns --example Violin charts help visualize the distribution and density of data. This example creates a single combined plot that includes violin charts for each numeric column in the dataframe. Columns that are non-numeric are excluded.
 xTickIndex = 0
 for i, boxplotColumn in enumerate(pokemonDf.columns):
     if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
@@ -43,7 +43,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major')
 plt.show() 
 
-#> Violin --separate --exampleTitle Violin Plots on Separate Axis --example Instead of showing all numeric columns in a single plot, this example separates the violin charts into individual subplots. Each subplot represents a single numeric column, making it easier to compare distributions side-by-side and prevents columns with vastly different distributions from being visualized poorly.
+#> Violin --separate --exampleImage Violin2.png --exampleTitle Violin Plots on Separate Axis --example Instead of showing all numeric columns in a single plot, this example separates the violin charts into individual subplots. Each subplot represents a single numeric column, making it easier to compare distributions side-by-side and prevents columns with vastly different distributions from being visualized poorly.
 nonNumericColumnCount = 0
 for i, boxplotColumn in enumerate(pokemonDf.columns):
     if is_numeric_dtype(pokemonDf[boxplotColumn]) and not is_bool_dtype(pokemonDf[boxplotColumn]):
@@ -69,7 +69,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major')
 plt.show() 
 
-#> Violin --x Attack Defense Sp.Atk Sp.Def --exampleTitle Violin Plots for Selected Columns --example When you're only interested in a specific subset of columns, you can generate violin plots just for those columns. In this case, the distribution of Attack, Defense, Sp.Atk, and Sp.Def is shown together in one figure.
+#> Violin --x Attack Defense Sp.Atk Sp.Def --exampleImage Violin3.png --exampleTitle Violin Plots for Selected Columns --example When you're only interested in a specific subset of columns, you can generate violin plots just for those columns. In this case, the distribution of Attack, Defense, Sp.Atk, and Sp.Def is shown together in one figure.
 plt.violinplot(pokemonDf['Attack'],  positions=[0])
 
 plt.violinplot(pokemonDf['Defense'],  positions=[1])
@@ -88,7 +88,7 @@ plt.grid(True, linestyle='--', linewidth=0.5)
 plt.tick_params(axis='both', which='major')
 plt.show() 
 
-#> Violin --x Attack Defense Sp.Atk Sp.Def --separate --exampleTitle Violin Plots for Selected Columns on Separate Axis --example This example plots only the Attack, Defense, Sp.Atk, and Sp.Def columns, but each as its own subplot. This view is useful when the goal is to compare the shape and spread of each distribution individually without disparate distributions.
+#> Violin --x Attack Defense Sp.Atk Sp.Def --separate --exampleImage Violin4.png --exampleTitle Violin Plots for Selected Columns on Separate Axis --example This example plots only the Attack, Defense, Sp.Atk, and Sp.Def columns, but each as its own subplot. This view is useful when the goal is to compare the shape and spread of each distribution individually without disparate distributions.
 _, boxplotAxes = plt.subplots(nrows=1, ncols=4, figsize=(10, 5))
 boxplotAxes[0].violinplot(pokemonDf['Attack'],  positions=[0])
 boxplotAxes[0].set_xticks([0], ['Attack'])
